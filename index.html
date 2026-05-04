@@ -1944,7 +1944,7 @@ function calcBalances() {
         balance[team] = (balance[team] || 0) + WIN_SHARE;
       } else {
         const rule = PAY_RULES.find(r => r.pos === pos);
-        if (rule) balance[team] = (balance[team] || 0) - rule.amount;
+        if (rule) balance[team] = (balance[team] || 0) + rule.amount;
       }
     });
   });
