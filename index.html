@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liga Clubes Amigos 26-27</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:       #0a0a0f;
+  --surface:  #111118;
+  --card:     #18181f;
+  --border:   rgba(255,255,255,0.07);
+  --border-hi:rgba(255,255,255,0.14);
+  --gold:     #f5c842;
+  --gold-dim: rgba(245,200,66,0.12);
+  --gold-glow:rgba(245,200,66,0.25);
+  --white:    #f0f0f5;
+  --muted:    #6b6b80;
+  --green:    #22c55e;
+  --red:      #ef4444;
+  --amber:    #f59e0b;
+  --nav-h:    64px;
+  --radius:   12px;
+  --radius-sm:8px;
+}
+
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+
+html { scroll-behavior:smooth; }
+
+body {
+  background:var(--bg);
+  color:var(--white);
+  font-family:'Inter', sans-serif;
+  min-height:100vh;
+  padding-bottom:calc(var(--nav-h) + 16px);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ── HEADER ── */
+.app-header {
+  position:sticky; top:0; z-index:50;
+  background:rgba(10,10,15,0.85);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+  padding:0 20px;
+  height:56px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.header-brand {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.header-logo {
+  width:32px; height:32px;
+  background:var(--gold);
+  border-radius:8px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:16px;
+  flex-shrink:0;
+}
+
+.header-title {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:1.3rem;
+  letter-spacing:2px;
+  color:var(--white);
+  line-height:1;
+}
+
+.header-season {
+  font-size:0.7rem;
+  color:var(--muted);
+  letter-spacing:1px;
+  text-transform:uppercase;
+  font-weight:500;
+}
+
+.header-badge {
+  background:var(--gold-dim);
+  border:1px solid var(--gold-glow);
+  color:var(--gold);
+  font-size:0.68rem;
+  font-weight:600;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  padding:4px 10px;
+  border-radius:20px;
+}
+
+/* ── BOTTOM NAV ── */
+.bottom-nav {
+  position:fixed; bottom:0; left:0; right:0;
+  height:var(--nav-h);
+  background:rgba(17,17,24,0.95);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-top:1px solid var(--border);
+  display:flex;
+  align-items:stretch;
+  z-index:100;
+  padding-bottom:env(safe-area-inset-bottom, 0px);
+}
+
+.nav-item {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
+  cursor:pointer;
+  border:none;
+  background:transparent;
+  color:var(--muted);
+  transition:color 0.2s;
+  padding:8px 4px;
+  -webkit-tap-highlight-color:transparent;
+}
+
+.nav-item.active { color:var(--gold); }
+.nav-item:hover:not(.active) { color:rgba(240,240,245,0.6); }
+
+.nav-icon { font-size:1.3rem; line-height:1; }
+.nav-label { font-size:0.6rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; }
+
+/* ── SECTIONS ── */
+.section {
+  display:none;
+  max-width:900px;
+  margin:0 auto;
+  padding:20px 16px 12px;
+  animation:fadeIn 0.2s ease;
+}
+.section.active { display:block; }
+
+@keyframes fadeIn { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:none} }
+
+.section-header {
+  margin-bottom:20px;
+}
+
+.section-title {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:1.8rem;
+  letter-spacing:3px;
+  color:var(--white);
+  line-height:1;
+}
+
+.section-sub {
+  font-size:0.72rem;
+  color:var(--muted);
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  margin-top:4px;
+  font-weight:500;
+}
+
+/* ── CARDS ── */
+.card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+
+.card-header {
+  padding:14px 16px;
+  border-bottom:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.card-title {
+  font-size:0.72rem;
+  font-weight:600;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+/* ── STANDINGS TABLE ── */
+.standings-table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+.standings-table th {
+  padding:10px 12px;
+  font-size:0.65rem;
+  font-weight:600;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--muted);
+  text-align:center;
+  border-bottom:1px solid var(--border);
+}
+
+.standings-table th:nth-child(2) { text-align:left; }
+
+.standings-table tr.team-row {
+  border-bottom:1px solid var(--border);
+  transition:background 0.15s;
+  cursor:default;
+}
+
+.standings-table tr.team-row:last-child { border-bottom:none; }
+.standings-table tr.team-row:hover { background:rgba(255,255,255,0.03); }
+
+.standings-table td {
+  padding:11px 12px;
+  text-align:center;
+  font-size:0.88rem;
+  color:rgba(240,240,245,0.7);
+}
+
+td.t-pos {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:1rem;
+  color:var(--muted);
+  width:36px;
+}
+
+td.t-name {
+  text-align:left;
+  font-weight:600;
+  font-size:0.9rem;
+  color:var(--white);
+  min-width:120px;
+}
+
+td.t-pts {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:1.2rem;
+  color:var(--gold);
+  font-weight:700;
+}
+
+td.t-jor {
+  font-weight:600;
+  color:rgba(240,240,245,0.5);
+}
+
+/* Zone markers */
+.zone-dot {
+  display:inline-block;
+  width:4px; height:4px;
+  border-radius:50%;
+  margin-left:6px;
+  vertical-align:middle;
+  flex-shrink:0;
+}
+
+tr.z-top    td.t-pos { color:var(--green); }
+tr.z-mid    td.t-pos { color:var(--muted); }
+tr.z-top    { border-left:2px solid var(--green); }
+tr.z-mid    { border-left:2px solid transparent; }
+tr.z-bottom { border-left:2px solid transparent; }
+
+.hide-mobile { }
+
+/* Zone legend */
+.zone-legend {
+  display:flex;
+  gap:16px;
+  margin-top:12px;
+  flex-wrap:wrap;
+}
+
+.zone-legend-item {
+  display:flex;
+  align-items:center;
+  gap:6px;
+  font-size:0.7rem;
+  color:var(--muted);
+  font-weight:500;
+  letter-spacing:0.5px;
+}
+
+.zl-dot {
+  width:8px; height:8px;
+  border-radius:2px;
+}
+
+/* ── ROUNDS ── */
+.rounds-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
+  gap:12px;
+}
+
+.round-card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+
+.round-card-header {
+  padding:10px 14px;
+  background:rgba(255,255,255,0.03);
+  border-bottom:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.round-card-title {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:0.95rem;
+  letter-spacing:2px;
+  color:var(--gold);
+}
+
+.round-card-meta {
+  font-size:0.65rem;
+  color:var(--muted);
+  letter-spacing:1px;
+  font-weight:500;
+}
+
+.match-row {
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  padding:8px 14px;
+  gap:8px;
+  border-bottom:1px solid var(--border);
+  font-size:0.82rem;
+}
+
+.match-row:last-child { border-bottom:none; }
+
+.match-home {
+  text-align:right;
+  font-weight:500;
+  color:rgba(240,240,245,0.6);
+  font-size:0.82rem;
+  line-height:1.2;
+}
+
+.match-away {
+  text-align:left;
+  font-weight:500;
+  color:rgba(240,240,245,0.6);
+  font-size:0.82rem;
+  line-height:1.2;
+}
+
+.match-home.w, .match-away.w {
+  color:var(--gold);
+  font-weight:700;
+}
+
+.match-score {
+  background:rgba(255,255,255,0.06);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:3px 8px;
+  font-family:'Bebas Neue', sans-serif;
+  font-size:0.9rem;
+  color:var(--white);
+  white-space:nowrap;
+  letter-spacing:1px;
+  text-align:center;
+  min-width:56px;
+}
+
+.pending-chip {
+  background:rgba(107,107,128,0.15);
+  border:1px solid var(--border);
+  color:var(--muted);
+  font-size:0.65rem;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  padding:2px 8px;
+  border-radius:4px;
+}
+
+/* ── NEXT JORNADA ── */
+.next-card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  max-width:520px;
+}
+
+.next-match {
+  display:grid;
+  grid-template-columns:1fr 48px 1fr;
+  align-items:center;
+  padding:11px 16px;
+  border-bottom:1px solid var(--border);
+  gap:8px;
+}
+
+.next-match:last-child { border-bottom:none; }
+
+.next-team-name {
+  font-size:0.88rem;
+  font-weight:500;
+  color:var(--white);
+}
+
+.next-team-name.right { text-align:right; }
+
+.next-vs {
+  text-align:center;
+  font-size:0.65rem;
+  font-weight:700;
+  letter-spacing:1px;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+
+/* ── PLAYOFFS BRACKET ── */
+.bracket-scroll {
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  padding-bottom:8px;
+  scrollbar-width:thin;
+  scrollbar-color:var(--border) transparent;
+}
+
+.bracket-scroll::-webkit-scrollbar { height:3px; }
+.bracket-scroll::-webkit-scrollbar-thumb { background:var(--border-hi); border-radius:2px; }
+
+.bracket-inner {
+  display:flex;
+  gap:8px;
+  min-width:960px;
+  align-items:stretch;
+  padding:4px 2px;
+}
+
+.bracket-col {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+
+.bracket-col-title {
+  font-size:0.65rem;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--gold);
+  text-align:center;
+  padding:8px;
+  margin-bottom:8px;
+}
+
+.bracket-col-matches {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  flex:1;
+  gap:8px;
+}
+
+.b-match {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius-sm);
+  overflow:hidden;
+}
+
+.b-match.pending {
+  opacity:0.5;
+  border-style:dashed;
+}
+
+.b-match-label {
+  font-size:0.6rem;
+  letter-spacing:1px;
+  color:var(--muted);
+  text-transform:uppercase;
+  padding:4px 10px;
+  background:rgba(255,255,255,0.03);
+  border-bottom:1px solid var(--border);
+}
+
+.b-team {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:7px 10px;
+  font-size:0.8rem;
+  font-weight:500;
+  color:rgba(240,240,245,0.6);
+  border-bottom:1px solid var(--border);
+  gap:6px;
+}
+
+.b-team:last-child { border-bottom:none; }
+.b-team.winner { color:var(--gold); background:rgba(245,200,66,0.05); font-weight:600; }
+.b-team.loser { opacity:0.35; text-decoration:line-through; }
+
+.b-score {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:1rem;
+  background:rgba(255,255,255,0.07);
+  border-radius:4px;
+  padding:1px 6px;
+  min-width:28px;
+  text-align:center;
+  flex-shrink:0;
+}
+
+.b-team.winner .b-score { color:var(--gold); }
+
+.b-tbd {
+  display:flex;
+  align-items:center;
+  padding:8px 10px;
+  font-size:0.75rem;
+  color:rgba(107,107,128,0.5);
+  letter-spacing:0.5px;
+  border-bottom:1px solid var(--border);
+}
+
+.b-tbd:last-child { border-bottom:none; }
+
+.champion-col { flex:0.65; }
+
+.champion-card {
+  background:linear-gradient(135deg, rgba(245,200,66,0.1), rgba(245,200,66,0.04));
+  border:1px solid rgba(245,200,66,0.3);
+  border-radius:var(--radius);
+  padding:24px 16px;
+  text-align:center;
+  margin:auto 0;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.champion-trophy { font-size:2.2rem; margin-bottom:10px; }
+.champion-name { font-family:'Bebas Neue', sans-serif; font-size:1.5rem; letter-spacing:2px; color:var(--gold); }
+.champion-tbd { font-family:'Bebas Neue', sans-serif; font-size:1.2rem; letter-spacing:2px; color:rgba(245,200,66,0.3); }
+.champion-label { font-size:0.65rem; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-top:6px; }
+
+/* ── CRÓNICA ── */
+.cronica-main {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  margin-bottom:16px;
+}
+
+.cronica-main-header {
+  padding:14px 18px;
+  border-bottom:1px solid var(--border);
+  background:rgba(245,200,66,0.05);
+}
+
+.cronica-main-title {
+  font-size:0.65rem;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+
+.cronica-main-body {
+  padding:18px;
+  font-size:0.9rem;
+  line-height:1.75;
+  color:rgba(240,240,245,0.8);
+}
+
+.cronica-main-body p { margin-bottom:12px; }
+.cronica-main-body p:last-child { margin-bottom:0; }
+
+.archive-title {
+  font-size:0.65rem;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:10px;
+  margin-top:24px;
+}
+
+.cronica-item {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius-sm);
+  margin-bottom:8px;
+  overflow:hidden;
+}
+
+.cronica-item-header {
+  padding:12px 14px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  cursor:pointer;
+  user-select:none;
+  transition:background 0.15s;
+}
+
+.cronica-item-header:hover { background:rgba(255,255,255,0.03); }
+
+.cronica-item-label {
+  font-size:0.8rem;
+  font-weight:600;
+  color:rgba(240,240,245,0.7);
+}
+
+.cronica-item-toggle {
+  font-size:0.7rem;
+  color:var(--muted);
+  transition:transform 0.2s;
+}
+
+.cronica-item.open .cronica-item-toggle { transform:rotate(180deg); }
+
+.cronica-item-body {
+  display:none;
+  padding:14px 14px 16px;
+  font-size:0.85rem;
+  line-height:1.7;
+  color:rgba(240,240,245,0.7);
+  border-top:1px solid var(--border);
+}
+
+.cronica-item-body p { margin-bottom:10px; }
+.cronica-item-body p:last-child { margin-bottom:0; }
+.cronica-item.open .cronica-item-body { display:block; }
+
+/* ── PAGOS ── */
+.pagos-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-bottom:16px;
+}
+
+.payers-card {
+  background:var(--card);
+  border:1px solid rgba(239,68,68,0.25);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+
+.payers-header {
+  padding:12px 14px;
+  border-bottom:1px solid var(--border);
+  font-size:0.65rem;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#ef4444;
+}
+
+.payer-row {
+  display:flex;
+  align-items:center;
+  padding:10px 14px;
+  border-bottom:1px solid var(--border);
+  gap:10px;
+}
+
+.payer-row:last-child { border-bottom:none; }
+
+.payer-pos {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:1rem;
+  color:var(--muted);
+  width:28px;
+  flex-shrink:0;
+}
+
+.payer-name {
+  font-size:0.88rem;
+  font-weight:500;
+  color:var(--white);
+  flex:1;
+}
+
+.payer-amount {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:1.1rem;
+  color:#ef4444;
+}
+
+.balance-card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+
+.balance-table {
+  width:100%;
+  border-collapse:collapse;
+  font-size:0.85rem;
+}
+
+.balance-table th {
+  padding:10px 12px;
+  font-size:0.65rem;
+  font-weight:600;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--muted);
+  text-align:left;
+  border-bottom:1px solid var(--border);
+}
+
+.balance-table th:last-child { text-align:right; }
+
+.balance-table td {
+  padding:9px 12px;
+  color:rgba(240,240,245,0.7);
+  border-bottom:1px solid var(--border);
+  font-size:0.85rem;
+}
+
+.balance-table td:first-child { font-weight:500; color:var(--white); }
+.balance-table td:last-child { text-align:right; color:var(--gold); font-weight:600; }
+.balance-table tr:last-child td { border-bottom:none; }
+.balance-table tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
+
+.pagos-history-title {
+  font-size:0.65rem;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:10px;
+  margin-top:20px;
+}
+
+.history-scroll { overflow-x:auto; }
+
+.history-tbl {
+  width:100%;
+  border-collapse:collapse;
+  font-size:0.78rem;
+  min-width:900px;
+}
+
+.history-tbl th {
+  padding:8px 10px;
+  background:rgba(255,255,255,0.04);
+  color:var(--muted);
+  font-size:0.62rem;
+  letter-spacing:1px;
+  font-weight:600;
+  text-transform:uppercase;
+  text-align:center;
+  border-bottom:1px solid var(--border);
+  white-space:nowrap;
+}
+
+.history-tbl th:first-child { text-align:left; }
+
+.history-tbl td {
+  padding:7px 10px;
+  text-align:center;
+  color:rgba(240,240,245,0.4);
+  border-bottom:1px solid var(--border);
+}
+
+.history-tbl td:first-child { text-align:left; color:var(--muted); }
+.history-tbl tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
+.history-tbl td.hv { color:var(--gold); font-weight:600; }
+
+.history-tbl tr.total-row td {
+  background:rgba(245,200,66,0.06);
+  border-top:1px solid rgba(245,200,66,0.2);
+  color:var(--gold);
+  font-weight:700;
+}
+
+/* ── STATS ── */
+.highlight-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.hl-card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:16px 12px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.hl-card::after {
+  content:'';
+  position:absolute;
+  top:0; left:0; right:0;
+  height:2px;
+}
+
+.hl-card.gold::after { background:var(--gold); }
+.hl-card.green::after { background:var(--green); }
+.hl-card.red::after { background:var(--red); }
+.hl-card.blue::after { background:#60b8ff; }
+
+.hl-icon { font-size:1.4rem; margin-bottom:8px; display:block; }
+.hl-label { font-size:0.62rem; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-bottom:8px; display:block; }
+.hl-name { font-size:0.82rem; font-weight:600; color:var(--white); display:block; margin-bottom:4px; line-height:1.2; }
+.hl-value { font-family:'Bebas Neue', sans-serif; font-size:1.8rem; line-height:1; display:block; }
+.hl-card.gold .hl-value { color:var(--gold); }
+.hl-card.green .hl-value { color:var(--green); }
+.hl-card.red .hl-value { color:var(--red); }
+.hl-card.blue .hl-value { color:#60b8ff; }
+.hl-sub { font-size:0.7rem; color:var(--muted); margin-top:3px; display:block; }
+
+.stats-select-wrap { margin-bottom:16px; }
+
+.stats-select {
+  background:var(--card);
+  border:1px solid var(--border-hi);
+  border-radius:var(--radius-sm);
+  color:var(--white);
+  font-family:'Inter', sans-serif;
+  font-size:0.88rem;
+  padding:10px 36px 10px 14px;
+  cursor:pointer;
+  outline:none;
+  min-width:220px;
+  appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%236b6b80' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 12px center;
+  background-color:var(--card);
+  transition:border-color 0.2s;
+}
+
+.stats-select:focus { border-color:var(--gold); }
+
+.stats-kpi-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.kpi-card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius-sm);
+  padding:14px;
+  text-align:center;
+}
+
+.kpi-value { font-family:'Bebas Neue', sans-serif; font-size:1.8rem; color:var(--gold); display:block; line-height:1; }
+.kpi-label { font-size:0.65rem; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-top:4px; display:block; }
+.kpi-sub { font-size:0.75rem; color:rgba(240,240,245,0.5); margin-top:3px; display:block; }
+
+.section-label {
+  font-size:0.65rem;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin:20px 0 10px;
+}
+
+.jor-dots { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:6px; }
+
+.jor-dot {
+  width:34px; height:34px;
+  border-radius:6px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Bebas Neue', sans-serif;
+  font-size:0.85rem;
+  flex-shrink:0;
+  cursor:default;
+}
+
+.dot-legend {
+  font-size:0.68rem;
+  color:var(--muted);
+  margin-top:4px;
+}
+
+.stats-main-table-wrap {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  margin-bottom:16px;
+}
+
+.stats-main-table {
+  width:100%;
+  border-collapse:collapse;
+  font-size:0.82rem;
+}
+
+.stats-main-table th {
+  padding:10px 12px;
+  font-size:0.62rem;
+  font-weight:600;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--muted);
+  text-align:center;
+  border-bottom:1px solid var(--border);
+  background:rgba(255,255,255,0.03);
+}
+
+.stats-main-table th:nth-child(2) { text-align:left; }
+
+.stats-main-table td {
+  padding:10px 12px;
+  text-align:center;
+  color:rgba(240,240,245,0.7);
+  border-bottom:1px solid var(--border);
+}
+
+.stats-main-table td:nth-child(2) { text-align:left; font-weight:600; color:var(--white); }
+.stats-main-table tr:last-child td { border-bottom:none; }
+.stats-main-table tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
+.stats-main-table td.hi { color:var(--gold); font-weight:700; }
+.stats-main-table td.lo { color:var(--red); }
+
+.mini-cards-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(260px,1fr));
+  gap:10px;
+}
+
+.mini-card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius-sm);
+  padding:14px;
+  transition:border-color 0.2s;
+}
+
+.mini-card:hover { border-color:var(--border-hi); }
+
+.mini-card-name {
+  font-size:0.88rem;
+  font-weight:600;
+  color:var(--white);
+  margin-bottom:10px;
+}
+
+.mini-stats-row {
+  display:flex;
+  gap:0;
+  margin-bottom:10px;
+}
+
+.mini-stat {
+  flex:1;
+  text-align:center;
+  border-right:1px solid var(--border);
+  padding:0 8px;
+}
+
+.mini-stat:last-child { border-right:none; }
+
+.mini-stat-val {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:1.3rem;
+  color:var(--gold);
+  display:block;
+  line-height:1;
+}
+
+.mini-stat-lbl {
+  font-size:0.6rem;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-top:2px;
+}
+
+/* ── EMPTY STATES ── */
+.empty-state {
+  text-align:center;
+  padding:48px 24px;
+  color:var(--muted);
+}
+
+.empty-icon { font-size:2rem; margin-bottom:12px; }
+.empty-title { font-family:'Bebas Neue', sans-serif; font-size:1.2rem; letter-spacing:2px; color:rgba(240,240,245,0.3); margin-bottom:6px; }
+.empty-sub { font-size:0.78rem; font-weight:500; letter-spacing:0.5px; }
+
+/* ── ROUND FILTERS ── */
+.rounds-filters {
+  display:flex;
+  gap:10px;
+  margin-bottom:16px;
+  flex-wrap:wrap;
+}
+
+.filter-select {
+  background:var(--card);
+  border:1px solid var(--border-hi);
+  border-radius:var(--radius-sm);
+  color:var(--white);
+  font-family:'Inter', sans-serif;
+  font-size:0.82rem;
+  padding:9px 32px 9px 12px;
+  cursor:pointer;
+  outline:none;
+  flex:1;
+  min-width:140px;
+  appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%236b6b80' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 10px center;
+  background-color:var(--card);
+  transition:border-color 0.2s;
+}
+
+.filter-select:focus { border-color:var(--gold); }
+
+.filter-clear {
+  background:transparent;
+  border:1px solid var(--border-hi);
+  border-radius:var(--radius-sm);
+  color:var(--muted);
+  font-family:'Inter', sans-serif;
+  font-size:0.78rem;
+  font-weight:500;
+  padding:9px 14px;
+  cursor:pointer;
+  white-space:nowrap;
+  transition:all 0.2s;
+  display:none;
+}
+
+.filter-clear:hover { border-color:var(--gold); color:var(--gold); }
+.filter-clear.visible { display:block; }
+
+.filter-badge {
+  font-size:0.68rem;
+  font-weight:600;
+  color:var(--muted);
+  letter-spacing:0.5px;
+  align-self:center;
+  white-space:nowrap;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width:640px) {
+  .highlight-grid { grid-template-columns:1fr 1fr; }
+  .stats-kpi-grid { grid-template-columns:1fr 1fr; }
+  .pagos-grid { grid-template-columns:1fr; }
+  .rounds-grid { grid-template-columns:1fr; }
+  .mini-cards-grid { grid-template-columns:1fr; }
+  .hide-mobile { display:none !important; }
+  .section { padding:16px 12px 8px; }
+}
+
+@media (max-width:400px) {
+  .highlight-grid { grid-template-columns:1fr 1fr; }
+  .hl-value { font-size:1.4rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="app-header">
+  <div class="header-brand">
+    <div class="header-logo">⚽</div>
+    <div>
+      <div class="header-title">Liga Clubes Amigos</div>
+      <div class="header-season">Temporada 2026-27</div>
+    </div>
+  </div>
+  <div class="header-badge">J2 disputada</div>
+</header>
+
+<!-- SECTIONS -->
+<div id="s-standings" class="section active">
+  <div class="section-header">
+    <div class="section-title">Clasificación</div>
+    <div class="section-sub" id="standings-sub">Jornada 1 · 16 equipos</div>
+  </div>
+  <div class="card">
+    <table class="standings-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Equipo</th>
+          <th>PTS</th>
+          <th class="hide-mobile">PJ</th>
+          <th class="hide-mobile">PG</th>
+          <th class="hide-mobile">PE</th>
+          <th class="hide-mobile">PP</th>
+          <th>Jor.</th>
+        </tr>
+      </thead>
+      <tbody id="standings-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<div id="s-rounds" class="section">
+  <div class="section-header">
+    <div class="section-title">Jornadas</div>
+    <div class="section-sub">Resultados · Temporada 2026-27</div>
+  </div>
+  <div class="rounds-filters">
+    <select class="filter-select" id="filter-jornada" onchange="filterRounds()">
+      <option value="">Todas las jornadas</option>
+    </select>
+    <select class="filter-select" id="filter-equipo" onchange="filterRounds()">
+      <option value="">Todos los equipos</option>
+    </select>
+    <button class="filter-clear" id="filter-clear-btn" onclick="clearRoundFilters()">✕ Quitar filtros</button>
+    <span class="filter-badge" id="filter-badge"></span>
+  </div>
+  <div class="rounds-grid" id="rounds-grid"></div>
+</div>
+
+<div id="s-next" class="section">
+  <div class="section-header">
+    <div class="section-title">Próxima</div>
+    <div class="section-sub" id="next-sub">Jornada 3 · Pendiente</div>
+  </div>
+  <div id="next-content"></div>
+</div>
+
+<div id="s-playoffs" class="section">
+  <div class="section-header">
+    <div class="section-title">Playoffs</div>
+    <div class="section-sub">Copa · Temporada 2026-27</div>
+  </div>
+  <div class="bracket-scroll">
+    <div class="bracket-inner" id="bracket-inner"></div>
+  </div>
+</div>
+
+<div id="s-cronica" class="section">
+  <div class="section-header">
+    <div class="section-title">Crónica</div>
+    <div class="section-sub">Sin filtros desde 2026</div>
+  </div>
+  <div id="cronica-content"></div>
+</div>
+
+<div id="s-pagos" class="section">
+  <div class="section-header">
+    <div class="section-title">Pagos</div>
+    <div class="section-sub">Acumulado · Temporada 2026-27</div>
+  </div>
+  <div class="pagos-grid">
+    <div class="payers-card">
+      <div class="payers-header">🚨 Próximos en pagar</div>
+      <div id="next-payers"></div>
+    </div>
+    <div class="balance-card">
+      <div class="card-header"><span class="card-title">📊 Saldo acumulado</span></div>
+      <table class="balance-table">
+        <thead><tr><th>Equipo</th><th>Pagado</th></tr></thead>
+        <tbody id="pagos-summary-body"></tbody>
+      </table>
+    </div>
+  </div>
+  <div class="pagos-history-title">Histórico por jornada</div>
+  <div class="history-scroll">
+    <table class="history-tbl" id="history-table"></table>
+  </div>
+</div>
+
+<div id="s-stats" class="section">
+  <div class="section-header">
+    <div class="section-title">Estadísticas</div>
+    <div class="section-sub" id="stats-sub">Fichas individuales · 1 jornada</div>
+  </div>
+  <div id="stats-content"></div>
+</div>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <button class="nav-item active" onclick="showTab('standings',this)">
+    <span class="nav-icon">🏆</span>
+    <span class="nav-label">Liga</span>
+  </button>
+  <button class="nav-item" onclick="showTab('next',this)">
+    <span class="nav-icon">⏭</span>
+    <span class="nav-label">Próxima</span>
+  </button>
+  <button class="nav-item" onclick="showTab('rounds',this)">
+    <span class="nav-icon">📅</span>
+    <span class="nav-label">Jornadas</span>
+  </button>
+  <button class="nav-item" onclick="showTab('cronica',this)">
+    <span class="nav-icon">📰</span>
+    <span class="nav-label">Crónica</span>
+  </button>
+  <button class="nav-item" onclick="showTab('pagos',this)">
+    <span class="nav-icon">💰</span>
+    <span class="nav-label">Pagos</span>
+  </button>
+  <button class="nav-item" onclick="showTab('stats',this)">
+    <span class="nav-icon">📈</span>
+    <span class="nav-label">Stats</span>
+  </button>
+</nav>
+
+<script>
+// ═══════════════════════════════════════════
+// DATA
+// ═══════════════════════════════════════════
+
+const TEAMS_2627 = [
+  "Danilo Stars","Sergchenko","Celta de Viño","Paco Buyo",
+  "AnceLuni","Avaricius Jr.","Josisi Mourinho","Sors",
+  "Raphontino","Kingsquare","CucuDaris","Castriano Ronaldo",
+  "Vicentine Zidane","Tano Amunt","Cardonistas","Puro Llorente"
+];
+
+const jorPoints2627 = {
+  "AnceLuni":51,"Josisi Mourinho":45,"Castriano Ronaldo":45,"Raphontino":43,
+  "Tano Amunt":41,"Vicentine Zidane":39,"CucuDaris":36,"Paco Buyo":34,
+  "Kingsquare":33,"Cardonistas":32,"Sors":30,"Avaricius Jr.":28,
+  "Danilo Stars":26,"Puro Llorente":24,"Celta de Viño":20,"Sergchenko":13,
+};
+
+const rounds2627 = [
+  { j:"J1", matches:[
+    ["Danilo Stars","14","30","Sergchenko"],
+    ["Celta de Viño","10","17","Paco Buyo"],
+    ["AnceLuni","16","27","Avaricius Jr."],
+    ["Josisi Mourinho","22","16","Sors"],
+    ["Raphontino","16","33","Kingsquare"],
+    ["CucuDaris","27","31","Castriano Ronaldo"],
+    ["Vicentine Zidane","32","23","Tano Amunt"],
+    ["Cardonistas","25","21","Puro Llorente"],
+  ]},
+  { j:"J2", matches:[
+    ["Paco Buyo","34","26","Danilo Stars"],
+    ["Avaricius Jr.","28","13","Sergchenko"],
+    ["Sors","30","20","Celta de Viño"],
+    ["Kingsquare","33","51","AnceLuni"],
+    ["Castriano Ronaldo","45","45","Josisi Mourinho"],
+    ["Tano Amunt","41","43","Raphontino"],
+    ["Puro Llorente","24","36","CucuDaris"],
+    ["Cardonistas","32","39","Vicentine Zidane"],
+  ]},
+  { j:"J3", pending:true, matches:[
+    ["Danilo Stars","","","Avaricius Jr."],
+    ["Paco Buyo","","","Sors"],
+    ["Sergchenko","","","Kingsquare"],
+    ["Celta de Viño","","","Castriano Ronaldo"],
+    ["AnceLuni","","","Tano Amunt"],
+    ["Josisi Mourinho","","","Puro Llorente"],
+    ["Raphontino","","","Cardonistas"],
+    ["CucuDaris","","","Vicentine Zidane"],
+  ]},
+  { j:"J4", pending:true, matches:[
+    ["Sors","","","Danilo Stars"],
+    ["Kingsquare","","","Avaricius Jr."],
+    ["Castriano Ronaldo","","","Paco Buyo"],
+    ["Tano Amunt","","","Sergchenko"],
+    ["Puro Llorente","","","Celta de Viño"],
+    ["Cardonistas","","","AnceLuni"],
+    ["Vicentine Zidane","","","Josisi Mourinho"],
+    ["CucuDaris","","","Raphontino"],
+  ]},
+  { j:"J5", pending:true, matches:[
+    ["Danilo Stars","","","Kingsquare"],
+    ["Sors","","","Castriano Ronaldo"],
+    ["Avaricius Jr.","","","Tano Amunt"],
+    ["Paco Buyo","","","Puro Llorente"],
+    ["Sergchenko","","","Cardonistas"],
+    ["Celta de Viño","","","Vicentine Zidane"],
+    ["AnceLuni","","","CucuDaris"],
+    ["Josisi Mourinho","","","Raphontino"],
+  ]},
+  { j:"J6", pending:true, matches:[
+    ["Castriano Ronaldo","","","Danilo Stars"],
+    ["Tano Amunt","","","Kingsquare"],
+    ["Puro Llorente","","","Sors"],
+    ["Cardonistas","","","Avaricius Jr."],
+    ["Vicentine Zidane","","","Paco Buyo"],
+    ["CucuDaris","","","Sergchenko"],
+    ["Raphontino","","","Celta de Viño"],
+    ["Josisi Mourinho","","","AnceLuni"],
+  ]},
+  { j:"J7", pending:true, matches:[
+    ["Danilo Stars","","","Tano Amunt"],
+    ["Castriano Ronaldo","","","Puro Llorente"],
+    ["Kingsquare","","","Cardonistas"],
+    ["Sors","","","Vicentine Zidane"],
+    ["Avaricius Jr.","","","CucuDaris"],
+    ["Paco Buyo","","","Raphontino"],
+    ["Sergchenko","","","Josisi Mourinho"],
+    ["Celta de Viño","","","AnceLuni"],
+  ]},
+  { j:"J8", pending:true, matches:[
+    ["Puro Llorente","","","Danilo Stars"],
+    ["Cardonistas","","","Tano Amunt"],
+    ["Vicentine Zidane","","","Castriano Ronaldo"],
+    ["CucuDaris","","","Kingsquare"],
+    ["Raphontino","","","Sors"],
+    ["Josisi Mourinho","","","Avaricius Jr."],
+    ["AnceLuni","","","Paco Buyo"],
+    ["Celta de Viño","","","Sergchenko"],
+  ]},
+  { j:"J9", pending:true, matches:[
+    ["Danilo Stars","","","Cardonistas"],
+    ["Puro Llorente","","","Vicentine Zidane"],
+    ["Tano Amunt","","","CucuDaris"],
+    ["Castriano Ronaldo","","","Raphontino"],
+    ["Kingsquare","","","Josisi Mourinho"],
+    ["Sors","","","AnceLuni"],
+    ["Avaricius Jr.","","","Celta de Viño"],
+    ["Paco Buyo","","","Sergchenko"],
+  ]},
+  { j:"J10", pending:true, matches:[
+    ["Vicentine Zidane","","","Danilo Stars"],
+    ["CucuDaris","","","Cardonistas"],
+    ["Raphontino","","","Puro Llorente"],
+    ["Josisi Mourinho","","","Tano Amunt"],
+    ["AnceLuni","","","Castriano Ronaldo"],
+    ["Celta de Viño","","","Kingsquare"],
+    ["Sergchenko","","","Sors"],
+    ["Paco Buyo","","","Avaricius Jr."],
+  ]},
+  { j:"J11", pending:true, matches:[
+    ["Danilo Stars","","","CucuDaris"],
+    ["Vicentine Zidane","","","Raphontino"],
+    ["Cardonistas","","","Josisi Mourinho"],
+    ["Puro Llorente","","","AnceLuni"],
+    ["Tano Amunt","","","Celta de Viño"],
+    ["Castriano Ronaldo","","","Sergchenko"],
+    ["Kingsquare","","","Paco Buyo"],
+    ["Sors","","","Avaricius Jr."],
+  ]},
+  { j:"J12", pending:true, matches:[
+    ["Raphontino","","","Danilo Stars"],
+    ["Josisi Mourinho","","","CucuDaris"],
+    ["AnceLuni","","","Vicentine Zidane"],
+    ["Celta de Viño","","","Cardonistas"],
+    ["Sergchenko","","","Puro Llorente"],
+    ["Paco Buyo","","","Tano Amunt"],
+    ["Avaricius Jr.","","","Castriano Ronaldo"],
+    ["Sors","","","Kingsquare"],
+  ]},
+  { j:"J13", pending:true, matches:[
+    ["Danilo Stars","","","Josisi Mourinho"],
+    ["Raphontino","","","AnceLuni"],
+    ["CucuDaris","","","Celta de Viño"],
+    ["Vicentine Zidane","","","Sergchenko"],
+    ["Cardonistas","","","Paco Buyo"],
+    ["Puro Llorente","","","Avaricius Jr."],
+    ["Tano Amunt","","","Sors"],
+    ["Castriano Ronaldo","","","Kingsquare"],
+  ]},
+  { j:"J14", pending:true, matches:[
+    ["AnceLuni","","","Danilo Stars"],
+    ["Celta de Viño","","","Josisi Mourinho"],
+    ["Sergchenko","","","Raphontino"],
+    ["Paco Buyo","","","CucuDaris"],
+    ["Avaricius Jr.","","","Vicentine Zidane"],
+    ["Sors","","","Cardonistas"],
+    ["Kingsquare","","","Puro Llorente"],
+    ["Castriano Ronaldo","","","Tano Amunt"],
+  ]},
+  { j:"J15", pending:true, matches:[
+    ["Danilo Stars","","","Celta de Viño"],
+    ["AnceLuni","","","Sergchenko"],
+    ["Josisi Mourinho","","","Paco Buyo"],
+    ["Raphontino","","","Avaricius Jr."],
+    ["CucuDaris","","","Sors"],
+    ["Vicentine Zidane","","","Kingsquare"],
+    ["Cardonistas","","","Castriano Ronaldo"],
+    ["Puro Llorente","","","Tano Amunt"],
+  ]},
+  { j:"J16 (Vuelta J1)", pending:true, matches:[
+    ["Sergchenko","","","Danilo Stars"],
+    ["Paco Buyo","","","Celta de Viño"],
+    ["Avaricius Jr.","","","AnceLuni"],
+    ["Sors","","","Josisi Mourinho"],
+    ["Kingsquare","","","Raphontino"],
+    ["Castriano Ronaldo","","","CucuDaris"],
+    ["Tano Amunt","","","Vicentine Zidane"],
+    ["Puro Llorente","","","Cardonistas"],
+  ]},
+  { j:"J17 (Vuelta J2)", pending:true, matches:[
+    ["Danilo Stars","","","Paco Buyo"],
+    ["Sergchenko","","","Avaricius Jr."],
+    ["Celta de Viño","","","Sors"],
+    ["AnceLuni","","","Kingsquare"],
+    ["Josisi Mourinho","","","Castriano Ronaldo"],
+    ["Raphontino","","","Tano Amunt"],
+    ["CucuDaris","","","Puro Llorente"],
+    ["Vicentine Zidane","","","Cardonistas"],
+  ]},
+  { j:"J18 (Vuelta J3)", pending:true, matches:[
+    ["Avaricius Jr.","","","Danilo Stars"],
+    ["Sors","","","Paco Buyo"],
+    ["Kingsquare","","","Sergchenko"],
+    ["Castriano Ronaldo","","","Celta de Viño"],
+    ["Tano Amunt","","","AnceLuni"],
+    ["Puro Llorente","","","Josisi Mourinho"],
+    ["Cardonistas","","","Raphontino"],
+    ["Vicentine Zidane","","","CucuDaris"],
+  ]},
+  { j:"J19 (Vuelta J4)", pending:true, matches:[
+    ["Danilo Stars","","","Sors"],
+    ["Avaricius Jr.","","","Kingsquare"],
+    ["Paco Buyo","","","Castriano Ronaldo"],
+    ["Sergchenko","","","Tano Amunt"],
+    ["Celta de Viño","","","Puro Llorente"],
+    ["AnceLuni","","","Cardonistas"],
+    ["Josisi Mourinho","","","Vicentine Zidane"],
+    ["Raphontino","","","CucuDaris"],
+  ]},
+  { j:"J20 (Vuelta J5)", pending:true, matches:[
+    ["Kingsquare","","","Danilo Stars"],
+    ["Castriano Ronaldo","","","Sors"],
+    ["Tano Amunt","","","Avaricius Jr."],
+    ["Puro Llorente","","","Paco Buyo"],
+    ["Cardonistas","","","Sergchenko"],
+    ["Vicentine Zidane","","","Celta de Viño"],
+    ["CucuDaris","","","AnceLuni"],
+    ["Raphontino","","","Josisi Mourinho"],
+  ]},
+  { j:"J21 (Vuelta J6)", pending:true, matches:[
+    ["Danilo Stars","","","Castriano Ronaldo"],
+    ["Kingsquare","","","Tano Amunt"],
+    ["Sors","","","Puro Llorente"],
+    ["Avaricius Jr.","","","Cardonistas"],
+    ["Paco Buyo","","","Vicentine Zidane"],
+    ["Sergchenko","","","CucuDaris"],
+    ["Celta de Viño","","","Raphontino"],
+    ["AnceLuni","","","Josisi Mourinho"],
+  ]},
+  { j:"J22 (Vuelta J7)", pending:true, matches:[
+    ["Tano Amunt","","","Danilo Stars"],
+    ["Puro Llorente","","","Castriano Ronaldo"],
+    ["Cardonistas","","","Kingsquare"],
+    ["Vicentine Zidane","","","Sors"],
+    ["CucuDaris","","","Avaricius Jr."],
+    ["Raphontino","","","Paco Buyo"],
+    ["Josisi Mourinho","","","Sergchenko"],
+    ["AnceLuni","","","Celta de Viño"],
+  ]},
+  { j:"J23 (Vuelta J8)", pending:true, matches:[
+    ["Danilo Stars","","","Puro Llorente"],
+    ["Tano Amunt","","","Cardonistas"],
+    ["Castriano Ronaldo","","","Vicentine Zidane"],
+    ["Kingsquare","","","CucuDaris"],
+    ["Sors","","","Raphontino"],
+    ["Avaricius Jr.","","","Josisi Mourinho"],
+    ["Paco Buyo","","","AnceLuni"],
+    ["Sergchenko","","","Celta de Viño"],
+  ]},
+  { j:"J24 (Vuelta J9)", pending:true, matches:[
+    ["Cardonistas","","","Danilo Stars"],
+    ["Vicentine Zidane","","","Puro Llorente"],
+    ["CucuDaris","","","Tano Amunt"],
+    ["Raphontino","","","Castriano Ronaldo"],
+    ["Josisi Mourinho","","","Kingsquare"],
+    ["AnceLuni","","","Sors"],
+    ["Celta de Viño","","","Avaricius Jr."],
+    ["Sergchenko","","","Paco Buyo"],
+  ]},
+  { j:"J25 (Vuelta J10)", pending:true, matches:[
+    ["Danilo Stars","","","Vicentine Zidane"],
+    ["Cardonistas","","","CucuDaris"],
+    ["Puro Llorente","","","Raphontino"],
+    ["Tano Amunt","","","Josisi Mourinho"],
+    ["Castriano Ronaldo","","","AnceLuni"],
+    ["Kingsquare","","","Celta de Viño"],
+    ["Sors","","","Sergchenko"],
+    ["Avaricius Jr.","","","Paco Buyo"],
+  ]},
+  { j:"J26 (Vuelta J11)", pending:true, matches:[
+    ["CucuDaris","","","Danilo Stars"],
+    ["Raphontino","","","Vicentine Zidane"],
+    ["Josisi Mourinho","","","Cardonistas"],
+    ["AnceLuni","","","Puro Llorente"],
+    ["Celta de Viño","","","Tano Amunt"],
+    ["Sergchenko","","","Castriano Ronaldo"],
+    ["Paco Buyo","","","Kingsquare"],
+    ["Avaricius Jr.","","","Sors"],
+  ]},
+  { j:"J27 (Vuelta J12)", pending:true, matches:[
+    ["Danilo Stars","","","Raphontino"],
+    ["CucuDaris","","","Josisi Mourinho"],
+    ["Vicentine Zidane","","","AnceLuni"],
+    ["Cardonistas","","","Celta de Viño"],
+    ["Puro Llorente","","","Sergchenko"],
+    ["Tano Amunt","","","Paco Buyo"],
+    ["Castriano Ronaldo","","","Avaricius Jr."],
+    ["Kingsquare","","","Sors"],
+  ]},
+  { j:"J28 (Vuelta J13)", pending:true, matches:[
+    ["Josisi Mourinho","","","Danilo Stars"],
+    ["AnceLuni","","","Raphontino"],
+    ["Celta de Viño","","","CucuDaris"],
+    ["Sergchenko","","","Vicentine Zidane"],
+    ["Paco Buyo","","","Cardonistas"],
+    ["Avaricius Jr.","","","Puro Llorente"],
+    ["Sors","","","Tano Amunt"],
+    ["Kingsquare","","","Castriano Ronaldo"],
+  ]},
+  { j:"J29 (Vuelta J14)", pending:true, matches:[
+    ["Danilo Stars","","","AnceLuni"],
+    ["Josisi Mourinho","","","Celta de Viño"],
+    ["Raphontino","","","Sergchenko"],
+    ["CucuDaris","","","Paco Buyo"],
+    ["Vicentine Zidane","","","Avaricius Jr."],
+    ["Cardonistas","","","Sors"],
+    ["Puro Llorente","","","Kingsquare"],
+    ["Tano Amunt","","","Castriano Ronaldo"],
+  ]},
+  { j:"J30 (Vuelta J15)", pending:true, matches:[
+    ["Celta de Viño","","","Danilo Stars"],
+    ["Sergchenko","","","AnceLuni"],
+    ["Paco Buyo","","","Josisi Mourinho"],
+    ["Avaricius Jr.","","","Raphontino"],
+    ["Sors","","","CucuDaris"],
+    ["Kingsquare","","","Vicentine Zidane"],
+    ["Castriano Ronaldo","","","Cardonistas"],
+    ["Tano Amunt","","","Puro Llorente"],
+  ]},
+];
+
+const nextMatches2627 = [
+  ["Danilo Stars","Avaricius Jr."],
+  ["Paco Buyo","Sors"],
+  ["Sergchenko","Kingsquare"],
+  ["Celta de Viño","Castriano Ronaldo"],
+  ["AnceLuni","Tano Amunt"],
+  ["Josisi Mourinho","Puro Llorente"],
+  ["Raphontino","Cardonistas"],
+  ["CucuDaris","Vicentine Zidane"],
+];
+
+const PAY_RULES_2627 = [
+  {pos:11,label:"11º",amount:1.00},{pos:12,label:"12º",amount:1.00},
+  {pos:13,label:"13º",amount:1.50},{pos:14,label:"14º",amount:1.50},
+  {pos:15,label:"15º",amount:2.00},{pos:16,label:"16º",amount:2.50},
+];
+
+const jornadasRanking2627 = [
+  { j:"J1", ranking:[
+    "Kingsquare","Vicentine Zidane","Castriano Ronaldo","Sergchenko",
+    "CucuDaris","Avaricius Jr.","Cardonistas","Tano Amunt",
+    "Josisi Mourinho","Puro Llorente",
+    "Paco Buyo","Raphontino","AnceLuni","Sors","Danilo Stars","Celta de Viño",
+  ]},
+  { j:"J2", ranking:[
+    "AnceLuni","Josisi Mourinho","Castriano Ronaldo","Raphontino",
+    "Tano Amunt","Vicentine Zidane","CucuDaris","Paco Buyo",
+    "Kingsquare","Cardonistas",
+    "Sors","Avaricius Jr.","Danilo Stars","Puro Llorente","Celta de Viño","Sergchenko",
+  ]},
+];
+
+const jorStatsHistory = [
+  { j:"J1", data:{
+    "Kingsquare":33,"Vicentine Zidane":32,"Castriano Ronaldo":31,"Sergchenko":30,
+    "CucuDaris":27,"Avaricius Jr.":27,"Cardonistas":25,"Tano Amunt":23,
+    "Josisi Mourinho":22,"Puro Llorente":21,"Paco Buyo":17,"Raphontino":16,
+    "AnceLuni":16,"Sors":16,"Danilo Stars":14,"Celta de Viño":10,
+  }},
+  { j:"J2", data:{
+    "AnceLuni":51,"Josisi Mourinho":45,"Castriano Ronaldo":45,"Raphontino":43,
+    "Tano Amunt":41,"Vicentine Zidane":39,"CucuDaris":36,"Paco Buyo":34,
+    "Kingsquare":33,"Cardonistas":32,"Sors":30,"Avaricius Jr.":28,
+    "Danilo Stars":26,"Puro Llorente":24,"Celta de Viño":20,"Sergchenko":13,
+  }},
+];
+
+// ═══════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════
+
+function computeStandings(rounds) {
+  const t = {};
+  rounds.forEach(({matches, pending}) => {
+    if (pending) return;
+    matches.forEach(([home,hs,as_,away]) => {
+      const h=parseInt(hs), a=parseInt(as_);
+      if (isNaN(h)||isNaN(a)) return;
+      if (!t[home]) t[home]={pts:0,pg:0,pe:0,pp:0};
+      if (!t[away]) t[away]={pts:0,pg:0,pe:0,pp:0};
+      if (h>a){t[home].pts+=3;t[home].pg++;t[away].pp++;}
+      else if (h<a){t[away].pts+=3;t[away].pg++;t[home].pp++;}
+      else{t[home].pts+=1;t[home].pe++;t[away].pts+=1;t[away].pe++;}
+    });
+  });
+  return t;
+}
+
+function computeTeamStats(name, history) {
+  const jornadas = history.filter(j => j.data[name] !== undefined);
+  if (!jornadas.length) return null;
+  const puntos = jornadas.map(j => j.data[name]);
+  const total = puntos.reduce((a,b)=>a+b,0);
+  const media = +(total/puntos.length).toFixed(1);
+  const max = Math.max(...puntos), min = Math.min(...puntos);
+  const maxJ = jornadas[puntos.indexOf(max)].j;
+  const minJ = jornadas[puntos.indexOf(min)].j;
+  const rankings = jornadas.map(j => {
+    const s = Object.values(j.data).sort((a,b)=>b-a);
+    return s.indexOf(j.data[name])+1;
+  });
+  const mediaRanking = +(rankings.reduce((a,b)=>a+b,0)/rankings.length).toFixed(1);
+  const top8 = rankings.filter(r=>r<=8).length;
+  const bottom6 = rankings.filter(r=>r>10).length;
+  return {puntos,jornadas,total,media,max,min,maxJ,minJ,rankings,mediaRanking,top8,bottom6};
+}
+
+function rankColor(rank, n) {
+  const p = rank/n;
+  if (p<=0.25) return '#22c55e';
+  if (p<=0.5)  return '#f5c842';
+  if (p<=0.75) return '#f59e0b';
+  return '#ef4444';
+}
+
+// ═══════════════════════════════════════════
+// RENDER FUNCTIONS
+// ═══════════════════════════════════════════
+
+function renderStandings() {
+  const tbody = document.getElementById('standings-body');
+  const teams = computeStandings(rounds2627);
+  const all = TEAMS_2627.map(name=>({name,...(teams[name]||{pts:0,pg:0,pe:0,pp:0})}));
+  all.sort((a,b)=>b.pts-a.pts||b.pg-a.pg);
+  const n = all.length;
+  const lastJ = rounds2627.filter(r=>!r.pending).length;
+  document.getElementById('standings-sub').textContent = `Jornada ${lastJ} · ${n} equipos`;
+  tbody.innerHTML = '';
+  all.forEach((t,i) => {
+    const pos=i+1, pj=t.pg+t.pe+t.pp;
+    const zc = pos<=8?'z-top':pos>10?'z-bottom':'z-mid';
+    const medal = i===0?'🥇 ':i===1?'🥈 ':i===2?'🥉 ':'';
+    const jor = jorPoints2627[t.name]??'—';
+    tbody.innerHTML += `<tr class="team-row ${zc}">
+      <td class="t-pos">${pos}</td>
+      <td class="t-name">${medal}${t.name}</td>
+      <td class="t-pts">${t.pts}</td>
+      <td class="hide-mobile">${pj}</td>
+      <td class="hide-mobile">${t.pg}</td>
+      <td class="hide-mobile">${t.pe}</td>
+      <td class="hide-mobile">${t.pp}</td>
+      <td class="t-jor">${jor}</td>
+    </tr>`;
+  });
+}
+
+function renderRounds() {
+  const grid = document.getElementById('rounds-grid');
+  const jorSelect = document.getElementById('filter-jornada');
+  const eqSelect = document.getElementById('filter-equipo');
+
+  // Populate selects only once
+  if (jorSelect && jorSelect.options.length <= 1) {
+    rounds2627.forEach(r => {
+      const opt = document.createElement('option');
+      opt.value = r.j; opt.textContent = r.j;
+      jorSelect.appendChild(opt);
+    });
+    TEAMS_2627.slice().sort().forEach(t => {
+      const opt = document.createElement('option');
+      opt.value = t; opt.textContent = t;
+      eqSelect.appendChild(opt);
+    });
+  }
+
+  grid.innerHTML = '';
+  rounds2627.forEach(round => {
+    const isPending = round.pending;
+
+    // Filter matches by team if selected
+    const teamFilter = eqSelect ? eqSelect.value : '';
+    const filteredMatches = teamFilter
+      ? round.matches.filter(([home,,, away]) => home === teamFilter || away === teamFilter)
+      : round.matches;
+
+    if (!filteredMatches.length) return;
+
+    const matchHTML = filteredMatches.map(([home, hs, as_, away]) => {
+      if (isPending || hs === '') return `<div class="match-row">
+        <div class="match-home">${home}</div>
+        <div class="match-score"><span class="pending-chip">pdte</span></div>
+        <div class="match-away">${away}</div></div>`;
+      const h = parseInt(hs), a = parseInt(as_);
+      return `<div class="match-row">
+        <div class="match-home ${h>a?'w':''}">${home}</div>
+        <div class="match-score">${hs}·${as_}</div>
+        <div class="match-away ${a>h?'w':''}">${away}</div></div>`;
+    }).join('');
+
+    grid.innerHTML += `<div class="round-card" data-j="${round.j}">
+      <div class="round-card-header">
+        <span class="round-card-title">${round.j}</span>
+        <span class="round-card-meta">${filteredMatches.length} partido${filteredMatches.length!==1?'s':''}</span>
+      </div>
+      <div>${matchHTML}</div>
+    </div>`;
+  });
+
+  // Apply jornada filter (hide/show cards)
+  filterRoundsDisplay();
+}
+
+function filterRounds() {
+  renderRounds();
+  filterRoundsDisplay();
+}
+
+function filterRoundsDisplay() {
+  const jorVal = document.getElementById('filter-jornada')?.value || '';
+  const eqVal = document.getElementById('filter-equipo')?.value || '';
+  const clearBtn = document.getElementById('filter-clear-btn');
+  const badge = document.getElementById('filter-badge');
+
+  const cards = document.querySelectorAll('#rounds-grid .round-card');
+  let visible = 0;
+  cards.forEach(card => {
+    const show = !jorVal || card.dataset.j === jorVal;
+    card.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+
+  const hasFilter = jorVal || eqVal;
+  clearBtn?.classList.toggle('visible', !!hasFilter);
+
+  if (badge) {
+    if (eqVal && jorVal) badge.textContent = `${eqVal} · ${jorVal}`;
+    else if (eqVal) badge.textContent = `${eqVal} · ${visible} jornada${visible!==1?'s':''}`;
+    else if (jorVal) badge.textContent = jorVal;
+    else badge.textContent = '';
+  }
+}
+
+function clearRoundFilters() {
+  const jorSelect = document.getElementById('filter-jornada');
+  const eqSelect = document.getElementById('filter-equipo');
+  if (jorSelect) jorSelect.value = '';
+  if (eqSelect) eqSelect.value = '';
+  filterRounds();
+}
+
+function renderNext() {
+  const content = document.getElementById('next-content');
+  content.innerHTML = `<div class="next-card">
+    <div class="card-header">
+      <span class="card-title">⏳ Jornada 3 · Pendiente</span>
+    </div>
+    ${nextMatches2627.map(([h,a])=>`<div class="next-match">
+      <div class="next-team-name right">${h}</div>
+      <div class="next-vs">vs</div>
+      <div class="next-team-name">${a}</div>
+    </div>`).join('')}
+  </div>`;
+}
+
+function renderPlayoffs() {
+  const inner = document.getElementById('bracket-inner');
+  const rounds = [
+    {title:'Dieciseisavos', n:8},
+    {title:'Octavos',       n:4},
+    {title:'Cuartos',       n:2},
+    {title:'Semis',         n:2},
+    {title:'Final',         n:1},
+  ];
+  inner.innerHTML = rounds.map(r=>`
+    <div class="bracket-col">
+      <div class="bracket-col-title">${r.title}</div>
+      <div class="bracket-col-matches">
+        ${Array(r.n).fill(0).map(()=>`
+        <div class="b-match pending">
+          <div class="b-match-label">Pendiente</div>
+          <div class="b-tbd">Por determinar</div>
+          <div class="b-tbd">Por determinar</div>
+        </div>`).join('')}
+      </div>
+    </div>`).join('') + `
+    <div class="bracket-col champion-col">
+      <div class="bracket-col-title">Campeón</div>
+      <div class="bracket-col-matches">
+        <div class="champion-card">
+          <div class="champion-trophy">🏆</div>
+          <div class="champion-tbd">???</div>
+          <div class="champion-label">Pendiente</div>
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderCronica() {
+  const content = document.getElementById('cronica-content');
+  content.innerHTML = `
+  <div class="cronica-main">
+    <div class="cronica-main-header">
+      <div class="cronica-main-title">📰 Jornada 2 · Temporada 2026-27</div>
+    </div>
+    <div class="cronica-main-body">
+      <p><strong style="color:var(--gold)">ANCELUNI SE VENGA DEL MUNDO MACHACANDO A KINGSQUARE, SERGCHENKO DESAPARECE Y RAPHONTINO CONFIRMA QUE EL PRESIDENTE TAMBIÉN SABE JUGAR</strong></p>
+      <p>Si la Jornada 1 fue el aperitivo, la Jornada 2 fue el plato fuerte. Con sorpresas, revancha, un equipo que sacó cero puntos literalmente, y un Sergchenko que parece haber olvidado cómo funciona el fantasy.</p>
+      <p>El resultado del año lo firmó AnceLuni, que llevaba semanas quejándose de que le había tocado el peor equipo del reparto. Esta semana se calló la boca con los hechos: 51 puntos en la jornada y una victoria aplastante ante Kingsquare, que con 33 se quedó muy lejos. El líder de la jornada anterior noqueado. AnceLuni puede quejarse todo lo que quiera, pero esta semana manda.</p>
+      <p>Raphontino, el presidente de esta temporada, demostró que el cargo no es honorífico: 43 puntos y victoria ante Tano Amunt (41) en el partido más ajustado de la jornada. El presidente gobierna dentro y fuera del campo. Josisi Mourinho empató ante Castriano Ronaldo a 45 — el único empate de la jornada — y los dos se reparten un punto que sabe a poco para ambos.</p>
+      <p>Vicentine Zidane apareció con 39 puntos para vencer a Cardonistas (32). Y el segundo equipo de Vicentine — Sors — también ganó con 30 ante Celta de Viño (20). Solidaridad total entre manager y marioneta: los dos ganan, los dos cobran. Alguien debería investigar esto.</p>
+      <p>Sergchenko cerró la jornada con solo 13 puntos — el peor de la jornada con diferencia. Puro Llorente sigue en modo búnker con 24 puntos y derrota ante CucuDaris (36), y no ha dicho nada. Ni una queja, ni una amenaza. El silencio de Puro Llorente está empezando a ser más elocuente que cualquier discurso.</p>
+      <p>En pagos: Sergchenko (16º, 2.50€), Celta de Viño (15º, 2€), Puro Llorente (14º, 1.50€), Danilo Stars (13º, 1.50€), Avaricius Jr. (12º, 1€) y Sors (11º, 1€). Sors pagando como siempre. Seguro que Vicentine le consoló después.</p>
+    </div>
+  </div>
+  <div class="archive-title">📚 Archivo</div>
+  <div class="cronica-item" onclick="this.classList.toggle('open')">
+    <div class="cronica-item-header">
+      <span class="cronica-item-label">📰 Jornada 1 · Temporada 2026-27</span>
+      <span class="cronica-item-toggle">▼</span>
+    </div>
+    <div class="cronica-item-body">
+      <p><strong style="color:var(--gold)">KINGSQUARE ARRASA CON 33 PUNTOS, CELTA DE VIÑO ESTRENA LA TEMPORADA PAGANDO Y LOS DOS NUEVOS SE PRESENTAN SIN COMPLEJOS</strong></p>
+      <p>Kingsquare fue el mejor con 33 puntos y victoria ante Raphontino (33-16). Los dos nuevos, Sergchenko y Paco Buyo, se estrenaron con 30 y 17 respectivamente. Paco Buyo suficiente para ganar a Celta de Viño (17-10), que con 10 puntos se lleva el farolillo rojo. En pagos: Celta de Viño (2.50€), Danilo Stars (2€), Sors y AnceLuni (1.50€ cada uno), Raphontino y Paco Buyo (1€ cada uno).</p>
+    </div>
+  </div>`;
+}
+
+function renderPagos() {
+  // Compute balances
+  const balance = {};
+  TEAMS_2627.forEach(t=>{balance[t]=0;});
+  jornadasRanking2627.forEach(({ranking})=>{
+    ranking.forEach((team,idx)=>{
+      const pos=idx+1;
+      const rule=PAY_RULES_2627.find(r=>r.pos===pos);
+      if(rule) balance[team]=(balance[team]||0)+rule.amount;
+    });
+  });
+
+  // Next payers
+  const lastJ = jornadasRanking2627[jornadasRanking2627.length-1];
+  const payers = lastJ.ranking.slice(10);
+  const colors=['#ef4444','#ef4444','#f59e0b','#f59e0b','#f5c842','#d1d5db'];
+  document.getElementById('next-payers').innerHTML = payers.map((team,i)=>`
+    <div class="payer-row">
+      <span class="payer-pos">${PAY_RULES_2627[i].label}</span>
+      <span class="payer-name">${team}</span>
+      <span class="payer-amount" style="color:${colors[i]}">+${PAY_RULES_2627[i].amount.toFixed(2)}€</span>
+    </div>`).join('') +
+    `<div style="padding:8px 14px;font-size:0.65rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase">Según: ${lastJ.j}</div>`;
+
+  // Summary
+  const sorted = [...TEAMS_2627].sort((a,b)=>(balance[b]||0)-(balance[a]||0));
+  const tbody = document.getElementById('pagos-summary-body');
+  tbody.innerHTML = sorted.map(t=>`<tr>
+    <td>${t}</td>
+    <td>${(balance[t]||0).toFixed(2)}€</td>
+  </tr>`).join('');
+
+  // History
+  const table = document.getElementById('history-table');
+  const short = t=>t.length>9?t.slice(0,9)+'.':t;
+  let html = '<thead><tr><th>Jornada</th>'+TEAMS_2627.map(t=>`<th>${short(t)}</th>`).join('')+'</tr></thead><tbody>';
+  jornadasRanking2627.forEach(({j,ranking})=>{
+    html+=`<tr><td>${j}</td>`;
+    TEAMS_2627.forEach(team=>{
+      const pos=ranking.indexOf(team)+1;
+      const rule=pos>0?PAY_RULES_2627.find(r=>r.pos===pos):null;
+      html+=rule?`<td class="hv">+${rule.amount.toFixed(2)}</td>`:'<td></td>';
+    });
+    html+='</tr>';
+  });
+  html+='<tr class="total-row"><td>TOTAL</td>'+TEAMS_2627.map(t=>`<td>${(balance[t]||0).toFixed(2)}</td>`).join('')+'</tr></tbody>';
+  table.innerHTML=html;
+}
+
+function renderStats() {
+  const select = document.getElementById('stats-select');
+  const content = document.getElementById('stats-content');
+  const history = jorStatsHistory;
+  const teams = TEAMS_2627;
+  const selected = select ? select.value : '';
+
+  document.getElementById('stats-sub').textContent = `Fichas individuales · ${history.length} jornada${history.length!==1?'s':''} registrada${history.length!==1?'s':''}`;
+
+  if (!history.length) {
+    content.innerHTML = `<div class="empty-state"><div class="empty-icon">📊</div><div class="empty-title">Sin datos aún</div><div class="empty-sub">Sube el primer pantallazo para activar las estadísticas</div></div>`;
+    return;
+  }
+
+  const teamStats = teams.map(name=>({name,s:computeTeamStats(name,history)})).filter(t=>t.s);
+  teamStats.sort((a,b)=>b.s.media-a.s.media);
+
+  // Highlights
+  const bestMedia = teamStats[0];
+  const bestJor = teamStats.reduce((b,t)=>t.s.max>b.s.max?t:b,teamStats[0]);
+  const worstJor = teamStats.reduce((b,t)=>t.s.min<b.s.min?t:b,teamStats[0]);
+  const pagTotals={};
+  teams.forEach(t=>{pagTotals[t]=0;});
+  jornadasRanking2627.forEach(({ranking})=>{
+    ranking.forEach((team,idx)=>{
+      const rule=PAY_RULES_2627.find(r=>r.pos===idx+1);
+      if(rule) pagTotals[team]=(pagTotals[team]||0)+rule.amount;
+    });
+  });
+  const mostPaid=teams.reduce((top,t)=>(pagTotals[t]||0)>(pagTotals[top]||0)?t:top,teams[0]);
+
+  if (selected) {
+    const t = teamStats.find(t=>t.name===selected);
+    if (!t) return;
+    const n = teams.length;
+    content.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px">
+      <div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:2px">${t.name}</div>
+        <div style="font-size:0.7rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-top:2px">${t.s.jornadas.length} jornada${t.s.jornadas.length!==1?'s':''} jugada${t.s.jornadas.length!==1?'s':''}</div>
+      </div>
+      <div class="stats-select-wrap">
+        <select class="stats-select" id="stats-select" onchange="renderStats()">
+          <option value="">— Todos los equipos —</option>
+          ${teams.map(tm=>`<option value="${tm}" ${tm===selected?'selected':''}>${tm}</option>`).join('')}
+        </select>
+      </div>
+    </div>
+    <div class="stats-kpi-grid">
+      <div class="kpi-card"><span class="kpi-value">${t.s.media}</span><span class="kpi-label">Media pts/jornada</span></div>
+      <div class="kpi-card"><span class="kpi-value" style="color:var(--green)">${t.s.max}</span><span class="kpi-label">Mejor jornada</span><span class="kpi-sub">${t.s.maxJ}</span></div>
+      <div class="kpi-card"><span class="kpi-value" style="color:var(--red)">${t.s.min}</span><span class="kpi-label">Peor jornada</span><span class="kpi-sub">${t.s.minJ}</span></div>
+      <div class="kpi-card"><span class="kpi-value">${t.s.mediaRanking}º</span><span class="kpi-label">Posición media</span></div>
+      <div class="kpi-card"><span class="kpi-value" style="color:var(--green)">${t.s.top8}</span><span class="kpi-label">Jornadas top 8</span></div>
+      <div class="kpi-card"><span class="kpi-value" style="color:var(--red)">${t.s.bottom6}</span><span class="kpi-label">Jornadas zona pago</span></div>
+    </div>
+    <div class="section-label">Historial de puntos</div>
+    <div class="jor-dots">
+      ${t.s.jornadas.map((j,i)=>{
+        const pts=t.s.puntos[i],rank=t.s.rankings[i];
+        const col=rankColor(rank,n);
+        return `<div class="jor-dot" style="background:${col}18;border:1px solid ${col}40;color:${col}" title="${j.j}: ${pts}pts (${rank}º)">${pts}</div>`;
+      }).join('')}
+    </div>
+    <div class="dot-legend">🟢 Top 4 · 🟡 Top 8 · 🟠 Medio · 🔴 Zona pago</div>
+    <div class="section-label" style="margin-top:20px">Detalle por jornada</div>
+    <div class="stats-main-table-wrap">
+      <table class="stats-main-table">
+        <thead><tr><th>#</th><th>Jornada</th><th>Puntos</th><th>Posición</th><th>vs media liga</th></tr></thead>
+        <tbody>
+          ${t.s.jornadas.map((j,i)=>{
+            const pts=t.s.puntos[i],rank=t.s.rankings[i];
+            const allPts=Object.values(j.data);
+            const ml=(allPts.reduce((a,b)=>a+b,0)/allPts.length).toFixed(1);
+            const diff=+(pts-ml).toFixed(1);
+            const dc=diff>0?'color:var(--green)':diff<0?'color:var(--red)':'';
+            const rc=rank<=4?'hi':rank>10?'lo':'';
+            return `<tr><td>${i+1}</td><td>${j.j}</td><td>${pts}</td><td class="${rc}">${rank}º/${n}</td><td style="${dc}">${diff>0?'+':''}${diff}</td></tr>`;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>`;
+    return;
+  }
+
+  content.innerHTML = `
+  <div class="highlight-grid">
+    <div class="hl-card gold">
+      <span class="hl-icon">🏅</span>
+      <span class="hl-label">Mejor media</span>
+      <span class="hl-name">${bestMedia.name}</span>
+      <span class="hl-value">${bestMedia.s.media}</span>
+      <span class="hl-sub">pts/jornada</span>
+    </div>
+    <div class="hl-card green">
+      <span class="hl-icon">🚀</span>
+      <span class="hl-label">Mejor jornada</span>
+      <span class="hl-name">${bestJor.name}</span>
+      <span class="hl-value">${bestJor.s.max}</span>
+      <span class="hl-sub">${bestJor.s.maxJ}</span>
+    </div>
+    <div class="hl-card red">
+      <span class="hl-icon">💀</span>
+      <span class="hl-label">Peor jornada</span>
+      <span class="hl-name">${worstJor.name}</span>
+      <span class="hl-value">${worstJor.s.min}</span>
+      <span class="hl-sub">${worstJor.s.minJ}</span>
+    </div>
+    <div class="hl-card blue">
+      <span class="hl-icon">💸</span>
+      <span class="hl-label">Más pagado</span>
+      <span class="hl-name">${mostPaid}</span>
+      <span class="hl-value">${(pagTotals[mostPaid]||0).toFixed(2)}€</span>
+      <span class="hl-sub">acumulado</span>
+    </div>
+  </div>
+
+  <div class="stats-select-wrap">
+    <select class="stats-select" id="stats-select" onchange="renderStats()">
+      <option value="">— Ver todos los equipos —</option>
+      ${teams.map(t=>`<option value="${t}">${t}</option>`).join('')}
+    </select>
+  </div>
+
+  <div class="section-label">Ranking por media</div>
+  <div class="stats-main-table-wrap">
+    <table class="stats-main-table">
+      <thead><tr><th>#</th><th>Equipo</th><th>Media</th><th>Mejor</th><th>Peor</th><th>Pos. media</th><th class="hide-mobile">Top 8</th><th class="hide-mobile">Zona pago</th></tr></thead>
+      <tbody>
+        ${teamStats.map((t,i)=>`<tr>
+          <td>${i+1}</td>
+          <td>${t.name}</td>
+          <td class="${i===0?'hi':''}">${t.s.media}</td>
+          <td class="hi">${t.s.max}<span style="color:var(--muted);font-size:0.75rem;margin-left:4px">${t.s.maxJ}</span></td>
+          <td class="lo">${t.s.min}<span style="color:var(--muted);font-size:0.75rem;margin-left:4px">${t.s.minJ}</span></td>
+          <td>${t.s.mediaRanking}º</td>
+          <td class="hide-mobile" style="color:var(--green)">${t.s.top8}</td>
+          <td class="hide-mobile" style="color:var(--red)">${t.s.bottom6}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-label">Fichas individuales</div>
+  <div class="mini-cards-grid">
+    ${teamStats.map(t=>`
+    <div class="mini-card">
+      <div class="mini-card-name">${t.name}</div>
+      <div class="mini-stats-row">
+        <div class="mini-stat"><span class="mini-stat-val">${t.s.media}</span><span class="mini-stat-lbl">Media</span></div>
+        <div class="mini-stat"><span class="mini-stat-val" style="color:var(--green)">${t.s.max}</span><span class="mini-stat-lbl">Mejor</span></div>
+        <div class="mini-stat"><span class="mini-stat-val" style="color:var(--red)">${t.s.min}</span><span class="mini-stat-lbl">Peor</span></div>
+        <div class="mini-stat"><span class="mini-stat-val">${t.s.mediaRanking}º</span><span class="mini-stat-lbl">Pos. media</span></div>
+      </div>
+      <div class="jor-dots">
+        ${t.s.jornadas.map((j,i)=>{
+          const pts=t.s.puntos[i],rank=t.s.rankings[i];
+          const col=rankColor(rank,teams.length);
+          return `<div class="jor-dot" style="background:${col}18;border:1px solid ${col}40;color:${col};width:28px;height:28px;font-size:0.75rem" title="${j.j}: ${pts}pts (${rank}º)">${pts}</div>`;
+        }).join('')}
+      </div>
+    </div>`).join('')}
+  </div>`;
+}
+
+// ═══════════════════════════════════════════
+// NAV
+// ═══════════════════════════════════════════
+
+function showTab(id, btn) {
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(b=>b.classList.remove('active'));
+  document.getElementById('s-'+id).classList.add('active');
+  btn.classList.add('active');
+  renderAll();
+  return false;
+}
+
+function toggleCard(el) { el.classList.toggle('open'); }
+
+function renderAll() {
+  renderStandings();
+  renderRounds();
+  renderNext();
+  renderPlayoffs();
+  renderCronica();
+  renderPagos();
+  renderStats();
+}
+
+renderAll();
+</script>
+</body>
+</html>
