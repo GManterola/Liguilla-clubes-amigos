@@ -6,7 +6,10 @@ const TOKEN  = process.env.BIWENGER_TOKEN;
 const LEAGUE = process.env.BIWENGER_LEAGUE || '1699656';
 const USER   = process.env.BIWENGER_USER   || '10477021';
 
-if (!TOKEN) { console.error('❌ Falta BIWENGER_TOKEN.'); process.exit(1); }
+if (!TOKEN) {
+  console.error('❌ Falta BIWENGER_TOKEN.');
+  process.exit(1);
+}
 
 function biwengerGet(path) {
   return new Promise((resolve, reject) => {
@@ -28,8 +31,11 @@ function biwengerGet(path) {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
-        try { resolve(JSON.parse(data)); }
-        catch (e) { reject(new Error(`Parse error: ${data.slice(0, 300)}`)); }
+        try {
+          resolve(JSON.parse(data));
+        } catch (e) {
+          reject(new Error('Parse error: ' + data.slice(0, 300)));
+        }
       });
     });
     req.on('error', reject);
@@ -46,30 +52,38 @@ async function main() {
     process.exit(1);
   }
 
-  const round = data.data?.round;
-  const standings = data.data?.league?.standings;
+  const round = data.data && data.data.round;
+  const standings = data.data && data.data.league && data.data.league.standings;
 
   if (!round || !standings) {
-    console.error('❌ Estructura inesperada:', JSON.stringify(data.data, null, 2).slice(0, 500));
+    console.error('❌ Estructura inesperada:', JSON.stringify(data.data).slice(0, 500));
     process.exit(1);
   }
 
-  const roundName = `J${round.id}`;
-  console.log(`\n✅ Ronda: ${roundName}`);
-  console.log('\n📊 Puntos por equipo:');
+  const roundName = 'J' + round.id;
+  console.log('✅ Ronda: ' + roundName);
+  console.log('📊 Puntos por equipo:');
 
   const points = {};
-  standings.forEach(p => {
+  standings.forEach(function(p) {
     const name = p.name;
-    const pts  = p.points ?? 0;
+    const pts = p.points || 0;
     points[name] = pts;
-    console.log(`  ${name}: ${pts}`);
+    console.log('  ' + name + ': ' + pts);
   });
 
-  const output = { jornada: roundName, roundId: round.id, points, fetchedAt: new Date().toISOString() };
+  const output = {
+    jornada: roundName,
+    roundId: round.id,
+    points: points,
+    fetchedAt: new Date().toISOString()
+  };
+
   fs.writeFileSync('jornada-data.json', JSON.stringify(output, null, 2));
-  console.log('\n💾 Guardado en jornada-data.json');
+  console.log('💾 Guardado en jornada-data.json');
 }
 
-main().catch(err => { console.error('❌ Error:', err.message); process.exit(1); });
+main().catch(function(err) {
+  console.error('❌ Error:', err.message);
+  process.exit(1);
 });
