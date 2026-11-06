@@ -25,21 +25,12 @@ jobs:
         with:
           node-version: '20'
 
-      - name: 🔐 Login en Biwenger
-        run: |
-          RESPONSE=$(curl -s -X POST "https://biwenger.as.com/api/v2/auth/login" \
-            -H "Content-Type: application/json" \
-            -H "x-lang: es" \
-            -d "{\"email\":\"${{ secrets.BIWENGER_EMAIL }}\",\"password\":\"${{ secrets.BIWENGER_PASSWORD }}\"}")
-          TOKEN=$(echo $RESPONSE | node -e "let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{try{const r=JSON.parse(d);console.log(r.data?.token||r.token||'');}catch(e){process.exit(1);}});" <<< "$RESPONSE")
-          if [ -z "$TOKEN" ]; then echo "❌ No se pudo obtener el token"; exit 1; fi
-          echo "BIWENGER_TOKEN=$TOKEN" >> $GITHUB_ENV
-
       - name: 📊 Fetch jornada desde Biwenger
         run: |
           cd scripts
-          BIWENGER_LEAGUE=${{ secrets.BIWENGER_LEAGUE }} \
-          BIWENGER_USER=${{ secrets.BIWENGER_USER }} \
+          BIWENGER_TOKEN="${{ secrets.BIWENGER_TOKEN }}" \
+          BIWENGER_LEAGUE="${{ secrets.BIWENGER_LEAGUE }}" \
+          BIWENGER_USER="${{ secrets.BIWENGER_USER }}" \
           node fetch-jornada.js
 
       - name: 🔍 Verificar si hay jornada nueva
@@ -68,4 +59,9 @@ jobs:
           git config user.email "liga-bot@noreply.github.com"
           git add index.html
           if git diff --staged --quiet; then
-            echo "ℹ️ Sin cambios
+            echo "ℹ️ Sin cambios"
+          else
+            git commit -m "⚽ Actualizar ${{ steps.check.outputs.jornada }} automáticamente"
+            git push
+            echo "✅ Publicado."
+          fi
