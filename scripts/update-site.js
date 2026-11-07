@@ -13,7 +13,7 @@ const path = require('path');
 const https = require('https');
 
 // ─── Config ───────────────────────────────────────────────────────────────────
-const HTML_PATH     = path.resolve(__dirname, '../../outputs/index.html');
+const HTML_PATH     = path.resolve(__dirname, '../index.html');
 const DATA_PATH     = path.resolve(__dirname, 'jornada-data.json');
 const DRY_RUN       = process.argv.includes('--dry-run');
 const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
