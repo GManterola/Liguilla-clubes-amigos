@@ -12,7 +12,6 @@ Copia de trabajo: artefacto "Liga Clubes Amigos 26-27" → https://claude.ai/art
 | `index.html` | Diseño y lógica de presentación. Badge, "Próxima" y avisos se calculan solos a partir de los datos | No |
 | `scripts/validar.js` | Validación de coherencia de los datos (también corre en GitHub Actions) | No |
 | `img/`, `manifest.webmanifest` | Iconos, imagen para compartir, app instalable | No |
-| `scripts/fetch-jornada.js.js`, `scripts/update-site.js`, `.github/workflows/update-liga.yml` | Automatización antigua vía Biwenger. Desactivada y obsoleta (edita arrays que ya no están en `index.html`). No usar | No |
 
 ## Actualizar una jornada
 
