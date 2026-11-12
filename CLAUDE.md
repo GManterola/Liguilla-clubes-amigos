@@ -11,7 +11,8 @@ Copia de trabajo: artefacto "Liga Clubes Amigos 26-27" → https://claude.ai/art
 | `data/temporada-2026-27.js` | Todos los datos: equipos, jornadas, rankings, puntos, próxima jornada, escala de pagos y crónicas | **Sí, solo este** |
 | `index.html` | Diseño y lógica (pestañas Inicio, Tabla, Jornadas, Crónica, Pagos, Equipos y ficha `#equipo-<nombre>`). Todo se calcula a partir de los datos: portada, premios, rachas, pagos. Los escudos se configuran en `CRESTS` (equipo nuevo sin entrada → escudo automático) | No |
 | `scripts/validar.js` | Validación de coherencia de los datos (también corre en GitHub Actions) | No |
-| `img/`, `manifest.webmanifest` | Iconos, imagen para compartir, app instalable | No |
+| `img/`, `manifest.webmanifest` | Iconos y app instalable. `img/og.png` (vista previa de WhatsApp) se regenera cada jornada con `scripts/og.js` | `og.png`, sí |
+| `vercel.json` | Rutas limpias: `/pagos`, `/equipo-sors`… sirven `index.html` | No |
 
 ## Actualizar una jornada
 
@@ -29,6 +30,7 @@ Usa el skill `actualizar-jornada-liga` (`.claude/skills/actualizar-jornada-liga/
 ## Publicar
 
 1. `node scripts/validar.js` → ✅
+1b. `node scripts/og.js` → regenera `img/og.png` y las etiquetas `og:` de `index.html` con la jornada nueva
 2. Commit y `git push origin main` → Vercel despliega en ~1 min. GitHub Actions vuelve a validar.
 3. Artefacto: `node scripts/build-artifact.js <scratchpad>/build/index.html` (incrusta los datos) y publicar ese archivo con `url` del artefacto (misma URL). `img/*` y `manifest.webmanifest` ya están publicados.
 4. Recordar al usuario: recarga forzada (Cmd/Ctrl+Shift+R) para ver los cambios.

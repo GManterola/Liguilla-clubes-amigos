@@ -17,6 +17,7 @@ img/, manifest.webmanifest    iconos, imagen para compartir, app instalable
 
 1. Editar `data/temporada-2026-27.js` (ver `CLAUDE.md` y `.claude/skills/actualizar-jornada-liga/SKILL.md`).
 2. `node scripts/validar.js`
-3. Push a `main` → Vercel publica solo. GitHub Actions valida cada push.
+3. `node scripts/og.js` (imagen para compartir; necesita Playwright)
+4. Push a `main` → Vercel publica solo. GitHub Actions valida cada push.
 
 Para ver la web en local basta con abrir `index.html` en el navegador.

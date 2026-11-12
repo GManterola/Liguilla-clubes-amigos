@@ -12,9 +12,9 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Liga Clubes Amigos">
 <meta property="og:title" content="Liga Clubes Amigos 26-27">
-<meta property="og:description" content="Clasificación, jornadas, pagos y crónicas sin filtros.">
+<meta property="og:description" content="J11: rey Danilo Stars (65), farolillo Raphontino (17). Líder: Vicentine Zidane.">
 <meta property="og:url" content="https://liguilla-clubes-amigos.vercel.app/">
-<meta property="og:image" content="https://liguilla-clubes-amigos.vercel.app/img/og.png">
+<meta property="og:image" content="https://liguilla-clubes-amigos.vercel.app/img/og.png?v=j11">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -822,7 +822,7 @@ function drawEquipos(){
   <div class="card"><div class="card-h"><h3>Todos los equipos</h3><span class="eyebrow">Toca una cabecera para ordenar</span></div>${modelTabla(now,posOf)}</div>`;
   body.querySelectorAll('th[data-k]').forEach(th=>th.addEventListener('click',()=>{
     const k=th.dataset.k; eqSort = {k, dir: eqSort.k===k ? -eqSort.dir : (k==='pos'||k==='posMedia'||k==='name'?1:-1)}; drawEquipos(); }));
-  body.querySelectorAll('tr[data-href]').forEach(tr=>tr.addEventListener('click',e=>{ if(!e.target.closest('a')) location.hash = tr.dataset.href; }));
+  body.querySelectorAll('tr[data-href]').forEach(tr=>tr.addEventListener('click',e=>{ if(!e.target.closest('a')) navigate(tr.dataset.href.slice(1)); }));
 }
 
 // 2 · Tabla comparativa ordenable, con barras dentro de las celdas
@@ -945,8 +945,27 @@ document.getElementById('navBottom').innerHTML = navHtml(true);
 document.getElementById('season').textContent = TEMPORADA;
 document.getElementById('pill').innerHTML = `<i></i>${esc(lastR.j)}<span class="pill-x"> disputada</span>`;
 
+// Rutas: en la web real, /pagos, /equipo-sors… (Analytics cuenta cada página).
+// En local (file://) y en el artefacto (data-routing="hash"), #pagos, #equipo-sors…
+const PATH_MODE = location.protocol !== 'file:' && document.documentElement.dataset.routing !== 'hash';
+const currentView = () => PATH_MODE
+  ? (decodeURIComponent(location.pathname.replace(/^\/+|\/+$/g,'')) || 'inicio')
+  : (location.hash.slice(1) || 'inicio');
+function navigate(v){
+  if (!PATH_MODE) { location.hash = v; return; }
+  const url = v==='inicio' ? '/' : '/'+v;
+  if (location.pathname !== url) history.pushState(null, '', url);
+  route(); window.scrollTo(0,0);
+}
+if (PATH_MODE && location.hash.length > 1) history.replaceState(null, '', '/'+location.hash.slice(1)); // enlaces antiguos con #
+document.addEventListener('click', e => {
+  if (!PATH_MODE || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const a = e.target.closest('a[href^="#"]'); if (!a) return;
+  e.preventDefault(); navigate(a.getAttribute('href').slice(1));
+});
+
 function route(){
-  let v = (location.hash||'#inicio').slice(1);
+  let v = currentView();
   if (v==='escudos') v='equipos';
   let cur = VIEWS.some(([id])=>id===v) ? v : 'inicio', active = cur;
   if (v.startsWith('equipo-') && BY_SLUG[v.slice(7)]) { renderEquipo(BY_SLUG[v.slice(7)]); cur='equipo'; active='equipos'; }
@@ -955,7 +974,8 @@ function route(){
   if (cur==='jornadas') drawJornada();
 }
 renderInicio(); renderClasificacion(); renderJornadas(); renderCronica(); renderPagos(); renderEquipos();
-window.addEventListener('hashchange',()=>{route();window.scrollTo(0,0)});
+if (PATH_MODE) window.addEventListener('popstate', route);
+else window.addEventListener('hashchange',()=>{route();window.scrollTo(0,0)});
 route();
 
 </script>

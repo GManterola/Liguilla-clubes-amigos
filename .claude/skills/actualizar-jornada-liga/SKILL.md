@@ -32,6 +32,7 @@ Los datos viven en `data/temporada-2026-27.js`. `index.html` no se toca para una
 - Opcional: abrir `index.html` con Playwright y comprobar que no hay errores de consola.
 
 ## Publicar
+0. `node scripts/og.js` → regenera la imagen de WhatsApp (`img/og.png`) y el texto `og:description` con el rey, el farolillo y el líder de la jornada. Revisa la imagen antes del commit.
 1. Commit (`Jxx: resultados, clasificación, pagos y crónica`) y `git push origin main` → Vercel despliega solo.
 2. Artefacto (misma URL https://claude.ai/artifact/6VYUukdk2BaqxYsYmbc4FG): `node scripts/build-artifact.js <scratchpad>/build/index.html` y publica ese archivo pasando `url` del artefacto. El build incrusta los datos; los iconos ya están publicados.
 
