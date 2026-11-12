@@ -1,8 +1,9 @@
 name: 🏆 Actualizar Liga Clubes Amigos
 
 on:
-  schedule:
-    - cron: '0 8 * * 1'
+  # Programación desactivada: la web se actualiza manualmente desde Claude con capturas.
+  # schedule:
+  #   - cron: '0 8 * * 1'
   workflow_dispatch:
     inputs:
       dry_run:
