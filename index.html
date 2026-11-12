@@ -1,4 +1,3 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -1103,7 +1102,7 @@ tr.z-bottom { border-left:2px solid transparent; }
       <div class="header-season">Temporada 2026-27</div>
     </div>
   </div>
-  <div class="header-badge">J11 disputada</div>
+  <div class="header-badge" id="header-badge"></div>
 </header>
 
 <!-- SECTIONS -->
@@ -1152,7 +1151,7 @@ tr.z-bottom { border-left:2px solid transparent; }
 <div id="s-next" class="section">
   <div class="section-header">
     <div class="section-title">Próxima</div>
-    <div class="section-sub" id="next-sub">Jornada 12 · Pendiente</div>
+    <div class="section-sub" id="next-sub"></div>
   </div>
   <div id="next-content"></div>
 </div>
@@ -1247,13 +1246,6 @@ const TEAMS_2627 = [
   "Vicentine Zidane","Tano Amunt","Cardonistas","Puro Llorente"
 ];
 
-const jorPoints2627 = {
-  "AnceLuni":51,"Josisi Mourinho":45,"Castriano Ronaldo":45,"Raphontino":43,
-  "Tano Amunt":41,"Vicentine Zidane":39,"CucuDaris":36,"Se vende Cuenta":34,
-  "Kingsquare":33,"Cardonistas":32,"Sors":30,"Avaricius Jr.":28,
-  "Danilo Stars":26,"Puro Llorente":24,"Celta de Viño":20,"Sergchenko":13,
-};
-
 const rounds2627 = [
   { j:"J1", matches:[
     ["Danilo Stars","14","30","Sergchenko"],
@@ -1315,7 +1307,7 @@ const rounds2627 = [
     ["Raphontino","54","41","Celta de Viño"],
     ["Josisi Mourinho","32","46","AnceLuni"],
   ]},
-  { j:"J7", partialPending:true, matches:[
+  { j:"J7", partialPending:true, pendingMatches:1, matches:[
     ["Danilo Stars","32","57","Tano Amunt"],
     ["Castriano Ronaldo","41","23","Puro Llorente"],
     ["Kingsquare","44","39","Cardonistas"],
@@ -1752,6 +1744,21 @@ function computeTeamStats(name, history) {
   return {puntos,jornadas,total,media,max,min,maxJ,minJ,rankings,mediaRanking,top8,bottom6};
 }
 
+// "J16 (Vuelta J1)" -> 16
+function jorNum(label) {
+  const m = /^J(\d+)/.exec(label);
+  return m ? parseInt(m[1], 10) : NaN;
+}
+
+function renderHeader() {
+  const played = rounds2627.filter(r => !r.pending);
+  const last = played[played.length - 1];
+  const partial = played.filter(r => r.partialPending).map(r => r.j);
+  const badge = document.getElementById('header-badge');
+  badge.textContent = last ? `${last.j} disputada` : 'Pretemporada';
+  badge.title = partial.length ? `Con partidos pendientes: ${partial.join(', ')}` : '';
+}
+
 function rankColor(rank, n) {
   const p = rank/n;
   if (p<=0.25) return '#22c55e';
@@ -1846,7 +1853,8 @@ function renderRounds() {
         <div class="match-away ${a>h?'w':''}">${away}</div></div>`;
     }).join('');
 
-    const partialBanner = isPartial ? `<div class="partial-pending-banner">⏳ Pendiente de disputar 1 partido — clasificación provisional</div>` : '';
+    const nPend = round.pendingMatches || 1;
+    const partialBanner = isPartial ? `<div class="partial-pending-banner">⏳ Pendiente de disputar ${nPend} partido${nPend!==1?'s':''} — clasificación provisional</div>` : '';
 
     grid.innerHTML += `<div class="round-card" data-j="${round.j}">
       <div class="round-card-header">
@@ -1902,9 +1910,13 @@ function clearRoundFilters() {
 
 function renderNext() {
   const content = document.getElementById('next-content');
+  const nextRound = rounds2627.find(r => r.pending);
+  const nextLabel = nextRound ? `Jornada ${jorNum(nextRound.j)} · Pendiente` : 'Temporada regular terminada';
+  document.getElementById('next-sub').textContent = nextLabel;
+  if (!nextRound) { content.innerHTML = ''; return; }
   content.innerHTML = `<div class="next-card">
     <div class="card-header">
-      <span class="card-title">⏳ Jornada 12 · Pendiente</span>
+      <span class="card-title">⏳ ${nextLabel}</span>
     </div>
     ${nextMatches2627.map(([h,a])=>`<div class="next-match">
       <div class="next-team-name right">${h}</div>
@@ -1957,10 +1969,10 @@ function renderCronica() {
     <div class="cronica-main-body">
       <p><strong style="color:var(--gold)">DANILO STARS DESPIERTA CON 65 PUNTOS Y RAPHONTINO PROTAGONIZA EL HUNDIMIENTO DE LA JORNADA</strong></p>
       <p>Jornada de contrastes brutales. Danilo Stars, que llevaba semanas cotizando a la baja, se presentó con <strong>65 puntos</strong> —el mejor registro de la temporada— y aplastó a CucuDaris (49) sin contemplaciones. Vicentine Zidane (61) no se quedó atrás y firmó otra actuación de liderazgo arrollando a Raphontino (17) en un partido que fue más ejecución que fútbol. Sí, 17 puntos. El hombre de los dos equipos en la sombra también gestiona sus rivales a conveniencia.</p>
-      <p>Cardonistas (53) derrotó con comodidad a Josisi mourinho (36) y consolida su candidatura. En la zona media la jornada deparó sorpresas: AnceLuni (40) arrebató la victoria a Puro Llorente (39) por un punto, Celta de Viño (43) se impuso a Tano Amunt (36), y Avaricius Jr. (47) venció a Sors (43) en un duelo ajustado. Castriano Ronaldo (44) cayó ante Sergchenko (48), que tiene una regularidad que incomoda.</p>
+      <p>Cardonistas (53) derrotó con comodidad a Josisi Mourinho (36) y consolida su candidatura. En la zona media la jornada deparó sorpresas: AnceLuni (40) arrebató la victoria a Puro Llorente (39) por un punto, Celta de Viño (43) se impuso a Tano Amunt (36), y Avaricius Jr. (47) venció a Sors (43) en un duelo ajustado. Castriano Ronaldo (44) cayó ante Sergchenko (48), que tiene una regularidad que incomoda.</p>
       <p>El partido más comentado de la semana: Kingsquare (33) perdiendo ante Se vende Cuenta (38). El equipo del mítico -1 sigue levantando puntos donde menos se le espera, mientras Kingsquare firma su peor jornada particular de las últimas semanas. Las cosas cambian.</p>
       <p>En cuanto al farolillo rojo semanal, Raphontino con 17 puntos establece un mínimo histórico que merecería análisis forense. Kingsquare (33) y Tano Amunt (36) completan el podio de la vergüenza.</p>
-      <p>En pagos: Raphontino (16º, 2,50€), Kingsquare (15º, 2,00€), Tano Amunt (14º, 1,50€), Josisi mourinho (13º, 1,50€), Se vende Cuenta (12º, 1,00€) y Puro Llorente (11º, 1,00€).</p>
+      <p>En pagos: Raphontino (16º, 2,50€), Kingsquare (15º, 2,00€), Tano Amunt (14º, 1,50€), Josisi Mourinho (13º, 1,50€), Se vende Cuenta (12º, 1,00€) y Puro Llorente (11º, 1,00€).</p>
     </div>
   </div>
   <div class="archive-title">📚 Archivo</div>
@@ -2314,6 +2326,7 @@ function showTab(id, btn) {
 function toggleCard(el) { el.classList.toggle('open'); }
 
 function renderAll() {
+  renderHeader();
   renderStandings();
   renderRounds();
   renderNext();
@@ -2327,5 +2340,3 @@ renderAll();
 </script>
 </body>
 </html>
-
-</body></html>
