@@ -1,0 +1,37 @@
+name: 📡 Leer Biwenger
+
+# Se lanza a mano (Actions → Leer Biwenger → Run workflow) o cuando Claude
+# modifica .github/biwenger-trigger. Guarda data/biwenger/ultima.json en el repo.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/biwenger-trigger']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: biwenger
+  cancel-in-progress: false
+
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Leer datos de la liga
+        env:
+          BIWENGER_TOKEN: ${{ secrets.BIWENGER_TOKEN }}
+        run: node scripts/biwenger-fetch.js
+      - name: Guardar en el repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/biwenger/ultima.json
+          git diff --cached --quiet && echo "Sin cambios" && exit 0
+          git commit -m "Datos de Biwenger $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
