@@ -322,6 +322,131 @@ table.cmp{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px}
 .chips-teams{display:flex;flex-wrap:wrap;gap:8px}
 .tchip{display:flex;align-items:center;gap:7px;padding:5px 11px 5px 7px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600;font-size:13px;background:var(--surface-2)}
 .tchip:hover{border-color:var(--accent)}
+
+/* ═════ Móvil (≤639px): tipografía más contenida y tablas que caben sin deslizar ═════ */
+.pill-x{display:inline}
+.abbr{display:none}
+@media (max-width:639px){
+  body{font-size:14px}
+  .eyebrow{font-size:10px;letter-spacing:.1em}
+  .top{padding-block:9px;gap:8px}
+  .logo{width:30px;height:30px;border-radius:8px}
+  .logo svg{width:17px;height:17px}
+  .brand h1{font-size:17px}
+  .brand small{font-size:10px}
+  .pill{padding:3px 8px;font-size:11px}
+  .pill-x{display:none}
+  .view{padding-block:16px 6px;gap:14px}
+  .hero-title h2{font-size:34px}
+  .h-page{font-size:28px}
+  .card-h{padding:12px 12px 0}
+  .card-h h3{font-size:16px}
+  .card-b{padding:10px 12px 12px}
+  .link{font-size:12px}
+  .intro{font-size:13.5px}
+  /* Inicio */
+  .duo{gap:10px}
+  .spot{padding:12px;gap:6px}
+  .spot .who{gap:8px}
+  .spot .who b{font-size:13.5px}
+  .spot .who .crest{width:30px;height:33px}
+  .spot .big{font-size:34px}
+  .spot .big small{font-size:13px}
+  .spot .note{font-size:11.5px}
+  .teaser h3{font-size:18px}
+  .teaser p{font-size:13.5px}
+  .m{padding:7px 9px}
+  .m-line{font-size:13.5px}
+  .m-line b{font-size:17px}
+  .pay-row{padding:5px 0;gap:8px}
+  .pay-row .amt{font-size:16px}
+  .pay-row .nm{font-size:13.5px}
+  /* Clasificación: tabla fija que cabe en 360px */
+  table.st{table-layout:fixed;font-size:13px}
+  .st th,.st td{padding:8px 3px}
+  .st th{font-size:10px;letter-spacing:.04em}
+  .st .c-pos{width:24px} .st .c-mv{width:26px} .st .c-pts{width:30px} .st .c-form{width:76px}
+  .st .pos{font-size:15px;width:auto}
+  .st tr.z8 .pos::before{left:-3px}
+  .st .team div{gap:6px}
+  .st .team .crest{width:20px;height:22px}
+  .st .team b{font-weight:600;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  .st .pts{font-size:17px}
+  .mv{font-size:10.5px;width:auto}
+  .form{gap:2px}
+  .form i{width:14px;height:14px;font-size:8.5px;border-radius:4px}
+  .legend{font-size:11px;padding:10px 12px 12px}
+  /* Jornadas */
+  .chip{padding:5px 9px;font-size:12px}
+  .jbtn{width:32px;height:32px;font-size:19px}
+  .rk{grid-template-columns:22px auto minmax(0,1fr) auto 54px;gap:7px;font-size:13.5px}
+  .rk b{font-size:16px}
+  .rk .eur{font-size:12px}
+  /* Crónica */
+  .article{padding:16px 14px;gap:12px}
+  .article h2{font-size:24px}
+  .article p{font-size:15px;line-height:1.65}
+  .arch summary{padding:11px 12px;gap:10px}
+  .arch .t{font-size:14.5px}
+  .arch-b{padding:0 12px 12px;font-size:14px}
+  /* Pagos */
+  .tiles{grid-template-columns:1fr 1fr;gap:10px}
+  .tiles>.tile:first-child:nth-last-child(3){grid-column:1/-1}
+  .tile{padding:11px 12px;gap:6px}
+  .tile b{font-size:24px}
+  .tile small{font-size:11.5px}
+  .tile .who{font-size:13px;gap:6px}
+  .tile .who .crest{width:24px;height:26px}
+  .bar-row{padding:4px 0;gap:8px;grid-template-columns:20px auto minmax(0,1fr) auto}
+  .bar-row .nm{font-size:13.5px}
+  .bar-row .amt{font-size:15px}
+  .bar-row .amt small{display:inline;margin-left:4px}
+  table.hist{font-size:11.5px}
+  .hist th,.hist td{padding:5px 3px}
+  .hist .cell{min-width:24px;padding:2px 3px}
+  .hist .full{display:none}
+  .hist .abbr{display:inline;font-weight:700}
+  .hist .l div{gap:5px}
+  /* Equipos: premios en dos columnas y tabla de 4 columnas */
+  .awards{grid-template-columns:1fr 1fr;gap:10px}
+  .award{padding:11px 11px 12px 14px;gap:7px}
+  .award .eyebrow{font-size:9.5px}
+  .aw-main{gap:8px}
+  .aw-main .crest{width:30px;height:33px}
+  .aw-team{font-size:12.5px}
+  .aw-v{font-size:21px}
+  .award small{font-size:11px;line-height:1.35}
+  table.cmp{table-layout:fixed;font-size:13px}
+  .cmp .opt{display:none}
+  .cmp th,.cmp td{padding:7px 4px}
+  .cmp th{font-size:10px}
+  .cmp .c-pos{width:26px} .cmp .c-media{width:62px} .cmp .c-paid{width:72px}
+  .cmp .l div{gap:6px;min-width:0}
+  .cmp td{overflow:hidden}
+  .cmp .l div a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+  .cmp .l .crest{width:20px;height:22px}
+  .barcell{min-width:0;width:100%;padding:3px 5px;text-align:right}
+  /* Ficha de equipo */
+  .team-head{gap:12px}
+  .team-head>.crest{width:60px;height:66px}
+  .vde{font-size:12px;gap:4px 10px;margin-top:6px}
+  .kpis{grid-template-columns:repeat(3,1fr);gap:8px}
+  .kpi{padding:9px 10px}
+  .kpi .eyebrow{font-size:9px;letter-spacing:.06em}
+  .kpi b{font-size:21px}
+  .kpi small{font-size:10.5px;line-height:1.3}
+  .chart{min-width:0}
+  .legend-inline{font-size:10.5px}
+  table.jj{table-layout:fixed}
+  .jj th,.jj td{font-size:12.5px;padding:7px 3px}
+  .jj .c-j{width:34px} .jj .c-res{width:84px} .jj .c-pue{width:42px} .jj .c-pag{display:none}
+  .jj td.l div{gap:5px;min-width:0}
+  .jj td{overflow:hidden}
+  .jj td.l a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+  .jj .res{gap:5px}
+  .crest-note{padding:12px}
+  .crest-note>.crest{width:42px;height:46px}
+}
 @media (prefers-reduced-motion:no-preference){ .view:not([hidden]){animation:in .25s ease} @keyframes in{from{opacity:.4;transform:translateY(4px)}} }
 </style>
 </head>
@@ -542,7 +667,7 @@ function renderClasificacion(){
   <div class="card">
     <div class="tbl-wrap">
       <table class="st num">
-        <thead><tr><th>#</th><th></th><th class="l">Equipo</th><th>Pts</th><th class="hm">PJ</th><th class="hm">V</th><th class="hm">E</th><th class="hm">D</th><th>Racha</th><th class="hm">Pts jor.</th></tr></thead>
+        <thead><tr><th class="c-pos">#</th><th class="c-mv"></th><th class="l c-team">Equipo</th><th class="c-pts">Pts</th><th class="hm">PJ</th><th class="hm">V</th><th class="hm">E</th><th class="hm">D</th><th class="c-form">Racha</th><th class="hm">Pts jor.</th></tr></thead>
         <tbody>
         ${now.map((t,i)=>{const p=i+1,d=prevPos[t.name]-p;
           const mv=d>0?`<td class="mv up" title="Sube ${d}">▲${d}</td>`:d<0?`<td class="mv dn" title="Baja ${-d}">▼${-d}</td>`:`<td class="mv eq" title="Igual">–</td>`;
@@ -671,7 +796,7 @@ function renderPagos(){
   <div class="card"><div class="card-h"><h3>Histórico</h3><span class="eyebrow">Desliza →</span></div>
     <div class="card-b"><div class="tbl-wrap"><table class="hist num">
       <thead><tr><th class="l sticky">Equipo</th>${js.map(j=>`<th>${j}</th>`).join('')}<th>Total</th></tr></thead>
-      <tbody>${order.map(t=>`<tr><td class="l sticky"><div>${crest(t,18)}${teamLink(t)}</div></td>${js.map(j=>{const a=PAID[t].byJ[j];return `<td>${a?`<span class="cell" style="--o:${(a/2.5).toFixed(2)}">${fmt1(a).replace(',0','')}</span>`:''}</td>`;}).join('')}<td class="tot">${fmtEur(PAID[t].amt)}</td></tr>`).join('')}</tbody>
+      <tbody>${order.map(t=>`<tr><td class="l sticky"><div>${crest(t,18)}<span class="full">${teamLink(t)}</span><a class="tl abbr" href="#equipo-${slug(t)}">${(CRESTS[t]||autoCrest(t)).ab}</a></div></td>${js.map(j=>{const a=PAID[t].byJ[j];return `<td>${a?`<span class="cell" style="--o:${(a/2.5).toFixed(2)}">${fmt1(a).replace(',0','')}</span>`:''}</td>`;}).join('')}<td class="tot">${fmtEur(PAID[t].amt)}</td></tr>`).join('')}</tbody>
     </table></div></div>
   </div>`;
 }
@@ -679,6 +804,7 @@ function renderPagos(){
 // ═════════════ Equipos ═════════════
 // ═════════════ Equipos: cuatro modelos para comparar ═════════════
 let eqSort = {k:'pos',dir:1};
+const OPT = new Set(['max','min','posMedia','top8']); // se ocultan en móvil
 
 const sd = a => { const m=a.reduce((x,y)=>x+y,0)/a.length; return Math.sqrt(a.reduce((s,v)=>s+(v-m)**2,0)/a.length); };
 const crestColors = t => CRESTS[t] || autoCrest(t);
@@ -713,9 +839,9 @@ function modelTabla(now,posOf){
     const txt = key==='media'||key==='posMedia' ? fmt1(val)+(key==='posMedia'?'º':'') : key==='paid' ? fmtEur(val) : val;
     const w = key==='posMedia' ? (17-val)/16 : key==='min' ? Math.max(0,val)/mx('max') : Math.max(0,val)/(mx(key)||1);
     const col = key==='paid'?'var(--pay)':key==='min'?'var(--loss)':key==='max'?'var(--win)':'var(--accent)';
-    return `<td><span class="barcell" style="--w:${(w*100).toFixed(0)}%;--c:${col}">${txt}</span></td>`;};
+    return `<td class="${OPT.has(key)?'opt':''}"><span class="barcell" style="--w:${(w*100).toFixed(0)}%;--c:${col}">${txt}</span></td>`;};
   return `<div class="tbl-wrap"><table class="cmp num">
-    <thead><tr>${cols.map(([key,n])=>`<th data-k="${key}" class="${key==='name'?'l sticky':''} ${eqSort.k===key?'on':''}">${n}${eqSort.k===key?(eqSort.dir<0?' ↓':' ↑'):''}</th>`).join('')}</tr></thead>
+    <thead><tr>${cols.map(([key,n])=>`<th data-k="${key}" class="c-${key} ${key==='name'?'l sticky':''} ${OPT.has(key)?'opt':''} ${eqSort.k===key?'on':''}">${n}${eqSort.k===key?(eqSort.dir<0?' ↓':' ↑'):''}</th>`).join('')}</tr></thead>
     <tbody>${rows.map(r=>`<tr data-href="#equipo-${slug(r.name)}">${cols.map(([key])=>cell(r,key)).join('')}</tr>`).join('')}</tbody>
   </table></div>`;
 }
@@ -756,7 +882,9 @@ function modelPremios(now,posOf){
 }
 
 function chart(t){
-  const s=STATS[t], avg=s.js.map(leagueAvg), W=640,H=230,L=34,R=12,T=14,B=26;
+  const narrow = matchMedia('(max-width: 639px)').matches;
+  const s=STATS[t], avg=s.js.map(leagueAvg), W=narrow?340:640,H=narrow?190:230,L=28,R=10,T=12,B=24;
+  const every = narrow && s.js.length>8 ? 2 : 1;
   const lo=Math.min(0,...s.pts)<0?Math.floor(Math.min(...s.pts)/10)*10:0, hi=Math.ceil(Math.max(70,...s.pts)/10)*10;
   const x=i=>L+(s.js.length<2?0:i*(W-L-R)/(s.js.length-1)), y=v=>T+(hi-v)*(H-T-B)/(hi-lo);
   const ticks=[]; for(let v=0; v<=hi; v+=20) ticks.push(v);
@@ -764,7 +892,7 @@ function chart(t){
   const area=`${x(0)},${y(Math.max(lo,0))} ${line(s.pts)} ${x(s.js.length-1)},${y(Math.max(lo,0))}`;
   return `<svg viewBox="0 0 ${W} ${H}" class="chart" role="img" aria-label="Puntos de ${esc(t)} por jornada frente a la media de la liga">
     ${ticks.map(v=>`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end" fill="var(--muted)" font-size="11">${v}</text>`).join('')}
-    ${s.js.map((j,i)=>`<text x="${x(i)}" y="${H-8}" text-anchor="middle" fill="var(--muted)" font-size="11">${j}</text>`).join('')}
+    ${s.js.map((j,i)=>(s.js.length-1-i)%every?'':`<text x="${x(i)}" y="${H-8}" text-anchor="middle" fill="var(--muted)" font-size="11">${j}</text>`).join('')}
     <polygon points="${area}" fill="var(--accent)" opacity=".10"/>
     <polyline points="${line(avg)}" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"/>
     <polyline points="${line(s.pts)}" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>
@@ -778,7 +906,7 @@ function renderEquipo(t){
     const m=r.matches.find(m=>m[0]===t||m[3]===t); if(!m) return '';
     const home=m[0]===t, mine=+(home?m[1]:m[2]), theirs=+(home?m[2]:m[1]), rival=home?m[3]:m[0];
     const res=mine>theirs?'W':mine<theirs?'L':'D', pos=officialPos(t,r.j), a=payFor(pos);
-    return `<tr><td>${r.j}</td><td class="l"><div>${crest(rival,18)}${teamLink(rival)}</div></td><td><span class="res"><span class="form"><i class="${res}">${{W:'V',D:'E',L:'D'}[res]}</i></span>${mine}-${theirs}</span></td><td class="${pos<=4?'good':pos>10?'bad':''}">${pos}º</td><td>${a?fmtEur(a):''}</td></tr>`;}).reverse().join('');
+    return `<tr><td>${r.j}</td><td class="l"><div>${crest(rival,18)}${teamLink(rival)}</div></td><td><span class="res"><span class="form"><i class="${res}">${{W:'V',D:'E',L:'D'}[res]}</i></span>${mine}-${theirs}</span></td><td class="${pos<=4?'good':pos>10?'bad':''}">${pos}º</td><td class="c-pag">${a?fmtEur(a):''}</td></tr>`;}).reverse().join('');
   const kpi=(l,v,sub='',cls='')=>`<div class="card kpi ${cls}"><span class="eyebrow">${l}</span><b class="num">${v}</b>${sub?`<small>${sub}</small>`:''}</div>`;
   document.getElementById('v-equipo').innerHTML = `
   <a class="link" href="#equipos">← Todos los equipos</a>
@@ -800,7 +928,7 @@ function renderEquipo(t){
   </div>
   <div class="card"><div class="card-h"><h3>Puntos por jornada</h3><span class="eyebrow legend-inline"><i class="ln"></i>${esc(t)} <i class="ln dash"></i>Media liga</span></div><div class="card-b"><div class="tbl-wrap">${chart(t)}</div></div></div>
   <div class="card"><div class="card-h"><h3>Jornada a jornada</h3></div>
-    <div class="card-b"><div class="tbl-wrap"><table class="st num jj"><thead><tr><th>J</th><th class="l">Rival</th><th>Resultado</th><th>Puesto</th><th>Pagó</th></tr></thead><tbody>${rows}</tbody></table></div></div></div>
+    <div class="card-b"><div class="tbl-wrap"><table class="st num jj"><thead><tr><th class="c-j">J</th><th class="l c-riv">Rival</th><th class="c-res">Resultado</th><th class="c-pue">Pos.</th><th class="c-pag">Pagó</th></tr></thead><tbody>${rows}</tbody></table></div></div></div>
   <div class="card crest-note">${crest(t,56)}<div><span class="eyebrow">El escudo</span><p>${(CRESTS[t]||autoCrest(t)).why}</p></div></div>`;
 }
 
@@ -817,7 +945,7 @@ const navHtml = (withIcons) => VIEWS.map(([id,n,short])=>`<a href="#${id}" data-
 document.getElementById('tabsTop').innerHTML = navHtml(false);
 document.getElementById('navBottom').innerHTML = navHtml(true);
 document.getElementById('season').textContent = TEMPORADA;
-document.getElementById('pill').innerHTML = `<i></i>${esc(lastR.j)} disputada`;
+document.getElementById('pill').innerHTML = `<i></i>${esc(lastR.j)}<span class="pill-x"> disputada</span>`;
 
 function route(){
   let v = (location.hash||'#inicio').slice(1);
