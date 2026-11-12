@@ -1,0 +1,2158 @@
+{
+  "fetchedAt": "2026-11-12T18:44:12.924Z",
+  "league": "1699656",
+  "calls": {
+    "roundsLeague": {
+      "http": 200,
+      "status": 200,
+      "shape": {
+        "round": {
+          "id": "number"
+        },
+        "league": {
+          "id": "number",
+          "name": "string",
+          "competition": "string",
+          "mode": "string",
+          "type": "string",
+          "marketMode": "string",
+          "scoreID": "number",
+          "standings": [
+            {
+              "id": "number",
+              "name": "string",
+              "icon": "string",
+              "points": "number",
+              "teamValue": "number",
+              "teamValueInc": "number",
+              "position": "number",
+              "lineup": {
+                "type": "string",
+                "points": "number",
+                "position": "number",
+                "date": "number",
+                "players": [
+                  "number",
+                  "×11"
+                ],
+                "bonuses": {
+                  "bonusPoint": "number",
+                  "bonusIdealLineup": [
+                    "…",
+                    "×2"
+                  ]
+                },
+                "count": "boolean"
+              }
+            },
+            "×16"
+          ],
+          "settings": {
+            "splitRound": "string",
+            "bonusFixed": "number",
+            "bonusPoint": "number",
+            "bonusInverse": "boolean",
+            "bonusIdealLineup": "number",
+            "bonusGameMVP": "number",
+            "bonusRoundPosition": [],
+            "lineupShow": "string",
+            "lineupRoundChanges": "number",
+            "lineupRoundChangesIn": "string",
+            "lineupRoundChangeStrategy": "boolean",
+            "bonusGoal": "number",
+            "bonusWorstLineup": "number",
+            "bonusProfitableLineup": "number",
+            "bonusLeaguePosition": [],
+            "bonusRoundPointsPosition": []
+          }
+        }
+      }
+    },
+    "league": {
+      "http": 200,
+      "status": 200,
+      "shape": {
+        "name": "string",
+        "type": "string",
+        "mode": "string",
+        "scoreID": "number",
+        "cover": "string",
+        "created": "number",
+        "id": "number",
+        "marketMode": "string",
+        "icon": "string",
+        "settings": {
+          "secret": "string",
+          "privacy": "string",
+          "balance": "string",
+          "customScore": "string",
+          "maxParticipants": "number",
+          "onlyAdminPosts": "boolean",
+          "showLastAccess": "boolean",
+          "marketClose": "number",
+          "marketOpen": "number",
+          "marketSize": "number",
+          "marketTTL": "number",
+          "marketSpeed": "string",
+          "marketKeepPlayers": "boolean",
+          "marketShowBids": "boolean",
+          "maximumBid": "string",
+          "userOffers": "string",
+          "exchanges": "boolean",
+          "userOfferPurchases": "number",
+          "userOfferSales": "number",
+          "bidsOverMV": "boolean",
+          "maxPurchasePrice": "number",
+          "transfersMode": "string",
+          "transfersAmount": "string",
+          "transfersShowBidders": "number",
+          "splitRound": "string",
+          "superPicaExtraPoints": "boolean",
+          "lineupShow": "string",
+          "lineupMultiPos": "boolean",
+          "lineupChanges": "number",
+          "lineupRemoveInvalid": "string",
+          "lineupPlayerUsageSeason": "number",
+          "lineupRoundChanges": "number",
+          "lineupRoundChangesIn": "string",
+          "lineupRoundChangesOut": "string",
+          "lineupRoundChangeStrategy": "boolean",
+          "lineupCaptain": "boolean",
+          "lineupCaptainMaxValue": "number",
+          "lineupCaptainPositions": "number",
+          "lineupStriker": "boolean",
+          "lineupStrikerMaxValue": "number"
+        },
+        "standings": [
+          {
+            "id": "number",
+            "name": "string",
+            "icon": "string",
+            "points": "number",
+            "position": "number"
+          },
+          "×16"
+        ]
+      }
+    },
+    "competition": {
+      "http": 200,
+      "status": 200,
+      "shape": {
+        "id": "number",
+        "name": "string",
+        "slug": "string",
+        "sport": "string",
+        "currency": "string",
+        "scores": [
+          {
+            "id": "number",
+            "name": "string",
+            "kind": "string"
+          },
+          "×7"
+        ],
+        "social": {
+          "twitter": "string",
+          "facebook": "string",
+          "instagram": "string",
+          "telegram": "string",
+          "tiktok": "string",
+          "blog": "string"
+        },
+        "config": {
+          "coaches": "boolean",
+          "multiPos": "boolean",
+          "optimizeImages": "boolean",
+          "superPicaScores": [
+            "number",
+            "×3"
+          ],
+          "standings": {
+            "champion": "number",
+            "playoffs": "number",
+            "other": "string",
+            "descends": "number"
+          },
+          "leagueSponsor": {
+            "image": "string",
+            "url": "string",
+            "title": "string"
+          }
+        },
+        "season": {
+          "id": "string",
+          "name": "string",
+          "slug": "string",
+          "rounds": [
+            {
+              "id": "number",
+              "name": "string",
+              "short": "string",
+              "status": "string"
+            },
+            "×43"
+          ],
+          "previous": {
+            "id": "string",
+            "name": "string",
+            "slug": "string"
+          }
+        },
+        "activeEvents": [],
+        "players": {
+          "11": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "20": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "33": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "altPositions": [
+              "number",
+              "×1"
+            ],
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "statusInfo": "string",
+            "iconHero": "string",
+            "statusChange": "number",
+            "fitness": [
+              "string",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "91": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "object",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "129": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "altPositions": [
+              "number",
+              "×1"
+            ],
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "163": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "429": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "statusInfo": "string",
+            "statusChange": "number",
+            "fitness": [
+              "string",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "object"
+          },
+          "742": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "statusInfo": "string",
+            "iconHero": "string",
+            "statusChange": "number",
+            "fitness": [
+              "string",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "832": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "statusInfo": "string",
+            "iconHero": "string",
+            "statusChange": "number",
+            "fitness": [
+              "string",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "856": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "altPositions": [
+              "number",
+              "×1"
+            ],
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "897": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "altPositions": [
+              "number",
+              "×1"
+            ],
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "947": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "altPositions": [
+              "number",
+              "×1"
+            ],
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "object"
+          },
+          "1074": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1083": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1125": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1249": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1462": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "altPositions": [
+              "number",
+              "×1"
+            ],
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1523": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "altPositions": [
+              "number",
+              "×1"
+            ],
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1599": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1602": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "altPositions": [
+              "number",
+              "×1"
+            ],
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1612": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1613": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1676": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1679": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "object",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1683": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×4"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1721": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "statusInfo": "string",
+            "statusChange": "number",
+            "fitness": [
+              "string",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1733": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1760": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1780": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "string",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1844": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "altPositions": [
+              "number",
+              "×1"
+            ],
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "statusInfo": "string",
+            "iconHero": "string",
+            "statusChange": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1871": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "statusInfo": "string",
+            "statusChange": "number",
+            "fitness": [
+              "string",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1876": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "object",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1897": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1927": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "altPositions": [
+              "number",
+              "×1"
+            ],
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "statusInfo": "string",
+            "iconHero": "string",
+            "statusChange": "number",
+            "fitness": [
+              "string",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1952": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1969": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "1995": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "2001": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "iconHero": "string",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "2009": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "statusInfo": "string",
+            "iconHero": "string",
+            "statusChange": "number",
+            "fitness": [
+              "string",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          },
+          "2044": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "teamID": "number",
+            "position": "number",
+            "price": "number",
+            "fantasyPrice": "number",
+            "number": "number",
+            "status": "string",
+            "priceIncrement": "number",
+            "fitness": [
+              "number",
+              "×5"
+            ],
+            "points": "number",
+            "playedHome": "number",
+            "playedAway": "number",
+            "pointsHome": "number",
+            "pointsAway": "number",
+            "pointsLastSeason": "number"
+          }
+        },
+        "teams": {
+          "1": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "2": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "3": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "5": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "6": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "7": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "8": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "10": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "13": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "15": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "17": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "18": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "19": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "65": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "70": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "75": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "87": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "91": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "93": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          },
+          "812": {
+            "id": "number",
+            "name": "string",
+            "slug": "string",
+            "nextGames": [
+              {
+                "id": "number",
+                "date": "number",
+                "home": {
+                  "id": "number"
+                },
+                "away": {
+                  "id": "number"
+                },
+                "round": {
+                  "id": "number"
+                },
+                "preview": "object",
+                "summary": "object"
+              },
+              "×1"
+            ]
+          }
+        },
+        "update": "number",
+        "etag": "number",
+        "scoreID": "number"
+      }
+    }
+  },
+  "round": {
+    "id": 4910
+  },
+  "roundStandings": [
+    {
+      "id": 10473713,
+      "name": "Vicentine Zidane",
+      "points": 487,
+      "position": 1,
+      "teamValue": 67580000
+    },
+    {
+      "id": 10477021,
+      "name": "Kingsquare",
+      "points": 454,
+      "position": 2,
+      "teamValue": 45030000
+    },
+    {
+      "id": 10477082,
+      "name": "Castriano Ronaldo",
+      "points": 414,
+      "position": 3,
+      "teamValue": 36080000
+    },
+    {
+      "id": 10476492,
+      "name": "Josisi mourinho",
+      "points": 411,
+      "position": 4,
+      "teamValue": 50420000
+    },
+    {
+      "id": 10474235,
+      "name": "Raphontino",
+      "points": 398,
+      "position": 5,
+      "teamValue": 42290000
+    },
+    {
+      "id": 10476303,
+      "name": "Cardonistas",
+      "points": 396,
+      "position": 6,
+      "teamValue": 41750000
+    },
+    {
+      "id": 11801799,
+      "name": "AnceLuni",
+      "points": 387,
+      "position": 7,
+      "teamValue": 28190000
+    },
+    {
+      "id": 10474962,
+      "name": "Danilo Stars",
+      "points": 373,
+      "position": 8,
+      "teamValue": 44840000
+    },
+    {
+      "id": 10473980,
+      "name": "Avaricius Jr.",
+      "points": 360,
+      "position": 9,
+      "teamValue": 41860000
+    },
+    {
+      "id": 11958892,
+      "name": "Puro Llorente",
+      "points": 343,
+      "position": 10,
+      "teamValue": 37240000
+    },
+    {
+      "id": 10476715,
+      "name": "Tano Amunt",
+      "points": 336,
+      "position": 11,
+      "teamValue": 38470000
+    },
+    {
+      "id": 10476218,
+      "name": "CucuDaris",
+      "points": 334,
+      "position": 12,
+      "teamValue": 32080000
+    },
+    {
+      "id": 10476987,
+      "name": "Sors",
+      "points": 320,
+      "position": 13,
+      "teamValue": 30960000
+    },
+    {
+      "id": 14250281,
+      "name": "Se vende Cuenta",
+      "points": 304,
+      "position": 14,
+      "teamValue": 26710000
+    },
+    {
+      "id": 14250371,
+      "name": "Sergchenko",
+      "points": 285,
+      "position": 15,
+      "teamValue": 19410000
+    },
+    {
+      "id": 13012799,
+      "name": "Celta de Viño",
+      "points": 266,
+      "position": 16,
+      "teamValue": 28010000
+    }
+  ],
+  "leagueInfo": {
+    "id": 1699656,
+    "name": "Clubes Amigos",
+    "type": "premium",
+    "mode": "league",
+    "scoreID": 5
+  },
+  "leagueStandings": [
+    {
+      "id": 10473713,
+      "name": "Vicentine Zidane",
+      "points": 487,
+      "position": 1
+    },
+    {
+      "id": 10477021,
+      "name": "Kingsquare",
+      "points": 454,
+      "position": 2
+    },
+    {
+      "id": 10477082,
+      "name": "Castriano Ronaldo",
+      "points": 414,
+      "position": 3
+    },
+    {
+      "id": 10476492,
+      "name": "Josisi mourinho",
+      "points": 411,
+      "position": 4
+    },
+    {
+      "id": 10474235,
+      "name": "Raphontino",
+      "points": 398,
+      "position": 5
+    },
+    {
+      "id": 10476303,
+      "name": "Cardonistas",
+      "points": 396,
+      "position": 6
+    },
+    {
+      "id": 11801799,
+      "name": "AnceLuni",
+      "points": 387,
+      "position": 7
+    },
+    {
+      "id": 10474962,
+      "name": "Danilo Stars",
+      "points": 373,
+      "position": 8
+    },
+    {
+      "id": 10473980,
+      "name": "Avaricius Jr.",
+      "points": 360,
+      "position": 9
+    },
+    {
+      "id": 11958892,
+      "name": "Puro Llorente",
+      "points": 343,
+      "position": 10
+    },
+    {
+      "id": 10476715,
+      "name": "Tano Amunt",
+      "points": 336,
+      "position": 11
+    },
+    {
+      "id": 10476218,
+      "name": "CucuDaris",
+      "points": 334,
+      "position": 12
+    },
+    {
+      "id": 10476987,
+      "name": "Sors",
+      "points": 320,
+      "position": 13
+    },
+    {
+      "id": 14250281,
+      "name": "Se vende Cuenta",
+      "points": 304,
+      "position": 14
+    },
+    {
+      "id": 14250371,
+      "name": "Sergchenko",
+      "points": 285,
+      "position": 15
+    },
+    {
+      "id": 13012799,
+      "name": "Celta de Viño",
+      "points": 266,
+      "position": 16
+    }
+  ],
+  "season": {
+    "id": "2027",
+    "name": "Temporada 2026/2027"
+  },
+  "calendar": [
+    {
+      "id": 4899,
+      "name": "Jornada 1",
+      "short": "J1",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4900,
+      "name": "Jornada 2",
+      "short": "J2",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4937,
+      "name": "Jornada 1 (aplazada)",
+      "short": "J1",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4901,
+      "name": "Jornada 3",
+      "short": "J3",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4904,
+      "name": "Jornada 6",
+      "short": "J6",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4902,
+      "name": "Jornada 4",
+      "short": "J4",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4903,
+      "name": "Jornada 5",
+      "short": "J5",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 5125,
+      "name": "Jornada 6 (aplazada)",
+      "short": "J6",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4905,
+      "name": "Jornada 7",
+      "short": "J7",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4906,
+      "name": "Jornada 8",
+      "short": "J8",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4907,
+      "name": "Jornada 9",
+      "short": "J9",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 5176,
+      "name": "Jornada 6 (aplazada)",
+      "short": "J6",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4908,
+      "name": "Jornada 10",
+      "short": "J10",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4909,
+      "name": "Jornada 11",
+      "short": "J11",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4910,
+      "name": "Jornada 12",
+      "short": "J12",
+      "status": "finished",
+      "games": []
+    },
+    {
+      "id": 4911,
+      "name": "Jornada 13",
+      "short": "J13",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4912,
+      "name": "Jornada 14",
+      "short": "J14",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4921,
+      "name": "Jornada 23",
+      "short": "J23",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4913,
+      "name": "Jornada 15",
+      "short": "J15",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4914,
+      "name": "Jornada 16",
+      "short": "J16",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4915,
+      "name": "Jornada 17",
+      "short": "J17",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4916,
+      "name": "Jornada 18",
+      "short": "J18",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4917,
+      "name": "Jornada 19",
+      "short": "J19",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4918,
+      "name": "Jornada 20",
+      "short": "J20",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4919,
+      "name": "Jornada 21",
+      "short": "J21",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4920,
+      "name": "Jornada 22",
+      "short": "J22",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 5203,
+      "name": "Jornada 23 (aplazada)",
+      "short": "J23",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4922,
+      "name": "Jornada 24",
+      "short": "J24",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4923,
+      "name": "Jornada 25",
+      "short": "J25",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4924,
+      "name": "Jornada 26",
+      "short": "J26",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4925,
+      "name": "Jornada 27",
+      "short": "J27",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4926,
+      "name": "Jornada 28",
+      "short": "J28",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4927,
+      "name": "Jornada 29",
+      "short": "J29",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4928,
+      "name": "Jornada 30",
+      "short": "J30",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4929,
+      "name": "Jornada 31",
+      "short": "J31",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4930,
+      "name": "Jornada 32",
+      "short": "J32",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4931,
+      "name": "Jornada 33",
+      "short": "J33",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4932,
+      "name": "Jornada 34",
+      "short": "J34",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4933,
+      "name": "Jornada 35",
+      "short": "J35",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4934,
+      "name": "Jornada 36",
+      "short": "J36",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4935,
+      "name": "Jornada 37",
+      "short": "J37",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 4936,
+      "name": "Jornada 38",
+      "short": "J38",
+      "status": "pending",
+      "games": []
+    },
+    {
+      "id": 5202,
+      "name": "Jornada 8 (aplazada)",
+      "short": "J8",
+      "status": "pending",
+      "games": []
+    }
+  ]
+}
