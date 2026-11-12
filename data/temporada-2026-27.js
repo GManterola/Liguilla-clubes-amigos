@@ -328,6 +328,13 @@ const nextMatches2627 = [
   ["Sors","Kingsquare"],
 ];
 
+// Fechas de las jornadas (inicio del primer partido y del último), sacadas de Biwenger
+// con scripts/biwenger-jornada.js. Equivalencia: nuestra JN = Jornada N+1 de LaLiga.
+const fechas2627 = {
+  J12: { inicio: "2026-11-20T20:00:00Z", fin: "2026-11-23T20:00:00Z" },
+  J13: { inicio: "2026-11-27T20:00:00Z", fin: "2026-11-30T20:00:00Z" },
+};
+
 const PAY_RULES_2627 = [
   {pos:11,label:"11º",amount:1.00},{pos:12,label:"12º",amount:1.00},
   {pos:13,label:"13º",amount:1.50},{pos:14,label:"14º",amount:1.50},

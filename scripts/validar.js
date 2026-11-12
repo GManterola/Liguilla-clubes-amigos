@@ -45,7 +45,8 @@ if (!html.includes(`src="data/${path.basename(DATA)}"`)) warn(`index.html no car
 const ctx = {};
 vm.runInNewContext(dataSrc + `
 ;this.D = { TEMPORADA, TEAMS_2627, rounds2627, nextMatches2627, PAY_RULES_2627,
-           jornadasRanking2627, jorStatsHistory, cronicas2627 };`, ctx);
+           jornadasRanking2627, jorStatsHistory, cronicas2627,
+           fechas: typeof fechas2627 !== 'undefined' ? fechas2627 : {} };`, ctx);
 const { TEAMS_2627: TEAMS, rounds2627: rounds, nextMatches2627: next, PAY_RULES_2627: pay,
         jornadasRanking2627: rankings, jorStatsHistory: history, cronicas2627: cronicas } = ctx.D;
 
@@ -69,6 +70,7 @@ if (JSON.stringify(payMap) !== JSON.stringify(PAY_RULES_ESPERADAS))
   err(`PAY_RULES_2627 ha cambiado: ${JSON.stringify(payMap)} (esperado ${JSON.stringify(PAY_RULES_ESPERADAS)})`);
 
 // ── 5. Jornadas (rounds2627) ─────────────────────────────────────
+const jorNumOf = l => parseInt((/^J(\d+)/.exec(l) || [])[1], 10);
 const isNum = v => /^-?\d+$/.test(String(v));
 let seenPending = false;
 const played = [];
@@ -152,6 +154,12 @@ TEAMS.forEach(t => {
 });
 if (tot.pg !== tot.pp) err(`Victorias totales (${tot.pg}) ≠ derrotas totales (${tot.pp})`);
 if (tot.pg + tot.pe / 2 !== played.length * 8) err('El total de partidos no cuadra con las jornadas disputadas');
+
+// ── 8b. Fechas de jornadas (opcional)
+Object.entries(ctx.D.fechas).forEach(([j, f]) => {
+  if (!rounds.some(r => jorNumOf(r.j) === jorNumOf(j))) err(`fechas2627: ${j} no existe en rounds2627`);
+  if (isNaN(Date.parse(f.inicio)) || isNaN(Date.parse(f.fin)) || Date.parse(f.fin) < Date.parse(f.inicio)) err(`fechas2627: fechas no válidas en ${j}`);
+});
 
 // ── 9. Crónicas ───────────────────────────────────────────────────
 if (!cronicas.length) warn('No hay crónicas');

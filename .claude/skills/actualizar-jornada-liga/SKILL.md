@@ -8,7 +8,8 @@ description: "Actualiza la web de la Liga Clubes Amigos con una nueva jornada a 
 Los datos viven en `data/temporada-2026-27.js`. `index.html` no se toca para una jornada normal.
 
 ## Entrada
-- Captura(s) con los puntos de la jornada (columna "Jor.").
+- **Preferente: Biwenger.** Lanza la lectura (`date -u +%FT%TZ > .github/biwenger-trigger`, commit, push), espera al workflow "📡 Leer Biwenger", haz `git pull` y ejecuta `node scripts/biwenger-jornada.js`. Nuestra JN = Jornada N+1 de LaLiga. Solo se publica como cerrada si sale "🟢 TERMINADA"; si queda alguna "(aplazada)" de esa jornada, va como `partialPending`.
+- Alternativa: captura(s) con los puntos de la jornada (columna "Jor.").
 - Si el usuario indica una corrección de una jornada anterior, aplícala antes de añadir la nueva.
 
 ## Pasos
@@ -17,6 +18,7 @@ Los datos viven en `data/temporada-2026-27.js`. `index.html` no se toca para una
    - Si falta algún partido por disputar: `partialPending:true, pendingMatches:N` (también en las entradas de esa jornada en `jornadasRanking2627` y `jorStatsHistory`). El aviso ámbar sale solo.
 3. **`jorStatsHistory`**: añade `{ j:"Jxx", data:{ equipo:puntos, ... } }` con los 16 equipos, ordenados de más a menos puntos.
 4. **`jornadasRanking2627`**: añade `{ j:"Jxx", ranking:[...] }` con los 16 equipos de 1º a 16º según los puntos de la jornada. Si hay empate en la frontera 10º/11º (zona de pago), pregunta al usuario el desempate.
+4b. **`fechas2627`**: copia las fechas que imprime `biwenger-jornada.js` (al menos la siguiente jornada pendiente).
 5. **`nextMatches2627`**: copia los emparejamientos de la siguiente jornada con `pending:true` en `rounds2627`.
 6. **Pagos**: los calcula la web con `PAY_RULES_2627` (11º 1,00 · 12º 1,00 · 13º 1,50 · 14º 1,50 · 15º 2,00 · 16º 2,50 €). No cambies la escala.
 7. **Crónica**: añade un objeto al PRINCIPIO de `cronicas2627`: `{ j:"Jxx", titular:"...", parrafos:["...", ...] }`. La anterior pasa sola al archivo.

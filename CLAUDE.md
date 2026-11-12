@@ -12,9 +12,19 @@ Copia de trabajo: artefacto "Liga Clubes Amigos 26-27" → https://claude.ai/art
 | `index.html` | Diseño y lógica (pestañas Inicio, Tabla, Jornadas, Crónica, Pagos, Equipos y ficha `#equipo-<nombre>`). Todo se calcula a partir de los datos: portada, premios, rachas, pagos. Los escudos se configuran en `CRESTS` (equipo nuevo sin entrada → escudo automático) | No |
 | `scripts/validar.js` | Validación de coherencia de los datos (también corre en GitHub Actions) | No |
 | `img/`, `manifest.webmanifest` | Iconos y app instalable. `img/og.png` (vista previa de WhatsApp) se regenera cada jornada con `scripts/og.js` | `og.png`, sí |
+| `scripts/biwenger-fetch.js`, `.github/workflows/biwenger.yml` | Lee Biwenger desde GitHub Actions (secreto `BIWENGER_TOKEN`) y guarda `data/biwenger/ultima.json`. Se lanza modificando `.github/biwenger-trigger` | No |
+| `scripts/biwenger-jornada.js` | Compara Biwenger con la web y da puntos y fechas de la jornada (solo lectura) | No |
 | `vercel.json` | Rutas limpias: `/pagos`, `/equipo-sors`… sirven `index.html` | No |
 
 ## Actualizar una jornada
+
+**Fuente principal: Biwenger** (sin capturas). Equivalencia: **nuestra JN = Jornada N+1 de LaLiga**. Las "(aplazada)" de Biwenger son partidos sueltos de una jornada anterior.
+1. `date -u +%FT%TZ > .github/biwenger-trigger`, commit y push → espera a que termine el workflow "📡 Leer Biwenger" (`gh run list --workflow biwenger.yml`) → `git pull`.
+2. `node scripts/biwenger-jornada.js` → si la jornada sale "🟢 TERMINADA", usa esos puntos. Si sale "en juego", no la publiques como cerrada.
+3. Actualiza `fechas2627` con las fechas que imprime el script.
+4. Si Biwenger falla (token caducado: HTTP 401), pide al usuario que renueve el secreto `BIWENGER_TOKEN` en GitHub o que mande captura.
+
+**Alternativa: captura** del usuario con la columna "Jor.".
 
 Usa el skill `actualizar-jornada-liga` (`.claude/skills/actualizar-jornada-liga/SKILL.md`). Reglas fijas del dueño de la liga:
 

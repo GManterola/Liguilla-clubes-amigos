@@ -482,6 +482,12 @@ const jorNum = l => parseInt((/^J(\d+)/.exec(l)||[])[1],10);
 const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 const played = rounds2627.filter(r=>!r.pending);
+const FECHAS = typeof fechas2627 !== 'undefined' ? fechas2627 : {};
+function rangoFechas(j){
+  const f = FECHAS[j]; if (!f) return '';
+  const d = (x,o) => new Date(x).toLocaleString('es-ES',{timeZone:'Europe/Madrid',...o});
+  return `${d(f.inicio,{weekday:'short',day:'numeric',month:'short'})}, ${d(f.inicio,{hour:'2-digit',minute:'2-digit'})} – ${d(f.fin,{weekday:'short',day:'numeric',month:'short'})}`;
+}
 const lastR = played[played.length-1];
 const nextR = rounds2627.find(r=>r.pending);
 
@@ -647,7 +653,7 @@ function renderInicio(){
     </div>
   </div>
       ${nextR?`<div class="card">
-        <div class="card-h"><h3>Próxima · ${esc(nextR.j)}</h3><span class="eyebrow">Pendiente</span></div>
+        <div class="card-h"><h3>Próxima · ${esc(nextR.j)}</h3><span class="eyebrow">${rangoFechas(nextR.j) || 'Pendiente'}</span></div>
         <div class="card-b matches wide">
           ${nextR.matches.map(([h,,,a])=>`<div class="m fxm"><div class="m-line">${crest(h,20)}<span>${esc(h)}</span><b></b></div><div class="m-line">${crest(a,20)}<span>${esc(a)}</span><b></b></div></div>`).join('')}
         </div>
@@ -751,7 +757,7 @@ function drawJornada(){
   }
   document.getElementById('jbody').innerHTML = `
     <div class="card">
-      <div class="card-h"><h3>Jornada ${n}</h3><span class="state ${estado.toLowerCase()}">${estado}${vuelta?` · vuelta de la ${vuelta[1]}`:''}</span></div>
+      <div class="card-h"><h3>Jornada ${n}</h3><span class="state ${estado.toLowerCase()}">${estado}${r.pending&&rangoFechas(r.j)?` · ${rangoFechas(r.j)}`:''}${vuelta?` · vuelta de la ${vuelta[1]}`:''}</span></div>
       ${r.partialPending?`<div class="warn">Queda ${r.pendingMatches||1} partido por disputar. Resultados y clasificación provisionales.</div>`:''}
       <div class="card-b matches">${matches}</div>
     </div>
