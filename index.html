@@ -228,6 +228,15 @@ a.tl:hover{text-decoration:underline;text-underline-offset:3px}
 .article p{margin:0;font-size:16.5px;line-height:1.7;max-width:65ch;color:var(--ink);opacity:.9}
 .article p strong{color:var(--accent)}
 .archive{display:grid;gap:8px}
+.cron-grid{display:grid;gap:14px;align-items:start}
+.cron-side{display:grid;gap:10px;min-width:0}
+@media (min-width:1000px){
+  .cron-grid{grid-template-columns:minmax(0,1fr) 340px;gap:20px}
+  .cron-side{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px);max-height:calc(100vh - 96px);overflow-y:auto;padding-right:2px}
+  .article{padding:28px 32px}
+  .article h2{max-width:24ch}
+  .cron-side .arch .t{font-size:15px}
+}
 .arch summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:13px 16px}
 .arch summary::-webkit-details-marker{display:none}
 .arch summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg) translateY(-3px);transition:transform .2s}
@@ -450,8 +459,6 @@ table.cmp{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px}
 </head>
 <body>
 <div class="wrap">
-  </div>
-
   <header class="top">
     <div class="brand">
       <div class="logo" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5c0 3 1.5 4.5 3.5 4.8M16 6h3c0 3-1.5 4.5-3.5 4.8M12 13v4M8.5 20h7"/></svg></div>
@@ -768,14 +775,18 @@ function drawJornada(){
 function renderCronica(){
   const [main,...arch] = cronicas2627;
   document.getElementById('v-cronica').innerHTML = `
+  <div class="cron-grid">
   <article class="card article">
     <div class="eyebrow">Crónica · Jornada ${jorNum(main.j)} · Temporada ${TEMPORADA}</div>
     <h2>${main.titular}</h2>
     ${main.parrafos.map(p=>`<p>${p}</p>`).join('')}
   </article>
-  <div class="eyebrow" style="margin-top:6px">Archivo · ${arch.length} crónicas</div>
+  <aside class="cron-side">
+  <div class="eyebrow">Archivo · ${arch.length} crónicas</div>
   <div class="archive">
     ${arch.map(c=>`<details class="card arch"><summary><span class="chip static">J${jorNum(c.j)}</span><span class="t">${c.titular}</span></summary><div class="arch-b">${c.parrafos.map(p=>`<p>${p}</p>`).join('')}</div></details>`).join('')}
+  </div>
+  </aside>
   </div>`;
 }
 
