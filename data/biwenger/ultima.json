@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-12T18:44:12.924Z",
+  "fetchedAt": "2026-11-12T18:45:11.901Z",
   "league": "1699656",
   "calls": {
     "roundsLeague": {
@@ -1635,112 +1635,144 @@
       "name": "Vicentine Zidane",
       "points": 487,
       "position": 1,
-      "teamValue": 67580000
+      "roundPoints": 61,
+      "lineupDate": 1793865791,
+      "lineupCount": true
     },
     {
       "id": 10477021,
       "name": "Kingsquare",
       "points": 454,
       "position": 2,
-      "teamValue": 45030000
+      "roundPoints": 33,
+      "lineupDate": 1793993511,
+      "lineupCount": true
     },
     {
       "id": 10477082,
       "name": "Castriano Ronaldo",
       "points": 414,
       "position": 3,
-      "teamValue": 36080000
+      "roundPoints": 44,
+      "lineupDate": 1793976707,
+      "lineupCount": true
     },
     {
       "id": 10476492,
       "name": "Josisi mourinho",
       "points": 411,
       "position": 4,
-      "teamValue": 50420000
+      "roundPoints": 36,
+      "lineupDate": 1793774212,
+      "lineupCount": true
     },
     {
       "id": 10474235,
       "name": "Raphontino",
       "points": 398,
       "position": 5,
-      "teamValue": 42290000
+      "roundPoints": 17,
+      "lineupDate": 1793970294,
+      "lineupCount": true
     },
     {
       "id": 10476303,
       "name": "Cardonistas",
       "points": 396,
       "position": 6,
-      "teamValue": 41750000
+      "roundPoints": 53,
+      "lineupDate": 1793948979,
+      "lineupCount": true
     },
     {
       "id": 11801799,
       "name": "AnceLuni",
       "points": 387,
       "position": 7,
-      "teamValue": 28190000
+      "roundPoints": 40,
+      "lineupDate": 1793972653,
+      "lineupCount": true
     },
     {
       "id": 10474962,
       "name": "Danilo Stars",
       "points": 373,
       "position": 8,
-      "teamValue": 44840000
+      "roundPoints": 65,
+      "lineupDate": 1793956833,
+      "lineupCount": true
     },
     {
       "id": 10473980,
       "name": "Avaricius Jr.",
       "points": 360,
       "position": 9,
-      "teamValue": 41860000
+      "roundPoints": 47,
+      "lineupDate": 1793885857,
+      "lineupCount": true
     },
     {
       "id": 11958892,
       "name": "Puro Llorente",
       "points": 343,
       "position": 10,
-      "teamValue": 37240000
+      "roundPoints": 39,
+      "lineupDate": 1793956714,
+      "lineupCount": true
     },
     {
       "id": 10476715,
       "name": "Tano Amunt",
       "points": 336,
       "position": 11,
-      "teamValue": 38470000
+      "roundPoints": 36,
+      "lineupDate": 1793992442,
+      "lineupCount": true
     },
     {
       "id": 10476218,
       "name": "CucuDaris",
       "points": 334,
       "position": 12,
-      "teamValue": 32080000
+      "roundPoints": 49,
+      "lineupDate": 1793991580,
+      "lineupCount": true
     },
     {
       "id": 10476987,
       "name": "Sors",
       "points": 320,
       "position": 13,
-      "teamValue": 30960000
+      "roundPoints": 43,
+      "lineupDate": 1793862535,
+      "lineupCount": true
     },
     {
       "id": 14250281,
       "name": "Se vende Cuenta",
       "points": 304,
       "position": 14,
-      "teamValue": 26710000
+      "roundPoints": 38,
+      "lineupDate": 1793988825,
+      "lineupCount": true
     },
     {
       "id": 14250371,
       "name": "Sergchenko",
       "points": 285,
       "position": 15,
-      "teamValue": 19410000
+      "roundPoints": 48,
+      "lineupDate": 1793961552,
+      "lineupCount": true
     },
     {
       "id": 13012799,
       "name": "Celta de Viño",
       "points": 266,
       "position": 16,
-      "teamValue": 28010000
+      "roundPoints": 43,
+      "lineupDate": 1793991003,
+      "lineupCount": true
     }
   ],
   "leagueInfo": {
@@ -2154,5 +2186,1328 @@
       "status": "pending",
       "games": []
     }
-  ]
+  ],
+  "rounds": {
+    "4908": {
+      "leagueHttp": 200,
+      "round": {
+        "id": 4908
+      },
+      "standings": [
+        {
+          "id": 10473713,
+          "name": "Vicentine Zidane",
+          "points": 370,
+          "position": 1,
+          "roundPoints": 63,
+          "lineupDate": 1792740209,
+          "lineupCount": true
+        },
+        {
+          "id": 10477021,
+          "name": "Kingsquare",
+          "points": 388,
+          "position": 2,
+          "roundPoints": 59,
+          "lineupDate": 1792780020,
+          "lineupCount": true
+        },
+        {
+          "id": 10477082,
+          "name": "Castriano Ronaldo",
+          "points": 331,
+          "position": 3,
+          "roundPoints": 55,
+          "lineupDate": 1792696241,
+          "lineupCount": true
+        },
+        {
+          "id": 10476492,
+          "name": "Josisi mourinho",
+          "points": 332,
+          "position": 4,
+          "roundPoints": 44,
+          "lineupDate": 1792780553,
+          "lineupCount": true
+        },
+        {
+          "id": 10474235,
+          "name": "Raphontino",
+          "points": 330,
+          "position": 5,
+          "roundPoints": 43,
+          "lineupDate": 1792741549,
+          "lineupCount": true
+        },
+        {
+          "id": 10476303,
+          "name": "Cardonistas",
+          "points": 286,
+          "position": 6,
+          "roundPoints": 56,
+          "lineupDate": 1792649438,
+          "lineupCount": true
+        },
+        {
+          "id": 11801799,
+          "name": "AnceLuni",
+          "points": 313,
+          "position": 7,
+          "roundPoints": 34,
+          "lineupDate": 1792735363,
+          "lineupCount": true
+        },
+        {
+          "id": 10474962,
+          "name": "Danilo Stars",
+          "points": 260,
+          "position": 8,
+          "roundPoints": 46,
+          "lineupDate": 1792736914,
+          "lineupCount": true
+        },
+        {
+          "id": 10473980,
+          "name": "Avaricius Jr.",
+          "points": 263,
+          "position": 9,
+          "roundPoints": 25,
+          "lineupDate": 1792693588,
+          "lineupCount": true
+        },
+        {
+          "id": 11958892,
+          "name": "Puro Llorente",
+          "points": 266,
+          "position": 10,
+          "roundPoints": 30,
+          "lineupDate": 1792695409,
+          "lineupCount": true
+        },
+        {
+          "id": 10476715,
+          "name": "Tano Amunt",
+          "points": 273,
+          "position": 11,
+          "roundPoints": 30,
+          "lineupDate": 1792708253,
+          "lineupCount": true
+        },
+        {
+          "id": 10476218,
+          "name": "CucuDaris",
+          "points": 252,
+          "position": 12,
+          "roundPoints": 27,
+          "lineupDate": 1792746452,
+          "lineupCount": true
+        },
+        {
+          "id": 10476987,
+          "name": "Sors",
+          "points": 245,
+          "position": 13,
+          "roundPoints": 33,
+          "lineupDate": 1792770412,
+          "lineupCount": true
+        },
+        {
+          "id": 14250281,
+          "name": "Se vende Cuenta",
+          "points": 212,
+          "position": 14,
+          "roundPoints": 21,
+          "lineupDate": 1792703746,
+          "lineupCount": true
+        },
+        {
+          "id": 14250371,
+          "name": "Sergchenko",
+          "points": 198,
+          "position": 15,
+          "roundPoints": 30,
+          "lineupDate": 1792739736,
+          "lineupCount": true
+        },
+        {
+          "id": 13012799,
+          "name": "Celta de Viño",
+          "points": 194,
+          "position": 16,
+          "roundPoints": 25,
+          "lineupDate": 1792781748,
+          "lineupCount": true
+        }
+      ],
+      "gamesHttp": 200,
+      "info": {
+        "id": 4908,
+        "name": "Jornada 10",
+        "short": "J10",
+        "status": "finished"
+      },
+      "games": [
+        {
+          "date": 1792782000,
+          "status": "finished",
+          "home": "Alavés",
+          "away": "Málaga",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "date": 1792843200,
+          "status": "finished",
+          "home": "Rayo Vallecano",
+          "away": "Elche",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "date": 1792851300,
+          "status": "finished",
+          "home": "Racing",
+          "away": "Espanyol",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "date": 1792859400,
+          "status": "finished",
+          "home": "Valencia",
+          "away": "Villarreal",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "date": 1792868400,
+          "status": "finished",
+          "home": "Atlético",
+          "away": "Deportivo",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "date": 1792933200,
+          "status": "finished",
+          "home": "Athletic",
+          "away": "Getafe",
+          "homeScore": 4,
+          "awayScore": 0
+        },
+        {
+          "date": 1792941300,
+          "status": "finished",
+          "home": "Celta",
+          "away": "Betis",
+          "homeScore": 0,
+          "awayScore": 0
+        },
+        {
+          "date": 1792949400,
+          "status": "finished",
+          "home": "Real Sociedad",
+          "away": "Levante",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "date": 1792958400,
+          "status": "finished",
+          "home": "Barcelona",
+          "away": "Real Madrid",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "date": 1793044800,
+          "status": "finished",
+          "home": "Sevilla",
+          "away": "Osasuna",
+          "homeScore": 2,
+          "awayScore": 0
+        }
+      ]
+    },
+    "4909": {
+      "leagueHttp": 200,
+      "round": {
+        "id": 4909
+      },
+      "standings": [
+        {
+          "id": 10473713,
+          "name": "Vicentine Zidane",
+          "points": 426,
+          "position": 1,
+          "roundPoints": 56,
+          "lineupDate": 1793302127,
+          "lineupCount": true
+        },
+        {
+          "id": 10477021,
+          "name": "Kingsquare",
+          "points": 421,
+          "position": 2,
+          "roundPoints": 33,
+          "lineupDate": 1793363395,
+          "lineupCount": true
+        },
+        {
+          "id": 10477082,
+          "name": "Castriano Ronaldo",
+          "points": 370,
+          "position": 3,
+          "roundPoints": 39,
+          "lineupDate": 1793388356,
+          "lineupCount": true
+        },
+        {
+          "id": 10476492,
+          "name": "Josisi mourinho",
+          "points": 375,
+          "position": 4,
+          "roundPoints": 43,
+          "lineupDate": 1793348105,
+          "lineupCount": true
+        },
+        {
+          "id": 10474235,
+          "name": "Raphontino",
+          "points": 381,
+          "position": 5,
+          "roundPoints": 51,
+          "lineupDate": 1793373769,
+          "lineupCount": true
+        },
+        {
+          "id": 10476303,
+          "name": "Cardonistas",
+          "points": 343,
+          "position": 6,
+          "roundPoints": 57,
+          "lineupDate": 1793348781,
+          "lineupCount": true
+        },
+        {
+          "id": 11801799,
+          "name": "AnceLuni",
+          "points": 347,
+          "position": 7,
+          "roundPoints": 34,
+          "lineupDate": 1793387192,
+          "lineupCount": true
+        },
+        {
+          "id": 10474962,
+          "name": "Danilo Stars",
+          "points": 308,
+          "position": 8,
+          "roundPoints": 48,
+          "lineupDate": 1793366199,
+          "lineupCount": true
+        },
+        {
+          "id": 10473980,
+          "name": "Avaricius Jr.",
+          "points": 313,
+          "position": 9,
+          "roundPoints": 50,
+          "lineupDate": 1793388389,
+          "lineupCount": true
+        },
+        {
+          "id": 11958892,
+          "name": "Puro Llorente",
+          "points": 304,
+          "position": 10,
+          "roundPoints": 38,
+          "lineupDate": 1793309237,
+          "lineupCount": true
+        },
+        {
+          "id": 10476715,
+          "name": "Tano Amunt",
+          "points": 300,
+          "position": 11,
+          "roundPoints": 27,
+          "lineupDate": 1793363808,
+          "lineupCount": true
+        },
+        {
+          "id": 10476218,
+          "name": "CucuDaris",
+          "points": 285,
+          "position": 12,
+          "roundPoints": 33,
+          "lineupDate": 1793361608,
+          "lineupCount": true
+        },
+        {
+          "id": 10476987,
+          "name": "Sors",
+          "points": 277,
+          "position": 13,
+          "roundPoints": 32,
+          "lineupDate": 1793350937,
+          "lineupCount": true
+        },
+        {
+          "id": 14250281,
+          "name": "Se vende Cuenta",
+          "points": 266,
+          "position": 14,
+          "roundPoints": 54,
+          "lineupDate": 1793377772,
+          "lineupCount": true
+        },
+        {
+          "id": 14250371,
+          "name": "Sergchenko",
+          "points": 237,
+          "position": 15,
+          "roundPoints": 39,
+          "lineupDate": 1793304600,
+          "lineupCount": true
+        },
+        {
+          "id": 13012799,
+          "name": "Celta de Viño",
+          "points": 223,
+          "position": 16,
+          "roundPoints": 29,
+          "lineupDate": 1793376229,
+          "lineupCount": true
+        }
+      ],
+      "gamesHttp": 200,
+      "info": {
+        "id": 4909,
+        "name": "Jornada 11",
+        "short": "J11",
+        "status": "finished"
+      },
+      "games": [
+        {
+          "date": 1793390400,
+          "status": "finished",
+          "home": "Villarreal",
+          "away": "Espanyol",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "date": 1793451600,
+          "status": "finished",
+          "home": "Levante",
+          "away": "Atlético",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "date": 1793459700,
+          "status": "finished",
+          "home": "Rayo Vallecano",
+          "away": "Celta",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "date": 1793467800,
+          "status": "finished",
+          "home": "Betis",
+          "away": "Málaga",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "date": 1793476800,
+          "status": "finished",
+          "home": "Barcelona",
+          "away": "Alavés",
+          "homeScore": 6,
+          "awayScore": 1
+        },
+        {
+          "date": 1793538000,
+          "status": "finished",
+          "home": "Getafe",
+          "away": "Sevilla",
+          "homeScore": 3,
+          "awayScore": 1
+        },
+        {
+          "date": 1793546100,
+          "status": "finished",
+          "home": "Racing",
+          "away": "Real Madrid",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "date": 1793554200,
+          "status": "finished",
+          "home": "Elche",
+          "away": "Valencia",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "date": 1793563200,
+          "status": "finished",
+          "home": "Athletic",
+          "away": "Real Sociedad",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "date": 1793649600,
+          "status": "finished",
+          "home": "Deportivo",
+          "away": "Osasuna",
+          "homeScore": 2,
+          "awayScore": 1
+        }
+      ]
+    },
+    "4910": {
+      "leagueHttp": 200,
+      "leagueShape": {
+        "round": {
+          "id": "number"
+        },
+        "league": {
+          "id": "number",
+          "name": "string",
+          "competition": "string",
+          "mode": "string",
+          "type": "string",
+          "marketMode": "string",
+          "scoreID": "number",
+          "standings": [
+            {
+              "id": "number",
+              "name": "string",
+              "icon": "string",
+              "points": "number",
+              "teamValue": "number",
+              "teamValueInc": "number",
+              "position": "number",
+              "lineup": {
+                "type": "string",
+                "points": "number",
+                "position": "number",
+                "date": "number",
+                "players": [
+                  "number",
+                  "×11"
+                ],
+                "bonuses": {
+                  "bonusPoint": "number",
+                  "bonusIdealLineup": [
+                    "…",
+                    "×2"
+                  ]
+                },
+                "count": "boolean"
+              }
+            },
+            "×16"
+          ],
+          "settings": {
+            "splitRound": "string",
+            "bonusFixed": "number",
+            "bonusPoint": "number",
+            "bonusInverse": "boolean",
+            "bonusIdealLineup": "number",
+            "bonusGameMVP": "number",
+            "bonusRoundPosition": [],
+            "lineupShow": "string",
+            "lineupRoundChanges": "number",
+            "lineupRoundChangesIn": "string",
+            "lineupRoundChangeStrategy": "boolean",
+            "bonusGoal": "number",
+            "bonusWorstLineup": "number",
+            "bonusProfitableLineup": "number",
+            "bonusLeaguePosition": [],
+            "bonusRoundPointsPosition": []
+          }
+        }
+      },
+      "round": {
+        "id": 4910
+      },
+      "standings": [
+        {
+          "id": 10473713,
+          "name": "Vicentine Zidane",
+          "points": 487,
+          "position": 1,
+          "roundPoints": 61,
+          "lineupDate": 1793865791,
+          "lineupCount": true
+        },
+        {
+          "id": 10477021,
+          "name": "Kingsquare",
+          "points": 454,
+          "position": 2,
+          "roundPoints": 33,
+          "lineupDate": 1793993511,
+          "lineupCount": true
+        },
+        {
+          "id": 10477082,
+          "name": "Castriano Ronaldo",
+          "points": 414,
+          "position": 3,
+          "roundPoints": 44,
+          "lineupDate": 1793976707,
+          "lineupCount": true
+        },
+        {
+          "id": 10476492,
+          "name": "Josisi mourinho",
+          "points": 411,
+          "position": 4,
+          "roundPoints": 36,
+          "lineupDate": 1793774212,
+          "lineupCount": true
+        },
+        {
+          "id": 10474235,
+          "name": "Raphontino",
+          "points": 398,
+          "position": 5,
+          "roundPoints": 17,
+          "lineupDate": 1793970294,
+          "lineupCount": true
+        },
+        {
+          "id": 10476303,
+          "name": "Cardonistas",
+          "points": 396,
+          "position": 6,
+          "roundPoints": 53,
+          "lineupDate": 1793948979,
+          "lineupCount": true
+        },
+        {
+          "id": 11801799,
+          "name": "AnceLuni",
+          "points": 387,
+          "position": 7,
+          "roundPoints": 40,
+          "lineupDate": 1793972653,
+          "lineupCount": true
+        },
+        {
+          "id": 10474962,
+          "name": "Danilo Stars",
+          "points": 373,
+          "position": 8,
+          "roundPoints": 65,
+          "lineupDate": 1793956833,
+          "lineupCount": true
+        },
+        {
+          "id": 10473980,
+          "name": "Avaricius Jr.",
+          "points": 360,
+          "position": 9,
+          "roundPoints": 47,
+          "lineupDate": 1793885857,
+          "lineupCount": true
+        },
+        {
+          "id": 11958892,
+          "name": "Puro Llorente",
+          "points": 343,
+          "position": 10,
+          "roundPoints": 39,
+          "lineupDate": 1793956714,
+          "lineupCount": true
+        },
+        {
+          "id": 10476715,
+          "name": "Tano Amunt",
+          "points": 336,
+          "position": 11,
+          "roundPoints": 36,
+          "lineupDate": 1793992442,
+          "lineupCount": true
+        },
+        {
+          "id": 10476218,
+          "name": "CucuDaris",
+          "points": 334,
+          "position": 12,
+          "roundPoints": 49,
+          "lineupDate": 1793991580,
+          "lineupCount": true
+        },
+        {
+          "id": 10476987,
+          "name": "Sors",
+          "points": 320,
+          "position": 13,
+          "roundPoints": 43,
+          "lineupDate": 1793862535,
+          "lineupCount": true
+        },
+        {
+          "id": 14250281,
+          "name": "Se vende Cuenta",
+          "points": 304,
+          "position": 14,
+          "roundPoints": 38,
+          "lineupDate": 1793988825,
+          "lineupCount": true
+        },
+        {
+          "id": 14250371,
+          "name": "Sergchenko",
+          "points": 285,
+          "position": 15,
+          "roundPoints": 48,
+          "lineupDate": 1793961552,
+          "lineupCount": true
+        },
+        {
+          "id": 13012799,
+          "name": "Celta de Viño",
+          "points": 266,
+          "position": 16,
+          "roundPoints": 43,
+          "lineupDate": 1793991003,
+          "lineupCount": true
+        }
+      ],
+      "gamesHttp": 200,
+      "info": {
+        "id": 4910,
+        "name": "Jornada 12",
+        "short": "J12",
+        "status": "finished"
+      },
+      "games": [
+        {
+          "date": 1793995200,
+          "status": "finished",
+          "home": "Sevilla",
+          "away": "Alavés",
+          "homeScore": 0,
+          "awayScore": 0
+        },
+        {
+          "date": 1794056400,
+          "status": "finished",
+          "home": "Málaga",
+          "away": "Racing",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "date": 1794064500,
+          "status": "finished",
+          "home": "Espanyol",
+          "away": "Deportivo",
+          "homeScore": 0,
+          "awayScore": 0
+        },
+        {
+          "date": 1794072600,
+          "status": "finished",
+          "home": "Osasuna",
+          "away": "Athletic",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "date": 1794081600,
+          "status": "finished",
+          "home": "Valencia",
+          "away": "Real Madrid",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "date": 1794142800,
+          "status": "finished",
+          "home": "Elche",
+          "away": "Betis",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "date": 1794150900,
+          "status": "finished",
+          "home": "Real Sociedad",
+          "away": "Rayo Vallecano",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "date": 1794159000,
+          "status": "finished",
+          "home": "Celta",
+          "away": "Levante",
+          "homeScore": 0,
+          "awayScore": 0
+        },
+        {
+          "date": 1794159000,
+          "status": "finished",
+          "home": "Villarreal",
+          "away": "Getafe",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "date": 1794168000,
+          "status": "finished",
+          "home": "Atlético",
+          "away": "Barcelona",
+          "homeScore": 1,
+          "awayScore": 2
+        }
+      ]
+    },
+    "4911": {
+      "leagueHttp": 200,
+      "round": {
+        "id": 4911
+      },
+      "standings": [
+        {
+          "id": 10473713,
+          "name": "Vicentine Zidane",
+          "points": 487,
+          "position": 1
+        },
+        {
+          "id": 10477021,
+          "name": "Kingsquare",
+          "points": 454,
+          "position": 2
+        },
+        {
+          "id": 10477082,
+          "name": "Castriano Ronaldo",
+          "points": 414,
+          "position": 3
+        },
+        {
+          "id": 10476492,
+          "name": "Josisi mourinho",
+          "points": 411,
+          "position": 4
+        },
+        {
+          "id": 10474235,
+          "name": "Raphontino",
+          "points": 398,
+          "position": 5
+        },
+        {
+          "id": 10476303,
+          "name": "Cardonistas",
+          "points": 396,
+          "position": 6
+        },
+        {
+          "id": 11801799,
+          "name": "AnceLuni",
+          "points": 387,
+          "position": 7
+        },
+        {
+          "id": 10474962,
+          "name": "Danilo Stars",
+          "points": 373,
+          "position": 8
+        },
+        {
+          "id": 10473980,
+          "name": "Avaricius Jr.",
+          "points": 360,
+          "position": 9
+        },
+        {
+          "id": 11958892,
+          "name": "Puro Llorente",
+          "points": 343,
+          "position": 10
+        },
+        {
+          "id": 10476715,
+          "name": "Tano Amunt",
+          "points": 336,
+          "position": 11
+        },
+        {
+          "id": 10476218,
+          "name": "CucuDaris",
+          "points": 334,
+          "position": 12
+        },
+        {
+          "id": 10476987,
+          "name": "Sors",
+          "points": 320,
+          "position": 13
+        },
+        {
+          "id": 14250281,
+          "name": "Se vende Cuenta",
+          "points": 304,
+          "position": 14
+        },
+        {
+          "id": 14250371,
+          "name": "Sergchenko",
+          "points": 285,
+          "position": 15
+        },
+        {
+          "id": 13012799,
+          "name": "Celta de Viño",
+          "points": 266,
+          "position": 16
+        }
+      ],
+      "gamesHttp": 200,
+      "gamesShape": {
+        "id": "number",
+        "name": "string",
+        "short": "string",
+        "competition": {
+          "id": "number",
+          "slug": "string",
+          "standings": [
+            {
+              "name": "string",
+              "teams": [
+                {
+                  "position": "number",
+                  "team": {
+                    "id": "…",
+                    "name": "…",
+                    "slug": "…"
+                  },
+                  "points": "number",
+                  "won": "number",
+                  "lost": "number",
+                  "tied": "number",
+                  "scored": "number",
+                  "against": "number"
+                },
+                "×20"
+              ]
+            },
+            "×1"
+          ]
+        },
+        "status": "string",
+        "scoreID": "number",
+        "games": [
+          {
+            "id": "number",
+            "date": "number",
+            "status": "string",
+            "home": {
+              "id": "number",
+              "name": "string",
+              "slug": "string",
+              "score": "object",
+              "reports": []
+            },
+            "away": {
+              "id": "number",
+              "name": "string",
+              "slug": "string",
+              "score": "object",
+              "reports": []
+            },
+            "preview": "object",
+            "summary": "object",
+            "location": "string"
+          },
+          "×10"
+        ],
+        "season": {
+          "id": "string",
+          "name": "string",
+          "slug": "string",
+          "rounds": [
+            {
+              "id": "number",
+              "name": "string",
+              "short": "string",
+              "status": "string"
+            },
+            "×43"
+          ]
+        },
+        "next": {
+          "id": "number",
+          "name": "string",
+          "games": [
+            {
+              "id": "number",
+              "date": "number",
+              "status": "string",
+              "home": {
+                "id": "number",
+                "name": "string",
+                "slug": "string",
+                "score": "object",
+                "difficulty": {
+                  "rating": "number",
+                  "standings": [
+                    "…",
+                    "×2"
+                  ],
+                  "homeAway": [
+                    "…",
+                    "×2"
+                  ],
+                  "form": [
+                    "…",
+                    "×2"
+                  ],
+                  "goalDiff": [
+                    "…",
+                    "×2"
+                  ]
+                },
+                "record": {
+                  "won": "number",
+                  "lost": "number",
+                  "tied": "number"
+                }
+              },
+              "away": {
+                "id": "number",
+                "name": "string",
+                "slug": "string",
+                "score": "object",
+                "difficulty": {
+                  "rating": "number",
+                  "standings": [
+                    "…",
+                    "×2"
+                  ],
+                  "homeAway": [
+                    "…",
+                    "×2"
+                  ],
+                  "form": [
+                    "…",
+                    "×2"
+                  ],
+                  "goalDiff": [
+                    "…",
+                    "×2"
+                  ]
+                },
+                "record": {
+                  "won": "number",
+                  "lost": "number",
+                  "tied": "number"
+                }
+              },
+              "location": "string"
+            },
+            "×10"
+          ]
+        },
+        "news": [],
+        "sponsor": {
+          "ad": "string"
+        }
+      },
+      "info": {
+        "id": 4911,
+        "name": "Jornada 13",
+        "short": "J13",
+        "status": "pending"
+      },
+      "games": [
+        {
+          "date": 1795204800,
+          "status": "pending",
+          "home": "Athletic",
+          "away": "Espanyol",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795266000,
+          "status": "pending",
+          "home": "Alavés",
+          "away": "Deportivo",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795274100,
+          "status": "pending",
+          "home": "Rayo Vallecano",
+          "away": "Valencia",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795282200,
+          "status": "pending",
+          "home": "Sevilla",
+          "away": "Betis",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795291200,
+          "status": "pending",
+          "home": "Real Madrid",
+          "away": "Celta",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795352400,
+          "status": "pending",
+          "home": "Barcelona",
+          "away": "Villarreal",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795360500,
+          "status": "pending",
+          "home": "Racing",
+          "away": "Real Sociedad",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795368600,
+          "status": "pending",
+          "home": "Osasuna",
+          "away": "Málaga",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795377600,
+          "status": "pending",
+          "home": "Getafe",
+          "away": "Atlético",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795464000,
+          "status": "pending",
+          "home": "Levante",
+          "away": "Elche",
+          "homeScore": null,
+          "awayScore": null
+        }
+      ]
+    },
+    "4912": {
+      "leagueHttp": 200,
+      "round": {
+        "id": 4912
+      },
+      "standings": [
+        {
+          "id": 10473713,
+          "name": "Vicentine Zidane",
+          "points": 487,
+          "position": 1
+        },
+        {
+          "id": 10477021,
+          "name": "Kingsquare",
+          "points": 454,
+          "position": 2
+        },
+        {
+          "id": 10477082,
+          "name": "Castriano Ronaldo",
+          "points": 414,
+          "position": 3
+        },
+        {
+          "id": 10476492,
+          "name": "Josisi mourinho",
+          "points": 411,
+          "position": 4
+        },
+        {
+          "id": 10474235,
+          "name": "Raphontino",
+          "points": 398,
+          "position": 5
+        },
+        {
+          "id": 10476303,
+          "name": "Cardonistas",
+          "points": 396,
+          "position": 6
+        },
+        {
+          "id": 11801799,
+          "name": "AnceLuni",
+          "points": 387,
+          "position": 7
+        },
+        {
+          "id": 10474962,
+          "name": "Danilo Stars",
+          "points": 373,
+          "position": 8
+        },
+        {
+          "id": 10473980,
+          "name": "Avaricius Jr.",
+          "points": 360,
+          "position": 9
+        },
+        {
+          "id": 11958892,
+          "name": "Puro Llorente",
+          "points": 343,
+          "position": 10
+        },
+        {
+          "id": 10476715,
+          "name": "Tano Amunt",
+          "points": 336,
+          "position": 11
+        },
+        {
+          "id": 10476218,
+          "name": "CucuDaris",
+          "points": 334,
+          "position": 12
+        },
+        {
+          "id": 10476987,
+          "name": "Sors",
+          "points": 320,
+          "position": 13
+        },
+        {
+          "id": 14250281,
+          "name": "Se vende Cuenta",
+          "points": 304,
+          "position": 14
+        },
+        {
+          "id": 14250371,
+          "name": "Sergchenko",
+          "points": 285,
+          "position": 15
+        },
+        {
+          "id": 13012799,
+          "name": "Celta de Viño",
+          "points": 266,
+          "position": 16
+        }
+      ],
+      "gamesHttp": 200,
+      "info": {
+        "id": 4912,
+        "name": "Jornada 14",
+        "short": "J14",
+        "status": "pending"
+      },
+      "games": [
+        {
+          "date": 1795809600,
+          "status": "pending",
+          "home": "Levante",
+          "away": "Racing",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795870800,
+          "status": "pending",
+          "home": "Betis",
+          "away": "Rayo Vallecano",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795878900,
+          "status": "pending",
+          "home": "Málaga",
+          "away": "Athletic",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795887000,
+          "status": "pending",
+          "home": "Elche",
+          "away": "Atlético",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795896000,
+          "status": "pending",
+          "home": "Real Madrid",
+          "away": "Alavés",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795957200,
+          "status": "pending",
+          "home": "Valencia",
+          "away": "Osasuna",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795965300,
+          "status": "pending",
+          "home": "Deportivo",
+          "away": "Barcelona",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795973400,
+          "status": "pending",
+          "home": "Celta",
+          "away": "Villarreal",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1795982400,
+          "status": "pending",
+          "home": "Real Sociedad",
+          "away": "Sevilla",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "date": 1796068800,
+          "status": "pending",
+          "home": "Espanyol",
+          "away": "Getafe",
+          "homeScore": null,
+          "awayScore": null
+        }
+      ]
+    }
+  }
 }
