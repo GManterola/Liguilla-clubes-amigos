@@ -38,7 +38,8 @@ function shape(v, depth = 0) {
 }
 
 const pick = (o, keys) => o ? Object.fromEntries(keys.filter(k => o[k] !== undefined).map(k => [k, o[k]])) : null;
-const teamRow = s => pick(s, ['id', 'name', 'points', 'position', 'teamValue', 'roundPoints', 'lastPoints']);
+const teamRow = s => ({ ...pick(s, ['id', 'name', 'points', 'position']),
+  ...(s.lineup ? { roundPoints: s.lineup.points, lineupDate: s.lineup.date, lineupCount: s.lineup.count } : {}) });
 
 (async () => {
   const out = { fetchedAt: new Date().toISOString(), league: LEAGUE, calls: {} };
@@ -74,6 +75,26 @@ const teamRow = s => pick(s, ['id', 'name', 'points', 'position', 'teamValue', '
         home: g.home?.name || g.home?.team?.name, away: g.away?.name || g.away?.team?.name,
         homeScore: g.home?.score, awayScore: g.away?.score })),
     }));
+  }
+
+  // 4. Puntos de la liga en rondas concretas (las últimas disputadas) y fechas de partidos
+  const ids = (out.calendar || []).map(r => r.id);
+  const curIdx = out.round ? ids.indexOf(out.round.id) : -1;
+  const near = curIdx >= 0 ? ids.slice(Math.max(0, curIdx - 2), curIdx + 3) : [];
+  out.rounds = {};
+  for (const id of near) {
+    const rl = await get('biwenger.as.com', `/api/v2/rounds/league/${id}`);
+    const rd = await get('cf.biwenger.com', `/api/v2/rounds/la-liga/${id}?lang=es&score=5`, false);
+    const dl = rl.json?.data, dd = rd.json?.data;
+    out.rounds[id] = {
+      leagueHttp: rl.http, leagueShape: id === out.round?.id ? shape(dl) : undefined,
+      round: pick(dl?.round, ['id', 'name', 'short', 'status', 'start', 'end']),
+      standings: (dl?.league?.standings || []).map(teamRow),
+      gamesHttp: rd.http, gamesShape: id === ids[curIdx + 1] ? shape(dd) : undefined,
+      info: pick(dd, ['id', 'name', 'short', 'status', 'start', 'end']),
+      games: (dd?.games || []).map(g => ({ date: g.date, status: g.status,
+        home: g.home?.name, away: g.away?.name, homeScore: g.home?.score, awayScore: g.away?.score })),
+    };
   }
 
   const dir = path.resolve(__dirname, '../data/biwenger');
