@@ -2,10 +2,10 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Liga Clubes Amigos 26-27</title>
 <meta name="description" content="Clasificación, resultados, pagos y crónicas de la Liga Clubes Amigos, temporada 2026-27.">
-<meta name="theme-color" content="#0a0a0f">
+<meta name="theme-color" content="#09090d">
 
 <!-- Vista previa al compartir (WhatsApp, Telegram, redes) -->
 <meta property="og:type" content="website">
@@ -38,1758 +38,800 @@
     document.head.appendChild(vaScript);
   }
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+/* Layout: app de liga — cabecera de jornada, contenido en tarjetas por rol, barra inferior en móvil / pestañas arriba en escritorio.
+   Cada paleta es un "look" único (no sigue el tema del sistema): fija fondo y todos los colores. */
 :root {
-  --bg:       #0a0a0f;
-  --surface:  #111118;
-  --card:     #18181f;
-  --border:   rgba(255,255,255,0.07);
-  --border-hi:rgba(255,255,255,0.14);
-  --gold:     #f5c842;
-  --gold-dim: rgba(245,200,66,0.12);
-  --gold-glow:rgba(245,200,66,0.25);
-  --white:    #f0f0f5;
-  --muted:    #6b6b80;
-  --green:    #22c55e;
-  --red:      #ef4444;
-  --amber:    #f59e0b;
-  --nav-h:    64px;
-  --radius:   12px;
-  --radius-sm:8px;
-}
-
-*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
-
-html { scroll-behavior:smooth; }
-
-body {
-  background:var(--bg);
-  color:var(--white);
-  font-family:'Inter', sans-serif;
-  min-height:100vh;
-  padding-bottom:calc(var(--nav-h) + 16px);
-  -webkit-font-smoothing:antialiased;
-}
-
-/* ── HEADER ── */
-.app-header {
-  position:sticky; top:0; z-index:50;
-  background:rgba(10,10,15,0.85);
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border);
-  padding:0 20px;
-  height:56px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.header-brand {
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-.header-logo {
-  width:32px; height:32px;
-  background:var(--gold);
-  border-radius:8px;
-  display:flex; align-items:center; justify-content:center;
-  font-size:16px;
-  flex-shrink:0;
-}
-
-.header-title {
-  font-family:'Bebas Neue', sans-serif;
-  font-size:1.3rem;
-  letter-spacing:2px;
-  color:var(--white);
-  line-height:1;
-}
-
-.header-season {
-  font-size:0.7rem;
-  color:var(--muted);
-  letter-spacing:1px;
-  text-transform:uppercase;
-  font-weight:500;
-}
-
-.header-badge {
-  background:var(--gold-dim);
-  border:1px solid var(--gold-glow);
-  color:var(--gold);
-  font-size:0.68rem;
-  font-weight:600;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-  padding:4px 10px;
-  border-radius:20px;
-}
-
-/* ── BOTTOM NAV ── */
-.bottom-nav {
-  position:fixed; bottom:0; left:0; right:0;
-  height:var(--nav-h);
-  background:rgba(17,17,24,0.95);
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
-  border-top:1px solid var(--border);
-  display:flex;
-  align-items:stretch;
-  z-index:100;
-  padding-bottom:env(safe-area-inset-bottom, 0px);
-}
-
-.nav-item {
-  flex:1;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:3px;
-  cursor:pointer;
-  border:none;
-  background:transparent;
-  color:var(--muted);
-  transition:color 0.2s;
-  padding:8px 4px;
-  -webkit-tap-highlight-color:transparent;
-}
-
-.nav-item.active { color:var(--gold); }
-.nav-item:hover:not(.active) { color:rgba(240,240,245,0.6); }
-
-.nav-icon { font-size:1.3rem; line-height:1; }
-.nav-label { font-size:0.6rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; }
-
-/* ── SECTIONS ── */
-.section {
-  display:none;
-  max-width:900px;
-  margin:0 auto;
-  padding:20px 16px 12px;
-  animation:fadeIn 0.2s ease;
-}
-.section.active { display:block; }
-
-@keyframes fadeIn { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:none} }
-
-.section-header {
-  margin-bottom:20px;
-}
-
-.section-title {
-  font-family:'Bebas Neue', sans-serif;
-  font-size:1.8rem;
-  letter-spacing:3px;
-  color:var(--white);
-  line-height:1;
-}
-
-.section-sub {
-  font-size:0.72rem;
-  color:var(--muted);
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-  margin-top:4px;
-  font-weight:500;
-}
-
-/* ── CARDS ── */
-.card {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  overflow:hidden;
-}
-
-.card-header {
-  padding:14px 16px;
-  border-bottom:1px solid var(--border);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.card-title {
-  font-size:0.72rem;
-  font-weight:600;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:var(--muted);
-}
-
-/* ── STANDINGS TABLE ── */
-.standings-table {
-  width:100%;
-  border-collapse:collapse;
-}
-
-.standings-table th {
-  padding:10px 12px;
-  font-size:0.65rem;
-  font-weight:600;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-  color:var(--muted);
-  text-align:center;
-  border-bottom:1px solid var(--border);
-}
-
-.standings-table th:nth-child(2) { text-align:left; }
-
-.standings-table tr.team-row {
-  border-bottom:1px solid var(--border);
-  transition:background 0.15s;
-  cursor:default;
-}
-
-.standings-table tr.team-row:last-child { border-bottom:none; }
-.standings-table tr.team-row:hover { background:rgba(255,255,255,0.03); }
-
-.standings-table td {
-  padding:11px 12px;
-  text-align:center;
-  font-size:0.88rem;
-  color:rgba(240,240,245,0.7);
-}
-
-td.t-pos {
-  font-family:'Bebas Neue', sans-serif;
-  font-size:1rem;
-  color:var(--muted);
-  width:36px;
-}
-
-td.t-name {
-  text-align:left;
-  font-weight:600;
-  font-size:0.9rem;
-  color:var(--white);
-  min-width:120px;
-}
-
-td.t-pts {
-  font-family:'Bebas Neue', sans-serif;
-  font-size:1.2rem;
-  color:var(--gold);
-  font-weight:700;
-}
-
-td.t-jor {
-  font-weight:600;
-  color:rgba(240,240,245,0.5);
-}
-
-/* Zone markers */
-.zone-dot {
-  display:inline-block;
-  width:4px; height:4px;
-  border-radius:50%;
-  margin-left:6px;
-  vertical-align:middle;
-  flex-shrink:0;
-}
-
-tr.z-top    td.t-pos { color:var(--green); }
-tr.z-mid    td.t-pos { color:var(--muted); }
-tr.z-top    { border-left:2px solid var(--green); }
-tr.z-mid    { border-left:2px solid transparent; }
-tr.z-bottom { border-left:2px solid transparent; }
-
-.hide-mobile { }
-
-/* Zone legend */
-.zone-legend {
-  display:flex;
-  gap:16px;
-  margin-top:12px;
-  flex-wrap:wrap;
-}
-
-.zone-legend-item {
-  display:flex;
-  align-items:center;
-  gap:6px;
-  font-size:0.7rem;
-  color:var(--muted);
-  font-weight:500;
-  letter-spacing:0.5px;
-}
-
-.zl-dot {
-  width:8px; height:8px;
-  border-radius:2px;
-}
-
-/* ── ROUNDS ── */
-.rounds-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
-  gap:12px;
-}
-
-.round-card {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  overflow:hidden;
-}
-
-.round-card-header {
-  padding:10px 14px;
-  background:rgba(255,255,255,0.03);
-  border-bottom:1px solid var(--border);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.round-card-title {
-  font-family:'Bebas Neue', sans-serif;
-  font-size:0.95rem;
-  letter-spacing:2px;
-  color:var(--gold);
-}
-
-.round-card-meta {
-  font-size:0.65rem;
-  color:var(--muted);
-  letter-spacing:1px;
-  font-weight:500;
-}
-
-.match-row {
-  display:grid;
-  grid-template-columns:1fr auto 1fr;
-  align-items:center;
-  padding:8px 14px;
-  gap:8px;
-  border-bottom:1px solid var(--border);
-  font-size:0.82rem;
-}
-
-.match-row:last-child { border-bottom:none; }
-
-.match-home {
-  text-align:right;
-  font-weight:500;
-  color:rgba(240,240,245,0.6);
-  font-size:0.82rem;
-  line-height:1.2;
-}
-
-.match-away {
-  text-align:left;
-  font-weight:500;
-  color:rgba(240,240,245,0.6);
-  font-size:0.82rem;
-  line-height:1.2;
-}
-
-.match-home.w, .match-away.w {
-  color:var(--gold);
-  font-weight:700;
-}
-
-.match-score {
-  background:rgba(255,255,255,0.06);
-  border:1px solid var(--border);
-  border-radius:6px;
-  padding:3px 8px;
-  font-family:'Bebas Neue', sans-serif;
-  font-size:0.9rem;
-  color:var(--white);
-  white-space:nowrap;
-  letter-spacing:1px;
-  text-align:center;
-  min-width:56px;
-}
-
-.partial-pending-banner {
-  margin: 0 0 10px 0;
-  padding: 8px 12px;
-  background: rgba(245,159,11,0.10);
-  border: 1px solid rgba(245,159,11,0.35);
-  border-radius: var(--radius-sm);
-  color: #f59e0b;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-}
-
-.pending-chip {
-  background:rgba(107,107,128,0.15);
-  border:1px solid var(--border);
-  color:var(--muted);
-  font-size:0.65rem;
-  font-weight:600;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  padding:2px 8px;
-  border-radius:4px;
-}
-
-/* ── NEXT JORNADA ── */
-.next-card {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  overflow:hidden;
-  max-width:520px;
-}
-
-.next-match {
-  display:grid;
-  grid-template-columns:1fr 48px 1fr;
-  align-items:center;
-  padding:11px 16px;
-  border-bottom:1px solid var(--border);
-  gap:8px;
-}
-
-.next-match:last-child { border-bottom:none; }
-
-.next-team-name {
-  font-size:0.88rem;
-  font-weight:500;
-  color:var(--white);
-}
-
-.next-team-name.right { text-align:right; }
-
-.next-vs {
-  text-align:center;
-  font-size:0.65rem;
-  font-weight:700;
-  letter-spacing:1px;
-  color:var(--muted);
-  text-transform:uppercase;
-}
-
-/* ── PLAYOFFS BRACKET ── */
-.bracket-scroll {
-  overflow-x:auto;
-  -webkit-overflow-scrolling:touch;
-  padding-bottom:8px;
-  scrollbar-width:thin;
-  scrollbar-color:var(--border) transparent;
-}
-
-.bracket-scroll::-webkit-scrollbar { height:3px; }
-.bracket-scroll::-webkit-scrollbar-thumb { background:var(--border-hi); border-radius:2px; }
-
-.bracket-inner {
-  display:flex;
-  gap:8px;
-  min-width:960px;
-  align-items:stretch;
-  padding:4px 2px;
-}
-
-.bracket-col {
-  flex:1;
-  display:flex;
-  flex-direction:column;
-}
-
-.bracket-col-title {
-  font-size:0.65rem;
-  font-weight:700;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:var(--gold);
-  text-align:center;
-  padding:8px;
-  margin-bottom:8px;
-}
-
-.bracket-col-matches {
-  display:flex;
-  flex-direction:column;
-  justify-content:space-around;
-  flex:1;
-  gap:8px;
-}
-
-.b-match {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius-sm);
-  overflow:hidden;
-}
-
-.b-match.pending {
-  opacity:0.5;
-  border-style:dashed;
-}
-
-.b-match-label {
-  font-size:0.6rem;
-  letter-spacing:1px;
-  color:var(--muted);
-  text-transform:uppercase;
-  padding:4px 10px;
-  background:rgba(255,255,255,0.03);
-  border-bottom:1px solid var(--border);
-}
-
-.b-team {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:7px 10px;
-  font-size:0.8rem;
-  font-weight:500;
-  color:rgba(240,240,245,0.6);
-  border-bottom:1px solid var(--border);
-  gap:6px;
-}
-
-.b-team:last-child { border-bottom:none; }
-.b-team.winner { color:var(--gold); background:rgba(245,200,66,0.05); font-weight:600; }
-.b-team.loser { opacity:0.35; text-decoration:line-through; }
-
-.b-score {
-  font-family:'Bebas Neue', sans-serif;
-  font-size:1rem;
-  background:rgba(255,255,255,0.07);
-  border-radius:4px;
-  padding:1px 6px;
-  min-width:28px;
-  text-align:center;
-  flex-shrink:0;
-}
-
-.b-team.winner .b-score { color:var(--gold); }
-
-.b-tbd {
-  display:flex;
-  align-items:center;
-  padding:8px 10px;
-  font-size:0.75rem;
-  color:rgba(107,107,128,0.5);
-  letter-spacing:0.5px;
-  border-bottom:1px solid var(--border);
-}
-
-.b-tbd:last-child { border-bottom:none; }
-
-.champion-col { flex:0.65; }
-
-.champion-card {
-  background:linear-gradient(135deg, rgba(245,200,66,0.1), rgba(245,200,66,0.04));
-  border:1px solid rgba(245,200,66,0.3);
-  border-radius:var(--radius);
-  padding:24px 16px;
-  text-align:center;
-  margin:auto 0;
-  flex:1;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-}
-
-.champion-trophy { font-size:2.2rem; margin-bottom:10px; }
-.champion-name { font-family:'Bebas Neue', sans-serif; font-size:1.5rem; letter-spacing:2px; color:var(--gold); }
-.champion-tbd { font-family:'Bebas Neue', sans-serif; font-size:1.2rem; letter-spacing:2px; color:rgba(245,200,66,0.3); }
-.champion-label { font-size:0.65rem; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-top:6px; }
-
-/* ── CRÓNICA ── */
-.cronica-main {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  overflow:hidden;
-  margin-bottom:16px;
-}
-
-.cronica-main-header {
-  padding:14px 18px;
-  border-bottom:1px solid var(--border);
-  background:rgba(245,200,66,0.05);
-}
-
-.cronica-main-title {
-  font-size:0.65rem;
-  font-weight:700;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:var(--gold);
-}
-
-.cronica-main-body {
-  padding:18px;
-  font-size:0.9rem;
-  line-height:1.75;
-  color:rgba(240,240,245,0.8);
-}
-
-.cronica-main-body p { margin-bottom:12px; }
-.cronica-main-body p:last-child { margin-bottom:0; }
-
-.archive-title {
-  font-size:0.65rem;
-  font-weight:700;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:var(--muted);
-  margin-bottom:10px;
-  margin-top:24px;
-}
-
-.cronica-item {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius-sm);
-  margin-bottom:8px;
-  overflow:hidden;
-}
-
-.cronica-item-header {
-  padding:12px 14px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  cursor:pointer;
-  user-select:none;
-  transition:background 0.15s;
-}
-
-.cronica-item-header:hover { background:rgba(255,255,255,0.03); }
-
-.cronica-item-label {
-  font-size:0.8rem;
-  font-weight:600;
-  color:rgba(240,240,245,0.7);
-}
-
-.cronica-item-toggle {
-  font-size:0.7rem;
-  color:var(--muted);
-  transition:transform 0.2s;
-}
-
-.cronica-item.open .cronica-item-toggle { transform:rotate(180deg); }
-
-.cronica-item-body {
-  display:none;
-  padding:14px 14px 16px;
-  font-size:0.85rem;
-  line-height:1.7;
-  color:rgba(240,240,245,0.7);
-  border-top:1px solid var(--border);
-}
-
-.cronica-item-body p { margin-bottom:10px; }
-.cronica-item-body p:last-child { margin-bottom:0; }
-.cronica-item.open .cronica-item-body { display:block; }
-
-/* ── PAGOS ── */
-.pagos-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  margin-bottom:16px;
-}
-
-.payers-card {
-  background:var(--card);
-  border:1px solid rgba(239,68,68,0.25);
-  border-radius:var(--radius);
-  overflow:hidden;
-}
-
-.payers-header {
-  padding:12px 14px;
-  border-bottom:1px solid var(--border);
-  font-size:0.65rem;
-  font-weight:700;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:#ef4444;
-}
-
-.payer-row {
-  display:flex;
-  align-items:center;
-  padding:10px 14px;
-  border-bottom:1px solid var(--border);
-  gap:10px;
-}
-
-.payer-row:last-child { border-bottom:none; }
-
-.payer-pos {
-  font-family:'Bebas Neue', sans-serif;
-  font-size:1rem;
-  color:var(--muted);
-  width:28px;
-  flex-shrink:0;
-}
-
-.payer-name {
-  font-size:0.88rem;
-  font-weight:500;
-  color:var(--white);
-  flex:1;
-}
-
-.payer-amount {
-  font-family:'Bebas Neue', sans-serif;
-  font-size:1.1rem;
-  color:#ef4444;
-}
-
-.balance-card {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  overflow:hidden;
-}
-
-.balance-table {
-  width:100%;
-  border-collapse:collapse;
-  font-size:0.85rem;
-}
-
-.balance-table th {
-  padding:10px 12px;
-  font-size:0.65rem;
-  font-weight:600;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-  color:var(--muted);
-  text-align:left;
-  border-bottom:1px solid var(--border);
-}
-
-.balance-table th:last-child { text-align:right; }
-
-.balance-table td {
-  padding:9px 12px;
-  color:rgba(240,240,245,0.7);
-  border-bottom:1px solid var(--border);
-  font-size:0.85rem;
-}
-
-.balance-table td:first-child { font-weight:500; color:var(--white); }
-.balance-table td:last-child { text-align:right; color:var(--gold); font-weight:600; }
-.balance-table tr:last-child td { border-bottom:none; }
-.balance-table tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
-
-.pagos-history-title {
-  font-size:0.65rem;
-  font-weight:700;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:var(--muted);
-  margin-bottom:10px;
-  margin-top:20px;
-}
-
-.history-scroll { overflow-x:auto; }
-
-.history-tbl {
-  width:100%;
-  border-collapse:collapse;
-  font-size:0.78rem;
-  min-width:900px;
-}
-
-.history-tbl th {
-  padding:8px 10px;
-  background:rgba(255,255,255,0.04);
-  color:var(--muted);
-  font-size:0.62rem;
-  letter-spacing:1px;
-  font-weight:600;
-  text-transform:uppercase;
-  text-align:center;
-  border-bottom:1px solid var(--border);
-  white-space:nowrap;
-}
-
-.history-tbl th:first-child { text-align:left; }
-
-.history-tbl td {
-  padding:7px 10px;
-  text-align:center;
-  color:rgba(240,240,245,0.4);
-  border-bottom:1px solid var(--border);
-}
-
-.history-tbl td:first-child { text-align:left; color:var(--muted); }
-.history-tbl tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
-.history-tbl td.hv { color:var(--gold); font-weight:600; }
-
-.history-tbl tr.total-row td {
-  background:rgba(245,200,66,0.06);
-  border-top:1px solid rgba(245,200,66,0.2);
-  color:var(--gold);
-  font-weight:700;
-}
-
-/* ── STATS ── */
-.highlight-grid {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:10px;
-  margin-bottom:20px;
-}
-
-.hl-card {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:16px 12px;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-}
-
-.hl-card::after {
-  content:'';
-  position:absolute;
-  top:0; left:0; right:0;
-  height:2px;
-}
-
-.hl-card.gold::after { background:var(--gold); }
-.hl-card.green::after { background:var(--green); }
-.hl-card.red::after { background:var(--red); }
-.hl-card.blue::after { background:#60b8ff; }
-
-.hl-icon { font-size:1.4rem; margin-bottom:8px; display:block; }
-.hl-label { font-size:0.62rem; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-bottom:8px; display:block; }
-.hl-name { font-size:0.82rem; font-weight:600; color:var(--white); display:block; margin-bottom:4px; line-height:1.2; }
-.hl-value { font-family:'Bebas Neue', sans-serif; font-size:1.8rem; line-height:1; display:block; }
-.hl-card.gold .hl-value { color:var(--gold); }
-.hl-card.green .hl-value { color:var(--green); }
-.hl-card.red .hl-value { color:var(--red); }
-.hl-card.blue .hl-value { color:#60b8ff; }
-.hl-sub { font-size:0.7rem; color:var(--muted); margin-top:3px; display:block; }
-
-.stats-select-wrap { margin-bottom:16px; }
-
-.stats-select {
-  background:var(--card);
-  border:1px solid var(--border-hi);
-  border-radius:var(--radius-sm);
-  color:var(--white);
-  font-family:'Inter', sans-serif;
-  font-size:0.88rem;
-  padding:10px 36px 10px 14px;
-  cursor:pointer;
-  outline:none;
-  min-width:220px;
-  appearance:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%236b6b80' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;
-  background-position:right 12px center;
-  background-color:var(--card);
-  transition:border-color 0.2s;
-}
-
-.stats-select:focus { border-color:var(--gold); }
-
-.stats-kpi-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px;
-  margin-bottom:20px;
-}
-
-.kpi-card {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius-sm);
-  padding:14px;
-  text-align:center;
-}
-
-.kpi-value { font-family:'Bebas Neue', sans-serif; font-size:1.8rem; color:var(--gold); display:block; line-height:1; }
-.kpi-label { font-size:0.65rem; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-top:4px; display:block; }
-.kpi-sub { font-size:0.75rem; color:rgba(240,240,245,0.5); margin-top:3px; display:block; }
-
-.section-label {
-  font-size:0.65rem;
-  font-weight:700;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:var(--muted);
-  margin:20px 0 10px;
-}
-
-.jor-dots { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:6px; }
-
-.jor-dot {
-  width:34px; height:34px;
-  border-radius:6px;
-  display:flex; align-items:center; justify-content:center;
-  font-family:'Bebas Neue', sans-serif;
-  font-size:0.85rem;
-  flex-shrink:0;
-  cursor:default;
-}
-
-.dot-legend {
-  font-size:0.68rem;
-  color:var(--muted);
-  margin-top:4px;
-}
-
-.stats-main-table-wrap {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  overflow:hidden;
-  margin-bottom:16px;
-}
-
-.stats-main-table {
-  width:100%;
-  border-collapse:collapse;
-  font-size:0.82rem;
-}
-
-.stats-main-table th {
-  padding:10px 12px;
-  font-size:0.62rem;
-  font-weight:600;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-  color:var(--muted);
-  text-align:center;
-  border-bottom:1px solid var(--border);
-  background:rgba(255,255,255,0.03);
-}
-
-.stats-main-table th:nth-child(2) { text-align:left; }
-
-.stats-main-table td {
-  padding:10px 12px;
-  text-align:center;
-  color:rgba(240,240,245,0.7);
-  border-bottom:1px solid var(--border);
-}
-
-.stats-main-table td:nth-child(2) { text-align:left; font-weight:600; color:var(--white); }
-.stats-main-table tr:last-child td { border-bottom:none; }
-.stats-main-table tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
-.stats-main-table td.hi { color:var(--gold); font-weight:700; }
-.stats-main-table td.lo { color:var(--red); }
-
-.mini-cards-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(260px,1fr));
-  gap:10px;
-}
-
-.mini-card {
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius-sm);
-  padding:14px;
-  transition:border-color 0.2s;
-}
-
-.mini-card:hover { border-color:var(--border-hi); }
-
-.mini-card-name {
-  font-size:0.88rem;
-  font-weight:600;
-  color:var(--white);
-  margin-bottom:10px;
-}
-
-.mini-stats-row {
-  display:flex;
-  gap:0;
-  margin-bottom:10px;
-}
-
-.mini-stat {
-  flex:1;
-  text-align:center;
-  border-right:1px solid var(--border);
-  padding:0 8px;
-}
-
-.mini-stat:last-child { border-right:none; }
-
-.mini-stat-val {
-  font-family:'Bebas Neue', sans-serif;
-  font-size:1.3rem;
-  color:var(--gold);
-  display:block;
-  line-height:1;
-}
-
-.mini-stat-lbl {
-  font-size:0.6rem;
-  font-weight:600;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  color:var(--muted);
-  margin-top:2px;
-}
-
-/* ── EMPTY STATES ── */
-.empty-state {
-  text-align:center;
-  padding:48px 24px;
-  color:var(--muted);
-}
-
-.empty-icon { font-size:2rem; margin-bottom:12px; }
-.empty-title { font-family:'Bebas Neue', sans-serif; font-size:1.2rem; letter-spacing:2px; color:rgba(240,240,245,0.3); margin-bottom:6px; }
-.empty-sub { font-size:0.78rem; font-weight:500; letter-spacing:0.5px; }
-
-/* ── ROUND FILTERS ── */
-.rounds-filters {
-  display:flex;
-  gap:10px;
-  margin-bottom:16px;
-  flex-wrap:wrap;
-}
-
-.filter-select {
-  background:var(--card);
-  border:1px solid var(--border-hi);
-  border-radius:var(--radius-sm);
-  color:var(--white);
-  font-family:'Inter', sans-serif;
-  font-size:0.82rem;
-  padding:9px 32px 9px 12px;
-  cursor:pointer;
-  outline:none;
-  flex:1;
-  min-width:140px;
-  appearance:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%236b6b80' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;
-  background-position:right 10px center;
-  background-color:var(--card);
-  transition:border-color 0.2s;
-}
-
-.filter-select:focus { border-color:var(--gold); }
-
-.filter-clear {
-  background:transparent;
-  border:1px solid var(--border-hi);
-  border-radius:var(--radius-sm);
-  color:var(--muted);
-  font-family:'Inter', sans-serif;
-  font-size:0.78rem;
-  font-weight:500;
-  padding:9px 14px;
-  cursor:pointer;
-  white-space:nowrap;
-  transition:all 0.2s;
-  display:none;
-}
-
-.filter-clear:hover { border-color:var(--gold); color:var(--gold); }
-.filter-clear.visible { display:block; }
-
-.filter-badge {
-  font-size:0.68rem;
-  font-weight:600;
-  color:var(--muted);
-  letter-spacing:0.5px;
-  align-self:center;
-  white-space:nowrap;
-}
-
-/* ── RESPONSIVE ── */
-@media (max-width:640px) {
-  .highlight-grid { grid-template-columns:1fr 1fr; }
-  .stats-kpi-grid { grid-template-columns:1fr 1fr; }
-  .pagos-grid { grid-template-columns:1fr; }
-  .rounds-grid { grid-template-columns:1fr; }
-  .mini-cards-grid { grid-template-columns:1fr; }
-  .hide-mobile { display:none !important; }
-  .section { padding:16px 12px 8px; }
-}
-
-@media (max-width:400px) {
-  .highlight-grid { grid-template-columns:1fr 1fr; }
-  .hl-value { font-size:1.4rem; }
-}
+  --font-display: "Saira Condensed", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r: 14px; --r-sm: 9px;
+  /* Paleta: Clásico (negro y dorado) */
+  --bg:#09090d; --surface:#15151c; --surface-2:#1c1c25; --line:rgba(255,255,255,.08);
+  --ink:#f2f2f6; --muted:#9a9aae; --accent:#f5c842; --accent-ink:#1a1400; --gold:#f5c842;
+  --win:#34d399; --draw:#f5c842; --loss:#f87171; --pay:#fb923c;
+  color-scheme: dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 calc(84px + env(safe-area-inset-bottom,0px));-webkit-font-smoothing:antialiased;transition:background .25s,color .25s}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+.wrap{max-width:1080px;margin:0 auto}
+.num{font-variant-numeric:tabular-nums}
+h1,h2,h3{font-family:var(--font-display);font-weight:800;letter-spacing:.01em;text-wrap:balance;margin:0;line-height:1}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+/* ── Cabecera ── */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);padding-block:12px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.logo{width:36px;height:36px;border-radius:10px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;flex-shrink:0}
+.brand h1{font-size:21px;text-transform:uppercase;white-space:nowrap}
+.brand small{display:block;color:var(--muted);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.tabs-top{display:none;margin-left:auto;gap:4px}
+.tabs-top a{padding:8px 14px;border-radius:999px;color:var(--muted);text-decoration:none;font-weight:600;font-size:14px}
+.tabs-top a[aria-current="page"]{background:var(--surface-2);color:var(--ink)}
+.pill{margin-left:auto;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.pill i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--win);margin-right:6px;vertical-align:1px}
+
+/* ── Barra inferior ── */
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--surface);border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(6,1fr);padding-bottom:env(safe-area-inset-bottom,0px);
+  padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+.nav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 2px 10px;color:var(--muted);text-decoration:none;font-size:10.5px;font-weight:600}
+.nav a[aria-current="page"]{color:var(--accent)}
+.nav svg,.tabs-top svg{width:22px;height:22px}
+@media (min-width:860px){
+  .nav{display:none} body{padding-block-end:40px}
+  .tabs-top{display:flex} .pill{margin-left:12px}
+}
+
+/* ── Vistas ── */
+.view{padding-block:22px 8px;display:grid;gap:18px}
+.view[hidden]{display:none}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);min-width:0}
+.card-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:14px 16px 0}
+.card-h h3{font-size:20px;text-transform:uppercase}
+.card-b{padding:12px 16px 16px}
+.link{color:var(--accent);font-weight:600;font-size:13px;text-decoration:none;white-space:nowrap}
+
+/* Hero de jornada */
+.hero{display:grid;gap:14px}
+.hero-title{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.hero-title h2{font-size:clamp(40px,11vw,64px);text-transform:uppercase}
+.hero-title h2 span{color:var(--accent)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.spot{position:relative;overflow:hidden;padding:16px;display:grid;gap:10px;align-content:start}
+.spot .eyebrow{display:flex;align-items:center;gap:6px}
+.spot .who{display:flex;align-items:center;gap:10px;min-width:0}
+.spot .who b{font-size:16px;line-height:1.2}
+.spot .big{font-family:var(--font-display);font-size:46px;font-weight:800;line-height:.9}
+.spot .big small{font-size:16px;color:var(--muted);margin-left:4px;font-family:var(--font-body);font-weight:600}
+.spot.win .big{color:var(--gold)}
+.spot.lose .big{color:var(--loss)}
+.spot .note{font-size:12.5px;color:var(--muted)}
+
+.grid-2{display:grid;gap:18px}
+@media (min-width:860px){ .grid-2{grid-template-columns:1.25fr 1fr;align-items:start} }
+
+/* Resultados: marcador a dos líneas, como en las apps de resultados */
+.matches{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+.m{background:var(--surface-2);border-radius:var(--r-sm);padding:8px 10px;display:grid;gap:4px;min-width:0}
+.m-line{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:8px;min-width:0;color:var(--muted);font-weight:500;font-size:14px}
+.m-line span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.m-line b{font-family:var(--font-display);font-size:20px;font-weight:700;min-width:28px;text-align:right}
+.m-line.w{color:var(--ink);font-weight:700}
+.m-line.w b{color:var(--accent)}
+.m .tag{text-align:left;margin:0 0 2px}
+.m.fxm .m-line{color:var(--ink);font-weight:600}
+.matches.wide{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(190px,1fr);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+.matches.wide .m{scroll-snap-align:start}
+@media (min-width:860px){ .matches.wide{grid-auto-flow:row;grid-template-columns:repeat(4,1fr);overflow:visible} }
+.res{display:grid}
+.res-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;padding:9px 0;border-top:1px solid var(--line)}
+.res-row:first-child{border-top:0}
+.side{display:flex;align-items:center;gap:8px;min-width:0;font-weight:500;font-size:14px;color:var(--muted)}
+.side.h{justify-content:flex-end;text-align:right}
+.side span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.side.w{color:var(--ink);font-weight:700}
+.score{display:flex;gap:2px;font-family:var(--font-display);font-weight:700;font-size:19px}
+.score b{min-width:34px;text-align:center;padding:2px 4px;border-radius:6px;background:var(--surface-2)}
+.score b.w{background:var(--accent);color:var(--accent-ink)}
+.tag{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-top:2px;text-align:center}
+
+/* Pagos */
+.pay{display:grid;gap:2px}
+.pay-row{display:grid;grid-template-columns:34px auto minmax(0,1fr) auto;align-items:center;gap:10px;padding:7px 0}
+.pay-row .pos{font-family:var(--font-display);font-weight:700;color:var(--muted);font-size:17px}
+.pay-row .amt{font-family:var(--font-display);font-weight:700;font-size:19px}
+.heat{display:block;width:100%;height:5px;border-radius:3px;background:var(--surface-2);overflow:hidden}
+.heat i{display:block;height:100%;background:var(--pay)}
+.pay-row .nm{font-weight:600;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+
+/* Crónica teaser */
+.teaser h3{font-size:24px;line-height:1.05;text-transform:none;letter-spacing:0}
+.teaser p{color:var(--muted);margin:10px 0 0;max-width:65ch;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.teaser h3{text-transform:uppercase}
+.teaser p{-webkit-line-clamp:2}
+
+/* Próxima */
+.fx{display:grid;gap:8px}
+.fx-row{display:grid;grid-template-columns:1fr 34px 1fr;align-items:center;gap:8px;font-size:14px;font-weight:600}
+.fx-row .vs{text-align:center;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.08em}
+
+/* Clasificación */
+.tbl-wrap{overflow-x:auto}
+table.st{width:100%;border-collapse:collapse;font-size:14px}
+.st th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;text-align:center;padding:10px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+.st th.l{text-align:left}
+.st td{padding:9px 6px;text-align:center;border-bottom:1px solid var(--line)}
+.st tr:last-child td{border-bottom:0}
+.st .pos{font-family:var(--font-display);font-weight:700;font-size:18px;width:30px;position:relative}
+.st tr.z8 .pos::before{content:"";position:absolute;left:-6px;top:8px;bottom:8px;width:3px;border-radius:2px;background:var(--win)}
+.st .team{text-align:left}
+.st .team div{display:flex;align-items:center;gap:9px;min-width:0}
+.st .team b{font-weight:600;white-space:nowrap}
+.st .pts{font-family:var(--font-display);font-weight:800;font-size:21px;color:var(--accent)}
+.mv{font-size:12px;font-weight:700;width:34px;white-space:nowrap}
+.mv.up{color:var(--win)} .mv.dn{color:var(--loss)} .mv.eq{color:var(--muted)}
+.form{display:flex;gap:3px;justify-content:center}
+.form i{width:18px;height:18px;border-radius:5px;font-style:normal;font-size:10px;font-weight:800;display:grid;place-items:center;color:var(--bg)}
+.form .W{background:var(--win)} .form .D{background:var(--draw)} .form .L{background:var(--loss)}
+.hm{display:none}
+@media (min-width:640px){ .hm{display:table-cell} }
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12px;color:var(--muted);padding:12px 16px 14px;border-top:1px solid var(--line)}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+
+/* Escudos */
+.crests{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.crest-card{padding:16px 12px 14px;display:grid;justify-items:center;gap:8px;text-align:center}
+.crest-card b{font-size:14px;line-height:1.2}
+.crest-card small{color:var(--muted);font-size:12px;line-height:1.35}
+.intro{color:var(--muted);max-width:65ch;margin:0}
+.crest{display:block;flex-shrink:0}
+/* ── Enlaces a equipo ── */
+a.tl{color:inherit;text-decoration:none}
+a.tl:hover{text-decoration:underline;text-underline-offset:3px}
+.h-page{font-size:clamp(36px,9vw,52px);text-transform:uppercase}
+.intro a{color:var(--accent)}
+
+/* ── Jornadas ── */
+.jsel{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;min-width:0}
+.jbtn{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface);font-size:22px;line-height:1;cursor:pointer}
+.jbtn:disabled{opacity:.35;cursor:default}
+.jstrip{display:flex;gap:6px;overflow-x:auto;scroll-behavior:smooth;padding:2px;scrollbar-width:none;min-width:0}
+.jstrip::-webkit-scrollbar{display:none}
+.chip{flex-shrink:0;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 11px;font-weight:700;font-size:13px;cursor:pointer;font-variant-numeric:tabular-nums}
+.chip.pend{color:var(--muted);border-style:dashed}
+.chip.part{border-color:var(--draw)}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chip.static{cursor:default;padding:3px 9px;font-size:12px}
+.state{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--win)}
+.state.pendiente{color:var(--muted)} .state.provisional{color:var(--draw)}
+.warn{margin:12px 16px 0;padding:9px 12px;border-radius:var(--r-sm);border:1px solid var(--draw);color:var(--draw);font-size:13px;font-weight:600}
+.rank{display:grid}
+.rk{display:grid;grid-template-columns:26px auto minmax(0,1fr) auto 62px;align-items:center;gap:9px;padding:6px 0;border-top:1px solid var(--line);font-size:14px}
+.rk:first-child{border-top:0}
+.rk .pos{font-family:var(--font-display);font-weight:700;color:var(--muted);font-size:16px}
+.rk .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.rk b{font-family:var(--font-display);font-size:18px}
+.rk .eur{text-align:right;font-weight:700;font-size:13px;color:var(--pay)}
+.rk.paid .pos{color:var(--pay)}
+
+/* ── Crónica ── */
+.article{padding:22px 20px;display:grid;gap:14px}
+.article h2{font-size:clamp(28px,6.5vw,44px);text-transform:uppercase;line-height:1.02;max-width:22ch}
+.article p{margin:0;font-size:16.5px;line-height:1.7;max-width:65ch;color:var(--ink);opacity:.9}
+.article p strong{color:var(--accent)}
+.archive{display:grid;gap:8px}
+.arch summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:13px 16px}
+.arch summary::-webkit-details-marker{display:none}
+.arch summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+.arch[open] summary::after{transform:rotate(225deg)}
+.arch .t{font-family:var(--font-display);font-weight:700;font-size:17px;line-height:1.15;text-transform:uppercase}
+.arch-b{padding:0 16px 16px;display:grid;gap:10px}
+.arch-b p{margin:0;max-width:65ch;color:var(--muted)}
+
+/* ── Pagos / Equipos: tarjetas de cifra ── */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tiles.four{grid-template-columns:repeat(2,1fr)}
+@media (min-width:860px){ .tiles.four{grid-template-columns:repeat(4,1fr)} }
+.tile{padding:14px 16px;display:grid;gap:8px;align-content:start;text-decoration:none;color:inherit;min-width:0}
+.tile b{font-family:var(--font-display);font-size:34px;font-weight:800;line-height:1}
+.tile small{color:var(--muted);font-size:12.5px}
+.tile .who{display:flex;align-items:center;gap:8px;font-weight:600;min-width:0}
+.tile .who span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tile.gold b{color:var(--gold)} .tile.good b{color:var(--win)} .tile.bad b{color:var(--loss)} .tile.pay b{color:var(--pay)}
+a.tile:hover,a.team-card:hover{border-color:var(--accent)}
+.bars{display:grid;gap:2px}
+.bar-row{display:grid;grid-template-columns:26px auto minmax(0,1fr) auto;align-items:center;gap:10px;padding:6px 0}
+.bar-row .pos{font-family:var(--font-display);font-weight:700;color:var(--muted)}
+.bar-row .nm{font-weight:600;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-row .amt{font-family:var(--font-display);font-weight:700;font-size:18px;text-align:right}
+.bar-row .amt small{display:block;font-family:var(--font-body);font-size:11px;color:var(--muted);font-weight:600}
+table.hist{border-collapse:separate;border-spacing:0;font-size:13px;min-width:100%}
+.hist th,.hist td{padding:6px 7px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+.hist th{font-size:11px;color:var(--muted);font-weight:700}
+.hist .l{text-align:left}
+.hist .l div{display:flex;align-items:center;gap:7px;font-weight:600}
+.hist .sticky{position:sticky;left:0;background:var(--surface);z-index:1}
+.hist .cell{display:inline-block;min-width:30px;padding:2px 5px;border-radius:5px;font-weight:700;color:var(--ink);background:color-mix(in srgb,var(--pay) calc(var(--o)*70%),transparent)}
+.hist .tot{font-weight:800;color:var(--pay)}
+
+/* ── Equipos ── */
+.teams{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.team-card{padding:14px;display:grid;gap:12px;text-decoration:none;color:inherit}
+.tc-h{display:flex;align-items:center;gap:12px}
+.tc-h b{display:block;font-size:15px;line-height:1.2}
+.tc-h small{color:var(--muted);font-size:12.5px}
+.tc-s{display:flex;align-items:end;justify-content:space-between;gap:12px}
+.tc-s b{font-family:var(--font-display);font-size:26px;font-weight:800;color:var(--accent);line-height:1;display:block}
+.team-head{display:flex;align-items:center;gap:16px;min-width:0}
+.vde{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:8px;color:var(--muted);font-size:13px}
+.vde b{color:var(--ink);font-size:15px}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:860px){ .kpis{grid-template-columns:repeat(6,1fr)} }
+.kpi{padding:12px 14px;display:grid;gap:4px;align-content:start}
+.kpi b{font-family:var(--font-display);font-size:30px;font-weight:800;line-height:1}
+.kpi small{color:var(--muted);font-size:12px}
+.kpi.gold b{color:var(--gold)} .kpi.good b{color:var(--win)} .kpi.bad b{color:var(--loss)} .kpi.pay b{color:var(--pay)}
+.chart{display:block;width:100%;min-width:520px;height:auto;font-family:var(--font-body)}
+.legend-inline{display:flex;align-items:center;gap:6px;text-transform:none;letter-spacing:0;font-weight:600}
+.legend-inline .ln{display:inline-block;width:16px;height:0;border-top:2.5px solid var(--accent)}
+.legend-inline .ln.dash{border-top:1.5px dashed var(--muted);margin-left:8px}
+.jj td.l div{display:flex;align-items:center;gap:7px}
+.jj td,.jj th{font-size:13.5px}
+.jj td.good{color:var(--win);font-weight:700} .jj td.bad{color:var(--loss);font-weight:700}
+.crest-note{display:flex;gap:14px;align-items:center;padding:14px 16px}
+.crest-note p{margin:4px 0 0;color:var(--muted)}
+.res{display:inline-flex;align-items:center;gap:8px}
+.tile .who span{white-space:normal;line-height:1.2}
+/* ── Equipos: modelos ── */
+/* Tabla */
+table.cmp{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px}
+.cmp th{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:10px 8px;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none}
+.cmp th.on{color:var(--accent)}
+.cmp td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+.cmp tr:last-child td{border-bottom:0}
+.cmp tbody tr{cursor:pointer}
+.cmp tbody tr:hover td{background:var(--surface-2)}
+.cmp .l{text-align:left}
+.cmp .l div{display:flex;align-items:center;gap:8px;font-weight:600}
+.cmp .sticky{position:sticky;left:0;background:var(--surface);z-index:1}
+.cmp td.pos{font-family:var(--font-display);font-weight:700;color:var(--muted);text-align:center}
+.barcell{display:inline-block;min-width:64px;padding:3px 7px;border-radius:5px;font-weight:700;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--c) 32%,transparent) var(--w),transparent var(--w))}
+/* Premios */
+.awards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.award{padding:14px 16px;display:grid;gap:10px;text-decoration:none;color:inherit;position:relative;overflow:hidden}
+.award::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--muted)}
+.award.gold::before{background:var(--gold)} .award.good::before{background:var(--win)} .award.bad::before{background:var(--loss)} .award.pay::before{background:var(--pay)}
+.award .eyebrow{color:var(--ink)}
+.aw-main{display:flex;align-items:center;gap:12px}
+.aw-team{display:block;font-size:15px;line-height:1.2}
+.aw-v{font-family:var(--font-display);font-weight:800;font-size:30px;line-height:1.05;display:block}
+.award.gold .aw-v{color:var(--gold)} .award.good .aw-v{color:var(--win)} .award.bad .aw-v{color:var(--loss)} .award.pay .aw-v{color:var(--pay)}
+.award small{color:var(--muted);font-size:12.5px}
+.award:hover{border-color:var(--accent)}
+.chips-teams{display:flex;flex-wrap:wrap;gap:8px}
+.tchip{display:flex;align-items:center;gap:7px;padding:5px 11px 5px 7px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600;font-size:13px;background:var(--surface-2)}
+.tchip:hover{border-color:var(--accent)}
+@media (prefers-reduced-motion:no-preference){ .view:not([hidden]){animation:in .25s ease} @keyframes in{from{opacity:.4;transform:translateY(4px)}} }
 </style>
 </head>
 <body>
+<div class="wrap">
+  </div>
 
-<!-- HEADER -->
-<header class="app-header">
-  <div class="header-brand">
-    <div class="header-logo">⚽</div>
-    <div>
-      <div class="header-title">Liga Clubes Amigos</div>
-      <div class="header-season">Temporada 2026-27</div>
+  <header class="top">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5c0 3 1.5 4.5 3.5 4.8M16 6h3c0 3-1.5 4.5-3.5 4.8M12 13v4M8.5 20h7"/></svg></div>
+      <div><h1>Liga Clubes Amigos</h1><small>Temporada <span id="season"></span></small></div>
     </div>
-  </div>
-  <div class="header-badge" id="header-badge"></div>
-</header>
+    <nav class="tabs-top" id="tabsTop" aria-label="Secciones"></nav>
+    <span class="pill num" id="pill"></span>
+  </header>
 
-<!-- SECTIONS -->
-<div id="s-standings" class="section active">
-  <div class="section-header">
-    <div class="section-title">Clasificación</div>
-    <div class="section-sub" id="standings-sub">Jornada 1 · 16 equipos</div>
-  </div>
-  <div class="card">
-    <table class="standings-table">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Equipo</th>
-          <th>PTS</th>
-          <th class="hide-mobile">PJ</th>
-          <th class="hide-mobile">PG</th>
-          <th class="hide-mobile">PE</th>
-          <th class="hide-mobile">PP</th>
-          <th>Jor.</th>
-        </tr>
-      </thead>
-      <tbody id="standings-body"></tbody>
-    </table>
-  </div>
+  <main>
+    <section class="view" id="v-inicio" aria-label="Inicio"></section>
+    <section class="view" id="v-clasificacion" aria-label="Clasificación" hidden></section>
+    <section class="view" id="v-jornadas" aria-label="Jornadas" hidden></section>
+    <section class="view" id="v-cronica" aria-label="Crónica" hidden></section>
+    <section class="view" id="v-pagos" aria-label="Pagos" hidden></section>
+    <section class="view" id="v-equipos" aria-label="Equipos" hidden></section>
+    <section class="view" id="v-equipo" aria-label="Ficha de equipo" hidden></section>
+  </main>
 </div>
 
-<div id="s-rounds" class="section">
-  <div class="section-header">
-    <div class="section-title">Jornadas</div>
-    <div class="section-sub">Resultados · Temporada 2026-27</div>
-  </div>
-  <div class="rounds-filters">
-    <select class="filter-select" id="filter-jornada" onchange="filterRounds()">
-      <option value="">Todas las jornadas</option>
-    </select>
-    <select class="filter-select" id="filter-equipo" onchange="filterRounds()">
-      <option value="">Todos los equipos</option>
-    </select>
-    <button class="filter-clear" id="filter-clear-btn" onclick="clearRoundFilters()">✕ Quitar filtros</button>
-    <span class="filter-badge" id="filter-badge"></span>
-  </div>
-  <div class="rounds-grid" id="rounds-grid"></div>
-</div>
-
-<div id="s-next" class="section">
-  <div class="section-header">
-    <div class="section-title">Próxima</div>
-    <div class="section-sub" id="next-sub"></div>
-  </div>
-  <div id="next-content"></div>
-</div>
-
-<div id="s-playoffs" class="section">
-  <div class="section-header">
-    <div class="section-title">Playoffs</div>
-    <div class="section-sub">Copa · Temporada 2026-27</div>
-  </div>
-  <div class="bracket-scroll">
-    <div class="bracket-inner" id="bracket-inner"></div>
-  </div>
-</div>
-
-<div id="s-cronica" class="section">
-  <div class="section-header">
-    <div class="section-title">Crónica</div>
-    <div class="section-sub">Sin filtros desde 2026</div>
-  </div>
-  <div id="cronica-content"></div>
-</div>
-
-<div id="s-pagos" class="section">
-  <div class="section-header">
-    <div class="section-title">Pagos</div>
-    <div class="section-sub">Acumulado · Temporada 2026-27</div>
-  </div>
-  <div class="pagos-grid">
-    <div class="payers-card">
-      <div class="payers-header">🚨 Próximos en pagar</div>
-      <div id="next-payers"></div>
-    </div>
-    <div class="balance-card">
-      <div class="card-header"><span class="card-title">📊 Saldo acumulado</span></div>
-      <table class="balance-table">
-        <thead><tr><th>Equipo</th><th>Pagado</th></tr></thead>
-        <tbody id="pagos-summary-body"></tbody>
-      </table>
-    </div>
-  </div>
-  <div class="pagos-history-title">Histórico por jornada</div>
-  <div class="history-scroll">
-    <table class="history-tbl" id="history-table"></table>
-  </div>
-</div>
-
-<div id="s-stats" class="section">
-  <div class="section-header">
-    <div class="section-title">Estadísticas</div>
-    <div class="section-sub" id="stats-sub">Fichas individuales · 1 jornada</div>
-  </div>
-  <div id="stats-content"></div>
-</div>
-
-<!-- BOTTOM NAV -->
-<nav class="bottom-nav">
-  <button class="nav-item active" onclick="showTab('standings',this)">
-    <span class="nav-icon">🏆</span>
-    <span class="nav-label">Liga</span>
-  </button>
-  <button class="nav-item" onclick="showTab('next',this)">
-    <span class="nav-icon">⏭</span>
-    <span class="nav-label">Próxima</span>
-  </button>
-  <button class="nav-item" onclick="showTab('rounds',this)">
-    <span class="nav-icon">📅</span>
-    <span class="nav-label">Jornadas</span>
-  </button>
-  <button class="nav-item" onclick="showTab('cronica',this)">
-    <span class="nav-icon">📰</span>
-    <span class="nav-label">Crónica</span>
-  </button>
-  <button class="nav-item" onclick="showTab('pagos',this)">
-    <span class="nav-icon">💰</span>
-    <span class="nav-label">Pagos</span>
-  </button>
-  <button class="nav-item" onclick="showTab('stats',this)">
-    <span class="nav-icon">📈</span>
-    <span class="nav-label">Stats</span>
-  </button>
-</nav>
+<nav class="nav" id="navBottom" aria-label="Secciones"></nav>
 
 <script src="data/temporada-2026-27.js"></script>
 <script>
-// ═══════════════════════════════════════════
-// HELPERS
-// ═══════════════════════════════════════════
+// ═════════════ Utilidades ═════════════
+const fmtEur = n => n.toLocaleString('es-ES',{minimumFractionDigits:2,maximumFractionDigits:2}) + ' €';
+const jorNum = l => parseInt((/^J(\d+)/.exec(l)||[])[1],10);
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-function computeStandings(rounds) {
-  const t = {};
-  rounds.forEach(({matches, pending}) => {
-    if (pending) return;
-    matches.forEach(([home,hs,as_,away]) => {
-      const h=parseInt(hs), a=parseInt(as_);
-      if (isNaN(h)||isNaN(a)) return;
-      if (!t[home]) t[home]={pts:0,pg:0,pe:0,pp:0};
-      if (!t[away]) t[away]={pts:0,pg:0,pe:0,pp:0};
-      if (h>a){t[home].pts+=3;t[home].pg++;t[away].pp++;}
-      else if (h<a){t[away].pts+=3;t[away].pg++;t[home].pp++;}
-      else{t[home].pts+=1;t[home].pe++;t[away].pts+=1;t[away].pe++;}
-    });
-  });
-  return t;
+const played = rounds2627.filter(r=>!r.pending);
+const lastR = played[played.length-1];
+const nextR = rounds2627.find(r=>r.pending);
+
+function standingsUpTo(n){ // n = nº de jornadas disputadas a contar
+  const t = Object.fromEntries(TEAMS_2627.map(x=>[x,{name:x,pts:0,pg:0,pe:0,pp:0,jor:0,form:[]}]));
+  played.slice(0,n).forEach(r=>r.matches.forEach(([h,hs,as,a])=>{
+    const x=+hs,y=+as;
+    t[h].jor+=x; t[a].jor+=y;
+    if(x>y){t[h].pts+=3;t[h].pg++;t[a].pp++;t[h].form.push('W');t[a].form.push('L');}
+    else if(x<y){t[a].pts+=3;t[a].pg++;t[h].pp++;t[a].form.push('W');t[h].form.push('L');}
+    else{t[h].pts++;t[a].pts++;t[h].pe++;t[a].pe++;t[h].form.push('D');t[a].form.push('D');}
+  }));
+  return Object.values(t).sort((a,b)=>b.pts-a.pts||b.jor-a.jor);
 }
 
-function computeTeamStats(name, history) {
-  const jornadas = history.filter(j => j.data[name] !== undefined);
-  if (!jornadas.length) return null;
-  const puntos = jornadas.map(j => j.data[name]);
-  const total = puntos.reduce((a,b)=>a+b,0);
-  const media = +(total/puntos.length).toFixed(1);
-  const max = Math.max(...puntos), min = Math.min(...puntos);
-  const maxJ = jornadas[puntos.indexOf(max)].j;
-  const minJ = jornadas[puntos.indexOf(min)].j;
-  const rankings = jornadas.map(j => {
-    const s = Object.values(j.data).sort((a,b)=>b-a);
-    return s.indexOf(j.data[name])+1;
-  });
-  const mediaRanking = +(rankings.reduce((a,b)=>a+b,0)/rankings.length).toFixed(1);
-  const top8 = rankings.filter(r=>r<=8).length;
-  const bottom6 = rankings.filter(r=>r>10).length;
-  return {puntos,jornadas,total,media,max,min,maxJ,minJ,rankings,mediaRanking,top8,bottom6};
+// ═════════════ Escudos generados ═════════════
+// shape: escudo | frances | redondo · pattern: liso | franjas | aros | mitades | cuarteles | banda | chevron
+const CRESTS = {
+  "Danilo Stars":      {ab:"DS",  c1:"#14213d", c2:"#fca311", shape:"escudo",  pat:"liso",     em:"stars",  why:"Azul noche y estrellas doradas: el nombre lo pedía."},
+  "Sergchenko":        {ab:"SRG", c1:"#1d6fd8", c2:"#ffd23f", shape:"redondo", pat:"mitades",  em:"ball",   why:"Azul y amarillo de estepa, partido por la mitad."},
+  "Celta de Viño":     {ab:"CV",  c1:"#8ecae6", c2:"#7a1f3d", shape:"escudo",  pat:"franjas",  em:"glass",  why:"Celeste de Celta y franjas color vino. Con copa."},
+  "Se vende Cuenta":   {ab:"SVC", c1:"#d62828", c2:"#ffffff", shape:"frances", pat:"banda",    em:"minus1", why:"Rojo de cartel de «Se vende». Lleva el −1 bordado."},
+  "AnceLuni":          {ab:"AL",  c1:"#f8f9fa", c2:"#5b2a86", shape:"escudo",  pat:"chevron",  em:"star",   why:"Blanco y morado, aire de banquillo con ceja levantada."},
+  "Avaricius Jr.":     {ab:"AVJ", c1:"#1f7a4a", c2:"#e8b923", shape:"redondo", pat:"aros",     em:"euro",   why:"Verde billete y oro. El símbolo del euro no es casualidad."},
+  "Josisi Mourinho":   {ab:"JM",  c1:"#111111", c2:"#1f4fa3", shape:"escudo",  pat:"cuarteles",em:"one",    why:"Negro y azul, sobrio. El «1» es por lo de Special One."},
+  "Sors":              {ab:"S",   c1:"#4b5160", c2:"#13294b", shape:"escudo",  pat:"liso",     em:"shadow", why:"Gris sombra con un VZ en marca de agua. Ya sabéis quién lo diseñó."},
+  "Raphontino":        {ab:"RPH", c1:"#5b21b6", c2:"#f2c14e", shape:"frances", pat:"liso",     em:"stars",  why:"Morado presidencial con ribete dorado."},
+  "Kingsquare":        {ab:"KSQ", c1:"#1d3fbf", c2:"#f2c14e", shape:"escudo",  pat:"cuarteles",em:"crown",  why:"Azul real, cuarteles y corona. Rey de la plaza."},
+  "CucuDaris":         {ab:"CD",  c1:"#f07c1b", c2:"#1b7f5c", shape:"redondo", pat:"banda",    em:"ball",   why:"Naranja y verde, banda cruzada."},
+  "Castriano Ronaldo": {ab:"CR",  c1:"#c8102e", c2:"#046a38", shape:"escudo",  pat:"mitades",  em:"seven",  why:"Rojo y verde y un 7. Siuuu."},
+  "Vicentine Zidane":  {ab:"VZ",  c1:"#13294b", c2:"#ffffff", shape:"escudo",  pat:"franjas",  em:"star",   why:"Azul marino y blanco, elegancia de calvo genial."},
+  "Tano Amunt":        {ab:"TA",  c1:"#ffffff", c2:"#111111", c3:"#f58220", shape:"escudo", pat:"banda", em:"ball", why:"Blanco y negro con banda naranja. Amunt."},
+  "Cardonistas":       {ab:"CRD", c1:"#7b3f9e", c2:"#3c8d2f", shape:"frances", pat:"chevron",  em:"thistle",why:"Morado y verde de cardo."},
+  "Puro Llorente":     {ab:"PL",  c1:"#7b4a2a", c2:"#b22222", shape:"redondo", pat:"franjas",  em:"ball",   why:"Marrón habano y rojo. Un puro de equipo."},
+};
+// Para equipos nuevos: escudo determinista a partir del nombre
+function autoCrest(name){
+  let h=0; for(const ch of name) h=(h*31+ch.charCodeAt(0))>>>0;
+  const hues=[[210,45],[0,45],[140,40],[30,90],[270,45],[190,60]];
+  const [hu,sat]=hues[h%hues.length];
+  const ab=name.replace(/[^A-Za-zÁÉÍÓÚÑáéíóúñ ]/g,'').split(/\s+/).filter(Boolean).map(w=>w[0]).join('').slice(0,3).toUpperCase()||'?';
+  return {ab,c1:`hsl(${hu} ${sat}% 30%)`,c2:`hsl(${(hu+180)%360} 70% 60%)`,shape:['escudo','frances','redondo'][h%3],
+    pat:['liso','franjas','aros','mitades','banda','chevron'][(h>>3)%6],em:'ball',why:'Generado automáticamente a partir del nombre.'};
+}
+const lum = c => { const m=/^#(..)(..)(..)$/.exec(c); if(!m) return .2; const f=v=>{v=parseInt(v,16)/255;return v<=.03928?v/12.92:((v+.055)/1.055)**2.4}; return .2126*f(m[1])+.7152*f(m[2])+.0722*f(m[3]); };
+
+let crestSeq=0;
+function crest(name,size=32){
+  const c = CRESTS[name] || autoCrest(name);
+  const id = 'cr'+(++crestSeq);
+  const c3 = c.c3 || c.c2;
+  const shapes = {
+    escudo:  'M10 8H90V54C90 80 72 97 50 106C28 97 10 80 10 54Z',
+    frances: 'M8 16L50 4L92 16V58C92 84 72 99 50 106C28 99 8 84 8 58Z',
+    redondo: 'M50 6A49 49 0 1 1 49.99 6Z',
+  };
+  const P = shapes[c.shape];
+  const pats = {
+    liso: '',
+    franjas: [14,38,62,86].map(x=>`<rect x="${x-6}" y="0" width="12" height="110" fill="${c.c2}"/>`).join(''),
+    aros: [22,46,70,94].map(y=>`<rect x="0" y="${y-6}" width="100" height="12" fill="${c.c2}"/>`).join(''),
+    mitades: `<rect x="50" y="0" width="50" height="110" fill="${c.c2}"/>`,
+    cuarteles: `<rect x="50" y="0" width="50" height="55" fill="${c.c2}"/><rect x="0" y="55" width="50" height="55" fill="${c.c2}"/>`,
+    banda: `<polygon points="0,30 0,58 100,98 100,70" fill="${c3}"/>`,
+    chevron: `<polygon points="0,52 50,82 100,52 100,72 50,102 0,72" fill="${c.c2}"/>`,
+  };
+  // color del texto: el que más contraste tenga con el color dominante
+  const txt = lum(c.c1) > .4 ? '#111111' : '#ffffff';
+  const halo = txt==='#ffffff' ? 'rgba(0,0,0,.55)' : 'rgba(255,255,255,.75)';
+  const emc = c.em==='shadow' ? 'rgba(255,255,255,.18)' : (lum(c.c1)>.4 ? c.c2 : (c.c2==='#ffffff'?'#ffffff':c.c2));
+  const star=(x,y,r)=>{let p=[];for(let i=0;i<10;i++){const a=-Math.PI/2+i*Math.PI/5,rr=i%2?r*.45:r;p.push((x+rr*Math.cos(a)).toFixed(1)+','+(y+rr*Math.sin(a)).toFixed(1));}return `<polygon points="${p.join(' ')}" fill="${emc}" stroke="${halo}" stroke-width="1.2"/>`;};
+  const ems = {
+    stars: star(34,24,7)+star(50,21,8.5)+star(66,24,7),
+    star: star(50,23,9),
+    crown: `<path d="M33 30L36 16L44 24L50 12L56 24L64 16L67 30Z" fill="${emc}" stroke="${halo}" stroke-width="1.2"/>`,
+    ball: `<circle cx="50" cy="23" r="8" fill="#fff" stroke="#111" stroke-width="1.5"/><path d="M50 18.5l3.5 2.6-1.3 4.1h-4.4l-1.3-4.1z" fill="#111"/>`,
+    glass: `<path d="M43 14h14c0 7-3 11-7 11s-7-4-7-11zM50 25v6M45 32h10" fill="none" stroke="${emc}" stroke-width="2.4" stroke-linecap="round"/><path d="M44 18h12c-.5 4-3 6.5-6 6.5s-5.5-2.5-6-6.5z" fill="${emc}"/>`,
+    minus1: `<rect x="37" y="15" width="26" height="15" rx="4" fill="#111"/><text x="50" y="26.5" text-anchor="middle" font-family="Saira Condensed,Arial Narrow,sans-serif" font-weight="800" font-size="13" fill="#fff">−1</text>`,
+    euro: `<text x="50" y="31" text-anchor="middle" font-family="Saira Condensed,Arial Narrow,sans-serif" font-weight="800" font-size="20" fill="${emc}" stroke="${halo}" stroke-width=".8">€</text>`,
+    one: `<text x="50" y="32" text-anchor="middle" font-family="Saira Condensed,Arial Narrow,sans-serif" font-weight="800" font-size="22" fill="${c.c2}" stroke="#fff" stroke-width="1.2" paint-order="stroke">1</text>`,
+    seven: `<text x="50" y="32" text-anchor="middle" font-family="Saira Condensed,Arial Narrow,sans-serif" font-weight="800" font-size="21" fill="#f2c14e" stroke="${halo}" stroke-width="1" paint-order="stroke">7</text>`,
+    thistle: `<path d="M50 30v-6M44 22c0-6 3-9 6-9s6 3 6 9z" fill="${lum(c.c1)>.4?c.c1:'#e9d5ff'}" stroke="${halo}" stroke-width="1.2"/><path d="M42 26l8-3 8 3" stroke="#a7f3d0" stroke-width="2" fill="none"/>`,
+    shadow: `<text x="50" y="72" text-anchor="middle" font-family="Saira Condensed,Arial Narrow,sans-serif" font-weight="800" font-size="58" fill="rgba(255,255,255,.12)">VZ</text>`,
+  };
+  const fs = c.ab.length>=3 ? 26 : c.ab.length===2 ? 32 : 40;
+  return `<svg class="crest" width="${size}" height="${size*1.1}" viewBox="0 0 100 110" role="img" aria-label="Escudo de ${esc(name)}">
+    <defs><clipPath id="${id}"><path d="${P}"/></clipPath></defs>
+    <g clip-path="url(#${id})"><rect width="100" height="110" fill="${c.c1}"/>${pats[c.pat]||''}${c.em==='shadow'?ems.shadow:''}</g>
+    ${c.em!=='shadow'?(ems[c.em]||''):''}
+    <text x="50" y="${c.em==='shadow'?70:69}" text-anchor="middle" font-family="Saira Condensed,Arial Narrow,sans-serif" font-weight="800" font-size="${fs}" fill="${txt}" stroke="${halo}" stroke-width="3" paint-order="stroke" letter-spacing=".5">${c.ab}</text>
+    <path d="${P}" fill="none" stroke="${c.c2==='#ffffff'&&lum(c.c1)>.4?'#111':c3}" stroke-width="5"/>
+    <path d="${P}" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="1"/>
+  </svg>`;
 }
 
-// "J16 (Vuelta J1)" -> 16
-function jorNum(label) {
-  const m = /^J(\d+)/.exec(label);
-  return m ? parseInt(m[1], 10) : NaN;
-}
+// ═════════════ Iconos ═════════════
+const ICONS = {
+  inicio:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>',
+  clasificacion:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg>',
+  escudos:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg>',
+  mas:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="19" cy="12" r="1.3"/></svg>',
+  trophy:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5c0 3 1.5 4.5 3.5 4.8M16 6h3c0 3-1.5 4.5-3.5 4.8M12 13v4M8.5 20h7"/></svg>',
+  lantern:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M8 5h8l1 3v9l-1 3H8l-1-3V8z"/><path d="M12 10v5"/></svg>',
+};
+const VIEWS = [['inicio','Inicio','Inicio'],['clasificacion','Clasificación','Tabla'],['jornadas','Jornadas','Jornadas'],['cronica','Crónica','Crónica'],['pagos','Pagos','Pagos'],['equipos','Equipos','Equipos']];
 
-function renderHeader() {
-  const played = rounds2627.filter(r => !r.pending);
-  const last = played[played.length - 1];
-  const partial = played.filter(r => r.partialPending).map(r => r.j);
-  const badge = document.getElementById('header-badge');
-  badge.textContent = last ? `${last.j} disputada` : 'Pretemporada';
-  badge.title = partial.length ? `Con partidos pendientes: ${partial.join(', ')}` : '';
-}
+// ═════════════ Vistas ═════════════
+function renderInicio(){
+  const hist = jorStatsHistory.find(h=>h.j===lastR.j).data;
+  const rk = jornadasRanking2627.find(r=>r.j===lastR.j).ranking;
+  const top = rk[0], last = rk[15];
+  const avg = Math.round(Object.values(hist).reduce((a,b)=>a+b,0)/16);
+  const closest = lastR.matches.reduce((b,m)=>Math.abs(m[1]-m[2])<Math.abs(b[1]-b[2])?m:b);
+  const biggest = lastR.matches.reduce((b,m)=>Math.abs(m[1]-m[2])>Math.abs(b[1]-b[2])?m:b);
+  const cr = cronicas2627[0];
+  const payers = rk.slice(10).map((t,i)=>({t,pos:11+i,amt:PAY_RULES_2627[i].amount})).reverse();
+  const maxAmt = Math.max(...PAY_RULES_2627.map(p=>p.amount));
+  const side = (n,s,w,h) => `<div class="side ${h?'h':''} ${w?'w':''}">${h?`<span>${esc(n)}</span>${crest(n,22)}`:`${crest(n,22)}<span>${esc(n)}</span>`}</div>`;
 
-function rankColor(rank, n) {
-  const p = rank/n;
-  if (p<=0.25) return '#22c55e';
-  if (p<=0.5)  return '#f5c842';
-  if (p<=0.75) return '#f59e0b';
-  return '#ef4444';
-}
-
-// ═══════════════════════════════════════════
-// RENDER FUNCTIONS
-// ═══════════════════════════════════════════
-
-function renderStandings() {
-  const tbody = document.getElementById('standings-body');
-  const teams = computeStandings(rounds2627);
-  const all = TEAMS_2627.map(name=>({name,...(teams[name]||{pts:0,pg:0,pe:0,pp:0})}));
-  const n = all.length;
-  const lastJ = rounds2627.filter(r=>!r.pending).length;
-
-  // Compute Jor. sum per team
-  const jorSum = {};
-  jorStatsHistory.forEach(({data}) => {
-    Object.entries(data).forEach(([team, pts]) => {
-      jorSum[team] = (jorSum[team] || 0) + pts;
-    });
-  });
-
-  // Sort: PTS desc, then Jor. sum desc as tiebreaker
-  all.sort((a,b) => b.pts - a.pts || (jorSum[b.name]||0) - (jorSum[a.name]||0));
-
-  document.getElementById('standings-sub').textContent = `Jornada ${lastJ} · ${n} equipos`;
-  tbody.innerHTML = '';
-  all.forEach((t,i) => {
-    const pos=i+1, pj=t.pg+t.pe+t.pp;
-    const zc = pos<=8?'z-top':pos>10?'z-bottom':'z-mid';
-    const medal = i===0?'🥇 ':i===1?'🥈 ':i===2?'🥉 ':'';
-    const jorVal = jorSum[t.name] ?? '—';
-    tbody.innerHTML += `<tr class="team-row ${zc}">
-      <td class="t-pos">${pos}</td>
-      <td class="t-name">${medal}${t.name}</td>
-      <td class="t-pts">${t.pts}</td>
-      <td class="hide-mobile">${pj}</td>
-      <td class="hide-mobile">${t.pg}</td>
-      <td class="hide-mobile">${t.pe}</td>
-      <td class="hide-mobile">${t.pp}</td>
-      <td class="t-jor">${jorVal}</td>
-    </tr>`;
-  });
-}
-
-function renderRounds() {
-  const grid = document.getElementById('rounds-grid');
-  const jorSelect = document.getElementById('filter-jornada');
-  const eqSelect = document.getElementById('filter-equipo');
-
-  // Populate selects only once
-  if (jorSelect && jorSelect.options.length <= 1) {
-    rounds2627.forEach(r => {
-      const opt = document.createElement('option');
-      opt.value = r.j; opt.textContent = r.j;
-      jorSelect.appendChild(opt);
-    });
-    TEAMS_2627.slice().sort().forEach(t => {
-      const opt = document.createElement('option');
-      opt.value = t; opt.textContent = t;
-      eqSelect.appendChild(opt);
-    });
-  }
-
-  grid.innerHTML = '';
-  rounds2627.forEach(round => {
-    const isPending = round.pending;
-    const isPartial = round.partialPending;
-
-    // Filter matches by team if selected
-    const teamFilter = eqSelect ? eqSelect.value : '';
-    const filteredMatches = teamFilter
-      ? round.matches.filter(([home,,, away]) => home === teamFilter || away === teamFilter)
-      : round.matches;
-
-    if (!filteredMatches.length) return;
-
-    const matchHTML = filteredMatches.map(([home, hs, as_, away]) => {
-      if (isPending || hs === '') return `<div class="match-row">
-        <div class="match-home">${home}</div>
-        <div class="match-score"><span class="pending-chip">pdte</span></div>
-        <div class="match-away">${away}</div></div>`;
-      const h = parseInt(hs), a = parseInt(as_);
-      return `<div class="match-row">
-        <div class="match-home ${h>a?'w':''}">${home}</div>
-        <div class="match-score">${hs}·${as_}</div>
-        <div class="match-away ${a>h?'w':''}">${away}</div></div>`;
-    }).join('');
-
-    const nPend = round.pendingMatches || 1;
-    const partialBanner = isPartial ? `<div class="partial-pending-banner">⏳ Pendiente de disputar ${nPend} partido${nPend!==1?'s':''} — clasificación provisional</div>` : '';
-
-    grid.innerHTML += `<div class="round-card" data-j="${round.j}">
-      <div class="round-card-header">
-        <span class="round-card-title">${round.j}</span>
-        <span class="round-card-meta">${filteredMatches.length} partido${filteredMatches.length!==1?'s':''}</span>
-      </div>
-      ${partialBanner}
-      <div>${matchHTML}</div>
-    </div>`;
-  });
-
-  // Apply jornada filter (hide/show cards)
-  filterRoundsDisplay();
-}
-
-function filterRounds() {
-  renderRounds();
-  filterRoundsDisplay();
-}
-
-function filterRoundsDisplay() {
-  const jorVal = document.getElementById('filter-jornada')?.value || '';
-  const eqVal = document.getElementById('filter-equipo')?.value || '';
-  const clearBtn = document.getElementById('filter-clear-btn');
-  const badge = document.getElementById('filter-badge');
-
-  const cards = document.querySelectorAll('#rounds-grid .round-card');
-  let visible = 0;
-  cards.forEach(card => {
-    const show = !jorVal || card.dataset.j === jorVal;
-    card.style.display = show ? '' : 'none';
-    if (show) visible++;
-  });
-
-  const hasFilter = jorVal || eqVal;
-  clearBtn?.classList.toggle('visible', !!hasFilter);
-
-  if (badge) {
-    if (eqVal && jorVal) badge.textContent = `${eqVal} · ${jorVal}`;
-    else if (eqVal) badge.textContent = `${eqVal} · ${visible} jornada${visible!==1?'s':''}`;
-    else if (jorVal) badge.textContent = jorVal;
-    else badge.textContent = '';
-  }
-}
-
-function clearRoundFilters() {
-  const jorSelect = document.getElementById('filter-jornada');
-  const eqSelect = document.getElementById('filter-equipo');
-  if (jorSelect) jorSelect.value = '';
-  if (eqSelect) eqSelect.value = '';
-  filterRounds();
-}
-
-function renderNext() {
-  const content = document.getElementById('next-content');
-  const nextRound = rounds2627.find(r => r.pending);
-  const nextLabel = nextRound ? `Jornada ${jorNum(nextRound.j)} · Pendiente` : 'Temporada regular terminada';
-  document.getElementById('next-sub').textContent = nextLabel;
-  if (!nextRound) { content.innerHTML = ''; return; }
-  content.innerHTML = `<div class="next-card">
-    <div class="card-header">
-      <span class="card-title">⏳ ${nextLabel}</span>
+  document.getElementById('v-inicio').innerHTML = `
+  <div class="hero">
+    <div class="hero-title">
+      <div><div class="eyebrow">Última jornada · media ${avg} pts</div><h2>Jornada <span>${jorNum(lastR.j)}</span></h2></div>
     </div>
-    ${nextMatches2627.map(([h,a])=>`<div class="next-match">
-      <div class="next-team-name right">${h}</div>
-      <div class="next-vs">vs</div>
-      <div class="next-team-name">${a}</div>
-    </div>`).join('')}
-  </div>`;
-}
-
-function renderPlayoffs() {
-  const inner = document.getElementById('bracket-inner');
-  const rounds = [
-    {title:'Dieciseisavos', n:8},
-    {title:'Octavos',       n:4},
-    {title:'Cuartos',       n:2},
-    {title:'Semis',         n:2},
-    {title:'Final',         n:1},
-  ];
-  inner.innerHTML = rounds.map(r=>`
-    <div class="bracket-col">
-      <div class="bracket-col-title">${r.title}</div>
-      <div class="bracket-col-matches">
-        ${Array(r.n).fill(0).map(()=>`
-        <div class="b-match pending">
-          <div class="b-match-label">Pendiente</div>
-          <div class="b-tbd">Por determinar</div>
-          <div class="b-tbd">Por determinar</div>
-        </div>`).join('')}
+    <div class="duo">
+      <div class="card spot win">
+        <div class="eyebrow" style="color:var(--gold)">${ICONS.trophy} Rey de la jornada</div>
+        <div class="who">${crest(top,40)}<b>${teamLink(top)}</b></div>
+        <div class="big num">${hist[top]}<small>pts</small></div>
+        <div class="note">+${hist[top]-avg} sobre la media</div>
       </div>
-    </div>`).join('') + `
-    <div class="bracket-col champion-col">
-      <div class="bracket-col-title">Campeón</div>
-      <div class="bracket-col-matches">
-        <div class="champion-card">
-          <div class="champion-trophy">🏆</div>
-          <div class="champion-tbd">???</div>
-          <div class="champion-label">Pendiente</div>
+      <div class="card spot lose">
+        <div class="eyebrow" style="color:var(--loss)">${ICONS.lantern} Farolillo rojo</div>
+        <div class="who">${crest(last,40)}<b>${teamLink(last)}</b></div>
+        <div class="big num">${hist[last]}<small>pts</small></div>
+        <div class="note">Paga ${fmtEur(maxAmt)}</div>
+      </div>
+    </div>
+      <div class="card teaser">
+        <div class="card-h"><span class="eyebrow">Crónica · ${cr.j}</span><a class="link" href="#cronica">Leer entera →</a></div>
+        <div class="card-b"><h3>${cr.titular}</h3><p>${cr.parrafos[0]}</p></div>
+      </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-h"><h3>Resultados</h3><a class="link" href="#clasificacion">Ver clasificación →</a></div>
+      <div class="card-b matches">
+        ${lastR.matches.map(m=>{const [h,hs,as,a]=m,x=+hs,y=+as;
+          const t = m===closest?'Partido más ajustado':m===biggest?'Goleada de la jornada':'';
+          return `<div class="m">${t?`<div class="tag">${t}</div>`:''}<div class="m-line ${x>y?'w':''}">${crest(h,22)}<span>${esc(h)}</span><b class="num">${hs}</b></div><div class="m-line ${y>x?'w':''}">${crest(a,22)}<span>${esc(a)}</span><b class="num">${as}</b></div></div>`;}).join('')}
+      </div>
+    </div>
+
+    <div style="display:grid;gap:18px;min-width:0">
+      <div class="card">
+        <div class="card-h"><h3>Pagan esta jornada</h3><span class="eyebrow num">${fmtEur(PAY_RULES_2627.reduce((s,p)=>s+p.amount,0))} en total</span></div>
+        <div class="card-b pay">
+          ${payers.map(p=>`<div class="pay-row"><span class="pos num">${p.pos}º</span>${crest(p.t,22)}<div style="display:grid;gap:4px;min-width:0"><span class="nm">${esc(p.t)}</span><span class="heat"><i style="width:${p.amt/maxAmt*100}%"></i></span></div><span class="amt num">${fmtEur(p.amt)}</span></div>`).join('')}
         </div>
       </div>
-    </div>`;
+
+    </div>
+  </div>
+      ${nextR?`<div class="card">
+        <div class="card-h"><h3>Próxima · ${esc(nextR.j)}</h3><span class="eyebrow">Pendiente</span></div>
+        <div class="card-b matches wide">
+          ${nextR.matches.map(([h,,,a])=>`<div class="m fxm"><div class="m-line">${crest(h,20)}<span>${esc(h)}</span><b></b></div><div class="m-line">${crest(a,20)}<span>${esc(a)}</span><b></b></div></div>`).join('')}
+        </div>
+      </div>`:''}
+  `;
 }
 
-function renderCronica() {
-  const content = document.getElementById('cronica-content');
-  const label = c => `📰 Jornada ${jorNum(c.j)} · Temporada ${TEMPORADA}`;
-  const body = c => `<p><strong style="color:var(--gold)">${c.titular}</strong></p>` +
-    c.parrafos.map(p => `<p>${p}</p>`).join('');
-  const [main, ...archive] = cronicas2627;
-  if (!main) { content.innerHTML = ''; return; }
-  content.innerHTML = `
-  <div class="cronica-main">
-    <div class="cronica-main-header">
-      <div class="cronica-main-title">${label(main)}</div>
-    </div>
-    <div class="cronica-main-body">${body(main)}</div>
-  </div>` + (archive.length ? `
-  <div class="archive-title">📚 Archivo</div>` + archive.map(c => `
-  <div class="cronica-item" onclick="this.classList.toggle('open')">
-    <div class="cronica-item-header">
-      <span class="cronica-item-label">${label(c)}</span>
-      <span class="cronica-item-toggle">▼</span>
-    </div>
-    <div class="cronica-item-body">${body(c)}</div>
-  </div>`).join('') : '');
-}
-
-function renderPagos() {
-  // Compute balances
-  const balance = {};
-  TEAMS_2627.forEach(t=>{balance[t]=0;});
-  jornadasRanking2627.forEach(({ranking})=>{
-    ranking.forEach((team,idx)=>{
-      const pos=idx+1;
-      const rule=PAY_RULES_2627.find(r=>r.pos===pos);
-      if(rule) balance[team]=(balance[team]||0)+rule.amount;
-    });
-  });
-
-  // Next payers
-  const lastJ = jornadasRanking2627[jornadasRanking2627.length-1];
-  const payers = lastJ.ranking.slice(10);
-  const colors=['#ef4444','#ef4444','#f59e0b','#f59e0b','#f5c842','#d1d5db'];
-  document.getElementById('next-payers').innerHTML = payers.map((team,i)=>`
-    <div class="payer-row">
-      <span class="payer-pos">${PAY_RULES_2627[i].label}</span>
-      <span class="payer-name">${team}</span>
-      <span class="payer-amount" style="color:${colors[i]}">+${PAY_RULES_2627[i].amount.toFixed(2)}€</span>
-    </div>`).join('') +
-    `<div style="padding:8px 14px;font-size:0.65rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase">Según: ${lastJ.j}</div>`;
-
-  // Summary
-  const sorted = [...TEAMS_2627].sort((a,b)=>(balance[b]||0)-(balance[a]||0));
-  const tbody = document.getElementById('pagos-summary-body');
-  tbody.innerHTML = sorted.map(t=>`<tr>
-    <td>${t}</td>
-    <td>${(balance[t]||0).toFixed(2)}€</td>
-  </tr>`).join('');
-
-  // History
-  const table = document.getElementById('history-table');
-  const short = t=>t.length>9?t.slice(0,9)+'.':t;
-  let html = '<thead><tr><th>Jornada</th>'+TEAMS_2627.map(t=>`<th>${short(t)}</th>`).join('')+'</tr></thead><tbody>';
-  jornadasRanking2627.forEach(({j,ranking})=>{
-    html+=`<tr><td>${j}</td>`;
-    TEAMS_2627.forEach(team=>{
-      const pos=ranking.indexOf(team)+1;
-      const rule=pos>0?PAY_RULES_2627.find(r=>r.pos===pos):null;
-      html+=rule?`<td class="hv">+${rule.amount.toFixed(2)}</td>`:'<td></td>';
-    });
-    html+='</tr>';
-  });
-  html+='<tr class="total-row"><td>TOTAL</td>'+TEAMS_2627.map(t=>`<td>${(balance[t]||0).toFixed(2)}</td>`).join('')+'</tr></tbody>';
-  table.innerHTML=html;
-}
-
-function renderStats() {
-  const select = document.getElementById('stats-select');
-  const content = document.getElementById('stats-content');
-  const history = jorStatsHistory;
-  const teams = TEAMS_2627;
-  const selected = select ? select.value : '';
-
-  document.getElementById('stats-sub').textContent = `Fichas individuales · ${history.length} jornada${history.length!==1?'s':''} registrada${history.length!==1?'s':''}`;
-
-  if (!history.length) {
-    content.innerHTML = `<div class="empty-state"><div class="empty-icon">📊</div><div class="empty-title">Sin datos aún</div><div class="empty-sub">Sube el primer pantallazo para activar las estadísticas</div></div>`;
-    return;
-  }
-
-  const teamStats = teams.map(name=>({name,s:computeTeamStats(name,history)})).filter(t=>t.s);
-  teamStats.sort((a,b)=>b.s.media-a.s.media);
-
-  // Highlights
-  const bestMedia = teamStats[0];
-  const bestJor = teamStats.reduce((b,t)=>t.s.max>b.s.max?t:b,teamStats[0]);
-  const worstJor = teamStats.reduce((b,t)=>t.s.min<b.s.min?t:b,teamStats[0]);
-  const pagTotals={};
-  teams.forEach(t=>{pagTotals[t]=0;});
-  jornadasRanking2627.forEach(({ranking})=>{
-    ranking.forEach((team,idx)=>{
-      const rule=PAY_RULES_2627.find(r=>r.pos===idx+1);
-      if(rule) pagTotals[team]=(pagTotals[team]||0)+rule.amount;
-    });
-  });
-  const mostPaid=teams.reduce((top,t)=>(pagTotals[t]||0)>(pagTotals[top]||0)?t:top,teams[0]);
-
-  if (selected) {
-    const t = teamStats.find(t=>t.name===selected);
-    if (!t) return;
-    const n = teams.length;
-    content.innerHTML = `
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px">
-      <div>
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:2px">${t.name}</div>
-        <div style="font-size:0.7rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-top:2px">${t.s.jornadas.length} jornada${t.s.jornadas.length!==1?'s':''} jugada${t.s.jornadas.length!==1?'s':''}</div>
-      </div>
-      <div class="stats-select-wrap">
-        <select class="stats-select" id="stats-select" onchange="renderStats()">
-          <option value="">— Todos los equipos —</option>
-          ${teams.map(tm=>`<option value="${tm}" ${tm===selected?'selected':''}>${tm}</option>`).join('')}
-        </select>
-      </div>
-    </div>
-    <div class="stats-kpi-grid">
-      <div class="kpi-card"><span class="kpi-value">${t.s.media}</span><span class="kpi-label">Media pts/jornada</span></div>
-      <div class="kpi-card"><span class="kpi-value" style="color:var(--green)">${t.s.max}</span><span class="kpi-label">Mejor jornada</span><span class="kpi-sub">${t.s.maxJ}</span></div>
-      <div class="kpi-card"><span class="kpi-value" style="color:var(--red)">${t.s.min}</span><span class="kpi-label">Peor jornada</span><span class="kpi-sub">${t.s.minJ}</span></div>
-      <div class="kpi-card"><span class="kpi-value">${t.s.mediaRanking}º</span><span class="kpi-label">Posición media</span></div>
-      <div class="kpi-card"><span class="kpi-value" style="color:var(--green)">${t.s.top8}</span><span class="kpi-label">Jornadas top 8</span></div>
-      <div class="kpi-card"><span class="kpi-value" style="color:var(--red)">${t.s.bottom6}</span><span class="kpi-label">Jornadas zona pago</span></div>
-    </div>
-    <div class="section-label">Historial de puntos</div>
-    <div class="jor-dots">
-      ${t.s.jornadas.map((j,i)=>{
-        const pts=t.s.puntos[i],rank=t.s.rankings[i];
-        const col=rankColor(rank,n);
-        return `<div class="jor-dot" style="background:${col}18;border:1px solid ${col}40;color:${col}" title="${j.j}: ${pts}pts (${rank}º)">${pts}</div>`;
-      }).join('')}
-    </div>
-    <div class="dot-legend">🟢 Top 4 · 🟡 Top 8 · 🟠 Medio · 🔴 Zona pago</div>
-    <div class="section-label" style="margin-top:20px">Detalle por jornada</div>
-    <div class="stats-main-table-wrap">
-      <table class="stats-main-table">
-        <thead><tr><th>#</th><th>Jornada</th><th>Puntos</th><th>Posición</th><th>vs media liga</th></tr></thead>
+function renderClasificacion(){
+  const now = standingsUpTo(played.length), prev = standingsUpTo(played.length-1);
+  const prevPos = Object.fromEntries(prev.map((t,i)=>[t.name,i+1]));
+  const partial = played.filter(r=>r.partialPending).map(r=>r.j);
+  document.getElementById('v-clasificacion').innerHTML = `
+  <div class="hero-title"><div><div class="eyebrow">Tras la ${esc(lastR.j)} · 16 equipos</div><h2 style="font-size:clamp(36px,9vw,52px);text-transform:uppercase">Clasificación</h2></div></div>
+  ${partial.length?`<div class="card" style="padding:10px 14px;border-color:var(--draw);color:var(--draw);font-size:13px;font-weight:600">Provisional: queda un partido de la ${partial.join(', ')} por disputar.</div>`:''}
+  <div class="card">
+    <div class="tbl-wrap">
+      <table class="st num">
+        <thead><tr><th>#</th><th></th><th class="l">Equipo</th><th>Pts</th><th class="hm">PJ</th><th class="hm">V</th><th class="hm">E</th><th class="hm">D</th><th>Racha</th><th class="hm">Pts jor.</th></tr></thead>
         <tbody>
-          ${t.s.jornadas.map((j,i)=>{
-            const pts=t.s.puntos[i],rank=t.s.rankings[i];
-            const allPts=Object.values(j.data);
-            const ml=(allPts.reduce((a,b)=>a+b,0)/allPts.length).toFixed(1);
-            const diff=+(pts-ml).toFixed(1);
-            const dc=diff>0?'color:var(--green)':diff<0?'color:var(--red)':'';
-            const rc=rank<=4?'hi':rank>10?'lo':'';
-            return `<tr><td>${i+1}</td><td>${j.j}</td><td>${pts}</td><td class="${rc}">${rank}º/${n}</td><td style="${dc}">${diff>0?'+':''}${diff}</td></tr>`;
-          }).join('')}
+        ${now.map((t,i)=>{const p=i+1,d=prevPos[t.name]-p;
+          const mv=d>0?`<td class="mv up" title="Sube ${d}">▲${d}</td>`:d<0?`<td class="mv dn" title="Baja ${-d}">▼${-d}</td>`:`<td class="mv eq" title="Igual">–</td>`;
+          return `<tr class="${p<=8?'z8':''}"><td class="pos">${p}</td>${mv}<td class="team"><div>${crest(t.name,26)}<b>${teamLink(t.name)}</b></div></td><td class="pts">${t.pts}</td><td class="hm">${t.pg+t.pe+t.pp}</td><td class="hm">${t.pg}</td><td class="hm">${t.pe}</td><td class="hm">${t.pp}</td><td><div class="form">${t.form.slice(-5).map(f=>`<i class="${f}" title="${{W:'Victoria',D:'Empate',L:'Derrota'}[f]}">${{W:'V',D:'E',L:'D'}[f]}</i>`).join('')}</div></td><td class="hm">${t.jor}</td></tr>`;}).join('')}
         </tbody>
       </table>
-    </div>`;
-    return;
-  }
-
-  content.innerHTML = `
-  <div class="highlight-grid">
-    <div class="hl-card gold">
-      <span class="hl-icon">🏅</span>
-      <span class="hl-label">Mejor media</span>
-      <span class="hl-name">${bestMedia.name}</span>
-      <span class="hl-value">${bestMedia.s.media}</span>
-      <span class="hl-sub">pts/jornada</span>
     </div>
-    <div class="hl-card green">
-      <span class="hl-icon">🚀</span>
-      <span class="hl-label">Mejor jornada</span>
-      <span class="hl-name">${bestJor.name}</span>
-      <span class="hl-value">${bestJor.s.max}</span>
-      <span class="hl-sub">${bestJor.s.maxJ}</span>
-    </div>
-    <div class="hl-card red">
-      <span class="hl-icon">💀</span>
-      <span class="hl-label">Peor jornada</span>
-      <span class="hl-name">${worstJor.name}</span>
-      <span class="hl-value">${worstJor.s.min}</span>
-      <span class="hl-sub">${worstJor.s.minJ}</span>
-    </div>
-    <div class="hl-card blue">
-      <span class="hl-icon">💸</span>
-      <span class="hl-label">Más pagado</span>
-      <span class="hl-name">${mostPaid}</span>
-      <span class="hl-value">${(pagTotals[mostPaid]||0).toFixed(2)}€</span>
-      <span class="hl-sub">acumulado</span>
-    </div>
-  </div>
-
-  <div class="stats-select-wrap">
-    <select class="stats-select" id="stats-select" onchange="renderStats()">
-      <option value="">— Ver todos los equipos —</option>
-      ${teams.map(t=>`<option value="${t}">${t}</option>`).join('')}
-    </select>
-  </div>
-
-  <div class="section-label">Ranking por media</div>
-  <div class="stats-main-table-wrap">
-    <table class="stats-main-table">
-      <thead><tr><th>#</th><th>Equipo</th><th>Media</th><th>Mejor</th><th>Peor</th><th>Pos. media</th><th class="hide-mobile">Top 8</th><th class="hide-mobile">Zona pago</th></tr></thead>
-      <tbody>
-        ${teamStats.map((t,i)=>`<tr>
-          <td>${i+1}</td>
-          <td>${t.name}</td>
-          <td class="${i===0?'hi':''}">${t.s.media}</td>
-          <td class="hi">${t.s.max}<span style="color:var(--muted);font-size:0.75rem;margin-left:4px">${t.s.maxJ}</span></td>
-          <td class="lo">${t.s.min}<span style="color:var(--muted);font-size:0.75rem;margin-left:4px">${t.s.minJ}</span></td>
-          <td>${t.s.mediaRanking}º</td>
-          <td class="hide-mobile" style="color:var(--green)">${t.s.top8}</td>
-          <td class="hide-mobile" style="color:var(--red)">${t.s.bottom6}</td>
-        </tr>`).join('')}
-      </tbody>
-    </table>
-  </div>
-
-  <div class="section-label">Fichas individuales</div>
-  <div class="mini-cards-grid">
-    ${teamStats.map(t=>`
-    <div class="mini-card">
-      <div class="mini-card-name">${t.name}</div>
-      <div class="mini-stats-row">
-        <div class="mini-stat"><span class="mini-stat-val">${t.s.media}</span><span class="mini-stat-lbl">Media</span></div>
-        <div class="mini-stat"><span class="mini-stat-val" style="color:var(--green)">${t.s.max}</span><span class="mini-stat-lbl">Mejor</span></div>
-        <div class="mini-stat"><span class="mini-stat-val" style="color:var(--red)">${t.s.min}</span><span class="mini-stat-lbl">Peor</span></div>
-        <div class="mini-stat"><span class="mini-stat-val">${t.s.mediaRanking}º</span><span class="mini-stat-lbl">Pos. media</span></div>
-      </div>
-      <div class="jor-dots">
-        ${t.s.jornadas.map((j,i)=>{
-          const pts=t.s.puntos[i],rank=t.s.rankings[i];
-          const col=rankColor(rank,teams.length);
-          return `<div class="jor-dot" style="background:${col}18;border:1px solid ${col}40;color:${col};width:28px;height:28px;font-size:0.75rem" title="${j.j}: ${pts}pts (${rank}º)">${pts}</div>`;
-        }).join('')}
-      </div>
-    </div>`).join('')}
+    <div class="legend"><span><i style="background:var(--win)"></i>Puestos 1-8</span><span>▲▼ Puestos ganados o perdidos respecto a la ${esc(played[played.length-2].j)}</span><span>Racha: últimas 5 jornadas</span></div>
   </div>`;
 }
 
-// ═══════════════════════════════════════════
-// NAV
-// ═══════════════════════════════════════════
+// ═════════════ Datos derivados ═════════════
+const slug = n => n.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const BY_SLUG = Object.fromEntries(TEAMS_2627.map(t=>[slug(t),t]));
+const teamLink = (n, inner) => `<a class="tl" href="#equipo-${slug(n)}">${inner ?? esc(n)}</a>`;
+const payFor = pos => (PAY_RULES_2627.find(r=>r.pos===pos)||{}).amount || 0;
+const officialPos = (team,j) => { const r=jornadasRanking2627.find(x=>x.j===j); return r ? r.ranking.indexOf(team)+1 : null; };
+const ptsOf = (team,j) => { const h=jorStatsHistory.find(x=>x.j===j); return h ? h.data[team] : null; };
+const leagueAvg = j => { const v=Object.values(jorStatsHistory.find(x=>x.j===j).data); return v.reduce((a,b)=>a+b,0)/v.length; };
+const fmt1 = n => n.toLocaleString('es-ES',{minimumFractionDigits:1,maximumFractionDigits:1});
 
-function showTab(id, btn) {
-  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
-  document.querySelectorAll('.nav-item').forEach(b=>b.classList.remove('active'));
-  document.getElementById('s-'+id).classList.add('active');
-  btn.classList.add('active');
-  renderAll();
-  return false;
+const PAID = Object.fromEntries(TEAMS_2627.map(t=>[t,{amt:0,times:0,byJ:{}}]));
+jornadasRanking2627.forEach(({j,ranking})=>ranking.forEach((t,i)=>{const a=payFor(i+1); if(a){PAID[t].amt+=a;PAID[t].times++;PAID[t].byJ[j]=a;}}));
+
+function teamStats(t){
+  const js = jorStatsHistory.filter(h=>h.data[t]!==undefined).map(h=>h.j);
+  const pts = js.map(j=>ptsOf(t,j));
+  const pos = js.map(j=>officialPos(t,j));
+  const max=Math.max(...pts), min=Math.min(...pts);
+  return { js, pts, pos, media: pts.reduce((a,b)=>a+b,0)/pts.length, max, maxJ: js[pts.indexOf(max)], min, minJ: js[pts.indexOf(min)],
+    posMedia: pos.reduce((a,b)=>a+b,0)/pos.length, top8: pos.filter(p=>p<=8).length, pago: pos.filter(p=>p>10).length };
+}
+const STATS = Object.fromEntries(TEAMS_2627.map(t=>[t,teamStats(t)]));
+
+function payersBlock(j){
+  const rk = jornadasRanking2627.find(r=>r.j===j).ranking;
+  const maxAmt = Math.max(...PAY_RULES_2627.map(p=>p.amount));
+  return rk.slice(10).map((t,i)=>({t,pos:11+i,amt:payFor(11+i)})).reverse().map(p=>
+    `<div class="pay-row"><span class="pos num">${p.pos}º</span>${crest(p.t,22)}<div style="display:grid;gap:4px;min-width:0"><span class="nm">${teamLink(p.t)}</span><span class="heat"><i style="width:${p.amt/maxAmt*100}%"></i></span></div><span class="amt num">${fmtEur(p.amt)}</span></div>`).join('');
 }
 
-function toggleCard(el) { el.classList.toggle('open'); }
-
-function renderAll() {
-  renderHeader();
-  renderStandings();
-  renderRounds();
-  renderNext();
-  renderPlayoffs();
-  renderCronica();
-  renderPagos();
-  renderStats();
+function sparkline(vals, w=120, h=30){
+  const lo=Math.min(0,...vals), hi=Math.max(70,...vals), n=vals.length;
+  const x=i=>n<2?w/2:(i/(n-1))*(w-4)+2, y=v=>h-2-((v-lo)/(hi-lo))*(h-4);
+  const pts=vals.map((v,i)=>`${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${x(n-1)}" cy="${y(vals[n-1])}" r="2.8" fill="var(--accent)"/></svg>`;
 }
 
-renderAll();
+// ═════════════ Jornadas ═════════════
+let selJ = played.length-1;
+function renderJornadas(){
+  const v = document.getElementById('v-jornadas');
+  v.innerHTML = `
+  <div class="hero-title"><div><div class="eyebrow">Temporada ${TEMPORADA} · ${played.length} de ${rounds2627.length} disputadas</div><h2 class="h-page">Jornadas</h2></div></div>
+  <div class="jsel">
+    <button type="button" class="jbtn" id="jprev" aria-label="Jornada anterior">‹</button>
+    <div class="jstrip" id="jstrip">${rounds2627.map((r,i)=>`<button type="button" class="chip ${r.pending?'pend':''} ${r.partialPending?'part':''}" data-i="${i}" id="jchip-${i}">J${jorNum(r.j)}</button>`).join('')}</div>
+    <button type="button" class="jbtn" id="jnext" aria-label="Jornada siguiente">›</button>
+  </div>
+  <div id="jbody" class="grid-2"></div>`;
+  v.querySelector('#jstrip').addEventListener('click',e=>{const b=e.target.closest('.chip'); if(b){selJ=+b.dataset.i; drawJornada();}});
+  v.querySelector('#jprev').addEventListener('click',()=>{if(selJ>0){selJ--;drawJornada();}});
+  v.querySelector('#jnext').addEventListener('click',()=>{if(selJ<rounds2627.length-1){selJ++;drawJornada();}});
+  drawJornada();
+}
+function drawJornada(){
+  const r = rounds2627[selJ], n = jorNum(r.j);
+  document.querySelectorAll('#jstrip .chip').forEach(c=>c.setAttribute('aria-pressed', +c.dataset.i===selJ));
+  const strip=document.getElementById('jstrip'), chip=document.getElementById('jchip-'+selJ);
+  if(strip&&chip) strip.scrollLeft = chip.offsetLeft - strip.clientWidth/2 + chip.clientWidth/2;
+  document.getElementById('jprev').disabled = selJ===0;
+  document.getElementById('jnext').disabled = selJ===rounds2627.length-1;
+  const vuelta = /\(Vuelta (J\d+)\)/.exec(r.j);
+  const estado = r.pending ? 'Pendiente' : r.partialPending ? 'Provisional' : 'Disputada';
+  const matches = r.matches.map(([h,hs,as,a])=>{
+    const x=+hs,y=+as, p=r.pending||hs==='';
+    return `<div class="m">${[[h,hs,!p&&x>y],[a,as,!p&&y>x]].map(([t,sc,w])=>`<div class="m-line ${w?'w':''}">${crest(t,22)}<span>${teamLink(t)}</span><b class="num">${p?'–':sc}</b></div>`).join('')}</div>`;}).join('');
+  let rankHtml = '';
+  if(!r.pending){
+    const rk = jornadasRanking2627.find(x=>x.j===r.j).ranking;
+    rankHtml = `<div class="card"><div class="card-h"><h3>Ranking de la jornada</h3><span class="eyebrow">Pagan del 11º al 16º</span></div>
+      <div class="card-b rank">${rk.map((t,i)=>{const a=payFor(i+1);return `<div class="rk ${a?'paid':''}"><span class="pos num">${i+1}</span>${crest(t,20)}<span class="nm">${teamLink(t)}</span><b class="num">${ptsOf(t,r.j)}</b><span class="eur num">${a?fmtEur(a):''}</span></div>`;}).join('')}</div></div>`;
+  }
+  document.getElementById('jbody').innerHTML = `
+    <div class="card">
+      <div class="card-h"><h3>Jornada ${n}</h3><span class="state ${estado.toLowerCase()}">${estado}${vuelta?` · vuelta de la ${vuelta[1]}`:''}</span></div>
+      ${r.partialPending?`<div class="warn">Queda ${r.pendingMatches||1} partido por disputar. Resultados y clasificación provisionales.</div>`:''}
+      <div class="card-b matches">${matches}</div>
+    </div>
+    ${rankHtml || `<div class="card"><div class="card-b"><p class="intro">Esta jornada aún no se ha jugado. Los resultados, el ranking y los pagos aparecerán aquí en cuanto se dispute.</p></div></div>`}`;
+}
+
+// ═════════════ Crónica ═════════════
+function renderCronica(){
+  const [main,...arch] = cronicas2627;
+  document.getElementById('v-cronica').innerHTML = `
+  <article class="card article">
+    <div class="eyebrow">Crónica · Jornada ${jorNum(main.j)} · Temporada ${TEMPORADA}</div>
+    <h2>${main.titular}</h2>
+    ${main.parrafos.map(p=>`<p>${p}</p>`).join('')}
+  </article>
+  <div class="eyebrow" style="margin-top:6px">Archivo · ${arch.length} crónicas</div>
+  <div class="archive">
+    ${arch.map(c=>`<details class="card arch"><summary><span class="chip static">J${jorNum(c.j)}</span><span class="t">${c.titular}</span></summary><div class="arch-b">${c.parrafos.map(p=>`<p>${p}</p>`).join('')}</div></details>`).join('')}
+  </div>`;
+}
+
+// ═════════════ Pagos ═════════════
+function renderPagos(){
+  const order = TEAMS_2627.slice().sort((a,b)=>PAID[b].amt-PAID[a].amt||PAID[b].times-PAID[a].times);
+  const total = order.reduce((s,t)=>s+PAID[t].amt,0), top = order[0], max = PAID[top].amt;
+  const perJ = PAY_RULES_2627.reduce((s,p)=>s+p.amount,0);
+  const js = jornadasRanking2627.map(r=>r.j);
+  document.getElementById('v-pagos').innerHTML = `
+  <div class="hero-title"><div><div class="eyebrow">Temporada ${TEMPORADA} · ${fmtEur(perJ)} por jornada</div><h2 class="h-page">Pagos</h2></div></div>
+  <div class="tiles">
+    <div class="card tile"><span class="eyebrow">Bote acumulado</span><b class="num">${fmtEur(total)}</b><small>${js.length} jornadas</small></div>
+    <div class="card tile"><span class="eyebrow">Más castigado</span><div class="who">${crest(top,30)}<span>${teamLink(top)}</span></div><small class="num">${fmtEur(max)} · ${PAID[top].times} ${PAID[top].times===1?'vez':'veces'}</small></div>
+    <div class="card tile"><span class="eyebrow">Se ha librado</span>${(()=>{const t=order[order.length-1];return `<div class="who">${crest(t,30)}<span>${teamLink(t)}</span></div><small class="num">${fmtEur(PAID[t].amt)} · ${PAID[t].times} ${PAID[t].times===1?'vez':'veces'}</small>`})()}</div>
+  </div>
+  <div class="grid-2">
+    <div class="card"><div class="card-h"><h3>Saldo por equipo</h3><span class="eyebrow">Pagado en total</span></div>
+      <div class="card-b bars">${order.map((t,i)=>`<div class="bar-row"><span class="pos num">${i+1}</span>${crest(t,20)}<div style="display:grid;gap:4px;min-width:0"><span class="nm">${teamLink(t)}</span><span class="heat"><i style="width:${max?PAID[t].amt/max*100:0}%"></i></span></div><span class="amt num">${fmtEur(PAID[t].amt)}<small>×${PAID[t].times}</small></span></div>`).join('')}</div></div>
+    <div class="card"><div class="card-h"><h3>Pagan en la ${esc(lastR.j)}</h3></div><div class="card-b pay">${payersBlock(lastR.j)}</div></div>
+  </div>
+  <div class="card"><div class="card-h"><h3>Histórico</h3><span class="eyebrow">Desliza →</span></div>
+    <div class="card-b"><div class="tbl-wrap"><table class="hist num">
+      <thead><tr><th class="l sticky">Equipo</th>${js.map(j=>`<th>${j}</th>`).join('')}<th>Total</th></tr></thead>
+      <tbody>${order.map(t=>`<tr><td class="l sticky"><div>${crest(t,18)}${teamLink(t)}</div></td>${js.map(j=>{const a=PAID[t].byJ[j];return `<td>${a?`<span class="cell" style="--o:${(a/2.5).toFixed(2)}">${fmt1(a).replace(',0','')}</span>`:''}</td>`;}).join('')}<td class="tot">${fmtEur(PAID[t].amt)}</td></tr>`).join('')}</tbody>
+    </table></div></div>
+  </div>`;
+}
+
+// ═════════════ Equipos ═════════════
+// ═════════════ Equipos: cuatro modelos para comparar ═════════════
+let eqSort = {k:'pos',dir:1};
+
+const sd = a => { const m=a.reduce((x,y)=>x+y,0)/a.length; return Math.sqrt(a.reduce((s,v)=>s+(v-m)**2,0)/a.length); };
+const crestColors = t => CRESTS[t] || autoCrest(t);
+function shade(hex, f){ const m=/^#(..)(..)(..)$/.exec(hex); if(!m) return hex; return '#'+[1,2,3].map(i=>Math.max(0,Math.min(255,Math.round(parseInt(m[i],16)*f))).toString(16).padStart(2,'0')).join(''); }
+
+function renderEquipos(){
+  document.getElementById('v-equipos').innerHTML = `
+  <div class="hero-title"><div><div class="eyebrow">${played.length} jornadas · toca un equipo para ver su ficha</div><h2 class="h-page">Equipos</h2></div></div>
+  <div id="eqBody" style="display:grid;gap:18px;min-width:0"></div>`;
+  drawEquipos();
+}
+
+function drawEquipos(){
+  const now = standingsUpTo(played.length), posOf = Object.fromEntries(now.map((t,i)=>[t.name,i+1]));
+  const body = document.getElementById('eqBody');
+  body.innerHTML = modelPremios(now,posOf) + `
+  <div class="card"><div class="card-h"><h3>Todos los equipos</h3><span class="eyebrow">Toca una cabecera para ordenar</span></div>${modelTabla(now,posOf)}</div>`;
+  body.querySelectorAll('th[data-k]').forEach(th=>th.addEventListener('click',()=>{
+    const k=th.dataset.k; eqSort = {k, dir: eqSort.k===k ? -eqSort.dir : (k==='pos'||k==='posMedia'||k==='name'?1:-1)}; drawEquipos(); }));
+  body.querySelectorAll('tr[data-href]').forEach(tr=>tr.addEventListener('click',e=>{ if(!e.target.closest('a')) location.hash = tr.dataset.href; }));
+}
+
+// 2 · Tabla comparativa ordenable, con barras dentro de las celdas
+function modelTabla(now,posOf){
+  const rows = TEAMS_2627.map(t=>({name:t,pos:posOf[t],media:STATS[t].media,max:STATS[t].max,min:STATS[t].min,posMedia:STATS[t].posMedia,top8:STATS[t].top8,paid:PAID[t].amt}));
+  const {k,dir}=eqSort; rows.sort((a,b)=> (typeof a[k]==='string'? a[k].localeCompare(b[k]) : a[k]-b[k]) * dir);
+  const mx = key => Math.max(...rows.map(r=>r[key]));
+  const cols = [['pos','#'],['name','Equipo'],['media','Media'],['max','Mejor'],['min','Peor'],['posMedia','Pos. media'],['top8','Top 8'],['paid','Pagado']];
+  const cell=(r,key)=>{const val=r[key];
+    if(key==='name') return `<td class="l sticky"><div>${crest(r.name,22)}${teamLink(r.name)}</div></td>`;
+    if(key==='pos') return `<td class="pos">${val}</td>`;
+    const txt = key==='media'||key==='posMedia' ? fmt1(val)+(key==='posMedia'?'º':'') : key==='paid' ? fmtEur(val) : val;
+    const w = key==='posMedia' ? (17-val)/16 : key==='min' ? Math.max(0,val)/mx('max') : Math.max(0,val)/(mx(key)||1);
+    const col = key==='paid'?'var(--pay)':key==='min'?'var(--loss)':key==='max'?'var(--win)':'var(--accent)';
+    return `<td><span class="barcell" style="--w:${(w*100).toFixed(0)}%;--c:${col}">${txt}</span></td>`;};
+  return `<div class="tbl-wrap"><table class="cmp num">
+    <thead><tr>${cols.map(([key,n])=>`<th data-k="${key}" class="${key==='name'?'l sticky':''} ${eqSort.k===key?'on':''}">${n}${eqSort.k===key?(eqSort.dir<0?' ↓':' ↑'):''}</th>`).join('')}</tr></thead>
+    <tbody>${rows.map(r=>`<tr data-href="#equipo-${slug(r.name)}">${cols.map(([key])=>cell(r,key)).join('')}</tr>`).join('')}</tbody>
+  </table></div>`;
+}
+
+// 4 · Premios: cada tarjeta cuenta una historia distinta
+function modelPremios(now,posOf){
+  const T = TEAMS_2627, S = STATS;
+  const pick = (f, better) => T.reduce((b,t)=> better(f(t),f(b)) ? t : b);
+  const last3 = t => { const p=S[t].pts.slice(-3); return p.reduce((a,b)=>a+b,0)/p.length; };
+  const jump = t => { let best=-1e9,j=''; S[t].pts.forEach((v,i)=>{ if(i&&v-S[t].pts[i-1]>best){best=v-S[t].pts[i-1]; j=S[t].js[i];} }); return {d:best,j}; };
+  const posNow = Object.fromEntries(now.map((x,i)=>[x.name,i+1]));
+  const back = Math.max(1, played.length-3), posThen = Object.fromEntries(standingsUpTo(back).map((x,i)=>[x.name,i+1]));
+  const drop = t => posNow[t]-posThen[t];
+  const used = new Set();
+  // pickU: el mejor según el criterio, sin repetir equipo ya premiado
+  const pickU = (f, better) => { const t = T.filter(x=>!used.has(x)).reduce((b,x)=> better(f(x),f(b)) ? x : b); used.add(t); return t; };
+  const fixed = {
+    int: pickU(t=>S[t].posMedia,(a,b)=>a<b),
+    mec: pickU(t=>PAID[t].amt,(a,b)=>a>b),
+    rec: pickU(t=>S[t].min,(a,b)=>a<b),
+  };
+  const awards = [
+    {k:'El Intocable', t:fixed.int, v:t=>fmt1(S[t].posMedia)+'º', s:'mejor puesto medio cada semana', cls:'gold'},
+    {k:'En racha', t:pickU(last3,(a,b)=>a>b), v:t=>fmt1(last3(t)), s:'pts de media en las 3 últimas', cls:'good'},
+    {k:'El Reloj Suizo', t:pickU(t=>sd(S[t].pts),(a,b)=>a<b), v:t=>'±'+fmt1(sd(S[t].pts)), s:'el más regular: siempre lo mismo', cls:''},
+    {k:'Montaña Rusa', t:pickU(t=>sd(S[t].pts),(a,b)=>a>b), v:t=>'±'+fmt1(sd(S[t].pts)), s:'nunca sabes qué equipo va a salir', cls:''},
+    {k:'El Resucitado', t:pickU(t=>jump(t).d,(a,b)=>a>b), v:t=>'+'+jump(t).d, s:t=>`puntos de subida de golpe en la ${jump(t).j}`, cls:'good'},
+    {k:'En caída libre', t:pickU(drop,(a,b)=>a>b), v:t=>drop(t)>0?`▼${drop(t)}`:'=', s:t=>drop(t)>0?`puestos perdidos en la tabla desde la J${back}`:'nadie ha caído en las últimas jornadas', cls:'bad'},
+    {k:'Mecenas de la liga', t:fixed.mec, v:t=>fmtEur(PAID[t].amt), s:t=>`pagados en ${PAID[t].times} jornadas. Gracias por tanto`, cls:'pay'},
+    {k:'Récord negativo', t:fixed.rec, v:t=>S[t].min, s:t=>`puntos en la ${S[t].minJ}. Nadie lo olvidará`, cls:'bad'},
+  ];
+  return `<p class="intro">Los equipos según su historia de la temporada. Se recalcula solo cada jornada.</p>
+  <div class="awards">${awards.map(a=>`<a class="card award ${a.cls}" href="#equipo-${slug(a.t)}">
+    <span class="eyebrow">${a.k}</span>
+    <div class="aw-main">${crest(a.t,54)}<div style="min-width:0"><b class="aw-team">${esc(a.t)}</b><span class="aw-v num">${a.v(a.t)}</span></div></div>
+    <small>${typeof a.s==='function'?a.s(a.t):a.s}</small></a>`).join('')}</div>
+`;
+}
+
+function chart(t){
+  const s=STATS[t], avg=s.js.map(leagueAvg), W=640,H=230,L=34,R=12,T=14,B=26;
+  const lo=Math.min(0,...s.pts)<0?Math.floor(Math.min(...s.pts)/10)*10:0, hi=Math.ceil(Math.max(70,...s.pts)/10)*10;
+  const x=i=>L+(s.js.length<2?0:i*(W-L-R)/(s.js.length-1)), y=v=>T+(hi-v)*(H-T-B)/(hi-lo);
+  const ticks=[]; for(let v=0; v<=hi; v+=20) ticks.push(v);
+  const line=(vals)=>vals.map((v,i)=>`${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+  const area=`${x(0)},${y(Math.max(lo,0))} ${line(s.pts)} ${x(s.js.length-1)},${y(Math.max(lo,0))}`;
+  return `<svg viewBox="0 0 ${W} ${H}" class="chart" role="img" aria-label="Puntos de ${esc(t)} por jornada frente a la media de la liga">
+    ${ticks.map(v=>`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end" fill="var(--muted)" font-size="11">${v}</text>`).join('')}
+    ${s.js.map((j,i)=>`<text x="${x(i)}" y="${H-8}" text-anchor="middle" fill="var(--muted)" font-size="11">${j}</text>`).join('')}
+    <polygon points="${area}" fill="var(--accent)" opacity=".10"/>
+    <polyline points="${line(avg)}" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <polyline points="${line(s.pts)}" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>
+    ${s.pts.map((v,i)=>{const p=s.pos[i];const c=p<=4?'var(--win)':p>10?'var(--loss)':'var(--accent)';return `<circle cx="${x(i)}" cy="${y(v)}" r="${i===s.pts.length-1?5:3.5}" fill="${c}" stroke="var(--surface)" stroke-width="1.5"><title>${s.js[i]}: ${v} pts (${p}º)</title></circle>`;}).join('')}
+  </svg>`;
+}
+
+function renderEquipo(t){
+  const s=STATS[t], now=standingsUpTo(played.length), p=now.findIndex(x=>x.name===t)+1, st=now[p-1];
+  const rows = played.map(r=>{
+    const m=r.matches.find(m=>m[0]===t||m[3]===t); if(!m) return '';
+    const home=m[0]===t, mine=+(home?m[1]:m[2]), theirs=+(home?m[2]:m[1]), rival=home?m[3]:m[0];
+    const res=mine>theirs?'W':mine<theirs?'L':'D', pos=officialPos(t,r.j), a=payFor(pos);
+    return `<tr><td>${r.j}</td><td class="l"><div>${crest(rival,18)}${teamLink(rival)}</div></td><td><span class="res"><span class="form"><i class="${res}">${{W:'V',D:'E',L:'D'}[res]}</i></span>${mine}-${theirs}</span></td><td class="${pos<=4?'good':pos>10?'bad':''}">${pos}º</td><td>${a?fmtEur(a):''}</td></tr>`;}).reverse().join('');
+  const kpi=(l,v,sub='',cls='')=>`<div class="card kpi ${cls}"><span class="eyebrow">${l}</span><b class="num">${v}</b>${sub?`<small>${sub}</small>`:''}</div>`;
+  document.getElementById('v-equipo').innerHTML = `
+  <a class="link" href="#equipos">← Todos los equipos</a>
+  <div class="team-head">
+    ${crest(t,92)}
+    <div style="min-width:0">
+      <div class="eyebrow">${p}º en la liga · ${st.pts} pts</div>
+      <h2 class="h-page">${esc(t)}</h2>
+      <div class="vde num"><span><b>${st.pg}</b> V</span><span><b>${st.pe}</b> E</span><span><b>${st.pp}</b> D</span><span class="form">${st.form.slice(-5).map(f=>`<i class="${f}">${{W:'V',D:'E',L:'D'}[f]}</i>`).join('')}</span></div>
+    </div>
+  </div>
+  <div class="kpis">
+    ${kpi('Media',fmt1(s.media),'pts por jornada','gold')}
+    ${kpi('Mejor jornada',s.max,s.maxJ,'good')}
+    ${kpi('Peor jornada',s.min,s.minJ,'bad')}
+    ${kpi('Posición media',fmt1(s.posMedia)+'º','en el ranking semanal')}
+    ${kpi('Jornadas top 8',s.top8,`de ${s.js.length}`)}
+    ${kpi('Pagado',fmtEur(PAID[t].amt),`${PAID[t].times} ${PAID[t].times===1?'vez':'veces'} en zona de pago`,'pay')}
+  </div>
+  <div class="card"><div class="card-h"><h3>Puntos por jornada</h3><span class="eyebrow legend-inline"><i class="ln"></i>${esc(t)} <i class="ln dash"></i>Media liga</span></div><div class="card-b"><div class="tbl-wrap">${chart(t)}</div></div></div>
+  <div class="card"><div class="card-h"><h3>Jornada a jornada</h3></div>
+    <div class="card-b"><div class="tbl-wrap"><table class="st num jj"><thead><tr><th>J</th><th class="l">Rival</th><th>Resultado</th><th>Puesto</th><th>Pagó</th></tr></thead><tbody>${rows}</tbody></table></div></div></div>
+  <div class="card crest-note">${crest(t,56)}<div><span class="eyebrow">El escudo</span><p>${(CRESTS[t]||autoCrest(t)).why}</p></div></div>`;
+}
+
+
+// ═════════════ Navegación ═════════════
+
+Object.assign(ICONS,{
+  jornadas:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>',
+  cronica:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h13v14a2 2 0 0 0 2 2H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v10a2 2 0 0 1-2 2M8 9h5M8 13h5M8 17h3"/></svg>',
+  pagos:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5a4 4 0 1 0 0 7M7 11h6M7 13.5h6"/></svg>',
+  equipos:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg>',
+});
+const navHtml = (withIcons) => VIEWS.map(([id,n,short])=>`<a href="#${id}" data-v="${id}">${withIcons?ICONS[id]+short:n}</a>`).join('');
+document.getElementById('tabsTop').innerHTML = navHtml(false);
+document.getElementById('navBottom').innerHTML = navHtml(true);
+document.getElementById('season').textContent = TEMPORADA;
+document.getElementById('pill').innerHTML = `<i></i>${esc(lastR.j)} disputada`;
+
+function route(){
+  let v = (location.hash||'#inicio').slice(1);
+  if (v==='escudos') v='equipos';
+  let cur = VIEWS.some(([id])=>id===v) ? v : 'inicio', active = cur;
+  if (v.startsWith('equipo-') && BY_SLUG[v.slice(7)]) { renderEquipo(BY_SLUG[v.slice(7)]); cur='equipo'; active='equipos'; }
+  ['inicio','clasificacion','jornadas','cronica','pagos','equipos','equipo'].forEach(id=>document.getElementById('v-'+id).hidden = id!==cur);
+  document.querySelectorAll('[data-v]').forEach(a=>{ if(a.dataset.v===active) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+  if (cur==='jornadas') drawJornada();
+}
+renderInicio(); renderClasificacion(); renderJornadas(); renderCronica(); renderPagos(); renderEquipos();
+window.addEventListener('hashchange',()=>{route();window.scrollTo(0,0)});
+route();
+
 </script>
 </body>
 </html>
