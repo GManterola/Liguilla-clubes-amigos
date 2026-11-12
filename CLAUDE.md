@@ -30,7 +30,7 @@ Usa el skill `actualizar-jornada-liga` (`.claude/skills/actualizar-jornada-liga/
 
 1. `node scripts/validar.js` → ✅
 2. Commit y `git push origin main` → Vercel despliega en ~1 min. GitHub Actions vuelve a validar.
-3. Publicar el artefacto con `file_path: index.html` y `files` = `data/temporada-2026-27.js`, `manifest.webmanifest` e `img/*` (misma URL).
+3. Artefacto: `node scripts/build-artifact.js <scratchpad>/build/index.html` (incrusta los datos) y publicar ese archivo con `url` del artefacto (misma URL). `img/*` y `manifest.webmanifest` ya están publicados.
 4. Recordar al usuario: recarga forzada (Cmd/Ctrl+Shift+R) para ver los cambios.
 
 **Nunca** subas a GitHub un `index.html` descargado del artefacto: lleva un envoltorio extra (doble `<!doctype>`). La fuente de verdad es este repo. `validar.js` lo detecta.

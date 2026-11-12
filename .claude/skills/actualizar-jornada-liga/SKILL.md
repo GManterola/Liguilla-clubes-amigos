@@ -33,7 +33,7 @@ Los datos viven en `data/temporada-2026-27.js`. `index.html` no se toca para una
 
 ## Publicar
 1. Commit (`Jxx: resultados, clasificación, pagos y crónica`) y `git push origin main` → Vercel despliega solo.
-2. Artefacto (misma URL https://claude.ai/artifact/6VYUukdk2BaqxYsYmbc4FG): publish con `file_path: index.html` y `files` con `data/temporada-2026-27.js` (los iconos ya están publicados; no hace falta reenviarlos si no cambian).
+2. Artefacto (misma URL https://claude.ai/artifact/6VYUukdk2BaqxYsYmbc4FG): `node scripts/build-artifact.js <scratchpad>/build/index.html` y publica ese archivo pasando `url` del artefacto. El build incrusta los datos; los iconos ya están publicados.
 
 ## Entrega
 - Resumen breve: ganador de la jornada, cambios en la clasificación, quién paga y cuánto.
