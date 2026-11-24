@@ -15,6 +15,7 @@ Copia de trabajo: artefacto "Liga Clubes Amigos 26-27" → https://claude.ai/art
 | `scripts/biwenger-fetch.js`, `.github/workflows/biwenger.yml` | Lee Biwenger desde GitHub Actions (secreto `BIWENGER_TOKEN`) y guarda `data/biwenger/ultima.json`. Se lanza modificando `.github/biwenger-trigger` | No |
 | `scripts/biwenger-jornada.js` | Compara Biwenger con la web y da puntos y fechas de la jornada (solo lectura) | No |
 | `scripts/previa.js` | Imagen vertical (1080×1350) con la previa de la próxima jornada para mandar por WhatsApp: `node scripts/previa.js <salida.png>` | Opcional |
+| `scripts/resultados.js`, `scripts/clausulazos.js` | Imágenes para WhatsApp: resultados de la última jornada (`node scripts/resultados.js <salida.png>`) y clausulazos del tablón de Biwenger (`node scripts/clausulazos.js <salida.png> [desde AAAA-MM-DD] [título]`, tras leer Biwenger) | Opcional |
 | `vercel.json` | Rutas limpias: `/pagos`, `/equipo-sors`… sirven `index.html` | No |
 
 ## Actualizar una jornada
