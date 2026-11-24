@@ -97,6 +97,29 @@ const teamRow = s => ({ ...pick(s, ['id', 'name', 'points', 'position']),
     };
   }
 
+  // 5. Jornada en curso: alineaciones (ids de jugadores), bonus de la liga y puntos de cada
+  //    jugador por partido, para poder estimar los puntos antes de que Biwenger cierre la ronda.
+  if (out.round && d1) {
+    out.live = { round: out.round.id, settings: d1.league?.settings || null,
+      lineups: (d1.league?.standings || []).map(s => ({ name: s.name, type: s.lineup?.type, players: s.lineup?.players || [], count: s.lineup?.count })) };
+    const rd = await get('cf.biwenger.com', `/api/v2/rounds/la-liga/${out.round.id}?lang=es&score=5`, false);
+    const games = rd.json?.data?.games || [];
+    out.live.playerPoints = {}; out.live.games = [];
+    for (const g of games) {
+      const gd = await get('cf.biwenger.com', `/api/v2/games/la-liga/${g.id}?lang=es&score=5`, false);
+      const data = gd.json?.data;
+      if (!out.live.gameShape && data) out.live.gameShape = shape(data);
+      out.live.games.push({ id: g.id, http: gd.http, status: g.status });
+      // Busca puntuaciones de jugadores en las estructuras habituales
+      const collect = (arr) => (arr || []).forEach(r => {
+        const id = r.player?.id ?? r.id ?? r.playerID; const pts = r.points ?? r.score ?? r.rawStats?.points;
+        if (id != null && typeof pts === 'number') out.live.playerPoints[id] = pts;
+      });
+      if (data) { collect(data.home?.reports); collect(data.away?.reports); collect(data.reports);
+        if (data.reports && !Array.isArray(data.reports)) Object.entries(data.reports).forEach(([id, r]) => { if (typeof r?.points === 'number') out.live.playerPoints[id] = r.points; }); }
+    }
+  }
+
   const dir = path.resolve(__dirname, '../data/biwenger');
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'ultima.json'), JSON.stringify(out, null, 2) + '\n');
