@@ -121,6 +121,25 @@ const teamRow = s => ({ ...pick(s, ['id', 'name', 'points', 'position']),
     }
   }
 
+  // 5b. Variantes de la consulta de la jornada en curso (la app muestra puntos aunque esté "active")
+  if (out.round) {
+    out.liveVariants = {};
+    const variants = {
+      score5: `/api/v2/rounds/league?score=5`,
+      byIdScore5: `/api/v2/rounds/league/${out.round.id}?score=5`,
+      fieldsAll: `/api/v2/rounds/league?score=5&fields=*,league(*,standings(*,lineup(*)))`,
+      leagueRound: `/api/v2/league/${LEAGUE}/round/${out.round.id}?score=5`,
+    };
+    for (const [k, p] of Object.entries(variants)) {
+      const r = await get('biwenger.as.com', p);
+      const st = r.json?.data?.league?.standings || r.json?.data?.standings || [];
+      out.liveVariants[k] = { http: r.http, n: st.length,
+        lineupKeys: st[0]?.lineup ? Object.keys(st[0].lineup) : null,
+        rows: st.map(x => ({ name: x.name, roundPoints: x.lineup?.points ?? x.roundPoints ?? null,
+          played: x.lineup?.played ?? x.lineup?.count ?? null })) };
+    }
+  }
+
   // 6. Datos públicos de los jugadores alineados (puntos de las últimas 5 jornadas)
   const allPlayers = r3.json?.data?.players || {};
   const pids = new Set();
