@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-24T08:14:00.377Z",
+  "fetchedAt": "2026-11-24T08:14:47.842Z",
   "league": "1699656",
   "calls": {
     "roundsLeague": {
@@ -3481,5 +3481,369 @@
         }
       ]
     }
+  },
+  "live": {
+    "round": 4911,
+    "settings": {
+      "splitRound": "recalculation",
+      "bonusFixed": 0,
+      "bonusPoint": 50000,
+      "bonusInverse": false,
+      "bonusIdealLineup": 250000,
+      "bonusGameMVP": 0,
+      "bonusRoundPosition": [],
+      "lineupShow": "round",
+      "lineupRoundChanges": 0,
+      "lineupRoundChangesIn": "onlyNoPlayed",
+      "lineupRoundChangeStrategy": true,
+      "bonusGoal": 0,
+      "bonusWorstLineup": 0,
+      "bonusProfitableLineup": 0,
+      "bonusLeaguePosition": [],
+      "bonusRoundPointsPosition": []
+    },
+    "lineups": [
+      {
+        "name": "Vicentine Zidane",
+        "type": "3-5-2",
+        "players": [
+          11677,
+          33694,
+          42390,
+          37495,
+          19441,
+          31027,
+          42412,
+          17057,
+          30507,
+          15568,
+          26360
+        ],
+        "count": true
+      },
+      {
+        "name": "Kingsquare",
+        "type": "3-4-3",
+        "players": [
+          41101,
+          2480,
+          35765,
+          33447,
+          163,
+          39357,
+          35344,
+          1083,
+          8555,
+          25127,
+          40552
+        ],
+        "count": true
+      },
+      {
+        "name": "Castriano Ronaldo",
+        "type": "3-3-4",
+        "players": [
+          37526,
+          37739,
+          43259,
+          17731,
+          41072,
+          6837,
+          11196,
+          35055,
+          41940,
+          21132,
+          15396
+        ],
+        "count": true
+      },
+      {
+        "name": "Josisi mourinho",
+        "type": "5-3-2",
+        "players": [
+          37600,
+          15410,
+          38290,
+          26131,
+          41270,
+          41413,
+          42726,
+          1612,
+          37897,
+          39885,
+          19577
+        ],
+        "count": true
+      },
+      {
+        "name": "Raphontino",
+        "type": "3-4-3",
+        "players": [
+          10117,
+          41684,
+          1599,
+          43185,
+          4245,
+          19693,
+          24326,
+          31167,
+          26930,
+          39386,
+          10276
+        ],
+        "count": true
+      },
+      {
+        "name": "Cardonistas",
+        "type": "4-4-2",
+        "players": [
+          38433,
+          11800,
+          10574,
+          19614,
+          25815,
+          19862,
+          34469,
+          35171,
+          27591,
+          42610,
+          43458
+        ],
+        "count": true
+      },
+      {
+        "name": "AnceLuni",
+        "type": "3-4-3",
+        "players": [
+          9887,
+          41031,
+          33871,
+          38194,
+          1602,
+          1969,
+          5807,
+          32338,
+          25677,
+          39431,
+          12494
+        ],
+        "count": true
+      },
+      {
+        "name": "Danilo Stars",
+        "type": "3-5-2",
+        "players": [
+          30487,
+          26592,
+          33970,
+          42277,
+          42425,
+          31243,
+          9480,
+          1462,
+          31475,
+          43262,
+          40911
+        ],
+        "count": true
+      },
+      {
+        "name": "Avaricius Jr.",
+        "type": "4-4-2",
+        "players": [
+          19192,
+          1676,
+          43267,
+          38072,
+          26566,
+          37724,
+          24979,
+          17369,
+          19141,
+          26271,
+          39874
+        ],
+        "count": true
+      },
+      {
+        "name": "Puro Llorente",
+        "type": "3-4-3",
+        "players": [
+          38405,
+          41609,
+          10030,
+          11045,
+          12734,
+          42814,
+          20969,
+          19547,
+          17442,
+          897,
+          30502
+        ],
+        "count": true
+      },
+      {
+        "name": "Tano Amunt",
+        "type": "5-2-3",
+        "players": [
+          1897,
+          43171,
+          2600,
+          2247,
+          39901,
+          1613,
+          8670,
+          24255,
+          37450,
+          2603,
+          18382
+        ],
+        "count": true
+      },
+      {
+        "name": "CucuDaris",
+        "type": "4-5-1",
+        "players": [
+          2184,
+          34717,
+          35408,
+          28103,
+          26095,
+          18256,
+          27929,
+          25403,
+          30477,
+          39813,
+          33697
+        ],
+        "count": true
+      },
+      {
+        "name": "Sors",
+        "type": "3-4-3",
+        "players": [
+          43282,
+          16889,
+          9983,
+          41100,
+          34527,
+          21033,
+          30123,
+          30789,
+          35763,
+          41082,
+          24474
+        ],
+        "count": true
+      },
+      {
+        "name": "Se vende Cuenta",
+        "type": "5-3-2",
+        "players": [
+          7003,
+          1721,
+          42757,
+          1760,
+          28115,
+          5220,
+          40948,
+          41418,
+          12221,
+          35615,
+          24509
+        ],
+        "count": true
+      },
+      {
+        "name": "Sergchenko",
+        "type": "3-3-4",
+        "players": [
+          17482,
+          37723,
+          38143,
+          33839,
+          17148,
+          34483,
+          41411,
+          29185,
+          18397,
+          32363,
+          1995
+        ],
+        "count": true
+      },
+      {
+        "name": "Celta de Viño",
+        "type": "3-3-4",
+        "players": [
+          14630,
+          40952,
+          26344,
+          19299,
+          41097,
+          32120,
+          26048,
+          10745,
+          1927,
+          34802,
+          39792
+        ],
+        "count": true
+      }
+    ],
+    "playerPoints": {},
+    "games": [
+      {
+        "id": 50830,
+        "http": 400,
+        "status": "finished"
+      },
+      {
+        "id": 50829,
+        "http": 400,
+        "status": "finished"
+      },
+      {
+        "id": 50836,
+        "http": 400,
+        "status": "finished"
+      },
+      {
+        "id": 50838,
+        "http": 400,
+        "status": "finished"
+      },
+      {
+        "id": 50837,
+        "http": 400,
+        "status": "finished"
+      },
+      {
+        "id": 50831,
+        "http": 400,
+        "status": "finished"
+      },
+      {
+        "id": 50835,
+        "http": 400,
+        "status": "finished"
+      },
+      {
+        "id": 50834,
+        "http": 400,
+        "status": "finished"
+      },
+      {
+        "id": 50832,
+        "http": 400,
+        "status": "finished"
+      },
+      {
+        "id": 50833,
+        "http": 400,
+        "status": "finished"
+      }
+    ]
   }
 }
