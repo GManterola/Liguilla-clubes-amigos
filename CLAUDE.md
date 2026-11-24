@@ -24,6 +24,8 @@ Copia de trabajo: artefacto "Liga Clubes Amigos 26-27" → https://claude.ai/art
 2. `node scripts/biwenger-jornada.js` → si la jornada sale "🟢 TERMINADA", usa esos puntos. Si sale "en juego", no la publiques como cerrada.
 3. Actualiza `fechas2627` con las fechas que imprime el script.
 4. Si Biwenger falla (token caducado: HTTP 401), pide al usuario que renueve el secreto `BIWENGER_TOKEN` en GitHub o que mande captura.
+5. **Biwenger tarda en cerrar la jornada**: aunque hayan terminado los partidos, la ronda sigue "active" y la API no da los totales por equipo (la web de Biwenger los suma en el navegador). **No sumes los puntos de los jugadores** (el usuario no lo quiere): pide la captura de la pestaña Jornada (columna "Jor.") o espera al cierre. Con la captura, comprueba que General = total anterior + Jor.
+6. **Empates en la jornada**: manda el orden de Biwenger (el de la captura o el de la API), también en la zona de pago.
 
 **Alternativa: captura** del usuario con la columna "Jor.".
 

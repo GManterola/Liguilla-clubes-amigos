@@ -9,7 +9,7 @@ Los datos viven en `data/temporada-2026-27.js`. `index.html` no se toca para una
 
 ## Entrada
 - **Preferente: Biwenger.** Lanza la lectura (`date -u +%FT%TZ > .github/biwenger-trigger`, commit, push), espera al workflow "📡 Leer Biwenger", haz `git pull` y ejecuta `node scripts/biwenger-jornada.js`. Nuestra JN = Jornada N+1 de LaLiga. Solo se publica como cerrada si sale "🟢 TERMINADA"; si queda alguna "(aplazada)" de esa jornada, va como `partialPending`.
-- Alternativa: captura(s) con los puntos de la jornada (columna "Jor.").
+- Alternativa: captura(s) con los puntos de la jornada (columna "Jor."). Es la vía normal si Biwenger aún no ha cerrado la ronda (sale "active" y sin puntos): no sumes jugadores. Comprueba General = total anterior + Jor. y respeta el orden de Biwenger en los empates.
 - Si el usuario indica una corrección de una jornada anterior, aplícala antes de añadir la nueva.
 
 ## Pasos
