@@ -127,15 +127,6 @@ const teamRow = s => ({ ...pick(s, ['id', 'name', 'points', 'position']),
     }
   }
 
-  // 5c. Prueba: la misma consulta de jornada con otras versiones de la app
-  out.versionTest = {};
-  for (const v of ['', '700', '750', '800', '900']) {
-    const r = await get('biwenger.as.com', '/api/v2/rounds/league', true, v);
-    const st = r.json?.data?.league?.standings || [];
-    out.versionTest[v || 'sin-version'] = { http: r.http, lineupKeys: st[0]?.lineup ? Object.keys(st[0].lineup) : null,
-      rows: st.map(x => [x.name, x.lineup?.points ?? null]) };
-  }
-
   // 6. Datos públicos de los jugadores alineados (puntos de las últimas 5 jornadas)
   const allPlayers = r3.json?.data?.players || {};
   const pids = new Set();
