@@ -144,7 +144,7 @@ const teamRow = s => ({ ...pick(s, ['id', 'name', 'points', 'position']),
   (out.live?.lineups || []).forEach(l => l.players.forEach(id => pids.add(String(id))));
   (out.board?.entries || []).forEach(e => e.content.forEach(c => { if (c.player != null) pids.add(String(c.player)); }));
   out.players = {};
-  pids.forEach(id => { const p = allPlayers[id]; if (p) out.players[id] = pick(p, ['id', 'name', 'teamID', 'position', 'status', 'fitness', 'points']); });
+  pids.forEach(id => { const p = allPlayers[id]; if (p) out.players[id] = pick(p, ['id', 'name', 'teamID', 'position', 'status', 'fitness', 'points', 'price', 'priceIncrement', 'playedHome', 'playedAway', 'pointsHome', 'pointsAway', 'pointsLastSeason']); });
 
   const dir = path.resolve(__dirname, '../data/biwenger');
   fs.mkdirSync(dir, { recursive: true });
