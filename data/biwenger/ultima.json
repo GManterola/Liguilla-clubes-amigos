@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-24T08:48:16.258Z",
+  "fetchedAt": "2026-11-24T10:44:01.677Z",
   "league": "1699656",
   "calls": {
     "roundsLeague": {
@@ -4949,320 +4949,320 @@
       }
     },
     "roundPlayerPoints": {
-      "11": 6,
-      "20": 8,
-      "33": 5,
-      "91": 1,
-      "163": 8,
-      "856": 1,
-      "897": 1,
-      "947": 11,
-      "1074": -1,
+      "11": 7,
+      "20": 6,
+      "33": 1,
+      "91": -1,
+      "163": 5,
+      "856": 6,
+      "897": 5,
+      "947": 9,
+      "1074": 0,
       "1083": 10,
-      "1125": 1,
-      "1249": 3,
-      "1462": 12,
-      "1523": 0,
-      "1599": 3,
+      "1125": 3,
+      "1249": 8,
+      "1462": 7,
+      "1523": 4,
+      "1599": 7,
       "1602": 7,
-      "1612": 10,
-      "1613": 3,
+      "1612": 4,
+      "1613": 4,
       "1676": 3,
-      "1721": -1,
-      "1733": 6,
-      "1760": 9,
-      "1876": 9,
-      "1897": 7,
+      "1721": 1,
+      "1733": 4,
+      "1760": 7,
+      "1876": 14,
+      "1897": 8,
       "1952": 10,
-      "1969": 7,
-      "1995": 7,
-      "2001": 4,
-      "2055": -1,
-      "2184": -1,
+      "1969": 3,
+      "1995": 4,
+      "2001": -1,
+      "2055": 4,
+      "2184": 3,
       "2247": 4,
-      "2368": 1,
-      "2476": 7,
-      "2480": 3,
-      "2597": 5,
-      "2600": 9,
-      "2603": 8,
-      "3159": 3,
-      "4245": 6,
-      "5069": 4,
-      "5220": 5,
-      "5678": 7,
-      "5697": -1,
-      "5771": 1,
+      "2368": 5,
+      "2476": 5,
+      "2480": 7,
+      "2597": 7,
+      "2600": 7,
+      "2603": 12,
+      "3159": -1,
+      "4245": 4,
+      "5069": 3,
+      "5220": 2,
+      "5678": 2,
+      "5697": 4,
+      "5771": 2,
       "5807": 6,
-      "6259": -1,
-      "6837": 3,
-      "7003": -2,
-      "8376": 6,
-      "8555": 2,
+      "6259": 5,
+      "6837": 0,
+      "7003": -1,
+      "8376": 0,
+      "8555": 6,
       "8670": 5,
-      "8747": 4,
-      "9045": 2,
-      "9047": -1,
-      "9065": 4,
-      "9402": 6,
-      "9480": 1,
-      "9887": 5,
-      "9983": -4,
-      "10030": 3,
-      "10155": 7,
-      "10158": 8,
-      "10245": 3,
-      "10276": -2,
-      "10574": 0,
-      "10745": 9,
-      "10997": 7,
-      "11196": -3,
-      "11633": 5,
-      "11677": 6,
-      "11800": 0,
-      "12221": 6,
-      "12403": 3,
-      "12494": 14,
-      "12596": -2,
-      "12734": 5,
-      "14466": 4,
-      "14630": 2,
-      "14800": -1,
-      "15396": 4,
-      "15410": 4,
+      "8747": 3,
+      "9045": -2,
+      "9047": 5,
+      "9065": 1,
+      "9402": 4,
+      "9480": 0,
+      "9887": -1,
+      "9983": -7,
+      "10030": 1,
+      "10155": 0,
+      "10158": 3,
+      "10245": 2,
+      "10276": 0,
+      "10574": 8,
+      "10745": 17,
+      "10997": 4,
+      "11196": 4,
+      "11633": 4,
+      "11677": 5,
+      "11800": 2,
+      "12221": 8,
+      "12403": 1,
+      "12494": 15,
+      "12596": -1,
+      "12734": 4,
+      "14466": -2,
+      "14630": 8,
+      "14800": 0,
+      "15396": -2,
+      "15410": -1,
       "15430": -4,
-      "15464": 2,
-      "15568": 10,
-      "15719": 4,
-      "16317": 5,
-      "16738": 4,
+      "15464": 4,
+      "15568": 6,
+      "15719": 9,
+      "16317": 6,
+      "16738": 8,
       "16889": -1,
-      "17021": 7,
-      "17057": 1,
+      "17021": 1,
+      "17057": 8,
       "17148": 3,
       "17200": 5,
       "17369": 6,
-      "17442": 2,
-      "17482": 2,
-      "17645": 4,
-      "17687": 0,
-      "17731": -1,
+      "17442": 5,
+      "17482": -1,
+      "17645": 8,
+      "17687": 8,
+      "17731": 5,
       "17756": -1,
-      "17937": 6,
-      "18128": 6,
-      "18174": 6,
-      "18251": 6,
-      "18256": 2,
-      "18382": 6,
-      "18397": 1,
-      "18398": 16,
-      "18564": 11,
-      "18570": 4,
-      "18945": 5,
-      "19141": 4,
-      "19192": 4,
-      "19299": 6,
-      "19441": 9,
+      "17937": 1,
+      "18128": 5,
+      "18174": 9,
+      "18251": 4,
+      "18256": 1,
+      "18382": 2,
+      "18397": 9,
+      "18398": 12,
+      "18564": 8,
+      "18570": 5,
+      "18945": 4,
+      "19141": -2,
+      "19192": 0,
+      "19299": 9,
+      "19441": 6,
       "19485": 2,
-      "19547": 15,
-      "19577": 7,
-      "19614": 8,
-      "19693": 4,
-      "19860": 2,
-      "20102": 0,
-      "20969": 4,
-      "21008": 8,
-      "21033": 4,
-      "21084": 7,
-      "21132": 7,
-      "22690": 5,
-      "23080": 0,
-      "23840": 5,
-      "24326": 6,
-      "24336": -2,
-      "24474": 0,
-      "24576": 3,
-      "24732": -3,
-      "24979": 1,
-      "25127": 2,
-      "25322": 4,
-      "25384": -3,
-      "25403": 6,
-      "25677": 0,
-      "25769": 2,
+      "19547": 10,
+      "19577": 1,
+      "19614": 7,
+      "19693": 3,
+      "19860": 0,
+      "20102": -2,
+      "20969": -1,
+      "21008": 3,
+      "21033": 1,
+      "21084": 5,
+      "21132": 0,
+      "22690": 3,
+      "23080": -1,
+      "23840": 4,
+      "24326": 5,
+      "24336": 1,
+      "24474": 4,
+      "24576": 7,
+      "24732": 2,
+      "24979": -2,
+      "25127": 3,
+      "25322": -2,
+      "25384": -2,
+      "25403": 1,
+      "25677": 4,
+      "25769": 6,
       "25777": -2,
-      "25815": 5,
-      "26077": 3,
-      "26092": 5,
-      "26095": 6,
-      "26131": 1,
-      "26271": 7,
-      "26276": 7,
-      "26344": 16,
-      "26566": -2,
-      "26592": 6,
-      "26879": 9,
-      "26930": 4,
-      "27575": -2,
-      "27591": 0,
-      "27929": -1,
-      "28087": 9,
-      "28103": 1,
-      "28115": 17,
-      "28282": 6,
-      "29184": 5,
-      "29185": 5,
-      "29661": 9,
+      "25815": 1,
+      "26077": -3,
+      "26092": 3,
+      "26095": 5,
+      "26131": 6,
+      "26271": 9,
+      "26276": 1,
+      "26344": 12,
+      "26566": 0,
+      "26592": 8,
+      "26879": 11,
+      "26930": 0,
+      "27575": 4,
+      "27591": 8,
+      "27929": 6,
+      "28087": 6,
+      "28103": 4,
+      "28115": 18,
+      "28282": 4,
+      "29184": 3,
+      "29185": 10,
+      "29661": 7,
       "30081": 7,
-      "30123": 9,
+      "30123": 7,
       "30334": 16,
-      "30477": 18,
-      "30487": 2,
-      "30493": 0,
-      "30495": -2,
-      "30510": -1,
-      "30789": 9,
+      "30477": 14,
+      "30487": -4,
+      "30493": 3,
+      "30495": -3,
+      "30510": 6,
+      "30789": 5,
       "31018": 5,
-      "31027": 5,
-      "31167": 4,
-      "31243": 3,
-      "31475": 6,
-      "31707": 2,
-      "32020": 4,
-      "32120": 11,
-      "32135": -4,
+      "31027": 9,
+      "31167": 1,
+      "31243": 4,
+      "31475": 0,
+      "31707": 0,
+      "32020": 2,
+      "32120": 6,
+      "32135": 2,
       "32338": 1,
-      "32363": 7,
-      "32435": -1,
+      "32363": 2,
+      "32435": -2,
       "32460": -1,
-      "32629": 1,
-      "33473": 2,
-      "33474": 7,
-      "33531": 3,
-      "33694": 5,
-      "33697": 1,
-      "33796": 7,
-      "33839": 8,
-      "33871": 6,
+      "32629": 6,
+      "33473": 0,
+      "33474": 8,
+      "33531": 8,
+      "33694": 9,
+      "33697": -1,
+      "33796": 5,
+      "33839": 2,
+      "33871": 3,
       "33970": 5,
-      "34077": 7,
-      "34111": 11,
-      "34127": 0,
-      "34196": -1,
-      "34469": 5,
-      "34479": 1,
-      "34483": 6,
-      "34527": 2,
-      "34557": 10,
-      "34802": 5,
+      "34077": 5,
+      "34111": 15,
+      "34127": 1,
+      "34196": 1,
+      "34469": 6,
+      "34479": -4,
+      "34483": 3,
+      "34527": 5,
+      "34557": 7,
+      "34802": 6,
       "35055": 0,
-      "35156": -7,
-      "35171": 1,
-      "35344": 6,
-      "35408": 6,
-      "35615": 1,
-      "35678": 11,
+      "35156": 0,
+      "35171": 4,
+      "35344": 14,
+      "35408": 8,
+      "35615": -1,
+      "35678": 6,
       "35706": 1,
-      "35763": 1,
-      "35770": 6,
-      "37416": 4,
-      "37450": 3,
-      "37488": 18,
-      "37495": 5,
-      "37499": 4,
-      "37525": 7,
-      "37600": 7,
-      "37711": 11,
-      "37723": 7,
-      "37724": 1,
-      "37726": 2,
-      "37733": 3,
-      "37739": 5,
-      "37897": 1,
-      "37898": -1,
-      "38072": 10,
-      "38095": -3,
-      "38143": 2,
-      "38194": 2,
-      "38290": 7,
-      "38308": 5,
-      "38355": 7,
-      "38368": 2,
-      "38405": 5,
-      "38422": 3,
-      "38433": 6,
-      "38449": 5,
-      "38493": -2,
+      "35763": 8,
+      "35770": 8,
+      "37416": 6,
+      "37450": 5,
+      "37488": 16,
+      "37495": 6,
+      "37499": 2,
+      "37525": 0,
+      "37600": 2,
+      "37711": 10,
+      "37723": 6,
+      "37724": -1,
+      "37726": 4,
+      "37733": 8,
+      "37739": 11,
+      "37897": 7,
+      "37898": 2,
+      "38072": 2,
+      "38095": 0,
+      "38143": 0,
+      "38194": 7,
+      "38290": 8,
+      "38308": 9,
+      "38355": 0,
+      "38368": 7,
+      "38405": 3,
+      "38422": 7,
+      "38433": 7,
+      "38449": 3,
+      "38493": 1,
       "38517": 6,
-      "38854": 12,
-      "38875": 0,
-      "38962": 5,
+      "38854": 13,
+      "38875": 2,
+      "38962": 1,
       "39357": -1,
-      "39431": 6,
+      "39431": 2,
       "39792": -2,
-      "39804": 1,
-      "39813": 7,
-      "39874": 0,
-      "39885": 9,
+      "39804": 6,
+      "39813": 4,
+      "39874": 3,
+      "39885": 12,
       "39901": 5,
-      "39924": 5,
-      "40010": -1,
-      "40552": 11,
-      "40911": 5,
-      "40952": 4,
-      "41031": 6,
-      "41072": 6,
-      "41081": 2,
-      "41082": 0,
-      "41083": 2,
-      "41086": -1,
-      "41087": 1,
-      "41092": 6,
-      "41100": 3,
-      "41101": 5,
-      "41200": 2,
-      "41270": 5,
-      "41275": 1,
-      "41411": 0,
+      "39924": 3,
+      "40010": 0,
+      "40552": 12,
+      "40911": 1,
+      "40952": 0,
+      "41031": 5,
+      "41072": 2,
+      "41081": -2,
+      "41082": 5,
+      "41083": -2,
+      "41086": -2,
+      "41087": 3,
+      "41092": 3,
+      "41100": -3,
+      "41101": 0,
+      "41200": 6,
+      "41270": 6,
+      "41275": -1,
+      "41411": 2,
       "41412": -2,
-      "41413": 9,
-      "41416": 9,
+      "41413": 5,
+      "41416": 7,
       "41418": 6,
-      "41419": 2,
-      "41420": 1,
-      "41565": 7,
-      "41566": 1,
-      "41606": 0,
-      "41684": 13,
-      "41807": 1,
-      "41940": 2,
-      "42277": 2,
-      "42390": 3,
+      "41419": 0,
+      "41420": 3,
+      "41565": 6,
+      "41566": -2,
+      "41606": -3,
+      "41684": 12,
+      "41807": -2,
+      "41940": 6,
+      "42277": 3,
+      "42390": 5,
       "42394": -1,
-      "42396": 2,
-      "42412": 1,
-      "42425": 3,
-      "42459": 6,
-      "42557": 4,
-      "42610": 13,
+      "42396": -1,
+      "42412": 0,
+      "42425": 4,
+      "42459": 5,
+      "42557": 5,
+      "42610": 16,
       "42726": -1,
-      "42748": -3,
-      "42813": -4,
-      "42814": 8,
-      "43172": 5,
-      "43185": 5,
-      "43259": 11,
-      "43261": 3,
-      "43262": -1,
-      "43264": 5,
-      "43267": 6,
-      "43268": 15,
-      "43270": 5,
-      "43272": -1,
-      "43282": 4,
-      "43386": 2,
-      "43448": 1,
-      "43458": 4
+      "42748": 2,
+      "42813": -1,
+      "42814": 2,
+      "43172": 3,
+      "43185": 10,
+      "43259": 8,
+      "43261": 2,
+      "43262": 3,
+      "43264": -1,
+      "43267": 5,
+      "43268": 19,
+      "43270": 3,
+      "43272": 0,
+      "43282": 0,
+      "43386": 1,
+      "43448": 3,
+      "43458": 7
     },
     "playerPoints": {},
     "games": [
@@ -5318,384 +5318,1586 @@
       }
     ]
   },
-  "versionTest": {
-    "700": {
-      "http": 200,
-      "lineupKeys": [
-        "type",
-        "date",
-        "players",
-        "count"
+  "board": {
+    "http": 200,
+    "shape": {
+      "type": "string",
+      "title": "string",
+      "content": [
+        {
+          "player": "number",
+          "from": {
+            "id": "number",
+            "name": "string",
+            "icon": "string"
+          },
+          "to": {
+            "id": "number",
+            "name": "string",
+            "icon": "string"
+          },
+          "amount": "number",
+          "type": "string"
+        },
+        "×1"
       ],
-      "rows": [
-        [
-          "Vicentine Zidane",
-          null
-        ],
-        [
-          "Kingsquare",
-          null
-        ],
-        [
-          "Castriano Ronaldo",
-          null
-        ],
-        [
-          "Josisi mourinho",
-          null
-        ],
-        [
-          "Raphontino",
-          null
-        ],
-        [
-          "Cardonistas",
-          null
-        ],
-        [
-          "AnceLuni",
-          null
-        ],
-        [
-          "Danilo Stars",
-          null
-        ],
-        [
-          "Avaricius Jr.",
-          null
-        ],
-        [
-          "Puro Llorente",
-          null
-        ],
-        [
-          "Tano Amunt",
-          null
-        ],
-        [
-          "CucuDaris",
-          null
-        ],
-        [
-          "Sors",
-          null
-        ],
-        [
-          "Se vende Cuenta",
-          null
-        ],
-        [
-          "Sergchenko",
-          null
-        ],
-        [
-          "Celta de Viño",
-          null
-        ]
-      ]
+      "date": "number",
+      "fixed": "boolean",
+      "author": "object"
     },
-    "750": {
-      "http": 200,
-      "lineupKeys": [
-        "type",
-        "date",
-        "players",
-        "count"
-      ],
-      "rows": [
-        [
-          "Vicentine Zidane",
-          null
-        ],
-        [
-          "Kingsquare",
-          null
-        ],
-        [
-          "Castriano Ronaldo",
-          null
-        ],
-        [
-          "Josisi mourinho",
-          null
-        ],
-        [
-          "Raphontino",
-          null
-        ],
-        [
-          "Cardonistas",
-          null
-        ],
-        [
-          "AnceLuni",
-          null
-        ],
-        [
-          "Danilo Stars",
-          null
-        ],
-        [
-          "Avaricius Jr.",
-          null
-        ],
-        [
-          "Puro Llorente",
-          null
-        ],
-        [
-          "Tano Amunt",
-          null
-        ],
-        [
-          "CucuDaris",
-          null
-        ],
-        [
-          "Sors",
-          null
-        ],
-        [
-          "Se vende Cuenta",
-          null
-        ],
-        [
-          "Sergchenko",
-          null
-        ],
-        [
-          "Celta de Viño",
-          null
+    "types": [
+      "transfer",
+      "clauseIncrement",
+      "market",
+      "roundStarted",
+      "adminText",
+      "bettingPool",
+      "playerMovements"
+    ],
+    "entries": [
+      {
+        "type": "transfer",
+        "date": 1795515136,
+        "content": [
+          {
+            "type": "clause",
+            "player": 1760,
+            "from": "Se vende Cuenta",
+            "to": "Danilo Stars",
+            "amount": 4789460
+          }
         ]
-      ]
-    },
-    "800": {
-      "http": 200,
-      "lineupKeys": [
-        "type",
-        "date",
-        "players",
-        "count"
-      ],
-      "rows": [
-        [
-          "Vicentine Zidane",
-          null
-        ],
-        [
-          "Kingsquare",
-          null
-        ],
-        [
-          "Castriano Ronaldo",
-          null
-        ],
-        [
-          "Josisi mourinho",
-          null
-        ],
-        [
-          "Raphontino",
-          null
-        ],
-        [
-          "Cardonistas",
-          null
-        ],
-        [
-          "AnceLuni",
-          null
-        ],
-        [
-          "Danilo Stars",
-          null
-        ],
-        [
-          "Avaricius Jr.",
-          null
-        ],
-        [
-          "Puro Llorente",
-          null
-        ],
-        [
-          "Tano Amunt",
-          null
-        ],
-        [
-          "CucuDaris",
-          null
-        ],
-        [
-          "Sors",
-          null
-        ],
-        [
-          "Se vende Cuenta",
-          null
-        ],
-        [
-          "Sergchenko",
-          null
-        ],
-        [
-          "Celta de Viño",
-          null
+      },
+      {
+        "type": "transfer",
+        "date": 1795514875,
+        "content": [
+          {
+            "player": 32435,
+            "from": "Danilo Stars",
+            "to": null,
+            "amount": 1215500
+          }
         ]
-      ]
-    },
-    "900": {
-      "http": 200,
-      "lineupKeys": [
-        "type",
-        "date",
-        "players",
-        "count"
-      ],
-      "rows": [
-        [
-          "Vicentine Zidane",
-          null
-        ],
-        [
-          "Kingsquare",
-          null
-        ],
-        [
-          "Castriano Ronaldo",
-          null
-        ],
-        [
-          "Josisi mourinho",
-          null
-        ],
-        [
-          "Raphontino",
-          null
-        ],
-        [
-          "Cardonistas",
-          null
-        ],
-        [
-          "AnceLuni",
-          null
-        ],
-        [
-          "Danilo Stars",
-          null
-        ],
-        [
-          "Avaricius Jr.",
-          null
-        ],
-        [
-          "Puro Llorente",
-          null
-        ],
-        [
-          "Tano Amunt",
-          null
-        ],
-        [
-          "CucuDaris",
-          null
-        ],
-        [
-          "Sors",
-          null
-        ],
-        [
-          "Se vende Cuenta",
-          null
-        ],
-        [
-          "Sergchenko",
-          null
-        ],
-        [
-          "Celta de Viño",
-          null
+      },
+      {
+        "type": "transfer",
+        "date": 1795514245,
+        "content": [
+          {
+            "type": "clause",
+            "player": 33970,
+            "from": "Danilo Stars",
+            "to": "Avaricius Jr.",
+            "amount": 2879900
+          },
+          {
+            "type": "clause",
+            "player": 1462,
+            "from": "Danilo Stars",
+            "to": "Vicentine Zidane",
+            "amount": 4152100
+          }
         ]
-      ]
-    },
-    "sin-version": {
-      "http": 200,
-      "lineupKeys": [
-        "type",
-        "date",
-        "players",
-        "count"
-      ],
-      "rows": [
-        [
-          "Vicentine Zidane",
-          null
-        ],
-        [
-          "Kingsquare",
-          null
-        ],
-        [
-          "Castriano Ronaldo",
-          null
-        ],
-        [
-          "Josisi mourinho",
-          null
-        ],
-        [
-          "Raphontino",
-          null
-        ],
-        [
-          "Cardonistas",
-          null
-        ],
-        [
-          "AnceLuni",
-          null
-        ],
-        [
-          "Danilo Stars",
-          null
-        ],
-        [
-          "Avaricius Jr.",
-          null
-        ],
-        [
-          "Puro Llorente",
-          null
-        ],
-        [
-          "Tano Amunt",
-          null
-        ],
-        [
-          "CucuDaris",
-          null
-        ],
-        [
-          "Sors",
-          null
-        ],
-        [
-          "Se vende Cuenta",
-          null
-        ],
-        [
-          "Sergchenko",
-          null
-        ],
-        [
-          "Celta de Viño",
-          null
+      },
+      {
+        "type": "transfer",
+        "date": 1795511379,
+        "content": [
+          {
+            "type": "clause",
+            "player": 43458,
+            "from": "Cardonistas",
+            "to": "Avaricius Jr.",
+            "amount": 3420100
+          }
         ]
-      ]
-    }
+      },
+      {
+        "type": "transfer",
+        "date": 1795509252,
+        "content": [
+          {
+            "player": 26566,
+            "from": "Avaricius Jr.",
+            "to": null,
+            "amount": 3261100
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795501256,
+        "content": [
+          {
+            "player": 43458,
+            "from": null,
+            "to": null,
+            "amount": 70000
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1795500325,
+        "content": [
+          {
+            "player": 37488,
+            "from": null,
+            "to": "Vicentine Zidane",
+            "amount": 3524890
+          },
+          {
+            "player": 35770,
+            "from": null,
+            "to": "Josisi mourinho",
+            "amount": 6888888
+          },
+          {
+            "player": 36566,
+            "from": null,
+            "to": "Kingsquare",
+            "amount": 150000
+          },
+          {
+            "player": 6259,
+            "from": null,
+            "to": "CucuDaris",
+            "amount": 832000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795497354,
+        "content": [
+          {
+            "player": 42814,
+            "from": null,
+            "to": null,
+            "amount": 200000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795496683,
+        "content": [
+          {
+            "player": 12734,
+            "from": null,
+            "to": null,
+            "amount": 600000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795467313,
+        "content": [
+          {
+            "player": 2480,
+            "from": null,
+            "to": null,
+            "amount": 300000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795467258,
+        "content": [
+          {
+            "player": 39357,
+            "from": "Kingsquare",
+            "to": null,
+            "amount": 896500
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795465272,
+        "content": [
+          {
+            "player": 41609,
+            "from": "Puro Llorente",
+            "to": null,
+            "amount": 709100
+          },
+          {
+            "player": 11045,
+            "from": "Puro Llorente",
+            "to": null,
+            "amount": 585000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795431292,
+        "content": [
+          {
+            "player": 17148,
+            "from": null,
+            "to": null,
+            "amount": 300000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795431253,
+        "content": [
+          {
+            "player": 32363,
+            "from": "Sergchenko",
+            "to": null,
+            "amount": 1745300
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795421865,
+        "content": [
+          {
+            "player": 26360,
+            "from": "Vicentine Zidane",
+            "to": null,
+            "amount": 889800
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795421536,
+        "content": [
+          {
+            "type": "clause",
+            "player": 43185,
+            "from": "Raphontino",
+            "to": "Vicentine Zidane",
+            "amount": 2730013
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795419974,
+        "content": [
+          {
+            "player": 42390,
+            "from": null,
+            "to": null,
+            "amount": 101000
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1795413929,
+        "content": [
+          {
+            "player": 37726,
+            "from": null,
+            "to": "Josisi mourinho",
+            "amount": 688880
+          },
+          {
+            "player": 20,
+            "from": null,
+            "to": "Celta de Viño",
+            "amount": 6080000
+          },
+          {
+            "player": 32435,
+            "from": null,
+            "to": "Danilo Stars",
+            "amount": 1260020
+          },
+          {
+            "player": 17200,
+            "from": null,
+            "to": "Castriano Ronaldo",
+            "amount": 235000
+          },
+          {
+            "player": 2253,
+            "from": null,
+            "to": "Kingsquare",
+            "amount": 1650000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795382081,
+        "content": [
+          {
+            "type": "clause",
+            "player": 40552,
+            "from": "Kingsquare",
+            "to": "Vicentine Zidane",
+            "amount": 2746000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795379787,
+        "content": [
+          {
+            "type": "clause",
+            "player": 32120,
+            "from": "Celta de Viño",
+            "to": "Danilo Stars",
+            "amount": 3289848
+          },
+          {
+            "type": "clause",
+            "player": 15568,
+            "from": "Vicentine Zidane",
+            "to": "Danilo Stars",
+            "amount": 15262000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795376163,
+        "content": [
+          {
+            "player": 33970,
+            "from": null,
+            "to": null,
+            "amount": 102000
+          },
+          {
+            "player": 33970,
+            "from": null,
+            "to": null,
+            "amount": 98000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795375783,
+        "content": [
+          {
+            "player": 38194,
+            "from": null,
+            "to": null,
+            "amount": 500000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795375066,
+        "content": [
+          {
+            "player": 26678,
+            "from": "Tano Amunt",
+            "to": null,
+            "amount": 1271400
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795374676,
+        "content": [
+          {
+            "player": 1462,
+            "from": null,
+            "to": null,
+            "amount": 135000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795353011,
+        "content": [
+          {
+            "player": 26592,
+            "from": null,
+            "to": null,
+            "amount": 290000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795352986,
+        "content": [
+          {
+            "type": "clause",
+            "player": 38854,
+            "from": "Tano Amunt",
+            "to": "Danilo Stars",
+            "amount": 746980
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795345181,
+        "content": [
+          {
+            "player": 24474,
+            "from": "Sors",
+            "to": null,
+            "amount": 5113400
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1795327439,
+        "content": [
+          {
+            "player": 9045,
+            "from": null,
+            "to": "Se vende Cuenta",
+            "amount": 2695000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795302518,
+        "content": [
+          {
+            "type": "clause",
+            "player": 41413,
+            "from": "Josisi mourinho",
+            "to": "Vicentine Zidane",
+            "amount": 195000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795289185,
+        "content": [
+          {
+            "player": 28115,
+            "from": null,
+            "to": null,
+            "amount": 250000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795281112,
+        "content": [
+          {
+            "player": 26095,
+            "from": null,
+            "to": null,
+            "amount": 313492
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795277671,
+        "content": [
+          {
+            "type": "clause",
+            "player": 26344,
+            "from": "Celta de Viño",
+            "to": "Josisi mourinho",
+            "amount": 195000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795266999,
+        "content": [
+          {
+            "type": "clause",
+            "player": 1612,
+            "from": "Josisi mourinho",
+            "to": "Celta de Viño",
+            "amount": 3466665
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795252809,
+        "content": [
+          {
+            "player": 43458,
+            "from": null,
+            "to": null,
+            "amount": 200000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795250511,
+        "content": [
+          {
+            "player": 41157,
+            "from": "Danilo Stars",
+            "to": null,
+            "amount": 183600
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795248757,
+        "content": [
+          {
+            "player": 30502,
+            "from": "Puro Llorente",
+            "to": null,
+            "amount": 2859200
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1795240921,
+        "content": [
+          {
+            "player": 14466,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 980010
+          },
+          {
+            "player": 41606,
+            "from": null,
+            "to": "Kingsquare",
+            "amount": 1350000
+          },
+          {
+            "player": 1249,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 12573110
+          },
+          {
+            "player": 18945,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 2600010
+          },
+          {
+            "player": 43272,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 6120010
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795176451,
+        "content": [
+          {
+            "player": 41086,
+            "from": "Sors",
+            "to": null,
+            "amount": 4625000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795171939,
+        "content": [
+          {
+            "player": 22690,
+            "from": "Kingsquare",
+            "to": null,
+            "amount": 1035900
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795166096,
+        "content": [
+          {
+            "player": 17344,
+            "from": "Castriano Ronaldo",
+            "to": null,
+            "amount": 1273600
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795163558,
+        "content": [
+          {
+            "player": 17200,
+            "from": "Avaricius Jr.",
+            "to": null,
+            "amount": 222100
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795162645,
+        "content": [
+          {
+            "player": 43268,
+            "from": "Kingsquare",
+            "to": null,
+            "amount": 2973400
+          },
+          {
+            "player": 41567,
+            "from": "Josisi mourinho",
+            "to": null,
+            "amount": 153500
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795159736,
+        "content": [
+          {
+            "player": 43281,
+            "from": "Sors",
+            "to": null,
+            "amount": 156000
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1795154725,
+        "content": [
+          {
+            "player": 1083,
+            "from": null,
+            "to": "Kingsquare",
+            "amount": 3900909
+          },
+          {
+            "player": 17442,
+            "from": null,
+            "to": "Puro Llorente",
+            "amount": 1450000
+          },
+          {
+            "player": 31475,
+            "from": null,
+            "to": "Danilo Stars",
+            "amount": 353230
+          },
+          {
+            "player": 10030,
+            "from": null,
+            "to": "Puro Llorente",
+            "amount": 950000
+          },
+          {
+            "player": 41157,
+            "from": null,
+            "to": "Danilo Stars",
+            "amount": 180010
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795129768,
+        "content": [
+          {
+            "player": 35055,
+            "from": "Sors",
+            "to": "Castriano Ronaldo",
+            "amount": 4103000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795115962,
+        "content": [
+          {
+            "player": 32363,
+            "from": null,
+            "to": null,
+            "amount": 200000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795102703,
+        "content": [
+          {
+            "type": "clause",
+            "player": 30507,
+            "from": "Sors",
+            "to": "Vicentine Zidane",
+            "amount": 361400
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795096650,
+        "content": [
+          {
+            "player": 4245,
+            "from": null,
+            "to": null,
+            "amount": 211000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795094213,
+        "content": [
+          {
+            "player": 42444,
+            "from": "Se vende Cuenta",
+            "to": null,
+            "amount": 2553900
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795094202,
+        "content": [
+          {
+            "type": "clause",
+            "player": 42757,
+            "from": "Danilo Stars",
+            "to": "Se vende Cuenta",
+            "amount": 2732826
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795093459,
+        "content": [
+          {
+            "player": 35171,
+            "from": null,
+            "to": null,
+            "amount": 550000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795093444,
+        "content": [
+          {
+            "player": 30081,
+            "from": "Cardonistas",
+            "to": null,
+            "amount": 6794400
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795074984,
+        "content": [
+          {
+            "type": "clause",
+            "player": 37723,
+            "from": "CucuDaris",
+            "to": "Sergchenko",
+            "amount": 665600
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795074341,
+        "content": [
+          {
+            "type": "clause",
+            "player": 33871,
+            "from": "Sergchenko",
+            "to": "AnceLuni",
+            "amount": 1467973
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795072932,
+        "content": [
+          {
+            "player": 32440,
+            "from": "Sors",
+            "to": null,
+            "amount": 8479300
+          },
+          {
+            "player": 18945,
+            "from": "Kingsquare",
+            "to": null,
+            "amount": 2689800
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795069383,
+        "content": [
+          {
+            "player": 15642,
+            "from": "Raphontino",
+            "to": null,
+            "amount": 154500
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795068362,
+        "content": [
+          {
+            "player": 2044,
+            "from": "Puro Llorente",
+            "to": null,
+            "amount": 3181400
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1795068246,
+        "content": [
+          {
+            "player": 34527,
+            "from": null,
+            "to": "Sors",
+            "amount": 8785000
+          },
+          {
+            "player": 39885,
+            "from": null,
+            "to": "Josisi mourinho",
+            "amount": 2770000
+          },
+          {
+            "player": 35055,
+            "from": null,
+            "to": "Sors",
+            "amount": 4568000
+          },
+          {
+            "player": 163,
+            "from": null,
+            "to": "Kingsquare",
+            "amount": 2850000
+          },
+          {
+            "player": 21033,
+            "from": null,
+            "to": "Sors",
+            "amount": 165000
+          },
+          {
+            "player": 30789,
+            "from": null,
+            "to": "Sors",
+            "amount": 8415000
+          },
+          {
+            "player": 37724,
+            "from": null,
+            "to": "Avaricius Jr.",
+            "amount": 350000
+          },
+          {
+            "player": 42605,
+            "from": null,
+            "to": "Puro Llorente",
+            "amount": 150000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795043274,
+        "content": [
+          {
+            "player": 25777,
+            "from": "Vicentine Zidane",
+            "to": null,
+            "amount": 2339000
+          },
+          {
+            "player": 35706,
+            "from": "Vicentine Zidane",
+            "to": null,
+            "amount": 6030200
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795023977,
+        "content": [
+          {
+            "type": "clause",
+            "player": 27591,
+            "from": "Raphontino",
+            "to": "Cardonistas",
+            "amount": 2226626
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795003533,
+        "content": [
+          {
+            "player": 33839,
+            "from": null,
+            "to": null,
+            "amount": 100000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795003391,
+        "content": [
+          {
+            "type": "clause",
+            "player": 17148,
+            "from": "Cardonistas",
+            "to": "Sergchenko",
+            "amount": 1137500
+          },
+          {
+            "type": "clause",
+            "player": 29185,
+            "from": "Josisi mourinho",
+            "to": "Sergchenko",
+            "amount": 1024400
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794986167,
+        "content": [
+          {
+            "player": 37817,
+            "from": "Raphontino",
+            "to": null,
+            "amount": 260900
+          },
+          {
+            "player": 6871,
+            "from": "Raphontino",
+            "to": null,
+            "amount": 151400
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1794981869,
+        "content": [
+          {
+            "player": 34717,
+            "from": null,
+            "to": "CucuDaris",
+            "amount": 711210
+          },
+          {
+            "player": 16889,
+            "from": null,
+            "to": "Sors",
+            "amount": 3565000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794931830,
+        "content": [
+          {
+            "player": 33971,
+            "from": "Sergchenko",
+            "to": null,
+            "amount": 1135300
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1794919273,
+        "content": [
+          {
+            "player": 4245,
+            "from": null,
+            "to": null,
+            "amount": 80000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1794915400,
+        "content": [
+          {
+            "player": 26592,
+            "from": null,
+            "to": null,
+            "amount": 54000
+          },
+          {
+            "player": 1462,
+            "from": null,
+            "to": null,
+            "amount": 65000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794913178,
+        "content": [
+          {
+            "player": 42605,
+            "from": "Danilo Stars",
+            "to": null,
+            "amount": 154300
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794913163,
+        "content": [
+          {
+            "type": "clause",
+            "player": 42277,
+            "from": "Kingsquare",
+            "to": "Danilo Stars",
+            "amount": 195013
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794898358,
+        "content": [
+          {
+            "type": "clause",
+            "player": 25815,
+            "from": "Josisi mourinho",
+            "to": "Cardonistas",
+            "amount": 1589321
+          },
+          {
+            "type": "clause",
+            "player": 43458,
+            "from": "Vicentine Zidane",
+            "to": "Cardonistas",
+            "amount": 2257000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794896356,
+        "content": [
+          {
+            "player": 36538,
+            "from": "Raphontino",
+            "to": null,
+            "amount": 224500
+          },
+          {
+            "player": 41713,
+            "from": "Raphontino",
+            "to": null,
+            "amount": 156900
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1794895637,
+        "content": [
+          {
+            "player": 41031,
+            "from": null,
+            "to": "AnceLuni",
+            "amount": 2312761
+          },
+          {
+            "player": 19141,
+            "from": null,
+            "to": "Avaricius Jr.",
+            "amount": 1750000
+          },
+          {
+            "player": 42412,
+            "from": null,
+            "to": "Vicentine Zidane",
+            "amount": 361070
+          },
+          {
+            "player": 41261,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 160000
+          },
+          {
+            "player": 15642,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 150000
+          },
+          {
+            "player": 41265,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 150000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1794845987,
+        "content": [
+          {
+            "player": 42425,
+            "from": null,
+            "to": null,
+            "amount": 50000
+          },
+          {
+            "player": 26592,
+            "from": null,
+            "to": null,
+            "amount": 156000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794838785,
+        "content": [
+          {
+            "player": 35344,
+            "from": "Danilo Stars",
+            "to": "Kingsquare",
+            "amount": 3600000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1794826878,
+        "content": [
+          {
+            "player": 27591,
+            "from": null,
+            "to": null,
+            "amount": 87000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794809688,
+        "content": [
+          {
+            "player": 38144,
+            "from": "Raphontino",
+            "to": null,
+            "amount": 156700
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1794809008,
+        "content": [
+          {
+            "player": 43185,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 2100010
+          },
+          {
+            "player": 37817,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 260000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794730333,
+        "content": [
+          {
+            "player": 26077,
+            "from": "Avaricius Jr.",
+            "to": null,
+            "amount": 1914000
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1794722540,
+        "content": [
+          {
+            "player": 1599,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 1213240
+          },
+          {
+            "player": 41086,
+            "from": null,
+            "to": "Sors",
+            "amount": 4850000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794669981,
+        "content": [
+          {
+            "type": "clause",
+            "player": 33697,
+            "from": "Sergchenko",
+            "to": "CucuDaris",
+            "amount": 1299998
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794669854,
+        "content": [
+          {
+            "player": 23842,
+            "from": "CucuDaris",
+            "to": null,
+            "amount": 163100
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1794636263,
+        "content": [
+          {
+            "player": 37526,
+            "from": null,
+            "to": "Castriano Ronaldo",
+            "amount": 150010
+          },
+          {
+            "player": 10276,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 6017380
+          },
+          {
+            "player": 35615,
+            "from": null,
+            "to": "Se vende Cuenta",
+            "amount": 1380000
+          },
+          {
+            "player": 35763,
+            "from": null,
+            "to": "Sors",
+            "amount": 2850000
+          },
+          {
+            "player": 2480,
+            "from": null,
+            "to": "Kingsquare",
+            "amount": 1609000
+          },
+          {
+            "player": 18945,
+            "from": null,
+            "to": "Kingsquare",
+            "amount": 3000090
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1794613612,
+        "content": [
+          {
+            "player": 40552,
+            "from": null,
+            "to": null,
+            "amount": 500000
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1794550004,
+        "content": [
+          {
+            "player": 26678,
+            "from": null,
+            "to": "Tano Amunt",
+            "amount": 1551000
+          },
+          {
+            "player": 6871,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 150000
+          },
+          {
+            "player": 41713,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 150000
+          },
+          {
+            "player": 33243,
+            "from": null,
+            "to": "Kingsquare",
+            "amount": 150010
+          },
+          {
+            "player": 38144,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 150000
+          },
+          {
+            "player": 36538,
+            "from": null,
+            "to": "Raphontino",
+            "amount": 220000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1794506487,
+        "content": [
+          {
+            "player": 17482,
+            "from": null,
+            "to": null,
+            "amount": 121000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794496164,
+        "content": [
+          {
+            "player": 30493,
+            "from": "AnceLuni",
+            "to": null,
+            "amount": 1829700
+          },
+          {
+            "player": 42119,
+            "from": "AnceLuni",
+            "to": null,
+            "amount": 1229000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1794484738,
+        "content": [
+          {
+            "player": 41940,
+            "from": null,
+            "to": null,
+            "amount": 250000
+          },
+          {
+            "player": 41940,
+            "from": null,
+            "to": null,
+            "amount": 300000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794471776,
+        "content": [
+          {
+            "player": 9045,
+            "from": "Avaricius Jr.",
+            "to": null,
+            "amount": 2864900
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1794463337,
+        "content": [
+          {
+            "player": 35408,
+            "from": null,
+            "to": "CucuDaris",
+            "amount": 1310000
+          },
+          {
+            "player": 39813,
+            "from": null,
+            "to": "CucuDaris",
+            "amount": 511210
+          },
+          {
+            "player": 37495,
+            "from": null,
+            "to": "Vicentine Zidane",
+            "amount": 7254780
+          },
+          {
+            "player": 37723,
+            "from": null,
+            "to": "CucuDaris",
+            "amount": 512000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794441496,
+        "content": [
+          {
+            "player": 18916,
+            "from": "Se vende Cuenta",
+            "to": null,
+            "amount": 916700
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794428082,
+        "content": [
+          {
+            "player": 10745,
+            "from": "Cardonistas",
+            "to": "Celta de Viño",
+            "amount": 4200000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794407884,
+        "content": [
+          {
+            "player": 40010,
+            "from": "Sors",
+            "to": null,
+            "amount": 1445800
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794396010,
+        "content": [
+          {
+            "player": 17937,
+            "from": "Raphontino",
+            "to": null,
+            "amount": 5143100
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794395127,
+        "content": [
+          {
+            "type": "clause",
+            "player": 33871,
+            "from": "CucuDaris",
+            "to": "Sergchenko",
+            "amount": 1129210
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1794377098,
+        "content": [
+          {
+            "player": 42605,
+            "from": null,
+            "to": "Danilo Stars",
+            "amount": 150000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1794312338,
+        "content": [
+          {
+            "type": "clause",
+            "player": 26566,
+            "from": "Celta de Viño",
+            "to": "Avaricius Jr.",
+            "amount": 3185018
+          }
+        ]
+      }
+    ]
   },
   "players": {
+    "20": {
+      "id": 20,
+      "name": "Eric García",
+      "teamID": 3,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        4,
+        3,
+        "doubt",
+        "injured",
+        11
+      ],
+      "points": 52
+    },
     "33": {
       "id": 33,
       "name": "Álvaro García",
@@ -5800,6 +7002,21 @@
         "injured"
       ],
       "points": 60
+    },
+    "1249": {
+      "id": 1249,
+      "name": "Isco",
+      "teamID": 87,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        6,
+        8,
+        7,
+        4,
+        null
+      ],
+      "points": 70
     },
     "1462": {
       "id": 1462,
@@ -5911,7 +7128,7 @@
       "name": "Manu Sánchez",
       "teamID": 10,
       "position": 2,
-      "status": "doubt",
+      "status": "injured",
       "fitness": [
         3,
         "doubt",
@@ -6086,6 +7303,21 @@
       ],
       "points": 42
     },
+    "2253": {
+      "id": 2253,
+      "name": "Rüdiger",
+      "teamID": 15,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "points": 28
+    },
     "2480": {
       "id": 2480,
       "name": "Mandi",
@@ -6236,6 +7468,21 @@
       ],
       "points": 52
     },
+    "6259": {
+      "id": 6259,
+      "name": "Hugo Duro",
+      "teamID": 18,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        1,
+        null,
+        null,
+        2,
+        0
+      ],
+      "points": 21
+    },
     "6792": {
       "id": 6792,
       "name": "Villalibre",
@@ -6265,6 +7512,21 @@
         6
       ],
       "points": 56
+    },
+    "6871": {
+      "id": 6871,
+      "name": "Odriozola",
+      "teamID": 13,
+      "position": 2,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        "injured",
+        "injured",
+        "injured",
+        "injured"
+      ],
+      "points": 0
     },
     "7003": {
       "id": 7003,
@@ -6310,6 +7572,21 @@
         2
       ],
       "points": 51
+    },
+    "9045": {
+      "id": 9045,
+      "name": "Enes Ünal",
+      "teamID": 8,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        -1,
+        3,
+        13,
+        2,
+        4
+      ],
+      "points": 45
     },
     "9480": {
       "id": 9480,
@@ -6581,6 +7858,21 @@
       ],
       "points": 44
     },
+    "14466": {
+      "id": 14466,
+      "name": "Hinojo",
+      "teamID": 7,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        2,
+        "sanctioned",
+        6,
+        null,
+        6
+      ],
+      "points": 34
+    },
     "14630": {
       "id": 14630,
       "name": "Leo Román",
@@ -6670,6 +7962,21 @@
         "sanctioned"
       ],
       "points": 32
+    },
+    "15642": {
+      "id": 15642,
+      "name": "Lobete",
+      "teamID": 65,
+      "position": 4,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        "injured",
+        "injured",
+        "injured",
+        "injured"
+      ],
+      "points": 4
     },
     "15828": {
       "id": 15828,
@@ -6971,6 +8278,21 @@
       ],
       "points": 25
     },
+    "18945": {
+      "id": 18945,
+      "name": "Koundé",
+      "teamID": 3,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        3,
+        "doubt",
+        "doubt",
+        "injured",
+        5
+      ],
+      "points": 33
+    },
     "19141": {
       "id": 19141,
       "name": "Ruibal",
@@ -7165,6 +8487,21 @@
         3
       ],
       "points": 75
+    },
+    "22690": {
+      "id": 22690,
+      "name": "Tete Morente",
+      "teamID": 75,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        2,
+        3,
+        4,
+        3
+      ],
+      "points": 40
     },
     "22699": {
       "id": 22699,
@@ -7406,6 +8743,21 @@
       ],
       "points": 40
     },
+    "26077": {
+      "id": 26077,
+      "name": "Sadiq",
+      "teamID": 18,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        -1,
+        0,
+        11,
+        "doubt",
+        "injured"
+      ],
+      "points": 23
+    },
     "26092": {
       "id": 26092,
       "name": "Terrats",
@@ -7525,6 +8877,21 @@
         7
       ],
       "points": 38
+    },
+    "26678": {
+      "id": 26678,
+      "name": "Christensen",
+      "teamID": 3,
+      "position": 2,
+      "status": "doubt",
+      "fitness": [
+        "doubt",
+        3,
+        "doubt",
+        "injured",
+        "injured"
+      ],
+      "points": 19
     },
     "26879": {
       "id": 26879,
@@ -7660,6 +9027,21 @@
         "injured"
       ],
       "points": 46
+    },
+    "30081": {
+      "id": 30081,
+      "name": "Pape Gueye",
+      "teamID": 19,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        7,
+        10,
+        "sanctioned",
+        -1,
+        3
+      ],
+      "points": 75
     },
     "30123": {
       "id": 30123,
@@ -7886,6 +9268,21 @@
       ],
       "points": 48
     },
+    "32435": {
+      "id": 32435,
+      "name": "Etta Eyong",
+      "teamID": 10,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        -1,
+        1,
+        2,
+        8
+      ],
+      "points": 18
+    },
     "32440": {
       "id": 32440,
       "name": "Cubarsí",
@@ -7915,6 +9312,21 @@
         null
       ],
       "points": 11
+    },
+    "33243": {
+      "id": 33243,
+      "name": "Risco",
+      "teamID": 8,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "points": 5
     },
     "33447": {
       "id": 33447,
@@ -8261,6 +9673,51 @@
       ],
       "points": 17
     },
+    "35770": {
+      "id": 35770,
+      "name": "Antony",
+      "teamID": 87,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        10,
+        1,
+        4,
+        1,
+        null
+      ],
+      "points": 57
+    },
+    "36538": {
+      "id": 36538,
+      "name": "Beitia",
+      "teamID": 13,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        "doubt",
+        "injured",
+        "injured",
+        "injured"
+      ],
+      "points": 7
+    },
+    "36566": {
+      "id": 36566,
+      "name": "Adrián Rodríguez",
+      "teamID": 91,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "points": 0
+    },
     "37450": {
       "id": 37450,
       "name": "Alemão",
@@ -8275,6 +9732,21 @@
         2
       ],
       "points": 26
+    },
+    "37488": {
+      "id": 37488,
+      "name": "Requena",
+      "teamID": 10,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        14,
+        0,
+        7,
+        4,
+        6
+      ],
+      "points": 55
     },
     "37495": {
       "id": 37495,
@@ -8350,6 +9822,21 @@
         3
       ],
       "points": 16
+    },
+    "37726": {
+      "id": 37726,
+      "name": "Oriol Rey",
+      "teamID": 10,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        3,
+        4,
+        null,
+        3
+      ],
+      "points": 39
     },
     "37733": {
       "id": 37733,
@@ -8440,6 +9927,21 @@
         1
       ],
       "points": 34
+    },
+    "38144": {
+      "id": 38144,
+      "name": "Egiluz",
+      "teamID": 1,
+      "position": 2,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        "injured",
+        "injured",
+        "injured",
+        "injured"
+      ],
+      "points": 0
     },
     "38194": {
       "id": 38194,
@@ -8861,6 +10363,21 @@
       ],
       "points": 60
     },
+    "41086": {
+      "id": 41086,
+      "name": "Bernardo Silva",
+      "teamID": 15,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        6,
+        3,
+        3,
+        2
+      ],
+      "points": 39
+    },
     "41093": {
       "id": 41093,
       "name": "Rafita",
@@ -8921,6 +10438,36 @@
       ],
       "points": 51
     },
+    "41157": {
+      "id": 41157,
+      "name": "Diatta",
+      "teamID": 19,
+      "position": 3,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        "injured",
+        "injured",
+        null,
+        null
+      ],
+      "points": 0
+    },
+    "41261": {
+      "id": 41261,
+      "name": "Guliashvili",
+      "teamID": 812,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        null,
+        4,
+        1,
+        null,
+        0
+      ],
+      "points": 14
+    },
     "41264": {
       "id": 41264,
       "name": "Mantilla",
@@ -8935,6 +10482,21 @@
         2
       ],
       "points": 18
+    },
+    "41265": {
+      "id": 41265,
+      "name": "Sainz-Maza",
+      "teamID": 812,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        3,
+        4,
+        null,
+        null
+      ],
+      "points": 8
     },
     "41270": {
       "id": 41270,
@@ -9056,6 +10618,21 @@
       ],
       "points": 0
     },
+    "41606": {
+      "id": 41606,
+      "name": "Mangala",
+      "teamID": 8,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        -2,
+        3,
+        11,
+        "doubt",
+        "doubt"
+      ],
+      "points": 35
+    },
     "41608": {
       "id": 41608,
       "name": "Buonanotte",
@@ -9100,6 +10677,21 @@
         3
       ],
       "points": 83
+    },
+    "41713": {
+      "id": 41713,
+      "name": "José Ángel",
+      "teamID": 7,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        3,
+        null,
+        null
+      ],
+      "points": 4
     },
     "41940": {
       "id": 41940,
@@ -9205,6 +10797,36 @@
         "sanctioned"
       ],
       "points": 50
+    },
+    "42444": {
+      "id": 42444,
+      "name": "Hjulmand",
+      "teamID": 2,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        3,
+        7,
+        3,
+        5
+      ],
+      "points": 45
+    },
+    "42605": {
+      "id": 42605,
+      "name": "Wanjala",
+      "teamID": 18,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "points": 0
     },
     "42610": {
       "id": 42610,
@@ -9400,6 +11022,21 @@
         4
       ],
       "points": 57
+    },
+    "43281": {
+      "id": 43281,
+      "name": "Esquivel",
+      "teamID": 2,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "points": 0
     },
     "43282": {
       "id": 43282,
