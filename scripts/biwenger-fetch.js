@@ -90,6 +90,7 @@ const teamRow = s => ({ ...pick(s, ['id', 'name', 'points', 'position']),
       leagueHttp: rl.http, leagueShape: id === out.round?.id ? shape(dl) : undefined,
       round: pick(dl?.round, ['id', 'name', 'short', 'status', 'start', 'end']),
       standings: (dl?.league?.standings || []).map(teamRow),
+      lineups: (dl?.league?.standings || []).map(s => ({ name: s.name, players: s.lineup?.players || [] })),
       gamesHttp: rd.http, gamesShape: id === ids[curIdx + 1] ? shape(dd) : undefined,
       info: pick(dd, ['id', 'name', 'short', 'status', 'start', 'end']),
       games: (dd?.games || []).map(g => ({ date: g.date, status: g.status,
@@ -119,6 +120,14 @@ const teamRow = s => ({ ...pick(s, ['id', 'name', 'points', 'position']),
         if (data.reports && !Array.isArray(data.reports)) Object.entries(data.reports).forEach(([id, r]) => { if (typeof r?.points === 'number') out.live.playerPoints[id] = r.points; }); }
     }
   }
+
+  // 6. Datos públicos de los jugadores alineados (puntos de las últimas 5 jornadas)
+  const allPlayers = r3.json?.data?.players || {};
+  const pids = new Set();
+  Object.values(out.rounds || {}).forEach(r => (r.lineups || []).forEach(l => l.players.forEach(id => pids.add(String(id)))));
+  (out.live?.lineups || []).forEach(l => l.players.forEach(id => pids.add(String(id))));
+  out.players = {};
+  pids.forEach(id => { const p = allPlayers[id]; if (p) out.players[id] = pick(p, ['id', 'name', 'teamID', 'position', 'status', 'fitness', 'points']); });
 
   const dir = path.resolve(__dirname, '../data/biwenger');
   fs.mkdirSync(dir, { recursive: true });
