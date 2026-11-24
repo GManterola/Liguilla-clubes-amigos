@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-24T08:14:47.842Z",
+  "fetchedAt": "2026-11-24T08:17:49.921Z",
   "league": "1699656",
   "calls": {
     "roundsLeague": {
@@ -2307,6 +2307,264 @@
           "lineupCount": true
         }
       ],
+      "lineups": [
+        {
+          "name": "Vicentine Zidane",
+          "players": [
+            11677,
+            33694,
+            42390,
+            38072,
+            30123,
+            31027,
+            19441,
+            25777,
+            26360,
+            33938,
+            897
+          ]
+        },
+        {
+          "name": "Kingsquare",
+          "players": [
+            41101,
+            15828,
+            27996,
+            33447,
+            43268,
+            35765,
+            43272,
+            42425,
+            39357,
+            25127,
+            17442
+          ]
+        },
+        {
+          "name": "Castriano Ronaldo",
+          "players": [
+            15289,
+            37739,
+            43259,
+            17731,
+            41072,
+            11196,
+            17369,
+            6837,
+            11633,
+            21132,
+            15396
+          ]
+        },
+        {
+          "name": "Josisi mourinho",
+          "players": [
+            37600,
+            1679,
+            38290,
+            26131,
+            12403,
+            26879,
+            42726,
+            19485,
+            37897,
+            129,
+            19577
+          ]
+        },
+        {
+          "name": "Raphontino",
+          "players": [
+            16606,
+            41684,
+            41093,
+            1760,
+            10030,
+            19693,
+            24197,
+            17937,
+            26930,
+            39386,
+            43264
+          ]
+        },
+        {
+          "name": "Cardonistas",
+          "players": [
+            38433,
+            11800,
+            10574,
+            19614,
+            35171,
+            19862,
+            1969,
+            37817,
+            10745,
+            43262,
+            3159
+          ]
+        },
+        {
+          "name": "AnceLuni",
+          "players": [
+            9887,
+            41419,
+            30493,
+            38194,
+            1602,
+            18128,
+            5807,
+            32338,
+            35706,
+            39431,
+            12494
+          ]
+        },
+        {
+          "name": "Danilo Stars",
+          "players": [
+            30487,
+            41264,
+            33970,
+            32569,
+            41608,
+            29184,
+            9480,
+            1462,
+            34469,
+            31167,
+            40911
+          ]
+        },
+        {
+          "name": "Avaricius Jr.",
+          "players": [
+            19192,
+            1676,
+            43267,
+            17200,
+            17645,
+            163,
+            24979,
+            39874,
+            23842,
+            26271,
+            41421
+          ]
+        },
+        {
+          "name": "Puro Llorente",
+          "players": [
+            38405,
+            41609,
+            1844,
+            11045,
+            12734,
+            42814,
+            38449,
+            19547,
+            20969,
+            39885,
+            30502
+          ]
+        },
+        {
+          "name": "Tano Amunt",
+          "players": [
+            1897,
+            43171,
+            35426,
+            2247,
+            39901,
+            1876,
+            22699,
+            429,
+            8670,
+            38854,
+            18382
+          ]
+        },
+        {
+          "name": "CucuDaris",
+          "players": [
+            2184,
+            19299,
+            34111,
+            28103,
+            18256,
+            26092,
+            27929,
+            25403,
+            12221,
+            6792,
+            40037
+          ]
+        },
+        {
+          "name": "Sors",
+          "players": [
+            43282,
+            41100,
+            9983,
+            38318,
+            14800,
+            1733,
+            41082,
+            33,
+            42610,
+            42748,
+            24474
+          ]
+        },
+        {
+          "name": "Se vende Cuenta",
+          "players": [
+            10117,
+            1721,
+            38404,
+            42271,
+            28115,
+            5220,
+            18916,
+            4753,
+            16317,
+            24509,
+            18397
+          ]
+        },
+        {
+          "name": "Sergchenko",
+          "players": [
+            17482,
+            33971,
+            38143,
+            40010,
+            34483,
+            41076,
+            17121,
+            41411,
+            32135,
+            41565,
+            1995
+          ]
+        },
+        {
+          "name": "Celta de Viño",
+          "players": [
+            14630,
+            856,
+            22964,
+            26344,
+            37733,
+            41097,
+            26048,
+            2602,
+            39941,
+            34802,
+            39792
+          ]
+        }
+      ],
       "gamesHttp": 200,
       "info": {
         "id": 4909,
@@ -2546,6 +2804,264 @@
           "roundPoints": 43,
           "lineupDate": 1793991003,
           "lineupCount": true
+        }
+      ],
+      "lineups": [
+        {
+          "name": "Vicentine Zidane",
+          "players": [
+            11677,
+            33694,
+            42390,
+            43185,
+            19441,
+            31027,
+            43458,
+            25777,
+            26360,
+            35706,
+            897
+          ]
+        },
+        {
+          "name": "Kingsquare",
+          "players": [
+            41101,
+            42277,
+            35765,
+            33447,
+            43268,
+            39357,
+            43272,
+            10157,
+            8555,
+            25127,
+            17442
+          ]
+        },
+        {
+          "name": "Castriano Ronaldo",
+          "players": [
+            15289,
+            37739,
+            43259,
+            17731,
+            41072,
+            6837,
+            17344,
+            41940,
+            11633,
+            21132,
+            15396
+          ]
+        },
+        {
+          "name": "Josisi mourinho",
+          "players": [
+            37600,
+            15410,
+            38290,
+            26131,
+            41270,
+            41413,
+            42726,
+            12403,
+            37897,
+            41567,
+            19577
+          ]
+        },
+        {
+          "name": "Raphontino",
+          "players": [
+            10117,
+            41684,
+            41093,
+            10030,
+            4245,
+            19693,
+            24326,
+            43264,
+            26930,
+            39386,
+            17937
+          ]
+        },
+        {
+          "name": "Cardonistas",
+          "players": [
+            38433,
+            11800,
+            10574,
+            19614,
+            35171,
+            19862,
+            34469,
+            17148,
+            10745,
+            43262,
+            3159
+          ]
+        },
+        {
+          "name": "AnceLuni",
+          "players": [
+            9887,
+            30493,
+            42119,
+            38194,
+            1602,
+            1969,
+            5807,
+            32338,
+            25677,
+            39431,
+            12494
+          ]
+        },
+        {
+          "name": "Danilo Stars",
+          "players": [
+            30487,
+            26592,
+            33970,
+            42757,
+            42425,
+            31167,
+            9480,
+            1462,
+            31243,
+            41421,
+            40911
+          ]
+        },
+        {
+          "name": "Avaricius Jr.",
+          "players": [
+            19192,
+            1676,
+            43267,
+            38072,
+            17645,
+            17200,
+            24979,
+            163,
+            17369,
+            26271,
+            39874
+          ]
+        },
+        {
+          "name": "Puro Llorente",
+          "players": [
+            38405,
+            41609,
+            1844,
+            11045,
+            12734,
+            42814,
+            2044,
+            19547,
+            20969,
+            39885,
+            30502
+          ]
+        },
+        {
+          "name": "Tano Amunt",
+          "players": [
+            1897,
+            43171,
+            2600,
+            2247,
+            39901,
+            1613,
+            8670,
+            1876,
+            37450,
+            2603,
+            18382
+          ]
+        },
+        {
+          "name": "CucuDaris",
+          "players": [
+            2184,
+            4070,
+            33871,
+            28103,
+            26095,
+            25327,
+            27929,
+            25403,
+            30477,
+            18256,
+            23842
+          ]
+        },
+        {
+          "name": "Sors",
+          "players": [
+            43282,
+            32440,
+            9983,
+            40010,
+            30507,
+            1733,
+            30123,
+            38368,
+            42610,
+            41082,
+            24474
+          ]
+        },
+        {
+          "name": "Se vende Cuenta",
+          "players": [
+            7003,
+            1721,
+            38404,
+            1760,
+            28115,
+            5220,
+            18916,
+            41418,
+            12221,
+            24509,
+            16317
+          ]
+        },
+        {
+          "name": "Sergchenko",
+          "players": [
+            17482,
+            33971,
+            38143,
+            33839,
+            17121,
+            34483,
+            41411,
+            33697,
+            18397,
+            41565,
+            1995
+          ]
+        },
+        {
+          "name": "Celta de Viño",
+          "players": [
+            14630,
+            856,
+            26566,
+            19299,
+            26344,
+            32120,
+            26048,
+            37733,
+            39941,
+            34802,
+            39792
+          ]
         }
       ],
       "gamesHttp": 200,
@@ -2826,6 +3342,264 @@
           "lineupCount": true
         }
       ],
+      "lineups": [
+        {
+          "name": "Vicentine Zidane",
+          "players": [
+            11677,
+            33694,
+            42390,
+            37495,
+            19441,
+            31027,
+            42412,
+            17057,
+            30507,
+            15568,
+            26360
+          ]
+        },
+        {
+          "name": "Kingsquare",
+          "players": [
+            41101,
+            2480,
+            35765,
+            33447,
+            163,
+            39357,
+            35344,
+            1083,
+            8555,
+            25127,
+            40552
+          ]
+        },
+        {
+          "name": "Castriano Ronaldo",
+          "players": [
+            37526,
+            37739,
+            43259,
+            17731,
+            41072,
+            6837,
+            11196,
+            35055,
+            41940,
+            21132,
+            15396
+          ]
+        },
+        {
+          "name": "Josisi mourinho",
+          "players": [
+            37600,
+            15410,
+            38290,
+            26131,
+            41270,
+            41413,
+            42726,
+            1612,
+            37897,
+            39885,
+            19577
+          ]
+        },
+        {
+          "name": "Raphontino",
+          "players": [
+            10117,
+            41684,
+            1599,
+            43185,
+            4245,
+            19693,
+            24326,
+            31167,
+            26930,
+            39386,
+            10276
+          ]
+        },
+        {
+          "name": "Cardonistas",
+          "players": [
+            38433,
+            11800,
+            10574,
+            19614,
+            25815,
+            19862,
+            34469,
+            35171,
+            27591,
+            42610,
+            43458
+          ]
+        },
+        {
+          "name": "AnceLuni",
+          "players": [
+            9887,
+            41031,
+            33871,
+            38194,
+            1602,
+            1969,
+            5807,
+            32338,
+            25677,
+            39431,
+            12494
+          ]
+        },
+        {
+          "name": "Danilo Stars",
+          "players": [
+            30487,
+            26592,
+            33970,
+            42277,
+            42425,
+            31243,
+            9480,
+            1462,
+            31475,
+            43262,
+            40911
+          ]
+        },
+        {
+          "name": "Avaricius Jr.",
+          "players": [
+            19192,
+            1676,
+            43267,
+            38072,
+            26566,
+            37724,
+            24979,
+            17369,
+            19141,
+            26271,
+            39874
+          ]
+        },
+        {
+          "name": "Puro Llorente",
+          "players": [
+            38405,
+            41609,
+            10030,
+            11045,
+            12734,
+            42814,
+            20969,
+            19547,
+            17442,
+            897,
+            30502
+          ]
+        },
+        {
+          "name": "Tano Amunt",
+          "players": [
+            1897,
+            43171,
+            2600,
+            2247,
+            39901,
+            1613,
+            8670,
+            24255,
+            37450,
+            2603,
+            18382
+          ]
+        },
+        {
+          "name": "CucuDaris",
+          "players": [
+            2184,
+            34717,
+            35408,
+            28103,
+            26095,
+            18256,
+            27929,
+            25403,
+            30477,
+            39813,
+            33697
+          ]
+        },
+        {
+          "name": "Sors",
+          "players": [
+            43282,
+            16889,
+            9983,
+            41100,
+            34527,
+            21033,
+            30123,
+            30789,
+            35763,
+            41082,
+            24474
+          ]
+        },
+        {
+          "name": "Se vende Cuenta",
+          "players": [
+            7003,
+            1721,
+            42757,
+            1760,
+            28115,
+            5220,
+            40948,
+            41418,
+            12221,
+            35615,
+            24509
+          ]
+        },
+        {
+          "name": "Sergchenko",
+          "players": [
+            17482,
+            37723,
+            38143,
+            33839,
+            17148,
+            34483,
+            41411,
+            29185,
+            18397,
+            32363,
+            1995
+          ]
+        },
+        {
+          "name": "Celta de Viño",
+          "players": [
+            14630,
+            40952,
+            26344,
+            19299,
+            41097,
+            32120,
+            26048,
+            10745,
+            1927,
+            34802,
+            39792
+          ]
+        }
+      ],
       "gamesHttp": 200,
       "info": {
         "id": 4911,
@@ -3017,6 +3791,72 @@
           "name": "Celta de Viño",
           "points": 266,
           "position": 16
+        }
+      ],
+      "lineups": [
+        {
+          "name": "Vicentine Zidane",
+          "players": []
+        },
+        {
+          "name": "Kingsquare",
+          "players": []
+        },
+        {
+          "name": "Castriano Ronaldo",
+          "players": []
+        },
+        {
+          "name": "Josisi mourinho",
+          "players": []
+        },
+        {
+          "name": "Raphontino",
+          "players": []
+        },
+        {
+          "name": "Cardonistas",
+          "players": []
+        },
+        {
+          "name": "AnceLuni",
+          "players": []
+        },
+        {
+          "name": "Danilo Stars",
+          "players": []
+        },
+        {
+          "name": "Avaricius Jr.",
+          "players": []
+        },
+        {
+          "name": "Puro Llorente",
+          "players": []
+        },
+        {
+          "name": "Tano Amunt",
+          "players": []
+        },
+        {
+          "name": "CucuDaris",
+          "players": []
+        },
+        {
+          "name": "Sors",
+          "players": []
+        },
+        {
+          "name": "Se vende Cuenta",
+          "players": []
+        },
+        {
+          "name": "Sergchenko",
+          "players": []
+        },
+        {
+          "name": "Celta de Viño",
+          "players": []
         }
       ],
       "gamesHttp": 200,
@@ -3389,6 +4229,72 @@
           "name": "Celta de Viño",
           "points": 266,
           "position": 16
+        }
+      ],
+      "lineups": [
+        {
+          "name": "Vicentine Zidane",
+          "players": []
+        },
+        {
+          "name": "Kingsquare",
+          "players": []
+        },
+        {
+          "name": "Castriano Ronaldo",
+          "players": []
+        },
+        {
+          "name": "Josisi mourinho",
+          "players": []
+        },
+        {
+          "name": "Raphontino",
+          "players": []
+        },
+        {
+          "name": "Cardonistas",
+          "players": []
+        },
+        {
+          "name": "AnceLuni",
+          "players": []
+        },
+        {
+          "name": "Danilo Stars",
+          "players": []
+        },
+        {
+          "name": "Avaricius Jr.",
+          "players": []
+        },
+        {
+          "name": "Puro Llorente",
+          "players": []
+        },
+        {
+          "name": "Tano Amunt",
+          "players": []
+        },
+        {
+          "name": "CucuDaris",
+          "players": []
+        },
+        {
+          "name": "Sors",
+          "players": []
+        },
+        {
+          "name": "Se vende Cuenta",
+          "players": []
+        },
+        {
+          "name": "Sergchenko",
+          "players": []
+        },
+        {
+          "name": "Celta de Viño",
+          "players": []
         }
       ],
       "gamesHttp": 200,
@@ -3845,5 +4751,3740 @@
         "status": "finished"
       }
     ]
+  },
+  "players": {
+    "33": {
+      "id": 33,
+      "name": "Álvaro García",
+      "teamID": 70,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        "injured",
+        4,
+        4,
+        11
+      ],
+      "points": 58
+    },
+    "129": {
+      "id": 129,
+      "name": "Brahim",
+      "teamID": 15,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        null,
+        1,
+        3,
+        null,
+        2
+      ],
+      "points": 15
+    },
+    "163": {
+      "id": 163,
+      "name": "Guido Rodríguez",
+      "teamID": 18,
+      "position": 3,
+      "status": "warned",
+      "fitness": [
+        4,
+        0,
+        7,
+        3,
+        4
+      ],
+      "points": 43
+    },
+    "429": {
+      "id": 429,
+      "name": "Rodri",
+      "teamID": 3,
+      "position": 3,
+      "status": "doubt",
+      "fitness": [
+        "doubt",
+        "injured",
+        5,
+        5,
+        13
+      ],
+      "points": 77
+    },
+    "856": {
+      "id": 856,
+      "name": "Kiko Femenía",
+      "teamID": 8,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        3,
+        1,
+        2,
+        -2,
+        2
+      ],
+      "points": 6
+    },
+    "897": {
+      "id": 897,
+      "name": "Berenguer",
+      "teamID": 1,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        5,
+        5,
+        16,
+        11
+      ],
+      "points": 76
+    },
+    "1083": {
+      "id": 1083,
+      "name": "Koke",
+      "teamID": 2,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        7,
+        6,
+        "doubt",
+        "injured",
+        "injured"
+      ],
+      "points": 60
+    },
+    "1462": {
+      "id": 1462,
+      "name": "Moi Gómez",
+      "teamID": 93,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        9,
+        5,
+        6,
+        6,
+        5
+      ],
+      "points": 50
+    },
+    "1599": {
+      "id": 1599,
+      "name": "Jonny",
+      "teamID": 91,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        5,
+        3,
+        -4,
+        null,
+        2
+      ],
+      "points": 31
+    },
+    "1602": {
+      "id": 1602,
+      "name": "Rubén García",
+      "teamID": 93,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        4,
+        4,
+        2,
+        3,
+        8
+      ],
+      "points": 49
+    },
+    "1612": {
+      "id": 1612,
+      "name": "Antonio Blanco",
+      "teamID": 91,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        7,
+        6,
+        null,
+        3,
+        5
+      ],
+      "points": 47
+    },
+    "1613": {
+      "id": 1613,
+      "name": "Laporte",
+      "teamID": 1,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        3,
+        5,
+        5,
+        "sanctioned",
+        -1
+      ],
+      "points": 43
+    },
+    "1676": {
+      "id": 1676,
+      "name": "Giménez",
+      "teamID": 6,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        3,
+        4,
+        4,
+        6,
+        4
+      ],
+      "points": 47
+    },
+    "1679": {
+      "id": 1679,
+      "name": "Diego Llorente",
+      "teamID": 87,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        3,
+        1
+      ],
+      "points": 20
+    },
+    "1721": {
+      "id": 1721,
+      "name": "Manu Sánchez",
+      "teamID": 10,
+      "position": 2,
+      "status": "doubt",
+      "fitness": [
+        3,
+        "doubt",
+        "doubt",
+        3,
+        3
+      ],
+      "points": 37
+    },
+    "1733": {
+      "id": 1733,
+      "name": "Camavinga",
+      "teamID": 15,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        4,
+        2,
+        3,
+        9,
+        2
+      ],
+      "points": 43
+    },
+    "1760": {
+      "id": 1760,
+      "name": "Chust",
+      "teamID": 75,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        6,
+        5,
+        7,
+        4,
+        8
+      ],
+      "points": 59
+    },
+    "1844": {
+      "id": 1844,
+      "name": "Gayà",
+      "teamID": 18,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        "sanctioned",
+        -4,
+        6,
+        4,
+        3
+      ],
+      "points": 29
+    },
+    "1876": {
+      "id": 1876,
+      "name": "Denis Suárez",
+      "teamID": 91,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        11,
+        null,
+        0,
+        4,
+        3
+      ],
+      "points": 42
+    },
+    "1897": {
+      "id": 1897,
+      "name": "Oblak",
+      "teamID": 2,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        4,
+        2,
+        9,
+        11,
+        7
+      ],
+      "points": 65
+    },
+    "1927": {
+      "id": 1927,
+      "name": "Gerard Moreno",
+      "teamID": 19,
+      "position": 4,
+      "status": "doubt",
+      "fitness": [
+        "doubt",
+        "doubt",
+        2,
+        3,
+        3
+      ],
+      "points": 43
+    },
+    "1969": {
+      "id": 1969,
+      "name": "Unai López",
+      "teamID": 70,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        6,
+        4,
+        14,
+        5,
+        5
+      ],
+      "points": 63
+    },
+    "1995": {
+      "id": 1995,
+      "name": "Iñaki Williams",
+      "teamID": 1,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        6,
+        11,
+        11,
+        2
+      ],
+      "points": 53
+    },
+    "2044": {
+      "id": 2044,
+      "name": "Ceballos",
+      "teamID": 87,
+      "position": 3,
+      "status": "doubt",
+      "fitness": [
+        "doubt",
+        8,
+        4,
+        4,
+        1
+      ],
+      "points": 34
+    },
+    "2184": {
+      "id": 2184,
+      "name": "Ryan",
+      "teamID": 10,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        3,
+        12,
+        3,
+        1,
+        7
+      ],
+      "points": 67
+    },
+    "2247": {
+      "id": 2247,
+      "name": "Bellerín",
+      "teamID": 87,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        2,
+        8,
+        4,
+        "doubt",
+        3
+      ],
+      "points": 42
+    },
+    "2480": {
+      "id": 2480,
+      "name": "Mandi",
+      "teamID": 10,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        4,
+        8,
+        3,
+        2,
+        3
+      ],
+      "points": 44
+    },
+    "2600": {
+      "id": 2600,
+      "name": "Marcos Llorente",
+      "teamID": 2,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        9,
+        3,
+        8,
+        4,
+        4
+      ],
+      "points": 63
+    },
+    "2602": {
+      "id": 2602,
+      "name": "Barrenetxea",
+      "teamID": 13,
+      "position": 3,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        7,
+        3,
+        4,
+        4
+      ],
+      "points": 51
+    },
+    "2603": {
+      "id": 2603,
+      "name": "Oyarzabal",
+      "teamID": 13,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        12,
+        null,
+        3,
+        6,
+        18
+      ],
+      "points": 68
+    },
+    "3159": {
+      "id": 3159,
+      "name": "Jutglà",
+      "teamID": 5,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        1,
+        null,
+        1,
+        2,
+        9
+      ],
+      "points": 43
+    },
+    "4070": {
+      "id": 4070,
+      "name": "Galilea",
+      "teamID": 65,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        -1,
+        3,
+        4,
+        null
+      ],
+      "points": 21
+    },
+    "4245": {
+      "id": 4245,
+      "name": "Pablo Martínez",
+      "teamID": 65,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        4,
+        2,
+        "doubt",
+        "injured",
+        11
+      ],
+      "points": 30
+    },
+    "4753": {
+      "id": 4753,
+      "name": "Andrés Martín",
+      "teamID": 812,
+      "position": 4,
+      "status": "doubt",
+      "fitness": [
+        "doubt",
+        "injured",
+        "doubt",
+        2,
+        0
+      ],
+      "points": 19
+    },
+    "5220": {
+      "id": 5220,
+      "name": "Fran García",
+      "teamID": 87,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        2,
+        5,
+        6,
+        null,
+        1
+      ],
+      "points": 43
+    },
+    "5807": {
+      "id": 5807,
+      "name": "Marc Roca",
+      "teamID": 87,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        5,
+        3,
+        8,
+        4,
+        null
+      ],
+      "points": 52
+    },
+    "6792": {
+      "id": 6792,
+      "name": "Villalibre",
+      "teamID": 812,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "points": 17
+    },
+    "6837": {
+      "id": 6837,
+      "name": "Soler",
+      "teamID": 13,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        4,
+        6,
+        5,
+        null,
+        6
+      ],
+      "points": 56
+    },
+    "7003": {
+      "id": 7003,
+      "name": "Remiro",
+      "teamID": 13,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        -2,
+        8,
+        1,
+        3,
+        7
+      ],
+      "points": 58
+    },
+    "8555": {
+      "id": 8555,
+      "name": "Diomande",
+      "teamID": 15,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        4,
+        8,
+        12,
+        6,
+        15
+      ],
+      "points": 87
+    },
+    "8670": {
+      "id": 8670,
+      "name": "Roro Riquelme",
+      "teamID": 87,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        10,
+        2,
+        null,
+        2
+      ],
+      "points": 51
+    },
+    "9480": {
+      "id": 9480,
+      "name": "Comesaña",
+      "teamID": 19,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        3,
+        4,
+        2,
+        3
+      ],
+      "points": 29
+    },
+    "9887": {
+      "id": 9887,
+      "name": "Sivera",
+      "teamID": 91,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        3,
+        10,
+        -4,
+        3,
+        1
+      ],
+      "points": 63
+    },
+    "9983": {
+      "id": 9983,
+      "name": "Djené",
+      "teamID": 8,
+      "position": 2,
+      "status": "sanctioned",
+      "fitness": [
+        -4,
+        5,
+        5,
+        "sanctioned",
+        -7
+      ],
+      "points": 18
+    },
+    "10030": {
+      "id": 10030,
+      "name": "Maffeo",
+      "teamID": 18,
+      "position": 2,
+      "status": "warned",
+      "fitness": [
+        5,
+        -2,
+        2,
+        2,
+        7
+      ],
+      "points": 24
+    },
+    "10117": {
+      "id": 10117,
+      "name": "Iván Villar",
+      "teamID": 5,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "points": 0
+    },
+    "10157": {
+      "id": 10157,
+      "name": "Aleñá",
+      "teamID": 91,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        1,
+        3
+      ],
+      "points": 17
+    },
+    "10276": {
+      "id": 10276,
+      "name": "Cucho",
+      "teamID": 87,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        0,
+        "doubt",
+        "injured",
+        "injured",
+        5
+      ],
+      "points": 44
+    },
+    "10574": {
+      "id": 10574,
+      "name": "Carreira",
+      "teamID": 5,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        4,
+        5,
+        3,
+        2,
+        3
+      ],
+      "points": 50
+    },
+    "10745": {
+      "id": 10745,
+      "name": "Guedes",
+      "teamID": 13,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        13,
+        1,
+        2,
+        4,
+        13
+      ],
+      "points": 54
+    },
+    "11045": {
+      "id": 11045,
+      "name": "Calero",
+      "teamID": 65,
+      "position": 2,
+      "status": "doubt",
+      "fitness": [
+        "doubt",
+        2,
+        4,
+        null,
+        2
+      ],
+      "points": 10
+    },
+    "11196": {
+      "id": 11196,
+      "name": "Lemar",
+      "teamID": 75,
+      "position": 3,
+      "status": "injured",
+      "fitness": [
+        1,
+        "doubt",
+        3,
+        11,
+        8
+      ],
+      "points": 55
+    },
+    "11633": {
+      "id": 11633,
+      "name": "Raba",
+      "teamID": 18,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        null,
+        2,
+        5,
+        3
+      ],
+      "points": 24
+    },
+    "11677": {
+      "id": 11677,
+      "name": "Dimitrievski",
+      "teamID": 18,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        9,
+        9,
+        9,
+        1,
+        4
+      ],
+      "points": 68
+    },
+    "11800": {
+      "id": 11800,
+      "name": "Cabrera",
+      "teamID": 7,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        4,
+        7,
+        15,
+        5,
+        5
+      ],
+      "points": 53
+    },
+    "12221": {
+      "id": 12221,
+      "name": "Pepelu",
+      "teamID": 18,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        4,
+        1,
+        7,
+        7,
+        7
+      ],
+      "points": 50
+    },
+    "12403": {
+      "id": 12403,
+      "name": "Iván Martín",
+      "teamID": 812,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        4,
+        1,
+        3,
+        5,
+        1
+      ],
+      "points": 47
+    },
+    "12494": {
+      "id": 12494,
+      "name": "Boyé",
+      "teamID": 91,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        13,
+        2,
+        2,
+        3,
+        6
+      ],
+      "points": 78
+    },
+    "12734": {
+      "id": 12734,
+      "name": "Javi Morcillo",
+      "teamID": 75,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        6,
+        6,
+        3,
+        8,
+        3
+      ],
+      "points": 44
+    },
+    "14630": {
+      "id": 14630,
+      "name": "Leo Román",
+      "teamID": 6,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        6,
+        11,
+        -1,
+        4,
+        -1
+      ],
+      "points": 56
+    },
+    "14800": {
+      "id": 14800,
+      "name": "Pablo Ibáñez",
+      "teamID": 91,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        1,
+        4,
+        2,
+        4,
+        4
+      ],
+      "points": 51
+    },
+    "15289": {
+      "id": 15289,
+      "name": "Lunin",
+      "teamID": 15,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        null,
+        0,
+        null,
+        9,
+        null
+      ],
+      "points": 9
+    },
+    "15396": {
+      "id": 15396,
+      "name": "Brugué",
+      "teamID": 10,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        5,
+        3,
+        2,
+        17
+      ],
+      "points": 76
+    },
+    "15410": {
+      "id": 15410,
+      "name": "Cucurella",
+      "teamID": 15,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        3,
+        8,
+        6,
+        7,
+        1
+      ],
+      "points": 48
+    },
+    "15568": {
+      "id": 15568,
+      "name": "Vinícius Jr",
+      "teamID": 15,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        7,
+        "sanctioned",
+        "sanctioned",
+        "sanctioned",
+        "sanctioned"
+      ],
+      "points": 32
+    },
+    "15828": {
+      "id": 15828,
+      "name": "Cristian Romero",
+      "teamID": 2,
+      "position": 2,
+      "status": "doubt",
+      "fitness": [
+        "doubt",
+        "doubt",
+        null,
+        "doubt",
+        7
+      ],
+      "points": 49
+    },
+    "16317": {
+      "id": 16317,
+      "name": "Puado",
+      "teamID": 7,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        null,
+        3,
+        2,
+        2
+      ],
+      "points": 9
+    },
+    "16606": {
+      "id": 16606,
+      "name": "Aitor Fernández",
+      "teamID": 93,
+      "position": 1,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        5,
+        null,
+        4,
+        5
+      ],
+      "points": 25
+    },
+    "16889": {
+      "id": 16889,
+      "name": "Pedrosa",
+      "teamID": 70,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        3,
+        6,
+        6,
+        2,
+        2
+      ],
+      "points": 45
+    },
+    "17057": {
+      "id": 17057,
+      "name": "Sancet",
+      "teamID": 1,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        4,
+        3,
+        1,
+        "injured",
+        "injured"
+      ],
+      "points": 35
+    },
+    "17121": {
+      "id": 17121,
+      "name": "Víctor García",
+      "teamID": 10,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        3,
+        3,
+        3,
+        3
+      ],
+      "points": 30
+    },
+    "17148": {
+      "id": 17148,
+      "name": "Pol Lozano",
+      "teamID": 7,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        5,
+        3,
+        3,
+        3,
+        3
+      ],
+      "points": 26
+    },
+    "17200": {
+      "id": 17200,
+      "name": "Aihen",
+      "teamID": 13,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        4,
+        3,
+        null,
+        null,
+        4
+      ],
+      "points": 16
+    },
+    "17344": {
+      "id": 17344,
+      "name": "Yangel Herrera",
+      "teamID": 13,
+      "position": 3,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        null,
+        null,
+        3,
+        "injured"
+      ],
+      "points": 35
+    },
+    "17369": {
+      "id": 17369,
+      "name": "Guevara",
+      "teamID": 91,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        3,
+        2,
+        null,
+        2
+      ],
+      "points": 19
+    },
+    "17442": {
+      "id": 17442,
+      "name": "Rioja",
+      "teamID": 18,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        2,
+        3,
+        4,
+        3
+      ],
+      "points": 34
+    },
+    "17482": {
+      "id": 17482,
+      "name": "Dituro",
+      "teamID": 75,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        3,
+        11,
+        7,
+        11,
+        12
+      ],
+      "points": 59
+    },
+    "17645": {
+      "id": 17645,
+      "name": "Galán",
+      "teamID": 5,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        4,
+        3,
+        1,
+        4,
+        null
+      ],
+      "points": 35
+    },
+    "17731": {
+      "id": 17731,
+      "name": "Catena",
+      "teamID": 93,
+      "position": 2,
+      "status": "sanctioned",
+      "fitness": [
+        1,
+        13,
+        2,
+        -1,
+        4
+      ],
+      "points": 43
+    },
+    "17937": {
+      "id": 17937,
+      "name": "Iván Romero",
+      "teamID": 10,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        4,
+        1,
+        4,
+        3,
+        6
+      ],
+      "points": 70
+    },
+    "18128": {
+      "id": 18128,
+      "name": "Iker Muñoz",
+      "teamID": 93,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        3,
+        3,
+        null,
+        3
+      ],
+      "points": 38
+    },
+    "18256": {
+      "id": 18256,
+      "name": "Barja",
+      "teamID": 93,
+      "position": 3,
+      "status": "warned",
+      "fitness": [
+        3,
+        3,
+        0,
+        2,
+        null
+      ],
+      "points": 29
+    },
+    "18382": {
+      "id": 18382,
+      "name": "Raul García",
+      "teamID": 93,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "points": 36
+    },
+    "18397": {
+      "id": 18397,
+      "name": "De Frutos",
+      "teamID": 70,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        5,
+        5,
+        17,
+        -1,
+        6
+      ],
+      "points": 45
+    },
+    "18916": {
+      "id": 18916,
+      "name": "Gudelj",
+      "teamID": 8,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        "sanctioned",
+        3,
+        3,
+        1,
+        4
+      ],
+      "points": 25
+    },
+    "19141": {
+      "id": 19141,
+      "name": "Ruibal",
+      "teamID": 87,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        6,
+        3,
+        null,
+        "injured"
+      ],
+      "points": 11
+    },
+    "19192": {
+      "id": 19192,
+      "name": "Agirrezabala",
+      "teamID": 812,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        0,
+        9,
+        5,
+        1,
+        7
+      ],
+      "points": 52
+    },
+    "19299": {
+      "id": 19299,
+      "name": "Sergio Gómez",
+      "teamID": 13,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        8,
+        3,
+        3,
+        3,
+        5
+      ],
+      "points": 48
+    },
+    "19441": {
+      "id": 19441,
+      "name": "Pedri",
+      "teamID": 3,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        10,
+        7,
+        6,
+        8,
+        6
+      ],
+      "points": 93
+    },
+    "19485": {
+      "id": 19485,
+      "name": "Torró",
+      "teamID": 93,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        5,
+        null,
+        3,
+        3
+      ],
+      "points": 32
+    },
+    "19547": {
+      "id": 19547,
+      "name": "Baena",
+      "teamID": 2,
+      "position": 3,
+      "status": "warned",
+      "fitness": [
+        13,
+        2,
+        10,
+        2,
+        14
+      ],
+      "points": 105
+    },
+    "19577": {
+      "id": 19577,
+      "name": "Mbappé",
+      "teamID": 15,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        5,
+        12,
+        12,
+        15,
+        17
+      ],
+      "points": 134
+    },
+    "19614": {
+      "id": 19614,
+      "name": "Natan",
+      "teamID": 87,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        6,
+        8,
+        4,
+        5,
+        null
+      ],
+      "points": 70
+    },
+    "19693": {
+      "id": 19693,
+      "name": "Osambela",
+      "teamID": 93,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        3,
+        2,
+        2,
+        10
+      ],
+      "points": 34
+    },
+    "19862": {
+      "id": 19862,
+      "name": "Expósito",
+      "teamID": 7,
+      "position": 3,
+      "status": "doubt",
+      "fitness": [
+        "injured",
+        4,
+        7,
+        13,
+        3
+      ],
+      "points": 66
+    },
+    "20969": {
+      "id": 20969,
+      "name": "Germán Valera",
+      "teamID": 75,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        3,
+        5,
+        11,
+        5
+      ],
+      "points": 65
+    },
+    "21033": {
+      "id": 21033,
+      "name": "Beñat Prados",
+      "teamID": 1,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        2,
+        2,
+        3,
+        null
+      ],
+      "points": 10
+    },
+    "21132": {
+      "id": 21132,
+      "name": "Fer Niño",
+      "teamID": 75,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        2,
+        3,
+        7,
+        3
+      ],
+      "points": 75
+    },
+    "22699": {
+      "id": 22699,
+      "name": "Urko",
+      "teamID": 7,
+      "position": 3,
+      "status": "doubt",
+      "fitness": [
+        "injured",
+        "injured",
+        "injured",
+        2,
+        null
+      ],
+      "points": 19
+    },
+    "22964": {
+      "id": 22964,
+      "name": "Foyth",
+      "teamID": 19,
+      "position": 2,
+      "status": "doubt",
+      "fitness": [
+        "doubt",
+        "doubt",
+        "injured",
+        3,
+        5
+      ],
+      "points": 27
+    },
+    "23842": {
+      "id": 23842,
+      "name": "Alfon González",
+      "teamID": 17,
+      "position": 4,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        2,
+        null,
+        null,
+        3
+      ],
+      "points": 11
+    },
+    "24197": {
+      "id": 24197,
+      "name": "Antañón",
+      "teamID": 5,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        6,
+        null,
+        null,
+        2
+      ],
+      "points": 9
+    },
+    "24255": {
+      "id": 24255,
+      "name": "Fariñas",
+      "teamID": 3,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        1,
+        8,
+        null,
+        null
+      ],
+      "points": 9
+    },
+    "24326": {
+      "id": 24326,
+      "name": "Pathé Ciss",
+      "teamID": 70,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        7,
+        3,
+        "sanctioned",
+        -1,
+        4
+      ],
+      "points": 40
+    },
+    "24474": {
+      "id": 24474,
+      "name": "Robert Navarro",
+      "teamID": 1,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        6,
+        5,
+        null,
+        6
+      ],
+      "points": 60
+    },
+    "24509": {
+      "id": 24509,
+      "name": "Danjuma",
+      "teamID": 18,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        null,
+        1,
+        7,
+        2,
+        4
+      ],
+      "points": 47
+    },
+    "24979": {
+      "id": 24979,
+      "name": "Turrientes",
+      "teamID": 13,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        4,
+        2,
+        11,
+        null
+      ],
+      "points": 33
+    },
+    "25127": {
+      "id": 25127,
+      "name": "Ez Abde",
+      "teamID": 87,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        4,
+        3,
+        7,
+        4,
+        11
+      ],
+      "points": 66
+    },
+    "25327": {
+      "id": 25327,
+      "name": "Unai Santos",
+      "teamID": 93,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "points": -1
+    },
+    "25403": {
+      "id": 25403,
+      "name": "Gonzalo Villar",
+      "teamID": 75,
+      "position": 3,
+      "status": "warned",
+      "fitness": [
+        3,
+        null,
+        4,
+        7,
+        1
+      ],
+      "points": 48
+    },
+    "25677": {
+      "id": 25677,
+      "name": "Adama Traoré",
+      "teamID": 6,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        3,
+        8,
+        5,
+        5
+      ],
+      "points": 38
+    },
+    "25777": {
+      "id": 25777,
+      "name": "Luismi Cruz",
+      "teamID": 6,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        3,
+        7,
+        2,
+        2
+      ],
+      "points": 56
+    },
+    "25815": {
+      "id": 25815,
+      "name": "Nacho Pérez",
+      "teamID": 10,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        2,
+        4,
+        2,
+        14,
+        3
+      ],
+      "points": 44
+    },
+    "26048": {
+      "id": 26048,
+      "name": "Tchouameni",
+      "teamID": 15,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        5,
+        6,
+        9,
+        5
+      ],
+      "points": 40
+    },
+    "26092": {
+      "id": 26092,
+      "name": "Terrats",
+      "teamID": 8,
+      "position": 3,
+      "status": "warned",
+      "fitness": [
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "points": 56
+    },
+    "26095": {
+      "id": 26095,
+      "name": "Arnau Martínez",
+      "teamID": 18,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        5,
+        1,
+        4,
+        2,
+        null
+      ],
+      "points": 23
+    },
+    "26131": {
+      "id": 26131,
+      "name": "Andrés García",
+      "teamID": 8,
+      "position": 2,
+      "status": "doubt",
+      "fitness": [
+        3,
+        2,
+        7,
+        1,
+        6
+      ],
+      "points": 46
+    },
+    "26271": {
+      "id": 26271,
+      "name": "Yamal",
+      "teamID": 3,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        8,
+        8,
+        19,
+        3,
+        15
+      ],
+      "points": 147
+    },
+    "26344": {
+      "id": 26344,
+      "name": "Copete",
+      "teamID": 18,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        16,
+        "doubt",
+        "doubt",
+        null,
+        "injured"
+      ],
+      "points": 16
+    },
+    "26360": {
+      "id": 26360,
+      "name": "Dubasin",
+      "teamID": 93,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        null,
+        2,
+        3,
+        4,
+        3
+      ],
+      "points": 31
+    },
+    "26566": {
+      "id": 26566,
+      "name": "Carlos Romero",
+      "teamID": 19,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        -1,
+        16,
+        2,
+        "doubt",
+        null
+      ],
+      "points": 36
+    },
+    "26592": {
+      "id": 26592,
+      "name": "Tárrega",
+      "teamID": 18,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        9,
+        2,
+        7,
+        3,
+        7
+      ],
+      "points": 38
+    },
+    "26879": {
+      "id": 26879,
+      "name": "Swedberg",
+      "teamID": 5,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        7,
+        3,
+        1,
+        3,
+        1
+      ],
+      "points": 33
+    },
+    "26930": {
+      "id": 26930,
+      "name": "Raphinha",
+      "teamID": 3,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        4,
+        1,
+        16,
+        10,
+        5
+      ],
+      "points": 149
+    },
+    "27591": {
+      "id": 27591,
+      "name": "Aimar",
+      "teamID": 93,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        4,
+        "injured",
+        "injured",
+        "injured",
+        "injured"
+      ],
+      "points": 13
+    },
+    "27929": {
+      "id": 27929,
+      "name": "Almeida",
+      "teamID": 812,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        4,
+        2,
+        3,
+        4
+      ],
+      "points": 18
+    },
+    "27996": {
+      "id": 27996,
+      "name": "Paredes",
+      "teamID": 1,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        "injured",
+        null,
+        14,
+        2
+      ],
+      "points": 51
+    },
+    "28103": {
+      "id": 28103,
+      "name": "El Hilali",
+      "teamID": 7,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        5,
+        9,
+        7,
+        6,
+        2
+      ],
+      "points": 58
+    },
+    "28115": {
+      "id": 28115,
+      "name": "Kike Salas",
+      "teamID": 17,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        17,
+        6,
+        12,
+        7,
+        3
+      ],
+      "points": 70
+    },
+    "29184": {
+      "id": 29184,
+      "name": "Barrios",
+      "teamID": 2,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        6,
+        6,
+        7,
+        2,
+        7
+      ],
+      "points": 57
+    },
+    "29185": {
+      "id": 29185,
+      "name": "Pablo Durán",
+      "teamID": 5,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        9,
+        5,
+        1,
+        3,
+        "injured"
+      ],
+      "points": 46
+    },
+    "30123": {
+      "id": 30123,
+      "name": "Javi Guerra",
+      "teamID": 18,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        6,
+        1,
+        7,
+        3,
+        5
+      ],
+      "points": 51
+    },
+    "30477": {
+      "id": 30477,
+      "name": "Bellingham",
+      "teamID": 15,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        14,
+        11,
+        15,
+        7,
+        7
+      ],
+      "points": 126
+    },
+    "30487": {
+      "id": 30487,
+      "name": "Álvaro Valles",
+      "teamID": 87,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        0,
+        4,
+        3,
+        10,
+        5
+      ],
+      "points": 83
+    },
+    "30493": {
+      "id": 30493,
+      "name": "Sergi Cardona",
+      "teamID": 19,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        3,
+        null,
+        3,
+        8,
+        7
+      ],
+      "points": 28
+    },
+    "30502": {
+      "id": 30502,
+      "name": "Bryan Zaragoza",
+      "teamID": 7,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        null,
+        3,
+        6,
+        3,
+        4
+      ],
+      "points": 39
+    },
+    "30507": {
+      "id": 30507,
+      "name": "Benavidez",
+      "teamID": 91,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        4,
+        3,
+        null,
+        null
+      ],
+      "points": 19
+    },
+    "30789": {
+      "id": 30789,
+      "name": "Giuliano Simeone",
+      "teamID": 2,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        5,
+        12,
+        11,
+        6,
+        4
+      ],
+      "points": 78
+    },
+    "31027": {
+      "id": 31027,
+      "name": "Arda Güler",
+      "teamID": 15,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        8,
+        16,
+        12,
+        6,
+        13
+      ],
+      "points": 116
+    },
+    "31167": {
+      "id": 31167,
+      "name": "Dotor",
+      "teamID": 65,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        11,
+        3,
+        3,
+        4
+      ],
+      "points": 52
+    },
+    "31243": {
+      "id": 31243,
+      "name": "Fermín",
+      "teamID": 3,
+      "position": 3,
+      "status": "sanctioned",
+      "fitness": [
+        5,
+        19,
+        17,
+        2,
+        7
+      ],
+      "points": 114
+    },
+    "31475": {
+      "id": 31475,
+      "name": "Zakharyan",
+      "teamID": 13,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        "doubt",
+        "injured",
+        1,
+        null
+      ],
+      "points": 20
+    },
+    "32120": {
+      "id": 32120,
+      "name": "Johnny",
+      "teamID": 2,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        10,
+        3,
+        "doubt",
+        "injured",
+        "injured"
+      ],
+      "points": 41
+    },
+    "32135": {
+      "id": 32135,
+      "name": "Hugo Álvarez",
+      "teamID": 5,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        -1,
+        7,
+        -1,
+        3,
+        2
+      ],
+      "points": 34
+    },
+    "32338": {
+      "id": 32338,
+      "name": "Agoumé",
+      "teamID": 17,
+      "position": 3,
+      "status": "warned",
+      "fitness": [
+        4,
+        5,
+        6,
+        7,
+        5
+      ],
+      "points": 65
+    },
+    "32363": {
+      "id": 32363,
+      "name": "Isaac Romero",
+      "teamID": 17,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        2,
+        3,
+        10,
+        "sanctioned"
+      ],
+      "points": 48
+    },
+    "32440": {
+      "id": 32440,
+      "name": "Cubarsí",
+      "teamID": 3,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        6,
+        7,
+        3,
+        10
+      ],
+      "points": 56
+    },
+    "32569": {
+      "id": 32569,
+      "name": "Sazonov",
+      "teamID": 8,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        2,
+        null
+      ],
+      "points": 11
+    },
+    "33447": {
+      "id": 33447,
+      "name": "Jon Martín",
+      "teamID": 13,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        4,
+        3,
+        6,
+        6
+      ],
+      "points": 43
+    },
+    "33694": {
+      "id": 33694,
+      "name": "Boyomo",
+      "teamID": 93,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        5,
+        3,
+        2,
+        5,
+        4
+      ],
+      "points": 23
+    },
+    "33697": {
+      "id": 33697,
+      "name": "Raúl Moro",
+      "teamID": 93,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        3,
+        3,
+        2,
+        2
+      ],
+      "points": 28
+    },
+    "33839": {
+      "id": 33839,
+      "name": "Javi Rodríguez",
+      "teamID": 5,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        5,
+        6,
+        2,
+        4,
+        17
+      ],
+      "points": 42
+    },
+    "33871": {
+      "id": 33871,
+      "name": "Pedro Felipe",
+      "teamID": 812,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        5,
+        5,
+        4,
+        3,
+        null
+      ],
+      "points": 16
+    },
+    "33938": {
+      "id": 33938,
+      "name": "Sannadi",
+      "teamID": 1,
+      "position": 4,
+      "status": "doubt",
+      "fitness": [
+        "injured",
+        "injured",
+        0,
+        2,
+        3
+      ],
+      "points": 14
+    },
+    "33970": {
+      "id": 33970,
+      "name": "Rosier",
+      "teamID": 93,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        8,
+        6,
+        3,
+        5,
+        3
+      ],
+      "points": 27
+    },
+    "33971": {
+      "id": 33971,
+      "name": "Bretones",
+      "teamID": 93,
+      "position": 2,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        1,
+        5,
+        2,
+        4
+      ],
+      "points": 26
+    },
+    "34111": {
+      "id": 34111,
+      "name": "Gerard Martín",
+      "teamID": 3,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        14,
+        6,
+        4,
+        4,
+        2
+      ],
+      "points": 67
+    },
+    "34469": {
+      "id": 34469,
+      "name": "Luka Sucic",
+      "teamID": 13,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        7,
+        7,
+        10,
+        6,
+        null
+      ],
+      "points": 74
+    },
+    "34483": {
+      "id": 34483,
+      "name": "Pedro Díaz",
+      "teamID": 70,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        4,
+        4,
+        0,
+        3
+      ],
+      "points": 35
+    },
+    "34527": {
+      "id": 34527,
+      "name": "Dani Olmo",
+      "teamID": 3,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        6,
+        "doubt",
+        "injured",
+        "injured",
+        15
+      ],
+      "points": 70
+    },
+    "34717": {
+      "id": 34717,
+      "name": "Logan Costa",
+      "teamID": 19,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        11,
+        null,
+        null,
+        5
+      ],
+      "points": 19
+    },
+    "34802": {
+      "id": 34802,
+      "name": "Toni Martínez",
+      "teamID": 91,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "points": 32
+    },
+    "35055": {
+      "id": 35055,
+      "name": "Óskarsson",
+      "teamID": 13,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        1,
+        9,
+        3,
+        9,
+        10
+      ],
+      "points": 43
+    },
+    "35171": {
+      "id": 35171,
+      "name": "Peio Canales",
+      "teamID": 1,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        6,
+        4,
+        6,
+        3
+      ],
+      "points": 38
+    },
+    "35344": {
+      "id": 35344,
+      "name": "Buchanan",
+      "teamID": 19,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        10,
+        12,
+        0,
+        5,
+        "injured"
+      ],
+      "points": 51
+    },
+    "35408": {
+      "id": 35408,
+      "name": "Pablo Ramón",
+      "teamID": 812,
+      "position": 2,
+      "status": "warned",
+      "fitness": [
+        4,
+        6,
+        2,
+        5,
+        1
+      ],
+      "points": 39
+    },
+    "35426": {
+      "id": 35426,
+      "name": "Facundo Garcés",
+      "teamID": 91,
+      "position": 2,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        "injured",
+        "injured",
+        "injured",
+        "injured"
+      ],
+      "points": 0
+    },
+    "35615": {
+      "id": 35615,
+      "name": "Rubén Vargas",
+      "teamID": 17,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        0,
+        2,
+        2,
+        3,
+        -1
+      ],
+      "points": 8
+    },
+    "35706": {
+      "id": 35706,
+      "name": "Adrián Niño",
+      "teamID": 65,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        4,
+        8,
+        11,
+        10
+      ],
+      "points": 58
+    },
+    "35763": {
+      "id": 35763,
+      "name": "Pablo García",
+      "teamID": 812,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        5,
+        7,
+        3,
+        4,
+        2
+      ],
+      "points": 54
+    },
+    "35765": {
+      "id": 35765,
+      "name": "Angel Ortiz",
+      "teamID": 87,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        3,
+        5,
+        2
+      ],
+      "points": 17
+    },
+    "37450": {
+      "id": 37450,
+      "name": "Alemão",
+      "teamID": 70,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "points": 26
+    },
+    "37495": {
+      "id": 37495,
+      "name": "Huijsen",
+      "teamID": 15,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        7,
+        9,
+        9,
+        7,
+        7
+      ],
+      "points": 60
+    },
+    "37526": {
+      "id": 37526,
+      "name": "Iturbe",
+      "teamID": 75,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "points": 0
+    },
+    "37600": {
+      "id": 37600,
+      "name": "Radu",
+      "teamID": 5,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        5,
+        2,
+        5,
+        4,
+        11
+      ],
+      "points": 72
+    },
+    "37723": {
+      "id": 37723,
+      "name": "José Salinas",
+      "teamID": 65,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        3,
+        3,
+        null,
+        2,
+        1
+      ],
+      "points": 23
+    },
+    "37724": {
+      "id": 37724,
+      "name": "Mendoza",
+      "teamID": 2,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        null,
+        null,
+        3,
+        3
+      ],
+      "points": 16
+    },
+    "37733": {
+      "id": 37733,
+      "name": "Kochorashvili",
+      "teamID": 17,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        6,
+        null,
+        1,
+        null,
+        "injured"
+      ],
+      "points": 28
+    },
+    "37739": {
+      "id": 37739,
+      "name": "De la Fuente",
+      "teamID": 10,
+      "position": 2,
+      "status": "warned",
+      "fitness": [
+        7,
+        1,
+        3,
+        "doubt",
+        "doubt"
+      ],
+      "points": 69
+    },
+    "37817": {
+      "id": 37817,
+      "name": "Bisiwu",
+      "teamID": 3,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "points": 0
+    },
+    "37897": {
+      "id": 37897,
+      "name": "Gorrotxategi",
+      "teamID": 13,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        4,
+        3,
+        4,
+        6,
+        5
+      ],
+      "points": 33
+    },
+    "38072": {
+      "id": 38072,
+      "name": "Castrín",
+      "teamID": 17,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        6,
+        4,
+        4,
+        6,
+        1
+      ],
+      "points": 46
+    },
+    "38143": {
+      "id": 38143,
+      "name": "Toljan",
+      "teamID": 10,
+      "position": 2,
+      "status": "doubt",
+      "fitness": [
+        3,
+        4,
+        2,
+        null,
+        1
+      ],
+      "points": 34
+    },
+    "38194": {
+      "id": 38194,
+      "name": "Suazo",
+      "teamID": 17,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        6,
+        8,
+        4,
+        4,
+        1
+      ],
+      "points": 54
+    },
+    "38290": {
+      "id": 38290,
+      "name": "Hancko",
+      "teamID": 2,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        7,
+        4,
+        7,
+        5,
+        7
+      ],
+      "points": 63
+    },
+    "38318": {
+      "id": 38318,
+      "name": "Valentín Gómez",
+      "teamID": 87,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        6,
+        10
+      ],
+      "points": 30
+    },
+    "38368": {
+      "id": 38368,
+      "name": "Ugrinic",
+      "teamID": 18,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        0,
+        3,
+        2,
+        2
+      ],
+      "points": 30
+    },
+    "38404": {
+      "id": 38404,
+      "name": "Vertrouwd",
+      "teamID": 70,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        "doubt",
+        3,
+        3,
+        2,
+        null
+      ],
+      "points": 9
+    },
+    "38405": {
+      "id": 38405,
+      "name": "Odysseas",
+      "teamID": 17,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        4,
+        4,
+        2,
+        2,
+        -1
+      ],
+      "points": 45
+    },
+    "38433": {
+      "id": 38433,
+      "name": "Gulácsi",
+      "teamID": 19,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        7,
+        4,
+        2,
+        3,
+        4
+      ],
+      "points": 42
+    },
+    "38449": {
+      "id": 38449,
+      "name": "Rego",
+      "teamID": 1,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        null,
+        null,
+        3,
+        2
+      ],
+      "points": 10
+    },
+    "38854": {
+      "id": 38854,
+      "name": "Oluwaseyi",
+      "teamID": 19,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        9,
+        5,
+        1,
+        null,
+        3
+      ],
+      "points": 24
+    },
+    "39357": {
+      "id": 39357,
+      "name": "Maciá",
+      "teamID": 19,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        4,
+        3,
+        4,
+        3
+      ],
+      "points": 29
+    },
+    "39386": {
+      "id": 39386,
+      "name": "Mañas",
+      "teamID": 91,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        null,
+        2,
+        2,
+        9,
+        1
+      ],
+      "points": 28
+    },
+    "39431": {
+      "id": 39431,
+      "name": "Thiago Fernández",
+      "teamID": 10,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        4,
+        1,
+        2,
+        7,
+        7
+      ],
+      "points": 43
+    },
+    "39792": {
+      "id": 39792,
+      "name": "Satriano",
+      "teamID": 8,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        -1,
+        2,
+        13,
+        2,
+        13
+      ],
+      "points": 57
+    },
+    "39813": {
+      "id": 39813,
+      "name": "Hugo Burcio",
+      "teamID": 5,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        3,
+        null,
+        2,
+        6
+      ],
+      "points": 22
+    },
+    "39874": {
+      "id": 39874,
+      "name": "Cepeda",
+      "teamID": 75,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        6,
+        5,
+        4,
+        1
+      ],
+      "points": 52
+    },
+    "39885": {
+      "id": 39885,
+      "name": "Ángel Pérez",
+      "teamID": 91,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        13,
+        2,
+        3,
+        4,
+        "sanctioned"
+      ],
+      "points": 60
+    },
+    "39901": {
+      "id": 39901,
+      "name": "Freeman",
+      "teamID": 19,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        2,
+        3,
+        3,
+        13,
+        6
+      ],
+      "points": 53
+    },
+    "39941": {
+      "id": 39941,
+      "name": "Lookman",
+      "teamID": 2,
+      "position": 4,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        null,
+        3,
+        -1,
+        0
+      ],
+      "points": 17
+    },
+    "40010": {
+      "id": 40010,
+      "name": "Sangaré",
+      "teamID": 75,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        3,
+        "doubt",
+        3,
+        6,
+        5
+      ],
+      "points": 37
+    },
+    "40037": {
+      "id": 40037,
+      "name": "Ochieng",
+      "teamID": 13,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        null,
+        3,
+        1,
+        1,
+        4
+      ],
+      "points": 31
+    },
+    "40552": {
+      "id": 40552,
+      "name": "Iker Luque",
+      "teamID": 812,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        8,
+        12,
+        2,
+        5,
+        null
+      ],
+      "points": 38
+    },
+    "40911": {
+      "id": 40911,
+      "name": "Nsongo",
+      "teamID": 6,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        3,
+        9,
+        2,
+        10
+      ],
+      "points": 65
+    },
+    "40948": {
+      "id": 40948,
+      "name": "Noé Carrillo",
+      "teamID": 6,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        "doubt",
+        null
+      ],
+      "points": 0
+    },
+    "40952": {
+      "id": 40952,
+      "name": "Quagliata",
+      "teamID": 6,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        2,
+        3,
+        4,
+        3,
+        5
+      ],
+      "points": 45
+    },
+    "41031": {
+      "id": 41031,
+      "name": "Loureiro",
+      "teamID": 6,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        2,
+        6,
+        8,
+        5,
+        3
+      ],
+      "points": 39
+    },
+    "41072": {
+      "id": 41072,
+      "name": "Mario Soriano",
+      "teamID": 6,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        4,
+        6,
+        15,
+        5,
+        2
+      ],
+      "points": 77
+    },
+    "41076": {
+      "id": 41076,
+      "name": "Villares",
+      "teamID": 6,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        4,
+        null,
+        2,
+        4
+      ],
+      "points": 33
+    },
+    "41082": {
+      "id": 41082,
+      "name": "Yeremay",
+      "teamID": 6,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        2,
+        7,
+        7,
+        9
+      ],
+      "points": 60
+    },
+    "41093": {
+      "id": 41093,
+      "name": "Rafita",
+      "teamID": 65,
+      "position": 2,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        3,
+        2,
+        4,
+        1
+      ],
+      "points": 46
+    },
+    "41097": {
+      "id": 41097,
+      "name": "Ochoa",
+      "teamID": 65,
+      "position": 3,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        "injured",
+        "injured",
+        "injured",
+        "injured"
+      ],
+      "points": 0
+    },
+    "41100": {
+      "id": 41100,
+      "name": "Álex Pastor",
+      "teamID": 65,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        1,
+        -1,
+        null,
+        null,
+        null
+      ],
+      "points": 0
+    },
+    "41101": {
+      "id": 41101,
+      "name": "Alfonso Herrero",
+      "teamID": 65,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        1,
+        3,
+        0,
+        6,
+        -4
+      ],
+      "points": 51
+    },
+    "41264": {
+      "id": 41264,
+      "name": "Mantilla",
+      "teamID": 812,
+      "position": 2,
+      "status": "injured",
+      "fitness": [
+        "injured",
+        "injured",
+        1,
+        3,
+        2
+      ],
+      "points": 18
+    },
+    "41270": {
+      "id": 41270,
+      "name": "Jorge Salinas",
+      "teamID": 812,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        2,
+        3,
+        "sanctioned",
+        7,
+        4
+      ],
+      "points": 36
+    },
+    "41411": {
+      "id": 41411,
+      "name": "Ramón Enríquez",
+      "teamID": 65,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        1,
+        3,
+        3,
+        5,
+        2
+      ],
+      "points": 29
+    },
+    "41413": {
+      "id": 41413,
+      "name": "Murillo",
+      "teamID": 65,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        6,
+        "doubt",
+        "doubt",
+        "injured",
+        "injured"
+      ],
+      "points": 6
+    },
+    "41418": {
+      "id": 41418,
+      "name": "Dani Lorenzo",
+      "teamID": 65,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        4,
+        4,
+        5,
+        1
+      ],
+      "points": 46
+    },
+    "41419": {
+      "id": 41419,
+      "name": "Recio",
+      "teamID": 65,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        3,
+        null,
+        "doubt",
+        3,
+        -2
+      ],
+      "points": 29
+    },
+    "41421": {
+      "id": 41421,
+      "name": "Haitam",
+      "teamID": 65,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        null,
+        "discarded",
+        null,
+        null,
+        null
+      ],
+      "points": 9
+    },
+    "41565": {
+      "id": 41565,
+      "name": "Osorio",
+      "teamID": 75,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        0,
+        2,
+        3,
+        1
+      ],
+      "points": 30
+    },
+    "41567": {
+      "id": 41567,
+      "name": "Kevin Sánchez",
+      "teamID": 6,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        -1,
+        null
+      ],
+      "points": 0
+    },
+    "41608": {
+      "id": 41608,
+      "name": "Buonanotte",
+      "teamID": 75,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        null,
+        1,
+        2,
+        6,
+        null
+      ],
+      "points": 27
+    },
+    "41609": {
+      "id": 41609,
+      "name": "Valentini",
+      "teamID": 91,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        6,
+        null,
+        2,
+        3
+      ],
+      "points": 30
+    },
+    "41684": {
+      "id": 41684,
+      "name": "Grimaldo",
+      "teamID": 2,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        10,
+        3,
+        13,
+        9,
+        3
+      ],
+      "points": 83
+    },
+    "41940": {
+      "id": 41940,
+      "name": "Tsitaishvili",
+      "teamID": 70,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        6,
+        5,
+        5,
+        5
+      ],
+      "points": 36
+    },
+    "42119": {
+      "id": 42119,
+      "name": "Drkusic",
+      "teamID": 7,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        0,
+        5,
+        8,
+        4
+      ],
+      "points": 24
+    },
+    "42271": {
+      "id": 42271,
+      "name": "De Haas",
+      "teamID": 18,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        1,
+        null,
+        3,
+        3
+      ],
+      "points": 23
+    },
+    "42277": {
+      "id": 42277,
+      "name": "Marc Santos",
+      "teamID": 10,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        4,
+        3,
+        3,
+        null,
+        null
+      ],
+      "points": 12
+    },
+    "42390": {
+      "id": 42390,
+      "name": "Hartman",
+      "teamID": 7,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        5,
+        6,
+        null,
+        2,
+        null
+      ],
+      "points": 27
+    },
+    "42412": {
+      "id": 42412,
+      "name": "Moscardo",
+      "teamID": 7,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        3,
+        0,
+        null,
+        2
+      ],
+      "points": 17
+    },
+    "42425": {
+      "id": 42425,
+      "name": "Amatucci",
+      "teamID": 6,
+      "position": 3,
+      "status": "warned",
+      "fitness": [
+        2,
+        7,
+        6,
+        5,
+        "sanctioned"
+      ],
+      "points": 50
+    },
+    "42610": {
+      "id": 42610,
+      "name": "Zabiri",
+      "teamID": 812,
+      "position": 4,
+      "status": "warned",
+      "fitness": [
+        17,
+        12,
+        0,
+        11,
+        3
+      ],
+      "points": 106
+    },
+    "42726": {
+      "id": 42726,
+      "name": "Francho",
+      "teamID": 8,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        -1,
+        1,
+        1,
+        3,
+        6
+      ],
+      "points": 27
+    },
+    "42748": {
+      "id": 42748,
+      "name": "Parrott",
+      "teamID": 87,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        1,
+        -1,
+        3,
+        3,
+        2
+      ],
+      "points": 29
+    },
+    "42757": {
+      "id": 42757,
+      "name": "Ndukwe",
+      "teamID": 10,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        4,
+        6,
+        2,
+        7
+      ],
+      "points": 38
+    },
+    "42814": {
+      "id": 42814,
+      "name": "Prati",
+      "teamID": 812,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        4,
+        7,
+        -1,
+        3,
+        3
+      ],
+      "points": 29
+    },
+    "43171": {
+      "id": 43171,
+      "name": "Johaneko",
+      "teamID": 1,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        2,
+        1,
+        null,
+        -3
+      ],
+      "points": 20
+    },
+    "43185": {
+      "id": 43185,
+      "name": "Mamadou Sarr",
+      "teamID": 13,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        7,
+        "doubt",
+        6,
+        4,
+        5
+      ],
+      "points": 37
+    },
+    "43259": {
+      "id": 43259,
+      "name": "Belocian",
+      "teamID": 812,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        8,
+        5,
+        1,
+        11,
+        -2
+      ],
+      "points": 33
+    },
+    "43262": {
+      "id": 43262,
+      "name": "Félix Correia",
+      "teamID": 17,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        3,
+        8,
+        5,
+        11,
+        -1
+      ],
+      "points": 48
+    },
+    "43264": {
+      "id": 43264,
+      "name": "Stassin",
+      "teamID": 17,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "points": 30
+    },
+    "43267": {
+      "id": 43267,
+      "name": "Sadick",
+      "teamID": 70,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        4,
+        3,
+        6,
+        3,
+        3
+      ],
+      "points": 27
+    },
+    "43268": {
+      "id": 43268,
+      "name": "Revivo",
+      "teamID": 75,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        16,
+        4,
+        5,
+        7,
+        6
+      ],
+      "points": 55
+    },
+    "43272": {
+      "id": 43272,
+      "name": "Fofana",
+      "teamID": 17,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        3,
+        2,
+        2,
+        7,
+        4
+      ],
+      "points": 57
+    },
+    "43282": {
+      "id": 43282,
+      "name": "Audero",
+      "teamID": 70,
+      "position": 1,
+      "status": "ok",
+      "fitness": [
+        4,
+        3,
+        3,
+        6,
+        6
+      ],
+      "points": 33
+    },
+    "43458": {
+      "id": 43458,
+      "name": "Alejandro Santiago",
+      "teamID": 7,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        6,
+        4,
+        6
+      ],
+      "points": 16
+    }
   }
 }
