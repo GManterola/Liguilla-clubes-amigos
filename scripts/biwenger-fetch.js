@@ -127,11 +127,22 @@ const teamRow = s => ({ ...pick(s, ['id', 'name', 'points', 'position']),
     }
   }
 
+  // 5d. Tablón de la liga: fichajes y cláusulas (actividad que ven todos los miembros)
+  const rb = await get('biwenger.as.com', `/api/v2/league/${LEAGUE}/board?offset=0&limit=100`);
+  const items = Array.isArray(rb.json?.data) ? rb.json.data : (rb.json?.data?.board || []);
+  out.board = { http: rb.http, shape: shape(items[0]), types: [...new Set(items.map(x => x.type))],
+    entries: items.filter(x => /transfer|clause|market|exchange|loan/i.test(x.type || ''))
+      .map(x => ({ type: x.type, date: x.date,
+        content: (Array.isArray(x.content) ? x.content : [x.content]).filter(Boolean).map(c => ({
+          type: c.type, player: c.player?.id ?? c.player, playerName: c.player?.name,
+          from: c.from?.name ?? null, to: c.to?.name ?? null, amount: c.amount ?? c.price ?? null })) })) };
+
   // 6. Datos públicos de los jugadores alineados (puntos de las últimas 5 jornadas)
   const allPlayers = r3.json?.data?.players || {};
   const pids = new Set();
   Object.values(out.rounds || {}).forEach(r => (r.lineups || []).forEach(l => l.players.forEach(id => pids.add(String(id)))));
   (out.live?.lineups || []).forEach(l => l.players.forEach(id => pids.add(String(id))));
+  (out.board?.entries || []).forEach(e => e.content.forEach(c => { if (c.player != null) pids.add(String(c.player)); }));
   out.players = {};
   pids.forEach(id => { const p = allPlayers[id]; if (p) out.players[id] = pick(p, ['id', 'name', 'teamID', 'position', 'status', 'fitness', 'points']); });
 
