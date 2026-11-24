@@ -23,7 +23,7 @@ Los datos viven en `data/temporada-2026-27.js`. `index.html` no se toca para una
 6. **Pagos**: los calcula la web con `PAY_RULES_2627` (11º 1,00 · 12º 1,00 · 13º 1,50 · 14º 1,50 · 15º 2,00 · 16º 2,50 €). No cambies la escala.
 7. **Crónica**: añade un objeto al PRINCIPIO de `cronicas2627`: `{ j:"Jxx", titular:"...", parrafos:["...", ...] }`. La anterior pasa sola al archivo.
    - Tono irónico, futbolero y gamberro.
-   - Running joke: el histórico -1 de Se vende Cuenta (J6). La broma de Vicentine Zidane gestionando a Sors "en la sombra" está RETIRADA: no la uses.
+   - Running joke: el histórico -1 de Se vende Cuenta (J6). La broma de Vicentine Zidane gestionando a Sors "en la sombra" está RETIRADA desde el 24/11/2026: no la uses en contenido nuevo (lo ya publicado se mantiene).
    - El titular refleja la historia más llamativa de la semana; si dudas entre dos enfoques, elige uno y menciona la alternativa al usuario.
    - Último párrafo: "En pagos: Equipo (16º, 2,50€), ... y Equipo (11º, 1,00€)."
    - Los párrafos admiten `<strong>` y `<em>`.

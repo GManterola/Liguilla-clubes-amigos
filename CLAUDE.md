@@ -36,7 +36,7 @@ Usa el skill `actualizar-jornada-liga` (`.claude/skills/actualizar-jornada-liga/
 - Pagos: pagan los 6 últimos de la jornada con `PAY_RULES_2627` (11º 1,00 · 12º 1,00 · 13º 1,50 · 14º 1,50 · 15º 2,00 · 16º 2,50 €). **No se cambia.**
 - Si falta algún partido por disputar, la jornada queda con `partialPending:true` y `pendingMatches:N` (aviso ámbar visible). Nunca se oculta.
 - Crónica nueva al principio de `cronicas2627` (historia principal); la anterior pasa sola al archivo desplegable.
-- Tono irónico, futbolero y gamberro. Running joke obligatorio: el **-1 histórico de Se vende Cuenta** (J6, antes "Paco Buyo"). **Retirada (24/11/2026): la broma de Vicentine Zidane gestionando a Sors en la sombra. No usarla.**
+- Tono irónico, futbolero y gamberro. Running joke obligatorio: el **-1 histórico de Se vende Cuenta** (J6, antes "Paco Buyo"). **Retirada desde el 24/11/2026: la broma de Vicentine Zidane gestionando a Sors en la sombra. No usarla en contenido nuevo; lo ya publicado (crónicas anteriores, escudo de Sors) se mantiene.**
 - Antes de entregar: `node scripts/validar.js` debe terminar en ✅ y V/E/D/puntos deben cuadrar con la jornada anterior.
 - Publicar en los dos sitios: push a `main` (Vercel) y el artefacto (misma URL, con `files`).
 
