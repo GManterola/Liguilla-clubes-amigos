@@ -125,15 +125,15 @@ const rounds2627 = [
     ["Kingsquare","33","38","Se vende Cuenta"],
     ["Sors","43","47","Avaricius Jr."],
   ]},
-  { j:"J12", pending:true, matches:[
-    ["Raphontino","","","Danilo Stars"],
-    ["Josisi Mourinho","","","CucuDaris"],
-    ["AnceLuni","","","Vicentine Zidane"],
-    ["Celta de Viño","","","Cardonistas"],
-    ["Sergchenko","","","Puro Llorente"],
-    ["Se vende Cuenta","","","Tano Amunt"],
-    ["Avaricius Jr.","","","Castriano Ronaldo"],
-    ["Sors","","","Kingsquare"],
+  { j:"J12", matches:[
+    ["Raphontino","42","50","Danilo Stars"],
+    ["Josisi Mourinho","56","47","CucuDaris"],
+    ["AnceLuni","55","58","Vicentine Zidane"],
+    ["Celta de Viño","56","62","Cardonistas"],
+    ["Sergchenko","43","43","Puro Llorente"],
+    ["Se vende Cuenta","34","38","Tano Amunt"],
+    ["Avaricius Jr.","34","35","Castriano Ronaldo"],
+    ["Sors","33","44","Kingsquare"],
   ]},
   { j:"J13", pending:true, matches:[
     ["Danilo Stars","","","Josisi Mourinho"],
@@ -318,14 +318,14 @@ const rounds2627 = [
 ];
 
 const nextMatches2627 = [
-  ["Raphontino","Danilo Stars"],
-  ["Josisi Mourinho","CucuDaris"],
-  ["AnceLuni","Vicentine Zidane"],
-  ["Celta de Viño","Cardonistas"],
-  ["Sergchenko","Puro Llorente"],
-  ["Se vende Cuenta","Tano Amunt"],
-  ["Avaricius Jr.","Castriano Ronaldo"],
-  ["Sors","Kingsquare"],
+  ["Danilo Stars","Josisi Mourinho"],
+  ["Raphontino","AnceLuni"],
+  ["CucuDaris","Celta de Viño"],
+  ["Vicentine Zidane","Sergchenko"],
+  ["Cardonistas","Se vende Cuenta"],
+  ["Puro Llorente","Avaricius Jr."],
+  ["Tano Amunt","Sors"],
+  ["Castriano Ronaldo","Kingsquare"],
 ];
 
 // Fechas de las jornadas (inicio del primer partido y del último), sacadas de Biwenger
@@ -408,6 +408,12 @@ const jornadasRanking2627 = [
     "Celta de Viño","AnceLuni",
     "Puro Llorente","Se vende Cuenta","Josisi Mourinho","Tano Amunt","Kingsquare","Raphontino",
   ]},
+  { j:"J12", ranking:[
+    "Cardonistas","Vicentine Zidane","Josisi Mourinho","Celta de Viño",
+    "AnceLuni","Danilo Stars","CucuDaris","Kingsquare",
+    "Puro Llorente","Sergchenko",
+    "Raphontino","Tano Amunt","Castriano Ronaldo","Avaricius Jr.","Se vende Cuenta","Sors",
+  ]},
 ];
 
 const jorStatsHistory = [
@@ -477,11 +483,27 @@ const jorStatsHistory = [
     "Celta de Viño":43,"AnceLuni":40,"Puro Llorente":39,"Se vende Cuenta":38,
     "Josisi Mourinho":36,"Tano Amunt":36,"Kingsquare":33,"Raphontino":17,
   }},
+  { j:"J12", data:{
+    "Cardonistas":62,"Vicentine Zidane":58,"Josisi Mourinho":56,"Celta de Viño":56,
+    "AnceLuni":55,"Danilo Stars":50,"CucuDaris":47,"Kingsquare":44,
+    "Puro Llorente":43,"Sergchenko":43,"Raphontino":42,"Tano Amunt":38,
+    "Castriano Ronaldo":35,"Avaricius Jr.":34,"Se vende Cuenta":34,"Sors":33,
+  }},
 ];
 
 // Crónicas: la PRIMERA es la historia principal; el resto va al archivo desplegable.
 // Los párrafos admiten HTML sencillo (<strong>, <em>).
 const cronicas2627 = [
+  { j:"J12",
+    titular:"CARDONISTAS VUELVE DEL PARÓN CON 62, VICENTINE ZIDANE FIRMA EL 12 DE 12 Y SORS PAGA EL PATO DE SU JEFE",
+    parrafos:[
+      "Dos semanas de parón, virus FIFA y alineaciones cogiendo polvo, y el que mejor ha usado las vacaciones ha sido <strong>Cardonistas</strong>: 62 puntos, rey de la jornada y cuarta victoria seguida. Ganó 62-56 a Celta de Viño, que firmó su mejor jornada de la temporada y aun así perdió. Es lo que tiene ser el mecenas oficial de la liga: hasta cuando aciertas, te cobran.",
+      "<strong>Vicentine Zidane</strong> sigue a lo suyo: 58-55 a AnceLuni y van <strong>12 victorias de 12</strong>. Nadie le ha ganado todavía, ni siquiera Sors, que es el único que podría hacerlo con conocimiento de causa. Kingsquare cumplió ante ese mismo Sors (44-33) y mantiene la distancia en 6 puntos. Lo de Sors merece análisis: <strong>16º con 33 puntos</strong> justo contra el perseguidor de su jefe. O Vicentine se olvidó de alinear a su equipo B, o el plan siempre fue que Sors pagara la cena.",
+      "Josisi Mourinho volvió a sonreír ante CucuDaris (56-47), Danilo Stars ganó a Raphontino (50-42) y Tano Amunt se llevó el clásico de la ruina contra Se vende Cuenta (38-34). Castriano Ronaldo ganó a Avaricius Jr. por un solo punto (35-34). Avaricius, fiel a su nombre, se queda sin victoria y encima paga.",
+      "El partido de la jornada en lo raro: <strong>Sergchenko 43 - 43 Puro Llorente</strong>. Empate a todo. Puro Llorente frena por fin una racha de cinco derrotas y Sergchenko, con la peor media de la liga, sube al 4º puesto. Nadie sabe cómo lo hace y él tampoco lo va a explicar.",
+      "En la tabla, Cardonistas entra en el top 8 (7º) y <strong>Se vende Cuenta se cae al 9º</strong>. El equipo del -1 histórico paga 2 € y se queda fuera de la zona noble. Hay tradiciones que se respetan.",
+      "En pagos: Sors (16º, 2,50€), Se vende Cuenta (15º, 2,00€), Avaricius Jr. (14º, 1,50€), Castriano Ronaldo (13º, 1,50€), Tano Amunt (12º, 1,00€) y Raphontino (11º, 1,00€).",
+    ]},
   { j:"J11",
     titular:"DANILO STARS DESPIERTA CON 65 PUNTOS Y RAPHONTINO PROTAGONIZA EL HUNDIMIENTO DE LA JORNADA",
     parrafos:[
