@@ -105,6 +105,12 @@ const teamRow = s => ({ ...pick(s, ['id', 'name', 'points', 'position']),
       lineups: (d1.league?.standings || []).map(s => ({ name: s.name, type: s.lineup?.type, players: s.lineup?.players || [], count: s.lineup?.count })) };
     const rd = await get('cf.biwenger.com', `/api/v2/rounds/la-liga/${out.round.id}?lang=es&score=5`, false);
     const games = rd.json?.data?.games || [];
+    out.live.roundShape = shape(rd.json?.data);
+    // Puntos de cada jugador en la jornada, si vienen dentro de los partidos
+    out.live.roundPlayerPoints = {};
+    const grab = (arr) => (arr || []).forEach(r => { const id = r.player?.id ?? r.id; const pts = r.points ?? r.score;
+      if (id != null && (typeof pts === 'number' || pts === null)) out.live.roundPlayerPoints[id] = pts; });
+    games.forEach(g => { grab(g.home?.reports); grab(g.away?.reports); grab(g.reports); grab(g.home?.players); grab(g.away?.players); });
     out.live.playerPoints = {}; out.live.games = [];
     for (const g of games) {
       const gd = await get('cf.biwenger.com', `/api/v2/games/la-liga/${g.id}?lang=es&score=5`, false);
