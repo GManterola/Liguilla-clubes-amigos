@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-24T08:17:49.921Z",
+  "fetchedAt": "2026-11-24T08:24:39.372Z",
   "league": "1699656",
   "calls": {
     "roundsLeague": {
@@ -4751,6 +4751,290 @@
         "status": "finished"
       }
     ]
+  },
+  "liveVariants": {
+    "score5": {
+      "http": 200,
+      "n": 16,
+      "lineupKeys": [
+        "type",
+        "date",
+        "players",
+        "count"
+      ],
+      "rows": [
+        {
+          "name": "Vicentine Zidane",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Kingsquare",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Castriano Ronaldo",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Josisi mourinho",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Raphontino",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Cardonistas",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "AnceLuni",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Danilo Stars",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Avaricius Jr.",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Puro Llorente",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Tano Amunt",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "CucuDaris",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Sors",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Se vende Cuenta",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Sergchenko",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Celta de Viño",
+          "roundPoints": null,
+          "played": true
+        }
+      ]
+    },
+    "byIdScore5": {
+      "http": 200,
+      "n": 16,
+      "lineupKeys": [
+        "type",
+        "date",
+        "players",
+        "count"
+      ],
+      "rows": [
+        {
+          "name": "Vicentine Zidane",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Kingsquare",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Castriano Ronaldo",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Josisi mourinho",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Raphontino",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Cardonistas",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "AnceLuni",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Danilo Stars",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Avaricius Jr.",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Puro Llorente",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Tano Amunt",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "CucuDaris",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Sors",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Se vende Cuenta",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Sergchenko",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Celta de Viño",
+          "roundPoints": null,
+          "played": true
+        }
+      ]
+    },
+    "fieldsAll": {
+      "http": 200,
+      "n": 16,
+      "lineupKeys": [
+        "type",
+        "date",
+        "players",
+        "count"
+      ],
+      "rows": [
+        {
+          "name": "Vicentine Zidane",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Kingsquare",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Castriano Ronaldo",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Josisi mourinho",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Raphontino",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Cardonistas",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "AnceLuni",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Danilo Stars",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Avaricius Jr.",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Puro Llorente",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Tano Amunt",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "CucuDaris",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Sors",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Se vende Cuenta",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Sergchenko",
+          "roundPoints": null,
+          "played": true
+        },
+        {
+          "name": "Celta de Viño",
+          "roundPoints": null,
+          "played": true
+        }
+      ]
+    },
+    "leagueRound": {
+      "http": 400,
+      "n": 0,
+      "lineupKeys": null,
+      "rows": []
+    }
   },
   "players": {
     "33": {
