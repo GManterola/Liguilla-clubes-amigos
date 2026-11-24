@@ -495,10 +495,10 @@ const jorStatsHistory = [
 // Los párrafos admiten HTML sencillo (<strong>, <em>).
 const cronicas2627 = [
   { j:"J12",
-    titular:"CARDONISTAS VUELVE DEL PARÓN CON 62, VICENTINE ZIDANE FIRMA EL 12 DE 12 Y SORS PAGA EL PATO DE SU JEFE",
+    titular:"CARDONISTAS VUELVE DEL PARÓN CON 62, VICENTINE ZIDANE FIRMA EL 12 DE 12 Y SORS CIERRA LA TABLA",
     parrafos:[
       "Dos semanas de parón, virus FIFA y alineaciones cogiendo polvo, y el que mejor ha usado las vacaciones ha sido <strong>Cardonistas</strong>: 62 puntos, rey de la jornada y cuarta victoria seguida. Ganó 62-56 a Celta de Viño, que firmó su mejor jornada de la temporada y aun así perdió. Es lo que tiene ser el mecenas oficial de la liga: hasta cuando aciertas, te cobran.",
-      "<strong>Vicentine Zidane</strong> sigue a lo suyo: 58-55 a AnceLuni y van <strong>12 victorias de 12</strong>. Nadie le ha ganado todavía, ni siquiera Sors, que es el único que podría hacerlo con conocimiento de causa. Kingsquare cumplió ante ese mismo Sors (44-33) y mantiene la distancia en 6 puntos. Lo de Sors merece análisis: <strong>16º con 33 puntos</strong> justo contra el perseguidor de su jefe. O Vicentine se olvidó de alinear a su equipo B, o el plan siempre fue que Sors pagara la cena.",
+      "<strong>Vicentine Zidane</strong> sigue a lo suyo: 58-55 a AnceLuni y van <strong>12 victorias de 12</strong>. Nadie le ha ganado todavía y empieza a dar miedo preguntar quién será el primero. Kingsquare cumplió ante Sors (44-33) y mantiene la distancia en 6 puntos. Sors, en cambio, firmó la peor jornada: <strong>16º con 33 puntos</strong> y 2,50 € directos a la caja. Volver del parón con las piernas de pretemporada sale caro.",
       "Josisi Mourinho volvió a sonreír ante CucuDaris (56-47), Danilo Stars ganó a Raphontino (50-42) y Tano Amunt se llevó el clásico de la ruina contra Se vende Cuenta (38-34). Castriano Ronaldo ganó a Avaricius Jr. por un solo punto (35-34). Avaricius, fiel a su nombre, se queda sin victoria y encima paga.",
       "El partido de la jornada en lo raro: <strong>Sergchenko 43 - 43 Puro Llorente</strong>. Empate a todo. Puro Llorente frena por fin una racha de cinco derrotas y Sergchenko, con la peor media de la liga, sube al 4º puesto. Nadie sabe cómo lo hace y él tampoco lo va a explicar.",
       "En la tabla, Cardonistas entra en el top 8 (7º) y <strong>Se vende Cuenta se cae al 9º</strong>. El equipo del -1 histórico paga 2 € y se queda fuera de la zona noble. Hay tradiciones que se respetan.",
