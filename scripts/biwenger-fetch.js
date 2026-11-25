@@ -146,6 +146,11 @@ const teamRow = s => ({ ...pick(s, ['id', 'name', 'points', 'position']),
   out.players = {};
   pids.forEach(id => { const p = allPlayers[id]; if (p) out.players[id] = pick(p, ['id', 'name', 'teamID', 'position', 'status', 'fitness', 'points', 'price', 'priceIncrement', 'playedHome', 'playedAway', 'pointsHome', 'pointsAway', 'pointsLastSeason']); });
 
+  // 7. Catálogo público de jugadores baratos (≤ 1,5 M€) y equipos de LaLiga, para recomendaciones de mercado
+  out.teams = Object.fromEntries(Object.values(r3.json?.data?.teams || {}).map(t => [t.id, t.name]));
+  out.catalog = Object.values(allPlayers).filter(p => p.price && p.price <= 1500000)
+    .map(p => pick(p, ['id', 'name', 'teamID', 'position', 'status', 'fitness', 'points', 'price', 'priceIncrement', 'playedHome', 'playedAway']));
+
   const dir = path.resolve(__dirname, '../data/biwenger');
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'ultima.json'), JSON.stringify(out, null, 2) + '\n');
