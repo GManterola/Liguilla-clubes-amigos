@@ -27,12 +27,25 @@ if (!OUT) { console.error('Uso: node scripts/previa.js <salida.png>'); process.e
     const st = Object.fromEntries(table.map(t => [t.name, t]));
     const leader = table[0];
 
-    // Etiquetas automáticas: el duelo de más altura y el de más dinero pagado
-    const sumPos = m => pos[m[0]] + pos[m[3]];
+    // Etiquetas automáticas (cada partido, como mucho una; por orden de prioridad)
     const sumPaid = m => PAID[m[0]].amt + PAID[m[3]].amt;
-    const top = next.matches.reduce((b, m) => sumPos(m) < sumPos(b) ? m : b);
-    const ruina = next.matches.filter(m => m !== top).reduce((b, m) => sumPaid(m) > sumPaid(b) ? m : b);
-    const tag = m => m === top ? 'Duelo de altura' : m === ruina ? 'Duelo de pagadores' : '';
+    const streak = t => { const f = st[t].form; let n = 0; for (let i = f.length - 1; i >= 0 && f[i] === f[f.length - 1]; i--) n++; return { r: f[f.length - 1], n }; };
+    const tags = new Map();
+    const free = () => next.matches.filter(m => !tags.has(m));
+    // 1. Duelo de altura: los dos en el top 4
+    free().filter(m => pos[m[0]] <= 4 && pos[m[3]] <= 4).forEach(m => tags.set(m, 'Duelo de altura'));
+    // 2. Duelo directo: empatados a puntos
+    free().filter(m => st[m[0]].pts === st[m[3]].pts).forEach(m => tags.set(m, 'Duelo directo'));
+    // 3. Duelo del sótano: los dos en los tres últimos puestos
+    free().filter(m => pos[m[0]] >= 14 && pos[m[3]] >= 14).forEach(m => tags.set(m, 'Duelo del sótano'));
+    // 4. Racha contra racha: uno con 3+ victorias seguidas contra otro con 3+ derrotas seguidas
+    free().filter(m => { const a = streak(m[0]), b = streak(m[3]); return a.n >= 3 && b.n >= 3 && a.r !== b.r; }).forEach(m => tags.set(m, 'Racha contra racha'));
+    // 5. Duelo de pagadores: los que más han pagado entre los partidos que quedan
+    if (free().length) { const r = free().reduce((b, m) => sumPaid(m) > sumPaid(b) ? m : b); if (sumPaid(r) >= 15) tags.set(r, 'Duelo de pagadores'); }
+    // 6. En racha: algún equipo con 4+ resultados iguales seguidos
+    free().forEach(m => { const a = streak(m[0]), b = streak(m[3]); const x = [a, b].find(s => s.n >= 4 && s.r !== 'D');
+      if (x) tags.set(m, x.r === 'W' ? 'Racha de victorias' : 'Racha negra'); });
+    const tag = m => tags.get(m) || '';
 
     const side = (t, right) => `
       <div class="pv-team ${right ? 'r' : ''}">
@@ -101,11 +114,11 @@ if (!OUT) { console.error('Uso: node scripts/previa.js <salida.png>'); process.e
       .pv-leg i{width:11px;height:11px;border-radius:3px;margin-left:6px}
       .pv-leg .W{background:var(--win)} .pv-leg .D{background:var(--draw)} .pv-leg .L{background:var(--loss)}`;
     document.head.appendChild(css);
-    return { j: next.j, top: top[0] + ' vs ' + top[3], ruina: ruina[0] + ' vs ' + ruina[3] };
+    return { j: next.j, tags: [...tags].map(([m, t]) => `${t}: ${m[0]} vs ${m[3]}`) };
   });
   if (!info) { console.error('No hay jornada pendiente'); process.exit(1); }
   await page.waitForTimeout(300);
   await page.locator('#pv').screenshot({ path: OUT });
   await browser.close();
-  console.log(`✅ Previa ${info.j} → ${OUT}\n   Duelo de altura: ${info.top} · Duelo de pagadores: ${info.ruina}`);
+  console.log(`✅ Previa ${info.j} → ${OUT}\n   ${info.tags.join('\n   ')}`);
 })().catch(e => { console.error('❌', e.message); process.exit(1); });
