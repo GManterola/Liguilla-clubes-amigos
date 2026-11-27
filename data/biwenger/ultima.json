@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-25T11:21:00.885Z",
+  "fetchedAt": "2026-11-27T08:14:32.210Z",
   "league": "1699656",
   "calls": {
     "roundsLeague": {
@@ -247,6 +247,9 @@
               },
               "×10"
             ],
+            "pool": {
+              "id": "number"
+            },
             "probableLineups": "boolean"
           },
           "×1"
@@ -4094,7 +4097,19 @@
           ]
         },
         "canonicalURL": "string",
-        "news": [],
+        "news": [
+          {
+            "id": "number",
+            "source": "string",
+            "title": "string",
+            "url": "string",
+            "date": "number",
+            "photo": "string",
+            "video": "string",
+            "comments": "number"
+          },
+          "×1"
+        ],
         "sponsor": {
           "ad": "string"
         }
@@ -4148,7 +4163,7 @@
         },
         {
           "date": 1795957200,
-          "status": "pending",
+          "status": "preview",
           "home": "Valencia",
           "away": "Osasuna",
           "homeScore": null,
@@ -4156,7 +4171,7 @@
         },
         {
           "date": 1795965300,
-          "status": "pending",
+          "status": "preview",
           "home": "Deportivo",
           "away": "Barcelona",
           "homeScore": null,
@@ -4164,7 +4179,7 @@
         },
         {
           "date": 1795973400,
-          "status": "pending",
+          "status": "preview",
           "home": "Celta",
           "away": "Villarreal",
           "homeScore": null,
@@ -4172,7 +4187,7 @@
         },
         {
           "date": 1795982400,
-          "status": "pending",
+          "status": "preview",
           "home": "Real Sociedad",
           "away": "Sevilla",
           "homeScore": null,
@@ -4180,7 +4195,7 @@
         },
         {
           "date": 1796068800,
-          "status": "pending",
+          "status": "preview",
           "home": "Espanyol",
           "away": "Getafe",
           "homeScore": null,
@@ -5019,320 +5034,320 @@
       }
     },
     "roundPlayerPoints": {
-      "11": 4,
-      "20": 2,
-      "33": 5,
+      "11": 0,
+      "20": 3,
+      "33": -2,
       "91": 4,
       "163": 1,
-      "856": 7,
-      "897": 5,
-      "947": 4,
-      "1074": 6,
+      "856": 3,
+      "897": -1,
+      "947": 11,
+      "1074": -1,
       "1083": 11,
-      "1125": 4,
-      "1249": 4,
-      "1462": 7,
-      "1523": 2,
-      "1599": 2,
-      "1602": 3,
-      "1612": 7,
-      "1613": 3,
+      "1125": 9,
+      "1249": 8,
+      "1462": 11,
+      "1523": 0,
+      "1599": 7,
+      "1602": 5,
+      "1612": 3,
+      "1613": 1,
       "1676": 0,
-      "1721": -1,
-      "1733": 8,
+      "1721": 2,
+      "1733": 1,
       "1760": 7,
-      "1876": 8,
-      "1897": 2,
-      "1952": 4,
-      "1969": 5,
-      "1995": 1,
-      "2001": 4,
+      "1876": 9,
+      "1897": 1,
+      "1952": 7,
+      "1969": 6,
+      "1995": 3,
+      "2001": 0,
       "2055": 6,
-      "2184": 7,
+      "2184": 5,
       "2247": 0,
-      "2368": 4,
-      "2476": 9,
-      "2480": 2,
-      "2597": 7,
-      "2600": 6,
-      "2603": 10,
-      "3159": 3,
-      "4245": 0,
-      "5069": 7,
-      "5220": 0,
-      "5678": 3,
-      "5697": -2,
-      "5771": -1,
-      "5807": 1,
-      "6259": -1,
-      "6837": 4,
-      "7003": 0,
-      "8376": 4,
-      "8555": 0,
-      "8670": 5,
-      "8747": 4,
-      "9045": -2,
+      "2368": 5,
+      "2476": 10,
+      "2480": 3,
+      "2597": 5,
+      "2600": 8,
+      "2603": 9,
+      "3159": -3,
+      "4245": 6,
+      "5069": 5,
+      "5220": 6,
+      "5678": 2,
+      "5697": 3,
+      "5771": 5,
+      "5807": 7,
+      "6259": 2,
+      "6837": 0,
+      "7003": -4,
+      "8376": 5,
+      "8555": 8,
+      "8670": 6,
+      "8747": 6,
+      "9045": 3,
       "9047": 0,
-      "9065": -1,
+      "9065": 2,
       "9402": -1,
-      "9480": 5,
-      "9887": 2,
-      "9983": -3,
-      "10030": 7,
-      "10155": 6,
+      "9480": -2,
+      "9887": 1,
+      "9983": -7,
+      "10030": 4,
+      "10155": 5,
       "10158": 4,
-      "10245": 2,
-      "10276": 0,
-      "10574": 7,
-      "10745": 11,
-      "10997": 0,
-      "11196": -2,
-      "11633": 4,
-      "11677": 12,
+      "10245": 7,
+      "10276": -1,
+      "10574": 5,
+      "10745": 10,
+      "10997": 7,
+      "11196": 5,
+      "11633": -2,
+      "11677": 6,
       "11800": 5,
       "12221": 8,
       "12403": 2,
       "12494": 12,
-      "12596": -2,
-      "12734": 9,
-      "14466": -2,
+      "12596": 4,
+      "12734": 10,
+      "14466": 3,
       "14630": 2,
       "14800": 4,
-      "15396": 0,
-      "15410": -1,
-      "15430": -3,
-      "15464": 1,
-      "15568": 10,
-      "15719": 10,
-      "16317": 2,
-      "16738": 9,
-      "16889": 0,
-      "17021": 8,
+      "15396": 2,
+      "15410": 3,
+      "15430": -4,
+      "15464": 2,
+      "15568": 11,
+      "15719": 8,
+      "16317": 3,
+      "16738": 3,
+      "16889": 5,
+      "17021": 2,
       "17057": 1,
-      "17148": 3,
-      "17200": 5,
-      "17369": 1,
-      "17442": 0,
-      "17482": -1,
-      "17645": 2,
-      "17687": 8,
-      "17731": -2,
-      "17756": -2,
-      "17937": 2,
-      "18128": 1,
-      "18174": 9,
+      "17148": 5,
+      "17200": 3,
+      "17369": 0,
+      "17442": 5,
+      "17482": 5,
+      "17645": 7,
+      "17687": 0,
+      "17731": 4,
+      "17756": 3,
+      "17937": 7,
+      "18128": 6,
+      "18174": 5,
       "18251": 5,
-      "18256": 6,
-      "18382": 1,
-      "18397": 6,
+      "18256": 1,
+      "18382": -2,
+      "18397": 3,
       "18398": 8,
       "18564": 12,
-      "18570": 0,
-      "18945": 3,
-      "19141": 1,
-      "19192": 1,
-      "19299": 6,
+      "18570": 1,
+      "18945": 2,
+      "19141": 3,
+      "19192": 0,
+      "19299": 12,
       "19441": 13,
-      "19485": 5,
-      "19547": 11,
-      "19577": 9,
-      "19614": 4,
-      "19693": 1,
-      "19860": 0,
+      "19485": 6,
+      "19547": 14,
+      "19577": 1,
+      "19614": 10,
+      "19693": 5,
+      "19860": -1,
       "20102": 0,
-      "20969": -1,
-      "21008": 9,
-      "21033": 2,
+      "20969": 0,
+      "21008": 7,
+      "21033": 1,
       "21084": 4,
-      "21132": 3,
-      "22690": 4,
-      "23080": 1,
-      "23840": 6,
-      "24326": 11,
-      "24336": 4,
-      "24474": -2,
-      "24576": 0,
-      "24732": -3,
-      "24979": 4,
-      "25127": 5,
-      "25322": 5,
-      "25384": 4,
-      "25403": 4,
-      "25677": 5,
-      "25769": 6,
-      "25777": 2,
-      "25815": 5,
-      "26077": 1,
-      "26092": -1,
-      "26095": 6,
-      "26131": 4,
-      "26271": 7,
-      "26276": 6,
-      "26344": 18,
-      "26566": 3,
-      "26592": 10,
-      "26879": 9,
-      "26930": 5,
+      "21132": 1,
+      "22690": 3,
+      "23080": 5,
+      "23840": 2,
+      "24326": 9,
+      "24336": 5,
+      "24474": 3,
+      "24576": 5,
+      "24732": -1,
+      "24979": 2,
+      "25127": 2,
+      "25322": 6,
+      "25384": -3,
+      "25403": 6,
+      "25677": 6,
+      "25769": 8,
+      "25777": 6,
+      "25815": 1,
+      "26077": 3,
+      "26092": 4,
+      "26095": 5,
+      "26131": 0,
+      "26271": 11,
+      "26276": 7,
+      "26344": 16,
+      "26566": -1,
+      "26592": 13,
+      "26879": 8,
+      "26930": 3,
       "27575": 0,
-      "27591": 4,
+      "27591": 1,
       "27929": 0,
-      "28087": 2,
-      "28103": 4,
-      "28115": 21,
-      "28282": 2,
-      "29184": 4,
-      "29185": 9,
-      "29661": 4,
-      "30081": 3,
-      "30123": 5,
-      "30334": 14,
-      "30477": 15,
+      "28087": 1,
+      "28103": 9,
+      "28115": 15,
+      "28282": 7,
+      "29184": 5,
+      "29185": 8,
+      "29661": 5,
+      "30081": 11,
+      "30123": 10,
+      "30334": 12,
+      "30477": 12,
       "30487": -3,
-      "30493": 0,
-      "30495": 5,
-      "30510": 2,
-      "30789": 6,
-      "31018": 1,
-      "31027": 5,
-      "31167": 7,
-      "31243": 3,
-      "31475": 5,
-      "31707": 6,
+      "30493": 6,
+      "30495": 4,
+      "30510": 6,
+      "30789": 7,
+      "31018": -2,
+      "31027": 6,
+      "31167": 1,
+      "31243": 9,
+      "31475": 1,
+      "31707": 2,
       "32020": 1,
-      "32120": 12,
+      "32120": 13,
       "32135": -3,
-      "32338": 1,
-      "32363": 2,
-      "32435": 6,
-      "32460": 6,
-      "32629": -1,
-      "33473": 3,
-      "33474": 9,
-      "33531": 3,
-      "33694": 6,
-      "33697": -1,
-      "33796": 10,
-      "33839": 2,
-      "33871": 2,
-      "33970": 12,
-      "34077": 0,
-      "34111": 11,
-      "34127": 0,
-      "34196": 1,
+      "32338": 8,
+      "32363": 6,
+      "32435": 3,
+      "32460": 4,
+      "32629": 3,
+      "33473": -1,
+      "33474": 3,
+      "33531": 4,
+      "33694": 9,
+      "33697": 1,
+      "33796": 4,
+      "33839": 1,
+      "33871": 3,
+      "33970": 9,
+      "34077": 2,
+      "34111": 13,
+      "34127": 2,
+      "34196": 0,
       "34469": 11,
-      "34479": 1,
-      "34483": 1,
-      "34527": 7,
-      "34557": 6,
-      "34802": 2,
+      "34479": 0,
+      "34483": 5,
+      "34527": 3,
+      "34557": 12,
+      "34802": 3,
       "35055": 3,
-      "35156": -2,
-      "35171": 0,
-      "35344": 9,
-      "35408": 6,
-      "35615": 0,
-      "35678": 14,
-      "35706": 1,
-      "35763": 8,
+      "35156": 0,
+      "35171": 1,
+      "35344": 8,
+      "35408": 0,
+      "35615": 4,
+      "35678": 7,
+      "35706": 6,
+      "35763": 9,
       "35770": 7,
-      "37416": 4,
-      "37450": -1,
-      "37488": 15,
-      "37495": 7,
-      "37499": 0,
-      "37525": 0,
+      "37416": 2,
+      "37450": 5,
+      "37488": 17,
+      "37495": 11,
+      "37499": -1,
+      "37525": 5,
       "37600": 5,
       "37711": 11,
-      "37723": 7,
-      "37724": 1,
-      "37726": 4,
-      "37733": 2,
+      "37723": 6,
+      "37724": 6,
+      "37726": 7,
+      "37733": 9,
       "37739": 9,
-      "37897": 5,
-      "37898": 2,
-      "38072": 9,
-      "38095": 0,
-      "38143": 1,
-      "38194": 6,
-      "38290": 4,
-      "38308": 7,
-      "38355": 4,
-      "38368": 2,
-      "38405": 4,
-      "38422": 5,
-      "38433": 9,
-      "38449": -2,
-      "38493": 1,
-      "38517": 0,
-      "38854": 7,
-      "38875": 4,
-      "38962": 4,
-      "39357": 5,
-      "39431": 2,
-      "39792": -3,
-      "39804": 6,
-      "39813": 5,
-      "39874": 6,
-      "39885": 9,
-      "39901": 6,
-      "39924": 0,
-      "40010": 0,
-      "40552": 7,
-      "40911": 1,
-      "40952": 1,
-      "41031": 1,
-      "41072": 4,
-      "41081": 0,
-      "41082": 1,
-      "41083": -1,
-      "41086": -2,
-      "41087": 5,
-      "41092": 6,
-      "41100": 2,
-      "41101": 0,
-      "41200": 3,
-      "41270": 1,
-      "41275": 2,
-      "41411": 5,
-      "41412": 1,
+      "37897": 8,
+      "37898": 4,
+      "38072": 2,
+      "38095": 4,
+      "38143": 2,
+      "38194": 8,
+      "38290": 6,
+      "38308": 9,
+      "38355": 1,
+      "38368": 4,
+      "38405": 6,
+      "38422": 11,
+      "38433": 4,
+      "38449": 1,
+      "38493": 4,
+      "38517": 2,
+      "38854": 9,
+      "38875": 0,
+      "38962": 1,
+      "39357": 2,
+      "39431": 0,
+      "39792": -2,
+      "39804": 3,
+      "39813": 0,
+      "39874": 5,
+      "39885": 16,
+      "39901": 1,
+      "39924": 3,
+      "40010": 2,
+      "40552": 5,
+      "40911": 2,
+      "40952": 0,
+      "41031": -1,
+      "41072": 6,
+      "41081": -2,
+      "41082": 4,
+      "41083": 1,
+      "41086": -1,
+      "41087": 1,
+      "41092": 7,
+      "41100": -2,
+      "41101": 1,
+      "41200": 5,
+      "41270": 6,
+      "41275": 1,
+      "41411": 2,
+      "41412": 3,
       "41413": 7,
-      "41416": 3,
-      "41418": 2,
+      "41416": 6,
+      "41418": 0,
       "41419": 1,
-      "41420": 3,
-      "41565": 6,
-      "41566": -1,
-      "41606": -2,
-      "41684": 6,
+      "41420": 0,
+      "41565": 7,
+      "41566": 2,
+      "41606": -6,
+      "41684": 7,
       "41807": -2,
-      "41940": 2,
-      "42277": 7,
-      "42390": 9,
-      "42394": 1,
-      "42396": 1,
-      "42412": 0,
-      "42425": 6,
-      "42459": 0,
-      "42557": -1,
-      "42610": 18,
-      "42726": -5,
+      "41940": 3,
+      "42277": 8,
+      "42390": 1,
+      "42394": 2,
+      "42396": -1,
+      "42412": 2,
+      "42425": 4,
+      "42459": 2,
+      "42557": 5,
+      "42610": 13,
+      "42726": -3,
       "42748": 3,
       "42813": -4,
-      "42814": 6,
-      "43172": 1,
-      "43185": 9,
-      "43259": 6,
-      "43261": 4,
-      "43262": 0,
-      "43264": -1,
+      "42814": 5,
+      "43172": 2,
+      "43185": 7,
+      "43259": 11,
+      "43261": 2,
+      "43262": 7,
+      "43264": 3,
       "43267": 4,
-      "43268": 20,
-      "43270": 2,
-      "43272": 3,
-      "43282": 8,
-      "43386": -1,
-      "43448": 0,
-      "43458": 5
+      "43268": 17,
+      "43270": 6,
+      "43272": 1,
+      "43282": 3,
+      "43386": 4,
+      "43448": 6,
+      "43458": 3
     },
     "playerPoints": {},
     "games": [
@@ -5395,31 +5410,414 @@
       "title": "string",
       "content": [
         {
-          "player": "number",
-          "from": {
+          "user": {
             "id": "number",
-            "name": "string",
-            "icon": "string"
+            "name": "string"
           },
-          "amount": "number"
+          "player": "number",
+          "amount": "number",
+          "releaseClause": "number"
         },
         "×1"
       ],
       "date": "number",
       "fixed": "boolean",
-      "author": "object"
+      "author": {
+        "id": "number",
+        "name": "string"
+      }
     },
     "types": [
-      "transfer",
-      "playerMovements",
-      "market",
       "clauseIncrement",
+      "transfer",
+      "market",
+      "bettingPool",
+      "playerMovements",
       "roundFinished",
       "roundStarted",
-      "adminText",
-      "bettingPool"
+      "adminText"
     ],
     "entries": [
+      {
+        "type": "clauseIncrement",
+        "date": 1795766400,
+        "content": [
+          {
+            "player": 34527,
+            "from": null,
+            "to": null,
+            "amount": 250000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795761300,
+        "content": [
+          {
+            "player": 31243,
+            "from": "Danilo Stars",
+            "to": null,
+            "amount": 15817100
+          },
+          {
+            "player": 26592,
+            "from": "Cardonistas",
+            "to": "Danilo Stars",
+            "amount": 3175000
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1795759405,
+        "content": [
+          {
+            "player": 26276,
+            "from": null,
+            "to": "Sors",
+            "amount": 4401000
+          },
+          {
+            "player": 129,
+            "from": null,
+            "to": "Celta de Viño",
+            "amount": 1060000
+          },
+          {
+            "player": 25322,
+            "from": null,
+            "to": "Cardonistas",
+            "amount": 3200000
+          },
+          {
+            "player": 32435,
+            "from": null,
+            "to": "Se vende Cuenta",
+            "amount": 1520000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795734761,
+        "content": [
+          {
+            "player": 1927,
+            "from": "Celta de Viño",
+            "to": null,
+            "amount": 2687300
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795731572,
+        "content": [
+          {
+            "player": 18945,
+            "from": "Raphontino",
+            "to": null,
+            "amount": 2830300
+          },
+          {
+            "player": 41261,
+            "from": "Raphontino",
+            "to": null,
+            "amount": 165600
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795721335,
+        "content": [
+          {
+            "type": "clause",
+            "player": 27591,
+            "from": "Cardonistas",
+            "to": "Puro Llorente",
+            "amount": 3704613
+          },
+          {
+            "type": "clause",
+            "player": 26592,
+            "from": "Danilo Stars",
+            "to": "Cardonistas",
+            "amount": 3175000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795705612,
+        "content": [
+          {
+            "player": 25677,
+            "from": "AnceLuni",
+            "to": "Sergchenko",
+            "amount": 2000000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795696103,
+        "content": [
+          {
+            "player": 42390,
+            "from": null,
+            "to": null,
+            "amount": 153000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795696020,
+        "content": [
+          {
+            "player": 30507,
+            "from": "Vicentine Zidane",
+            "to": null,
+            "amount": 153800
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795695325,
+        "content": [
+          {
+            "player": 33697,
+            "from": "CucuDaris",
+            "to": null,
+            "amount": 797800
+          },
+          {
+            "player": 42412,
+            "from": "Vicentine Zidane",
+            "to": "Avaricius Jr.",
+            "amount": 400000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795695232,
+        "content": [
+          {
+            "type": "clause",
+            "player": 12734,
+            "from": "Puro Llorente",
+            "to": "AnceLuni",
+            "amount": 3728753
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795695207,
+        "content": [
+          {
+            "player": 37526,
+            "from": "Castriano Ronaldo",
+            "to": null,
+            "amount": 143000
+          },
+          {
+            "player": 15289,
+            "from": "Castriano Ronaldo",
+            "to": null,
+            "amount": 452500
+          },
+          {
+            "player": 40952,
+            "from": "Celta de Viño",
+            "to": "CucuDaris",
+            "amount": 2050000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795690341,
+        "content": [
+          {
+            "type": "clause",
+            "player": 35408,
+            "from": "CucuDaris",
+            "to": "Puro Llorente",
+            "amount": 1703000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795690249,
+        "content": [
+          {
+            "player": 42390,
+            "from": null,
+            "to": null,
+            "amount": 176697
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795690222,
+        "content": [
+          {
+            "player": 33871,
+            "from": null,
+            "to": null,
+            "amount": 250000
+          }
+        ]
+      },
+      {
+        "type": "clauseIncrement",
+        "date": 1795686983,
+        "content": [
+          {
+            "player": 35344,
+            "from": null,
+            "to": null,
+            "amount": 300000
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795686917,
+        "content": [
+          {
+            "player": 41200,
+            "from": "Kingsquare",
+            "to": null,
+            "amount": 12036300
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795681607,
+        "content": [
+          {
+            "type": "clause",
+            "player": 21033,
+            "from": "Sors",
+            "to": "Raphontino",
+            "amount": 214500
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795681088,
+        "content": [
+          {
+            "player": 24979,
+            "from": "Avaricius Jr.",
+            "to": null,
+            "amount": 851600
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795673118,
+        "content": [
+          {
+            "player": 38143,
+            "from": "Sergchenko",
+            "to": null,
+            "amount": 700000
+          }
+        ]
+      },
+      {
+        "type": "market",
+        "date": 1795673037,
+        "content": [
+          {
+            "player": 21084,
+            "from": null,
+            "to": "CucuDaris",
+            "amount": 3121000
+          },
+          {
+            "player": 39792,
+            "from": null,
+            "to": "Sergchenko",
+            "amount": 3555555
+          },
+          {
+            "player": 38962,
+            "from": null,
+            "to": "Cardonistas",
+            "amount": 6290000
+          },
+          {
+            "player": 26813,
+            "from": null,
+            "to": "Sors",
+            "amount": 150500
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795639798,
+        "content": [
+          {
+            "type": "clause",
+            "player": 34717,
+            "from": "CucuDaris",
+            "to": "Sors",
+            "amount": 924573
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795635747,
+        "content": [
+          {
+            "player": 1780,
+            "from": "Kingsquare",
+            "to": null,
+            "amount": 152900
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795635739,
+        "content": [
+          {
+            "type": "clause",
+            "player": 41100,
+            "from": "Sors",
+            "to": "Kingsquare",
+            "amount": 240500
+          }
+        ]
+      },
+      {
+        "type": "transfer",
+        "date": 1795608505,
+        "content": [
+          {
+            "type": "clause",
+            "player": 29185,
+            "from": "Sergchenko",
+            "to": "Puro Llorente",
+            "amount": 1331720
+          }
+        ]
+      },
       {
         "type": "transfer",
         "date": 1795605258,
@@ -6420,445 +6818,6 @@
             "amount": 665600
           }
         ]
-      },
-      {
-        "type": "transfer",
-        "date": 1795074341,
-        "content": [
-          {
-            "type": "clause",
-            "player": 33871,
-            "from": "Sergchenko",
-            "to": "AnceLuni",
-            "amount": 1467973
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1795072932,
-        "content": [
-          {
-            "player": 32440,
-            "from": "Sors",
-            "to": null,
-            "amount": 8479300
-          },
-          {
-            "player": 18945,
-            "from": "Kingsquare",
-            "to": null,
-            "amount": 2689800
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1795069383,
-        "content": [
-          {
-            "player": 15642,
-            "from": "Raphontino",
-            "to": null,
-            "amount": 154500
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1795068362,
-        "content": [
-          {
-            "player": 2044,
-            "from": "Puro Llorente",
-            "to": null,
-            "amount": 3181400
-          }
-        ]
-      },
-      {
-        "type": "market",
-        "date": 1795068246,
-        "content": [
-          {
-            "player": 34527,
-            "from": null,
-            "to": "Sors",
-            "amount": 8785000
-          },
-          {
-            "player": 39885,
-            "from": null,
-            "to": "Josisi mourinho",
-            "amount": 2770000
-          },
-          {
-            "player": 35055,
-            "from": null,
-            "to": "Sors",
-            "amount": 4568000
-          },
-          {
-            "player": 163,
-            "from": null,
-            "to": "Kingsquare",
-            "amount": 2850000
-          },
-          {
-            "player": 21033,
-            "from": null,
-            "to": "Sors",
-            "amount": 165000
-          },
-          {
-            "player": 30789,
-            "from": null,
-            "to": "Sors",
-            "amount": 8415000
-          },
-          {
-            "player": 37724,
-            "from": null,
-            "to": "Avaricius Jr.",
-            "amount": 350000
-          },
-          {
-            "player": 42605,
-            "from": null,
-            "to": "Puro Llorente",
-            "amount": 150000
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1795043274,
-        "content": [
-          {
-            "player": 25777,
-            "from": "Vicentine Zidane",
-            "to": null,
-            "amount": 2339000
-          },
-          {
-            "player": 35706,
-            "from": "Vicentine Zidane",
-            "to": null,
-            "amount": 6030200
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1795023977,
-        "content": [
-          {
-            "type": "clause",
-            "player": 27591,
-            "from": "Raphontino",
-            "to": "Cardonistas",
-            "amount": 2226626
-          }
-        ]
-      },
-      {
-        "type": "clauseIncrement",
-        "date": 1795003533,
-        "content": [
-          {
-            "player": 33839,
-            "from": null,
-            "to": null,
-            "amount": 100000
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1795003391,
-        "content": [
-          {
-            "type": "clause",
-            "player": 17148,
-            "from": "Cardonistas",
-            "to": "Sergchenko",
-            "amount": 1137500
-          },
-          {
-            "type": "clause",
-            "player": 29185,
-            "from": "Josisi mourinho",
-            "to": "Sergchenko",
-            "amount": 1024400
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1794986167,
-        "content": [
-          {
-            "player": 37817,
-            "from": "Raphontino",
-            "to": null,
-            "amount": 260900
-          },
-          {
-            "player": 6871,
-            "from": "Raphontino",
-            "to": null,
-            "amount": 151400
-          }
-        ]
-      },
-      {
-        "type": "market",
-        "date": 1794981869,
-        "content": [
-          {
-            "player": 34717,
-            "from": null,
-            "to": "CucuDaris",
-            "amount": 711210
-          },
-          {
-            "player": 16889,
-            "from": null,
-            "to": "Sors",
-            "amount": 3565000
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1794931830,
-        "content": [
-          {
-            "player": 33971,
-            "from": "Sergchenko",
-            "to": null,
-            "amount": 1135300
-          }
-        ]
-      },
-      {
-        "type": "clauseIncrement",
-        "date": 1794919273,
-        "content": [
-          {
-            "player": 4245,
-            "from": null,
-            "to": null,
-            "amount": 80000
-          }
-        ]
-      },
-      {
-        "type": "clauseIncrement",
-        "date": 1794915400,
-        "content": [
-          {
-            "player": 26592,
-            "from": null,
-            "to": null,
-            "amount": 54000
-          },
-          {
-            "player": 1462,
-            "from": null,
-            "to": null,
-            "amount": 65000
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1794913178,
-        "content": [
-          {
-            "player": 42605,
-            "from": "Danilo Stars",
-            "to": null,
-            "amount": 154300
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1794913163,
-        "content": [
-          {
-            "type": "clause",
-            "player": 42277,
-            "from": "Kingsquare",
-            "to": "Danilo Stars",
-            "amount": 195013
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1794898358,
-        "content": [
-          {
-            "type": "clause",
-            "player": 25815,
-            "from": "Josisi mourinho",
-            "to": "Cardonistas",
-            "amount": 1589321
-          },
-          {
-            "type": "clause",
-            "player": 43458,
-            "from": "Vicentine Zidane",
-            "to": "Cardonistas",
-            "amount": 2257000
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1794896356,
-        "content": [
-          {
-            "player": 36538,
-            "from": "Raphontino",
-            "to": null,
-            "amount": 224500
-          },
-          {
-            "player": 41713,
-            "from": "Raphontino",
-            "to": null,
-            "amount": 156900
-          }
-        ]
-      },
-      {
-        "type": "market",
-        "date": 1794895637,
-        "content": [
-          {
-            "player": 41031,
-            "from": null,
-            "to": "AnceLuni",
-            "amount": 2312761
-          },
-          {
-            "player": 19141,
-            "from": null,
-            "to": "Avaricius Jr.",
-            "amount": 1750000
-          },
-          {
-            "player": 42412,
-            "from": null,
-            "to": "Vicentine Zidane",
-            "amount": 361070
-          },
-          {
-            "player": 41261,
-            "from": null,
-            "to": "Raphontino",
-            "amount": 160000
-          },
-          {
-            "player": 15642,
-            "from": null,
-            "to": "Raphontino",
-            "amount": 150000
-          },
-          {
-            "player": 41265,
-            "from": null,
-            "to": "Raphontino",
-            "amount": 150000
-          }
-        ]
-      },
-      {
-        "type": "clauseIncrement",
-        "date": 1794845987,
-        "content": [
-          {
-            "player": 42425,
-            "from": null,
-            "to": null,
-            "amount": 50000
-          },
-          {
-            "player": 26592,
-            "from": null,
-            "to": null,
-            "amount": 156000
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1794838785,
-        "content": [
-          {
-            "player": 35344,
-            "from": "Danilo Stars",
-            "to": "Kingsquare",
-            "amount": 3600000
-          }
-        ]
-      },
-      {
-        "type": "clauseIncrement",
-        "date": 1794826878,
-        "content": [
-          {
-            "player": 27591,
-            "from": null,
-            "to": null,
-            "amount": 87000
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1794809688,
-        "content": [
-          {
-            "player": 38144,
-            "from": "Raphontino",
-            "to": null,
-            "amount": 156700
-          }
-        ]
-      },
-      {
-        "type": "market",
-        "date": 1794809008,
-        "content": [
-          {
-            "player": 43185,
-            "from": null,
-            "to": "Raphontino",
-            "amount": 2100010
-          },
-          {
-            "player": 37817,
-            "from": null,
-            "to": "Raphontino",
-            "amount": 260000
-          }
-        ]
-      },
-      {
-        "type": "transfer",
-        "date": 1794730333,
-        "content": [
-          {
-            "player": 26077,
-            "from": "Avaricius Jr.",
-            "to": null,
-            "amount": 1914000
-          }
-        ]
       }
     ]
   },
@@ -6877,8 +6836,8 @@
         11
       ],
       "points": 52,
-      "price": 5870000,
-      "priceIncrement": 20000,
+      "price": 5950000,
+      "priceIncrement": 40000,
       "playedHome": 4,
       "playedAway": 6,
       "pointsHome": 24,
@@ -6899,8 +6858,8 @@
         11
       ],
       "points": 58,
-      "price": 2750000,
-      "priceIncrement": 50000,
+      "price": 2870000,
+      "priceIncrement": 60000,
       "playedHome": 6,
       "playedAway": 5,
       "pointsHome": 31,
@@ -6922,7 +6881,7 @@
       ],
       "points": 15,
       "price": 750000,
-      "priceIncrement": -10000,
+      "priceIncrement": 0,
       "playedHome": 3,
       "playedAway": 3,
       "pointsHome": 9,
@@ -6943,8 +6902,8 @@
         4
       ],
       "points": 43,
-      "price": 2640000,
-      "priceIncrement": 0,
+      "price": 2650000,
+      "priceIncrement": 10000,
       "playedHome": 6,
       "playedAway": 4,
       "pointsHome": 23,
@@ -6965,8 +6924,8 @@
         13
       ],
       "points": 77,
-      "price": 12790000,
-      "priceIncrement": 60000,
+      "price": 12920000,
+      "priceIncrement": 50000,
       "playedHome": 6,
       "playedAway": 4,
       "pointsHome": 37,
@@ -7009,8 +6968,8 @@
         11
       ],
       "points": 76,
-      "price": 6330000,
-      "priceIncrement": 20000,
+      "price": 6410000,
+      "priceIncrement": 40000,
       "playedHome": 7,
       "playedAway": 5,
       "pointsHome": 36,
@@ -7031,8 +6990,8 @@
         "injured"
       ],
       "points": 60,
-      "price": 3860000,
-      "priceIncrement": 50000,
+      "price": 3970000,
+      "priceIncrement": 60000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 34,
@@ -7053,8 +7012,8 @@
         null
       ],
       "points": 70,
-      "price": 12410000,
-      "priceIncrement": 100000,
+      "price": 12560000,
+      "priceIncrement": 50000,
       "playedHome": 5,
       "playedAway": 7,
       "pointsHome": 39,
@@ -7075,8 +7034,8 @@
         5
       ],
       "points": 50,
-      "price": 2900000,
-      "priceIncrement": 130000,
+      "price": 3090000,
+      "priceIncrement": 70000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 26,
@@ -7119,8 +7078,8 @@
         8
       ],
       "points": 49,
-      "price": 2810000,
-      "priceIncrement": -30000,
+      "price": 2780000,
+      "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 29,
@@ -7141,7 +7100,7 @@
         5
       ],
       "points": 47,
-      "price": 2250000,
+      "price": 2370000,
       "priceIncrement": 60000,
       "playedHome": 7,
       "playedAway": 5,
@@ -7163,8 +7122,8 @@
         -1
       ],
       "points": 43,
-      "price": 4220000,
-      "priceIncrement": -40000,
+      "price": 4160000,
+      "priceIncrement": -30000,
       "playedHome": 6,
       "playedAway": 5,
       "pointsHome": 29,
@@ -7185,8 +7144,8 @@
         4
       ],
       "points": 47,
-      "price": 2940000,
-      "priceIncrement": -30000,
+      "price": 2910000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 7,
       "pointsHome": 19,
@@ -7207,7 +7166,7 @@
         1
       ],
       "points": 20,
-      "price": 870000,
+      "price": 850000,
       "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 2,
@@ -7229,7 +7188,7 @@
         3
       ],
       "points": 37,
-      "price": 1040000,
+      "price": 900000,
       "priceIncrement": -60000,
       "playedHome": 5,
       "playedAway": 6,
@@ -7251,7 +7210,7 @@
         2
       ],
       "points": 43,
-      "price": 2430000,
+      "price": 2450000,
       "priceIncrement": 10000,
       "playedHome": 6,
       "playedAway": 6,
@@ -7273,13 +7232,35 @@
         8
       ],
       "points": 59,
-      "price": 3530000,
-      "priceIncrement": 30000,
+      "price": 3580000,
+      "priceIncrement": 20000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 25,
       "pointsAway": 34,
       "pointsLastSeason": 131
+    },
+    "1780": {
+      "id": 1780,
+      "name": "Foulquier",
+      "teamID": 18,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        "doubt",
+        null,
+        "doubt",
+        "doubt"
+      ],
+      "points": 0,
+      "price": 150000,
+      "priceIncrement": 0,
+      "playedHome": 0,
+      "playedAway": 0,
+      "pointsHome": 0,
+      "pointsAway": 0,
+      "pointsLastSeason": 26
     },
     "1844": {
       "id": 1844,
@@ -7295,8 +7276,8 @@
         3
       ],
       "points": 29,
-      "price": 1320000,
-      "priceIncrement": 10000,
+      "price": 1370000,
+      "priceIncrement": 30000,
       "playedHome": 6,
       "playedAway": 4,
       "pointsHome": 12,
@@ -7317,8 +7298,8 @@
         3
       ],
       "points": 42,
-      "price": 930000,
-      "priceIncrement": 20000,
+      "price": 990000,
+      "priceIncrement": 30000,
       "playedHome": 7,
       "playedAway": 4,
       "pointsHome": 32,
@@ -7339,8 +7320,8 @@
         7
       ],
       "points": 65,
-      "price": 4520000,
-      "priceIncrement": 0,
+      "price": 4470000,
+      "priceIncrement": -30000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 33,
@@ -7361,8 +7342,8 @@
         3
       ],
       "points": 43,
-      "price": 2630000,
-      "priceIncrement": -10000,
+      "price": 2650000,
+      "priceIncrement": 20000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 25,
@@ -7383,7 +7364,7 @@
         5
       ],
       "points": 63,
-      "price": 3420000,
+      "price": 3470000,
       "priceIncrement": 20000,
       "playedHome": 6,
       "playedAway": 6,
@@ -7405,7 +7386,7 @@
         2
       ],
       "points": 53,
-      "price": 4490000,
+      "price": 4570000,
       "priceIncrement": 50000,
       "playedHome": 7,
       "playedAway": 5,
@@ -7427,8 +7408,8 @@
         1
       ],
       "points": 34,
-      "price": 2780000,
-      "priceIncrement": -30000,
+      "price": 2710000,
+      "priceIncrement": -40000,
       "playedHome": 4,
       "playedAway": 4,
       "pointsHome": 13,
@@ -7449,8 +7430,8 @@
         7
       ],
       "points": 67,
-      "price": 2860000,
-      "priceIncrement": -30000,
+      "price": 2820000,
+      "priceIncrement": -20000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 20,
@@ -7471,8 +7452,8 @@
         3
       ],
       "points": 42,
-      "price": 2790000,
-      "priceIncrement": -30000,
+      "price": 2750000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 23,
@@ -7493,7 +7474,7 @@
         null
       ],
       "points": 28,
-      "price": 1550000,
+      "price": 1490000,
       "priceIncrement": -30000,
       "playedHome": 3,
       "playedAway": 1,
@@ -7506,7 +7487,7 @@
       "name": "Mandi",
       "teamID": 10,
       "position": 2,
-      "status": "ok",
+      "status": "warned",
       "fitness": [
         4,
         8,
@@ -7515,8 +7496,8 @@
         3
       ],
       "points": 44,
-      "price": 1440000,
-      "priceIncrement": 10000,
+      "price": 1490000,
+      "priceIncrement": 20000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 17,
@@ -7537,8 +7518,8 @@
         4
       ],
       "points": 63,
-      "price": 6070000,
-      "priceIncrement": 30000,
+      "price": 6170000,
+      "priceIncrement": 60000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 27,
@@ -7559,7 +7540,7 @@
         4
       ],
       "points": 51,
-      "price": 1750000,
+      "price": 1690000,
       "priceIncrement": -30000,
       "playedHome": 6,
       "playedAway": 5,
@@ -7581,8 +7562,8 @@
         18
       ],
       "points": 68,
-      "price": 10210000,
-      "priceIncrement": 60000,
+      "price": 10360000,
+      "priceIncrement": 70000,
       "playedHome": 5,
       "playedAway": 7,
       "pointsHome": 23,
@@ -7603,8 +7584,8 @@
         9
       ],
       "points": 43,
-      "price": 2010000,
-      "priceIncrement": -30000,
+      "price": 1960000,
+      "priceIncrement": -20000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 34,
@@ -7625,7 +7606,7 @@
         null
       ],
       "points": 21,
-      "price": 490000,
+      "price": 470000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 5,
@@ -7647,8 +7628,8 @@
         11
       ],
       "points": 30,
-      "price": 840000,
-      "priceIncrement": 0,
+      "price": 870000,
+      "priceIncrement": 20000,
       "playedHome": 5,
       "playedAway": 4,
       "pointsHome": 19,
@@ -7660,7 +7641,7 @@
       "name": "Andrés Martín",
       "teamID": 812,
       "position": 4,
-      "status": "doubt",
+      "status": "injured",
       "fitness": [
         "doubt",
         "injured",
@@ -7669,8 +7650,8 @@
         0
       ],
       "points": 19,
-      "price": 1540000,
-      "priceIncrement": -10000,
+      "price": 1510000,
+      "priceIncrement": -20000,
       "playedHome": 4,
       "playedAway": 2,
       "pointsHome": 19,
@@ -7691,8 +7672,8 @@
         1
       ],
       "points": 43,
-      "price": 3750000,
-      "priceIncrement": -30000,
+      "price": 3700000,
+      "priceIncrement": -20000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 23,
@@ -7713,8 +7694,8 @@
         null
       ],
       "points": 52,
-      "price": 3180000,
-      "priceIncrement": 10000,
+      "price": 3220000,
+      "priceIncrement": 20000,
       "playedHome": 4,
       "playedAway": 6,
       "pointsHome": 23,
@@ -7735,7 +7716,7 @@
         0
       ],
       "points": 21,
-      "price": 810000,
+      "price": 790000,
       "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 5,
@@ -7757,7 +7738,7 @@
         1
       ],
       "points": 17,
-      "price": 610000,
+      "price": 590000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 4,
@@ -7779,35 +7760,13 @@
         6
       ],
       "points": 56,
-      "price": 5070000,
+      "price": 5040000,
       "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 7,
       "pointsHome": 19,
       "pointsAway": 37,
       "pointsLastSeason": 147
-    },
-    "6871": {
-      "id": 6871,
-      "name": "Odriozola",
-      "teamID": 13,
-      "position": 2,
-      "status": "injured",
-      "fitness": [
-        "injured",
-        "injured",
-        "injured",
-        "injured",
-        "injured"
-      ],
-      "points": 0,
-      "price": 150000,
-      "priceIncrement": 0,
-      "playedHome": 0,
-      "playedAway": 0,
-      "pointsHome": 0,
-      "pointsAway": 0,
-      "pointsLastSeason": 29
     },
     "7003": {
       "id": 7003,
@@ -7823,8 +7782,8 @@
         7
       ],
       "points": 58,
-      "price": 2990000,
-      "priceIncrement": -40000,
+      "price": 2930000,
+      "priceIncrement": -30000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 28,
@@ -7845,8 +7804,8 @@
         15
       ],
       "points": 87,
-      "price": 19050000,
-      "priceIncrement": -30000,
+      "price": 18910000,
+      "priceIncrement": -100000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 42,
@@ -7867,8 +7826,8 @@
         2
       ],
       "points": 51,
-      "price": 2310000,
-      "priceIncrement": -20000,
+      "price": 2290000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 27,
@@ -7889,8 +7848,8 @@
         4
       ],
       "points": 45,
-      "price": 2410000,
-      "priceIncrement": -50000,
+      "price": 2360000,
+      "priceIncrement": -20000,
       "playedHome": 7,
       "playedAway": 5,
       "pointsHome": 34,
@@ -7911,8 +7870,8 @@
         3
       ],
       "points": 29,
-      "price": 1530000,
-      "priceIncrement": -10000,
+      "price": 1540000,
+      "priceIncrement": 10000,
       "playedHome": 5,
       "playedAway": 7,
       "pointsHome": 16,
@@ -7933,8 +7892,8 @@
         1
       ],
       "points": 63,
-      "price": 3220000,
-      "priceIncrement": -40000,
+      "price": 3150000,
+      "priceIncrement": -30000,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 34,
@@ -7955,8 +7914,8 @@
         -7
       ],
       "points": 18,
-      "price": 900000,
-      "priceIncrement": -60000,
+      "price": 870000,
+      "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 5,
       "pointsHome": 10,
@@ -7977,8 +7936,8 @@
         7
       ],
       "points": 24,
-      "price": 930000,
-      "priceIncrement": 0,
+      "price": 960000,
+      "priceIncrement": 20000,
       "playedHome": 7,
       "playedAway": 5,
       "pointsHome": 14,
@@ -8022,7 +7981,7 @@
       ],
       "points": 17,
       "price": 340000,
-      "priceIncrement": -10000,
+      "priceIncrement": 0,
       "playedHome": 4,
       "playedAway": 4,
       "pointsHome": 6,
@@ -8043,8 +8002,8 @@
         5
       ],
       "points": 44,
-      "price": 4650000,
-      "priceIncrement": 60000,
+      "price": 4820000,
+      "priceIncrement": 90000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 21,
@@ -8065,7 +8024,7 @@
         3
       ],
       "points": 50,
-      "price": 1910000,
+      "price": 1950000,
       "priceIncrement": 20000,
       "playedHome": 7,
       "playedAway": 6,
@@ -8087,8 +8046,8 @@
         13
       ],
       "points": 54,
-      "price": 3760000,
-      "priceIncrement": 50000,
+      "price": 3880000,
+      "priceIncrement": 60000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 20,
@@ -8100,7 +8059,7 @@
       "name": "Calero",
       "teamID": 65,
       "position": 2,
-      "status": "doubt",
+      "status": "ok",
       "fitness": [
         "doubt",
         2,
@@ -8109,7 +8068,7 @@
         2
       ],
       "points": 10,
-      "price": 490000,
+      "price": 470000,
       "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 1,
@@ -8131,8 +8090,8 @@
         8
       ],
       "points": 55,
-      "price": 4350000,
-      "priceIncrement": -220000,
+      "price": 3850000,
+      "priceIncrement": -240000,
       "playedHome": 4,
       "playedAway": 5,
       "pointsHome": 27,
@@ -8153,8 +8112,8 @@
         3
       ],
       "points": 24,
-      "price": 800000,
-      "priceIncrement": -10000,
+      "price": 790000,
+      "priceIncrement": 0,
       "playedHome": 2,
       "playedAway": 4,
       "pointsHome": 8,
@@ -8175,7 +8134,7 @@
         4
       ],
       "points": 68,
-      "price": 3060000,
+      "price": 3100000,
       "priceIncrement": 20000,
       "playedHome": 7,
       "playedAway": 6,
@@ -8197,7 +8156,7 @@
         5
       ],
       "points": 53,
-      "price": 4540000,
+      "price": 4630000,
       "priceIncrement": 50000,
       "playedHome": 4,
       "playedAway": 6,
@@ -8219,7 +8178,7 @@
         7
       ],
       "points": 50,
-      "price": 3730000,
+      "price": 3770000,
       "priceIncrement": 20000,
       "playedHome": 7,
       "playedAway": 6,
@@ -8241,8 +8200,8 @@
         1
       ],
       "points": 47,
-      "price": 2070000,
-      "priceIncrement": -20000,
+      "price": 2040000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 5,
       "pointsHome": 33,
@@ -8263,7 +8222,7 @@
         6
       ],
       "points": 78,
-      "price": 4640000,
+      "price": 4720000,
       "priceIncrement": 40000,
       "playedHome": 6,
       "playedAway": 6,
@@ -8285,8 +8244,8 @@
         3
       ],
       "points": 44,
-      "price": 1400000,
-      "priceIncrement": 30000,
+      "price": 1500000,
+      "priceIncrement": 60000,
       "playedHome": 4,
       "playedAway": 7,
       "pointsHome": 14,
@@ -8307,8 +8266,8 @@
         6
       ],
       "points": 34,
-      "price": 940000,
-      "priceIncrement": 0,
+      "price": 980000,
+      "priceIncrement": 30000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 15,
@@ -8329,7 +8288,7 @@
         -1
       ],
       "points": 56,
-      "price": 2580000,
+      "price": 2620000,
       "priceIncrement": 20000,
       "playedHome": 6,
       "playedAway": 7,
@@ -8351,8 +8310,8 @@
         4
       ],
       "points": 51,
-      "price": 2170000,
-      "priceIncrement": -30000,
+      "price": 2130000,
+      "priceIncrement": -20000,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 30,
@@ -8395,8 +8354,8 @@
         17
       ],
       "points": 76,
-      "price": 4330000,
-      "priceIncrement": -50000,
+      "price": 4260000,
+      "priceIncrement": -40000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 54,
@@ -8417,8 +8376,8 @@
         1
       ],
       "points": 48,
-      "price": 7210000,
-      "priceIncrement": 30000,
+      "price": 7280000,
+      "priceIncrement": 40000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 20,
@@ -8439,35 +8398,13 @@
         "sanctioned"
       ],
       "points": 32,
-      "price": 12240000,
-      "priceIncrement": 170000,
+      "price": 12610000,
+      "priceIncrement": 190000,
       "playedHome": 5,
       "playedAway": 4,
       "pointsHome": 25,
       "pointsAway": 7,
       "pointsLastSeason": 263
-    },
-    "15642": {
-      "id": 15642,
-      "name": "Lobete",
-      "teamID": 65,
-      "position": 4,
-      "status": "injured",
-      "fitness": [
-        "injured",
-        "injured",
-        "injured",
-        "injured",
-        "injured"
-      ],
-      "points": 4,
-      "price": 150000,
-      "priceIncrement": 0,
-      "playedHome": 1,
-      "playedAway": 0,
-      "pointsHome": 4,
-      "pointsAway": 0,
-      "pointsLastSeason": null
     },
     "15828": {
       "id": 15828,
@@ -8483,8 +8420,8 @@
         7
       ],
       "points": 49,
-      "price": 5990000,
-      "priceIncrement": -60000,
+      "price": 5860000,
+      "priceIncrement": -70000,
       "playedHome": 2,
       "playedAway": 4,
       "pointsHome": 16,
@@ -8505,7 +8442,7 @@
         2
       ],
       "points": 9,
-      "price": 1250000,
+      "price": 1230000,
       "priceIncrement": -10000,
       "playedHome": 1,
       "playedAway": 3,
@@ -8527,7 +8464,7 @@
         5
       ],
       "points": 25,
-      "price": 750000,
+      "price": 730000,
       "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 3,
@@ -8549,8 +8486,8 @@
         2
       ],
       "points": 45,
-      "price": 2820000,
-      "priceIncrement": -60000,
+      "price": 2750000,
+      "priceIncrement": -30000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 27,
@@ -8571,8 +8508,8 @@
         "injured"
       ],
       "points": 35,
-      "price": 3990000,
-      "priceIncrement": 20000,
+      "price": 4040000,
+      "priceIncrement": 30000,
       "playedHome": 6,
       "playedAway": 3,
       "pointsHome": 25,
@@ -8593,8 +8530,8 @@
         3
       ],
       "points": 30,
-      "price": 610000,
-      "priceIncrement": -20000,
+      "price": 590000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 18,
@@ -8615,8 +8552,8 @@
         3
       ],
       "points": 26,
-      "price": 540000,
-      "priceIncrement": 20000,
+      "price": 610000,
+      "priceIncrement": 40000,
       "playedHome": 4,
       "playedAway": 5,
       "pointsHome": 11,
@@ -8659,8 +8596,8 @@
         "injured"
       ],
       "points": 35,
-      "price": 1120000,
-      "priceIncrement": -30000,
+      "price": 1070000,
+      "priceIncrement": -20000,
       "playedHome": 5,
       "playedAway": 4,
       "pointsHome": 15,
@@ -8703,8 +8640,8 @@
         3
       ],
       "points": 34,
-      "price": 1390000,
-      "priceIncrement": 0,
+      "price": 1400000,
+      "priceIncrement": 10000,
       "playedHome": 5,
       "playedAway": 4,
       "pointsHome": 17,
@@ -8725,8 +8662,8 @@
         12
       ],
       "points": 59,
-      "price": 3790000,
-      "priceIncrement": 0,
+      "price": 3780000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 22,
@@ -8747,8 +8684,8 @@
         null
       ],
       "points": 35,
-      "price": 1190000,
-      "priceIncrement": 0,
+      "price": 1200000,
+      "priceIncrement": 10000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 15,
@@ -8769,8 +8706,8 @@
         4
       ],
       "points": 43,
-      "price": 2130000,
-      "priceIncrement": -130000,
+      "price": 2030000,
+      "priceIncrement": -40000,
       "playedHome": 7,
       "playedAway": 5,
       "pointsHome": 33,
@@ -8791,8 +8728,8 @@
         6
       ],
       "points": 70,
-      "price": 4380000,
-      "priceIncrement": -30000,
+      "price": 4350000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 44,
@@ -8813,7 +8750,7 @@
         3
       ],
       "points": 38,
-      "price": 920000,
+      "price": 900000,
       "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 4,
@@ -8857,7 +8794,7 @@
         0
       ],
       "points": 36,
-      "price": 690000,
+      "price": 670000,
       "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 6,
@@ -8879,7 +8816,7 @@
         6
       ],
       "points": 45,
-      "price": 4190000,
+      "price": 4270000,
       "priceIncrement": 40000,
       "playedHome": 5,
       "playedAway": 5,
@@ -8923,8 +8860,8 @@
         5
       ],
       "points": 33,
-      "price": 2770000,
-      "priceIncrement": 40000,
+      "price": 2840000,
+      "priceIncrement": 30000,
       "playedHome": 4,
       "playedAway": 3,
       "pointsHome": 18,
@@ -8945,8 +8882,8 @@
         "injured"
       ],
       "points": 11,
-      "price": 1650000,
-      "priceIncrement": 10000,
+      "price": 1660000,
+      "priceIncrement": 0,
       "playedHome": 1,
       "playedAway": 2,
       "pointsHome": 3,
@@ -8967,8 +8904,8 @@
         7
       ],
       "points": 52,
-      "price": 2210000,
-      "priceIncrement": -10000,
+      "price": 2180000,
+      "priceIncrement": -20000,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 24,
@@ -8989,8 +8926,8 @@
         5
       ],
       "points": 48,
-      "price": 2130000,
-      "priceIncrement": 30000,
+      "price": 2200000,
+      "priceIncrement": 40000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 21,
@@ -9011,8 +8948,8 @@
         6
       ],
       "points": 93,
-      "price": 16080000,
-      "priceIncrement": 60000,
+      "price": 16240000,
+      "priceIncrement": 70000,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 52,
@@ -9033,8 +8970,8 @@
         3
       ],
       "points": 32,
-      "price": 690000,
-      "priceIncrement": -10000,
+      "price": 680000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 4,
       "pointsHome": 20,
@@ -9055,8 +8992,8 @@
         14
       ],
       "points": 105,
-      "price": 13430000,
-      "priceIncrement": 70000,
+      "price": 13560000,
+      "priceIncrement": 50000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 35,
@@ -9077,7 +9014,7 @@
         17
       ],
       "points": 134,
-      "price": 26320000,
+      "price": 26380000,
       "priceIncrement": 30000,
       "playedHome": 6,
       "playedAway": 7,
@@ -9099,8 +9036,8 @@
         null
       ],
       "points": 70,
-      "price": 5950000,
-      "priceIncrement": 20000,
+      "price": 6010000,
+      "priceIncrement": 30000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 30,
@@ -9134,7 +9071,7 @@
       "name": "Expósito",
       "teamID": 7,
       "position": 3,
-      "status": "doubt",
+      "status": "ok",
       "fitness": [
         "injured",
         4,
@@ -9143,8 +9080,8 @@
         3
       ],
       "points": 66,
-      "price": 4800000,
-      "priceIncrement": -70000,
+      "price": 4760000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 30,
@@ -9165,8 +9102,8 @@
         5
       ],
       "points": 65,
-      "price": 5570000,
-      "priceIncrement": -60000,
+      "price": 5460000,
+      "priceIncrement": -50000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 21,
@@ -9195,6 +9132,28 @@
       "pointsAway": 2,
       "pointsLastSeason": 5
     },
+    "21084": {
+      "id": 21084,
+      "name": "Ilaix Moriba",
+      "teamID": 5,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        6,
+        4,
+        -2,
+        6,
+        2
+      ],
+      "points": 51,
+      "price": 2620000,
+      "priceIncrement": 40000,
+      "playedHome": 7,
+      "playedAway": 6,
+      "pointsHome": 33,
+      "pointsAway": 18,
+      "pointsLastSeason": 155
+    },
     "21132": {
       "id": 21132,
       "name": "Fer Niño",
@@ -9209,8 +9168,8 @@
         3
       ],
       "points": 75,
-      "price": 4860000,
-      "priceIncrement": -80000,
+      "price": 4760000,
+      "priceIncrement": -50000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 31,
@@ -9231,8 +9190,8 @@
         3
       ],
       "points": 40,
-      "price": 1010000,
-      "priceIncrement": -10000,
+      "price": 1000000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 17,
@@ -9253,7 +9212,7 @@
         null
       ],
       "points": 19,
-      "price": 750000,
+      "price": 730000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 5,
@@ -9275,7 +9234,7 @@
         5
       ],
       "points": 27,
-      "price": 1810000,
+      "price": 1770000,
       "priceIncrement": -20000,
       "playedHome": 1,
       "playedAway": 5,
@@ -9341,8 +9300,8 @@
         null
       ],
       "points": 9,
-      "price": 870000,
-      "priceIncrement": -40000,
+      "price": 830000,
+      "priceIncrement": -20000,
       "playedHome": 1,
       "playedAway": 1,
       "pointsHome": 8,
@@ -9363,8 +9322,8 @@
         4
       ],
       "points": 40,
-      "price": 2000000,
-      "priceIncrement": 30000,
+      "price": 2070000,
+      "priceIncrement": 40000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 20,
@@ -9385,8 +9344,8 @@
         6
       ],
       "points": 60,
-      "price": 4540000,
-      "priceIncrement": -100000,
+      "price": 4410000,
+      "priceIncrement": -60000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 29,
@@ -9407,8 +9366,8 @@
         4
       ],
       "points": 47,
-      "price": 1990000,
-      "priceIncrement": -20000,
+      "price": 1960000,
+      "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 5,
       "pointsHome": 23,
@@ -9429,8 +9388,8 @@
         null
       ],
       "points": 33,
-      "price": 850000,
-      "priceIncrement": -10000,
+      "price": 840000,
+      "priceIncrement": 0,
       "playedHome": 4,
       "playedAway": 4,
       "pointsHome": 22,
@@ -9451,13 +9410,35 @@
         11
       ],
       "points": 66,
-      "price": 12690000,
-      "priceIncrement": -200000,
+      "price": 12410000,
+      "priceIncrement": -150000,
       "playedHome": 4,
       "playedAway": 6,
       "pointsHome": 38,
       "pointsAway": 28,
       "pointsLastSeason": 211
+    },
+    "25322": {
+      "id": 25322,
+      "name": "Javi Hernández",
+      "teamID": 7,
+      "position": 3,
+      "status": "ok",
+      "fitness": [
+        2,
+        3,
+        5,
+        5,
+        4
+      ],
+      "points": 51,
+      "price": 2490000,
+      "priceIncrement": -20000,
+      "playedHome": 6,
+      "playedAway": 7,
+      "pointsHome": 24,
+      "pointsAway": 27,
+      "pointsLastSeason": null
     },
     "25327": {
       "id": 25327,
@@ -9495,7 +9476,7 @@
         1
       ],
       "points": 48,
-      "price": 1920000,
+      "price": 1880000,
       "priceIncrement": -20000,
       "playedHome": 5,
       "playedAway": 7,
@@ -9517,8 +9498,8 @@
         5
       ],
       "points": 38,
-      "price": 1790000,
-      "priceIncrement": -20000,
+      "price": 1770000,
+      "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 6,
       "pointsHome": 20,
@@ -9539,8 +9520,8 @@
         2
       ],
       "points": 56,
-      "price": 2120000,
-      "priceIncrement": -30000,
+      "price": 2080000,
+      "priceIncrement": -20000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 24,
@@ -9561,8 +9542,8 @@
         3
       ],
       "points": 44,
-      "price": 1050000,
-      "priceIncrement": 0,
+      "price": 1060000,
+      "priceIncrement": 10000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 13,
@@ -9583,35 +9564,13 @@
         5
       ],
       "points": 40,
-      "price": 5750000,
+      "price": 5800000,
       "priceIncrement": 20000,
       "playedHome": 3,
       "playedAway": 5,
       "pointsHome": 14,
       "pointsAway": 26,
       "pointsLastSeason": 178
-    },
-    "26077": {
-      "id": 26077,
-      "name": "Sadiq",
-      "teamID": 18,
-      "position": 4,
-      "status": "ok",
-      "fitness": [
-        -1,
-        0,
-        11,
-        "doubt",
-        "injured"
-      ],
-      "points": 23,
-      "price": 1550000,
-      "priceIncrement": -30000,
-      "playedHome": 3,
-      "playedAway": 3,
-      "pointsHome": 3,
-      "pointsAway": 20,
-      "pointsLastSeason": 93
     },
     "26092": {
       "id": 26092,
@@ -9627,8 +9586,8 @@
         2
       ],
       "points": 56,
-      "price": 2690000,
-      "priceIncrement": -40000,
+      "price": 2640000,
+      "priceIncrement": -20000,
       "playedHome": 7,
       "playedAway": 5,
       "pointsHome": 37,
@@ -9649,8 +9608,8 @@
         null
       ],
       "points": 23,
-      "price": 660000,
-      "priceIncrement": 0,
+      "price": 670000,
+      "priceIncrement": 10000,
       "playedHome": 3,
       "playedAway": 6,
       "pointsHome": 4,
@@ -9662,7 +9621,7 @@
       "name": "Andrés García",
       "teamID": 8,
       "position": 2,
-      "status": "doubt",
+      "status": "ok",
       "fitness": [
         3,
         2,
@@ -9671,8 +9630,8 @@
         6
       ],
       "points": 46,
-      "price": 1610000,
-      "priceIncrement": -40000,
+      "price": 1600000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 33,
@@ -9693,13 +9652,35 @@
         15
       ],
       "points": 147,
-      "price": 26560000,
-      "priceIncrement": 20000,
+      "price": 26630000,
+      "priceIncrement": 30000,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 75,
       "pointsAway": 72,
       "pointsLastSeason": 266
+    },
+    "26276": {
+      "id": 26276,
+      "name": "Ratiu",
+      "teamID": 70,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        5,
+        4,
+        10,
+        "doubt",
+        "doubt"
+      ],
+      "points": 41,
+      "price": 3640000,
+      "priceIncrement": 20000,
+      "playedHome": 5,
+      "playedAway": 4,
+      "pointsHome": 32,
+      "pointsAway": 9,
+      "pointsLastSeason": 169
     },
     "26344": {
       "id": 26344,
@@ -9715,8 +9696,8 @@
         "injured"
       ],
       "points": 16,
-      "price": 650000,
-      "priceIncrement": 170000,
+      "price": 1020000,
+      "priceIncrement": 190000,
       "playedHome": 0,
       "playedAway": 1,
       "pointsHome": 0,
@@ -9737,8 +9718,8 @@
         3
       ],
       "points": 31,
-      "price": 800000,
-      "priceIncrement": -30000,
+      "price": 770000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 16,
@@ -9759,8 +9740,8 @@
         null
       ],
       "points": 36,
-      "price": 3050000,
-      "priceIncrement": -100000,
+      "price": 2940000,
+      "priceIncrement": -30000,
       "playedHome": 3,
       "playedAway": 6,
       "pointsHome": 19,
@@ -9781,8 +9762,8 @@
         7
       ],
       "points": 38,
-      "price": 1660000,
-      "priceIncrement": 70000,
+      "price": 1850000,
+      "priceIncrement": 100000,
       "playedHome": 6,
       "playedAway": 4,
       "pointsHome": 21,
@@ -9803,13 +9784,35 @@
         "injured"
       ],
       "points": 19,
-      "price": 1050000,
-      "priceIncrement": -30000,
+      "price": 1010000,
+      "priceIncrement": -20000,
       "playedHome": 2,
       "playedAway": 5,
       "pointsHome": 0,
       "pointsAway": 19,
       "pointsLastSeason": 36
+    },
+    "26813": {
+      "id": 26813,
+      "name": "Marcão",
+      "teamID": 17,
+      "position": 2,
+      "status": "doubt",
+      "fitness": [
+        "doubt",
+        "injured",
+        "injured",
+        "injured",
+        "injured"
+      ],
+      "points": 0,
+      "price": 150000,
+      "priceIncrement": 0,
+      "playedHome": 0,
+      "playedAway": 0,
+      "pointsHome": 0,
+      "pointsAway": 0,
+      "pointsLastSeason": 34
     },
     "26879": {
       "id": 26879,
@@ -9825,7 +9828,7 @@
         1
       ],
       "points": 33,
-      "price": 1020000,
+      "price": 1060000,
       "priceIncrement": 20000,
       "playedHome": 7,
       "playedAway": 5,
@@ -9847,8 +9850,8 @@
         5
       ],
       "points": 149,
-      "price": 24970000,
-      "priceIncrement": -90000,
+      "price": 24820000,
+      "priceIncrement": -120000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 82,
@@ -9869,8 +9872,8 @@
         "injured"
       ],
       "points": 13,
-      "price": 1700000,
-      "priceIncrement": 100000,
+      "price": 1960000,
+      "priceIncrement": 130000,
       "playedHome": 3,
       "playedAway": 1,
       "pointsHome": 12,
@@ -9891,7 +9894,7 @@
         4
       ],
       "points": 18,
-      "price": 760000,
+      "price": 740000,
       "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 4,
@@ -9913,8 +9916,8 @@
         2
       ],
       "points": 51,
-      "price": 2130000,
-      "priceIncrement": -20000,
+      "price": 2100000,
+      "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 3,
       "pointsHome": 38,
@@ -9935,8 +9938,8 @@
         2
       ],
       "points": 58,
-      "price": 3860000,
-      "priceIncrement": 30000,
+      "price": 3950000,
+      "priceIncrement": 50000,
       "playedHome": 5,
       "playedAway": 7,
       "pointsHome": 22,
@@ -9957,8 +9960,8 @@
         3
       ],
       "points": 70,
-      "price": 5140000,
-      "priceIncrement": 120000,
+      "price": 5380000,
+      "priceIncrement": 130000,
       "playedHome": 6,
       "playedAway": 5,
       "pointsHome": 41,
@@ -9979,8 +9982,8 @@
         7
       ],
       "points": 57,
-      "price": 8240000,
-      "priceIncrement": 60000,
+      "price": 8390000,
+      "priceIncrement": 80000,
       "playedHome": 4,
       "playedAway": 6,
       "pointsHome": 20,
@@ -10001,8 +10004,8 @@
         "injured"
       ],
       "points": 46,
-      "price": 950000,
-      "priceIncrement": 70000,
+      "price": 1090000,
+      "priceIncrement": 60000,
       "playedHome": 4,
       "playedAway": 6,
       "pointsHome": 28,
@@ -10023,7 +10026,7 @@
         3
       ],
       "points": 75,
-      "price": 6800000,
+      "price": 6930000,
       "priceIncrement": 60000,
       "playedHome": 5,
       "playedAway": 7,
@@ -10045,8 +10048,8 @@
         5
       ],
       "points": 51,
-      "price": 3090000,
-      "priceIncrement": 10000,
+      "price": 3120000,
+      "priceIncrement": 20000,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 20,
@@ -10067,8 +10070,8 @@
         "injured"
       ],
       "points": 10,
-      "price": 310000,
-      "priceIncrement": 0,
+      "price": 320000,
+      "priceIncrement": 10000,
       "playedHome": 2,
       "playedAway": 1,
       "pointsHome": 8,
@@ -10089,8 +10092,8 @@
         8
       ],
       "points": 55,
-      "price": 4390000,
-      "priceIncrement": 110000,
+      "price": 4630000,
+      "priceIncrement": 130000,
       "playedHome": 2,
       "playedAway": 4,
       "pointsHome": 16,
@@ -10111,8 +10114,8 @@
         7
       ],
       "points": 126,
-      "price": 20590000,
-      "priceIncrement": 100000,
+      "price": 20800000,
+      "priceIncrement": 90000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 68,
@@ -10133,8 +10136,8 @@
         5
       ],
       "points": 83,
-      "price": 6140000,
-      "priceIncrement": -60000,
+      "price": 6030000,
+      "priceIncrement": -50000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 37,
@@ -10155,7 +10158,7 @@
         7
       ],
       "points": 28,
-      "price": 1410000,
+      "price": 1390000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 4,
@@ -10177,8 +10180,8 @@
         4
       ],
       "points": 39,
-      "price": 2290000,
-      "priceIncrement": -60000,
+      "price": 2200000,
+      "priceIncrement": -40000,
       "playedHome": 4,
       "playedAway": 5,
       "pointsHome": 12,
@@ -10190,7 +10193,7 @@
       "name": "Benavidez",
       "teamID": 91,
       "position": 3,
-      "status": "ok",
+      "status": "injured",
       "fitness": [
         null,
         4,
@@ -10221,8 +10224,8 @@
         4
       ],
       "points": 78,
-      "price": 8730000,
-      "priceIncrement": 50000,
+      "price": 8870000,
+      "priceIncrement": 70000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 44,
@@ -10243,8 +10246,8 @@
         13
       ],
       "points": 116,
-      "price": 18980000,
-      "priceIncrement": 90000,
+      "price": 19130000,
+      "priceIncrement": 60000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 57,
@@ -10265,8 +10268,8 @@
         4
       ],
       "points": 52,
-      "price": 1820000,
-      "priceIncrement": -10000,
+      "price": 1810000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 32,
@@ -10287,8 +10290,8 @@
         7
       ],
       "points": 114,
-      "price": 16250000,
-      "priceIncrement": -180000,
+      "price": 15760000,
+      "priceIncrement": -280000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 46,
@@ -10331,8 +10334,8 @@
         "injured"
       ],
       "points": 41,
-      "price": 2390000,
-      "priceIncrement": 120000,
+      "price": 2700000,
+      "priceIncrement": 160000,
       "playedHome": 3,
       "playedAway": 5,
       "pointsHome": 18,
@@ -10353,8 +10356,8 @@
         2
       ],
       "points": 34,
-      "price": 1090000,
-      "priceIncrement": -10000,
+      "price": 1080000,
+      "priceIncrement": 0,
       "playedHome": 7,
       "playedAway": 4,
       "pointsHome": 31,
@@ -10375,8 +10378,8 @@
         5
       ],
       "points": 65,
-      "price": 4040000,
-      "priceIncrement": -20000,
+      "price": 3980000,
+      "priceIncrement": -30000,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 34,
@@ -10397,8 +10400,8 @@
         "sanctioned"
       ],
       "points": 48,
-      "price": 1750000,
-      "priceIncrement": -20000,
+      "price": 1730000,
+      "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 4,
       "pointsHome": 22,
@@ -10419,8 +10422,8 @@
         8
       ],
       "points": 18,
-      "price": 1210000,
-      "priceIncrement": -30000,
+      "price": 1180000,
+      "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 4,
       "pointsHome": 18,
@@ -10441,8 +10444,8 @@
         10
       ],
       "points": 56,
-      "price": 8110000,
-      "priceIncrement": 20000,
+      "price": 8160000,
+      "priceIncrement": 30000,
       "playedHome": 4,
       "playedAway": 5,
       "pointsHome": 22,
@@ -10507,8 +10510,8 @@
         6
       ],
       "points": 43,
-      "price": 3850000,
-      "priceIncrement": -170000,
+      "price": 3670000,
+      "priceIncrement": -70000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 33,
@@ -10529,7 +10532,7 @@
         4
       ],
       "points": 23,
-      "price": 1390000,
+      "price": 1430000,
       "priceIncrement": 20000,
       "playedHome": 4,
       "playedAway": 4,
@@ -10551,8 +10554,8 @@
         2
       ],
       "points": 28,
-      "price": 810000,
-      "priceIncrement": -40000,
+      "price": 780000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 4,
       "pointsHome": 17,
@@ -10573,7 +10576,7 @@
         17
       ],
       "points": 42,
-      "price": 2300000,
+      "price": 2360000,
       "priceIncrement": 30000,
       "playedHome": 5,
       "playedAway": 4,
@@ -10595,8 +10598,8 @@
         null
       ],
       "points": 16,
-      "price": 620000,
-      "priceIncrement": 30000,
+      "price": 700000,
+      "priceIncrement": 40000,
       "playedHome": 5,
       "playedAway": 2,
       "pointsHome": 14,
@@ -10639,8 +10642,8 @@
         3
       ],
       "points": 27,
-      "price": 1520000,
-      "priceIncrement": 60000,
+      "price": 1660000,
+      "priceIncrement": 70000,
       "playedHome": 3,
       "playedAway": 3,
       "pointsHome": 17,
@@ -10661,8 +10664,8 @@
         4
       ],
       "points": 26,
-      "price": 780000,
-      "priceIncrement": -20000,
+      "price": 760000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 20,
@@ -10683,8 +10686,8 @@
         2
       ],
       "points": 67,
-      "price": 4990000,
-      "priceIncrement": 60000,
+      "price": 5100000,
+      "priceIncrement": 50000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 40,
@@ -10705,8 +10708,8 @@
         null
       ],
       "points": 74,
-      "price": 6400000,
-      "priceIncrement": 70000,
+      "price": 6590000,
+      "priceIncrement": 100000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 23,
@@ -10727,7 +10730,7 @@
         3
       ],
       "points": 35,
-      "price": 940000,
+      "price": 920000,
       "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 6,
@@ -10749,8 +10752,8 @@
         15
       ],
       "points": 70,
-      "price": 9020000,
-      "priceIncrement": 140000,
+      "price": 9370000,
+      "priceIncrement": 180000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 32,
@@ -10771,8 +10774,8 @@
         5
       ],
       "points": 19,
-      "price": 470000,
-      "priceIncrement": -20000,
+      "price": 490000,
+      "priceIncrement": 20000,
       "playedHome": 3,
       "playedAway": 0,
       "pointsHome": 19,
@@ -10793,8 +10796,8 @@
         2
       ],
       "points": 32,
-      "price": 1580000,
-      "priceIncrement": -20000,
+      "price": 1550000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 19,
@@ -10815,8 +10818,8 @@
         10
       ],
       "points": 43,
-      "price": 4270000,
-      "priceIncrement": 10000,
+      "price": 4320000,
+      "priceIncrement": 20000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 33,
@@ -10837,8 +10840,8 @@
         3
       ],
       "points": 38,
-      "price": 2190000,
-      "priceIncrement": -40000,
+      "price": 2160000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 21,
@@ -10859,8 +10862,8 @@
         "injured"
       ],
       "points": 51,
-      "price": 3380000,
-      "priceIncrement": 90000,
+      "price": 3600000,
+      "priceIncrement": 120000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 20,
@@ -10881,7 +10884,7 @@
         1
       ],
       "points": 39,
-      "price": 1180000,
+      "price": 1220000,
       "priceIncrement": 20000,
       "playedHome": 6,
       "playedAway": 5,
@@ -10925,8 +10928,8 @@
         -1
       ],
       "points": 8,
-      "price": 1060000,
-      "priceIncrement": 0,
+      "price": 1070000,
+      "priceIncrement": 10000,
       "playedHome": 4,
       "playedAway": 2,
       "pointsHome": 7,
@@ -10947,8 +10950,8 @@
         10
       ],
       "points": 58,
-      "price": 6170000,
-      "priceIncrement": 0,
+      "price": 6050000,
+      "priceIncrement": -80000,
       "playedHome": 4,
       "playedAway": 5,
       "pointsHome": 25,
@@ -10969,8 +10972,8 @@
         2
       ],
       "points": 54,
-      "price": 2370000,
-      "priceIncrement": 0,
+      "price": 2400000,
+      "priceIncrement": 20000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 22,
@@ -11013,35 +11016,13 @@
         null
       ],
       "points": 57,
-      "price": 6160000,
-      "priceIncrement": 50000,
+      "price": 6280000,
+      "priceIncrement": 60000,
       "playedHome": 5,
       "playedAway": 7,
       "pointsHome": 28,
       "pointsAway": 29,
       "pointsLastSeason": 171
-    },
-    "36538": {
-      "id": 36538,
-      "name": "Beitia",
-      "teamID": 13,
-      "position": 2,
-      "status": "ok",
-      "fitness": [
-        null,
-        "doubt",
-        "injured",
-        "injured",
-        "injured"
-      ],
-      "points": 7,
-      "price": 220000,
-      "priceIncrement": 0,
-      "playedHome": 1,
-      "playedAway": 2,
-      "pointsHome": 2,
-      "pointsAway": 5,
-      "pointsLastSeason": 7
     },
     "36566": {
       "id": 36566,
@@ -11101,8 +11082,8 @@
         6
       ],
       "points": 55,
-      "price": 3210000,
-      "priceIncrement": 40000,
+      "price": 3330000,
+      "priceIncrement": 60000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 33,
@@ -11123,8 +11104,8 @@
         7
       ],
       "points": 60,
-      "price": 7220000,
-      "priceIncrement": 100000,
+      "price": 7460000,
+      "priceIncrement": 120000,
       "playedHome": 4,
       "playedAway": 7,
       "pointsHome": 24,
@@ -11167,7 +11148,7 @@
         11
       ],
       "points": 72,
-      "price": 3490000,
+      "price": 3450000,
       "priceIncrement": -30000,
       "playedHome": 7,
       "playedAway": 6,
@@ -11277,8 +11258,8 @@
         "doubt"
       ],
       "points": 69,
-      "price": 4130000,
-      "priceIncrement": 0,
+      "price": 4150000,
+      "priceIncrement": 10000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 38,
@@ -11321,8 +11302,8 @@
         5
       ],
       "points": 33,
-      "price": 1360000,
-      "priceIncrement": -10000,
+      "price": 1370000,
+      "priceIncrement": 10000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 14,
@@ -11343,8 +11324,8 @@
         1
       ],
       "points": 46,
-      "price": 1620000,
-      "priceIncrement": 30000,
+      "price": 1700000,
+      "priceIncrement": 40000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 25,
@@ -11365,35 +11346,13 @@
         1
       ],
       "points": 34,
-      "price": 710000,
+      "price": 650000,
       "priceIncrement": -30000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 13,
       "pointsAway": 21,
       "pointsLastSeason": 111
-    },
-    "38144": {
-      "id": 38144,
-      "name": "Egiluz",
-      "teamID": 1,
-      "position": 2,
-      "status": "injured",
-      "fitness": [
-        "injured",
-        "injured",
-        "injured",
-        "injured",
-        "injured"
-      ],
-      "points": 0,
-      "price": 150000,
-      "priceIncrement": 0,
-      "playedHome": 0,
-      "playedAway": 0,
-      "pointsHome": 0,
-      "pointsAway": 0,
-      "pointsLastSeason": null
     },
     "38194": {
       "id": 38194,
@@ -11409,8 +11368,8 @@
         1
       ],
       "points": 54,
-      "price": 3090000,
-      "priceIncrement": 20000,
+      "price": 3150000,
+      "priceIncrement": 30000,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 32,
@@ -11431,8 +11390,8 @@
         7
       ],
       "points": 63,
-      "price": 5110000,
-      "priceIncrement": 50000,
+      "price": 5230000,
+      "priceIncrement": 60000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 29,
@@ -11453,8 +11412,8 @@
         10
       ],
       "points": 30,
-      "price": 840000,
-      "priceIncrement": -20000,
+      "price": 820000,
+      "priceIncrement": -10000,
       "playedHome": 2,
       "playedAway": 3,
       "pointsHome": 15,
@@ -11475,8 +11434,8 @@
         2
       ],
       "points": 30,
-      "price": 710000,
-      "priceIncrement": -10000,
+      "price": 700000,
+      "priceIncrement": 0,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 11,
@@ -11519,7 +11478,7 @@
         -1
       ],
       "points": 45,
-      "price": 2050000,
+      "price": 2020000,
       "priceIncrement": -20000,
       "playedHome": 7,
       "playedAway": 6,
@@ -11541,8 +11500,8 @@
         4
       ],
       "points": 42,
-      "price": 1810000,
-      "priceIncrement": 0,
+      "price": 1830000,
+      "priceIncrement": 10000,
       "playedHome": 5,
       "playedAway": 4,
       "pointsHome": 24,
@@ -11585,13 +11544,35 @@
         3
       ],
       "points": 24,
-      "price": 480000,
-      "priceIncrement": 100000,
+      "price": 780000,
+      "priceIncrement": 160000,
       "playedHome": 5,
       "playedAway": 3,
       "pointsHome": 11,
       "pointsAway": 13,
       "pointsLastSeason": 67
+    },
+    "38962": {
+      "id": 38962,
+      "name": "Mikautadze",
+      "teamID": 19,
+      "position": 4,
+      "status": "ok",
+      "fitness": [
+        1,
+        2,
+        3,
+        10,
+        3
+      ],
+      "points": 60,
+      "price": 6200000,
+      "priceIncrement": -30000,
+      "playedHome": 6,
+      "playedAway": 7,
+      "pointsHome": 23,
+      "pointsAway": 37,
+      "pointsLastSeason": 192
     },
     "39357": {
       "id": 39357,
@@ -11607,8 +11588,8 @@
         3
       ],
       "points": 29,
-      "price": 830000,
-      "priceIncrement": -20000,
+      "price": 810000,
+      "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 5,
       "pointsHome": 12,
@@ -11629,8 +11610,8 @@
         1
       ],
       "points": 28,
-      "price": 250000,
-      "priceIncrement": -10000,
+      "price": 240000,
+      "priceIncrement": 0,
       "playedHome": 5,
       "playedAway": 4,
       "pointsHome": 21,
@@ -11651,8 +11632,8 @@
         7
       ],
       "points": 43,
-      "price": 1430000,
-      "priceIncrement": -10000,
+      "price": 1440000,
+      "priceIncrement": 10000,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 20,
@@ -11673,8 +11654,8 @@
         13
       ],
       "points": 57,
-      "price": 3410000,
-      "priceIncrement": -80000,
+      "price": 3320000,
+      "priceIncrement": -40000,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 48,
@@ -11717,7 +11698,7 @@
         1
       ],
       "points": 52,
-      "price": 1680000,
+      "price": 1660000,
       "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 7,
@@ -11739,8 +11720,8 @@
         "sanctioned"
       ],
       "points": 60,
-      "price": 2880000,
-      "priceIncrement": 60000,
+      "price": 3010000,
+      "priceIncrement": 70000,
       "playedHome": 7,
       "playedAway": 5,
       "pointsHome": 45,
@@ -11761,8 +11742,8 @@
         6
       ],
       "points": 53,
-      "price": 3250000,
-      "priceIncrement": -40000,
+      "price": 3220000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 20,
@@ -11783,7 +11764,7 @@
         0
       ],
       "points": 17,
-      "price": 1880000,
+      "price": 1820000,
       "priceIncrement": -30000,
       "playedHome": 5,
       "playedAway": 6,
@@ -11805,8 +11786,8 @@
         5
       ],
       "points": 37,
-      "price": 1230000,
-      "priceIncrement": 0,
+      "price": 1240000,
+      "priceIncrement": 10000,
       "playedHome": 4,
       "playedAway": 7,
       "pointsHome": 7,
@@ -11827,8 +11808,8 @@
         4
       ],
       "points": 31,
-      "price": 580000,
-      "priceIncrement": -20000,
+      "price": 560000,
+      "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 5,
       "pointsHome": 7,
@@ -11849,8 +11830,8 @@
         null
       ],
       "points": 38,
-      "price": 1710000,
-      "priceIncrement": 130000,
+      "price": 2000000,
+      "priceIncrement": 150000,
       "playedHome": 4,
       "playedAway": 3,
       "pointsHome": 20,
@@ -11871,8 +11852,8 @@
         10
       ],
       "points": 65,
-      "price": 3960000,
-      "priceIncrement": -110000,
+      "price": 3850000,
+      "priceIncrement": -40000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 40,
@@ -11915,7 +11896,7 @@
         5
       ],
       "points": 45,
-      "price": 1980000,
+      "price": 1940000,
       "priceIncrement": -20000,
       "playedHome": 6,
       "playedAway": 7,
@@ -11937,8 +11918,8 @@
         3
       ],
       "points": 39,
-      "price": 1790000,
-      "priceIncrement": -40000,
+      "price": 1710000,
+      "priceIncrement": -30000,
       "playedHome": 4,
       "playedAway": 5,
       "pointsHome": 21,
@@ -11959,7 +11940,7 @@
         2
       ],
       "points": 77,
-      "price": 6320000,
+      "price": 6360000,
       "priceIncrement": 10000,
       "playedHome": 6,
       "playedAway": 7,
@@ -11981,8 +11962,8 @@
         4
       ],
       "points": 33,
-      "price": 770000,
-      "priceIncrement": -20000,
+      "price": 750000,
+      "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 4,
       "pointsHome": 19,
@@ -12025,8 +12006,8 @@
         9
       ],
       "points": 60,
-      "price": 7330000,
-      "priceIncrement": -250000,
+      "price": 6990000,
+      "priceIncrement": -130000,
       "playedHome": 5,
       "playedAway": 7,
       "pointsHome": 25,
@@ -12047,8 +12028,8 @@
         2
       ],
       "points": 39,
-      "price": 4470000,
-      "priceIncrement": -30000,
+      "price": 4460000,
+      "priceIncrement": 0,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 16,
@@ -12069,8 +12050,8 @@
         1
       ],
       "points": 46,
-      "price": 1290000,
-      "priceIncrement": -30000,
+      "price": 1240000,
+      "priceIncrement": -20000,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 26,
@@ -12135,8 +12116,8 @@
         -4
       ],
       "points": 51,
-      "price": 2280000,
-      "priceIncrement": -40000,
+      "price": 2220000,
+      "priceIncrement": -30000,
       "playedHome": 6,
       "playedAway": 7,
       "pointsHome": 17,
@@ -12179,7 +12160,7 @@
         4
       ],
       "points": 77,
-      "price": 11440000,
+      "price": 11510000,
       "priceIncrement": 30000,
       "playedHome": 6,
       "playedAway": 6,
@@ -12192,7 +12173,7 @@
       "name": "Guliashvili",
       "teamID": 812,
       "position": 4,
-      "status": "ok",
+      "status": "doubt",
       "fitness": [
         null,
         4,
@@ -12223,7 +12204,7 @@
         2
       ],
       "points": 18,
-      "price": 460000,
+      "price": 450000,
       "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 4,
@@ -12267,8 +12248,8 @@
         4
       ],
       "points": 36,
-      "price": 1450000,
-      "priceIncrement": -10000,
+      "price": 1440000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 6,
       "pointsHome": 25,
@@ -12311,8 +12292,8 @@
         "injured"
       ],
       "points": 6,
-      "price": 240000,
-      "priceIncrement": 50000,
+      "price": 390000,
+      "priceIncrement": 80000,
       "playedHome": 0,
       "playedAway": 1,
       "pointsHome": 0,
@@ -12333,7 +12314,7 @@
         1
       ],
       "points": 46,
-      "price": 1750000,
+      "price": 1710000,
       "priceIncrement": -20000,
       "playedHome": 6,
       "playedAway": 6,
@@ -12355,8 +12336,8 @@
         -2
       ],
       "points": 29,
-      "price": 820000,
-      "priceIncrement": -10000,
+      "price": 810000,
+      "priceIncrement": 0,
       "playedHome": 5,
       "playedAway": 6,
       "pointsHome": 19,
@@ -12399,8 +12380,8 @@
         1
       ],
       "points": 30,
-      "price": 500000,
-      "priceIncrement": -10000,
+      "price": 490000,
+      "priceIncrement": 0,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 17,
@@ -12443,8 +12424,8 @@
         "doubt"
       ],
       "points": 35,
-      "price": 1100000,
-      "priceIncrement": -30000,
+      "price": 1070000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 4,
       "pointsHome": 20,
@@ -12465,8 +12446,8 @@
         null
       ],
       "points": 27,
-      "price": 570000,
-      "priceIncrement": -20000,
+      "price": 550000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 3,
       "pointsHome": 10,
@@ -12487,8 +12468,8 @@
         3
       ],
       "points": 30,
-      "price": 630000,
-      "priceIncrement": -20000,
+      "price": 610000,
+      "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 5,
       "pointsHome": 9,
@@ -12509,34 +12490,12 @@
         3
       ],
       "points": 83,
-      "price": 10980000,
-      "priceIncrement": 80000,
+      "price": 11190000,
+      "priceIncrement": 110000,
       "playedHome": 5,
       "playedAway": 7,
       "pointsHome": 31,
       "pointsAway": 52,
-      "pointsLastSeason": null
-    },
-    "41713": {
-      "id": 41713,
-      "name": "José Ángel",
-      "teamID": 7,
-      "position": 2,
-      "status": "ok",
-      "fitness": [
-        null,
-        null,
-        3,
-        null,
-        null
-      ],
-      "points": 4,
-      "price": 150000,
-      "priceIncrement": 0,
-      "playedHome": 1,
-      "playedAway": 1,
-      "pointsHome": 1,
-      "pointsAway": 3,
       "pointsLastSeason": null
     },
     "41940": {
@@ -12553,8 +12512,8 @@
         5
       ],
       "points": 36,
-      "price": 1480000,
-      "priceIncrement": -20000,
+      "price": 1460000,
+      "priceIncrement": 0,
       "playedHome": 5,
       "playedAway": 4,
       "pointsHome": 19,
@@ -12575,7 +12534,7 @@
         4
       ],
       "points": 24,
-      "price": 800000,
+      "price": 760000,
       "priceIncrement": -20000,
       "playedHome": 3,
       "playedAway": 4,
@@ -12597,8 +12556,8 @@
         3
       ],
       "points": 23,
-      "price": 930000,
-      "priceIncrement": -20000,
+      "price": 900000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 2,
       "pointsHome": 16,
@@ -12619,8 +12578,8 @@
         null
       ],
       "points": 12,
-      "price": 160000,
-      "priceIncrement": 10000,
+      "price": 200000,
+      "priceIncrement": 20000,
       "playedHome": 2,
       "playedAway": 2,
       "pointsHome": 7,
@@ -12641,8 +12600,8 @@
         null
       ],
       "points": 27,
-      "price": 880000,
-      "priceIncrement": 50000,
+      "price": 1020000,
+      "priceIncrement": 70000,
       "playedHome": 3,
       "playedAway": 4,
       "pointsHome": 11,
@@ -12685,8 +12644,8 @@
         "sanctioned"
       ],
       "points": 50,
-      "price": 3240000,
-      "priceIncrement": -70000,
+      "price": 3150000,
+      "priceIncrement": -40000,
       "playedHome": 4,
       "playedAway": 7,
       "pointsHome": 24,
@@ -12707,34 +12666,12 @@
         5
       ],
       "points": 45,
-      "price": 2270000,
-      "priceIncrement": -70000,
+      "price": 2200000,
+      "priceIncrement": -30000,
       "playedHome": 6,
       "playedAway": 5,
       "pointsHome": 16,
       "pointsAway": 29,
-      "pointsLastSeason": null
-    },
-    "42605": {
-      "id": 42605,
-      "name": "Wanjala",
-      "teamID": 18,
-      "position": 2,
-      "status": "ok",
-      "fitness": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "points": 0,
-      "price": 150000,
-      "priceIncrement": 0,
-      "playedHome": 0,
-      "playedAway": 0,
-      "pointsHome": 0,
-      "pointsAway": 0,
       "pointsLastSeason": null
     },
     "42610": {
@@ -12751,8 +12688,8 @@
         3
       ],
       "points": 106,
-      "price": 9720000,
-      "priceIncrement": 150000,
+      "price": 10100000,
+      "priceIncrement": 200000,
       "playedHome": 7,
       "playedAway": 6,
       "pointsHome": 77,
@@ -12773,7 +12710,7 @@
         6
       ],
       "points": 27,
-      "price": 540000,
+      "price": 520000,
       "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 5,
@@ -12795,8 +12732,8 @@
         2
       ],
       "points": 29,
-      "price": 2180000,
-      "priceIncrement": -40000,
+      "price": 2120000,
+      "priceIncrement": -30000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 22,
@@ -12817,8 +12754,8 @@
         7
       ],
       "points": 38,
-      "price": 1500000,
-      "priceIncrement": -110000,
+      "price": 1340000,
+      "priceIncrement": -60000,
       "playedHome": 4,
       "playedAway": 4,
       "pointsHome": 26,
@@ -12839,8 +12776,8 @@
         3
       ],
       "points": 29,
-      "price": 830000,
-      "priceIncrement": 10000,
+      "price": 880000,
+      "priceIncrement": 30000,
       "playedHome": 6,
       "playedAway": 4,
       "pointsHome": 13,
@@ -12861,7 +12798,7 @@
         -3
       ],
       "points": 20,
-      "price": 480000,
+      "price": 460000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 5,
@@ -12883,8 +12820,8 @@
         5
       ],
       "points": 37,
-      "price": 2090000,
-      "priceIncrement": 90000,
+      "price": 2310000,
+      "priceIncrement": 120000,
       "playedHome": 3,
       "playedAway": 4,
       "pointsHome": 15,
@@ -12905,7 +12842,7 @@
         -2
       ],
       "points": 33,
-      "price": 1100000,
+      "price": 1220000,
       "priceIncrement": 60000,
       "playedHome": 5,
       "playedAway": 4,
@@ -12927,8 +12864,8 @@
         -1
       ],
       "points": 48,
-      "price": 4750000,
-      "priceIncrement": -20000,
+      "price": 4680000,
+      "priceIncrement": -50000,
       "playedHome": 5,
       "playedAway": 4,
       "pointsHome": 31,
@@ -12949,7 +12886,7 @@
         3
       ],
       "points": 30,
-      "price": 1350000,
+      "price": 1330000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 4,
@@ -12971,8 +12908,8 @@
         3
       ],
       "points": 27,
-      "price": 950000,
-      "priceIncrement": 0,
+      "price": 960000,
+      "priceIncrement": 10000,
       "playedHome": 4,
       "playedAway": 4,
       "pointsHome": 16,
@@ -12993,8 +12930,8 @@
         6
       ],
       "points": 55,
-      "price": 2880000,
-      "priceIncrement": 80000,
+      "price": 3090000,
+      "priceIncrement": 120000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 16,
@@ -13015,8 +12952,8 @@
         4
       ],
       "points": 57,
-      "price": 5790000,
-      "priceIncrement": -80000,
+      "price": 5680000,
+      "priceIncrement": -50000,
       "playedHome": 5,
       "playedAway": 5,
       "pointsHome": 32,
@@ -13059,8 +12996,8 @@
         6
       ],
       "points": 33,
-      "price": 1600000,
-      "priceIncrement": -20000,
+      "price": 1570000,
+      "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 4,
       "pointsHome": 17,
@@ -13079,8 +13016,8 @@
         6
       ],
       "points": 16,
-      "price": 1990000,
-      "priceIncrement": 120000,
+      "price": 2280000,
+      "priceIncrement": 160000,
       "playedHome": 1,
       "playedAway": 2,
       "pointsHome": 4,
@@ -13145,7 +13082,7 @@
       ],
       "points": 15,
       "price": 750000,
-      "priceIncrement": -10000,
+      "priceIncrement": 0,
       "playedHome": 3,
       "playedAway": 3
     },
@@ -13220,8 +13157,8 @@
         3
       ],
       "points": 39,
-      "price": 1350000,
-      "priceIncrement": -20000,
+      "price": 1330000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 5
     },
@@ -13258,7 +13195,7 @@
         1
       ],
       "points": 20,
-      "price": 870000,
+      "price": 850000,
       "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 2
@@ -13277,7 +13214,7 @@
         3
       ],
       "points": 37,
-      "price": 1040000,
+      "price": 900000,
       "priceIncrement": -60000,
       "playedHome": 5,
       "playedAway": 6
@@ -13315,8 +13252,8 @@
         3
       ],
       "points": 29,
-      "price": 1320000,
-      "priceIncrement": 10000,
+      "price": 1370000,
+      "priceIncrement": 30000,
       "playedHome": 6,
       "playedAway": 4
     },
@@ -13353,8 +13290,8 @@
         3
       ],
       "points": 42,
-      "price": 930000,
-      "priceIncrement": 20000,
+      "price": 990000,
+      "priceIncrement": 30000,
       "playedHome": 7,
       "playedAway": 4
     },
@@ -13391,10 +13328,29 @@
         null
       ],
       "points": 12,
-      "price": 550000,
+      "price": 530000,
       "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 3
+    },
+    {
+      "id": 2253,
+      "name": "Rüdiger",
+      "teamID": 15,
+      "position": 2,
+      "status": "ok",
+      "fitness": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "points": 28,
+      "price": 1490000,
+      "priceIncrement": -30000,
+      "playedHome": 3,
+      "playedAway": 1
     },
     {
       "id": 2368,
@@ -13410,7 +13366,7 @@
         2
       ],
       "points": 9,
-      "price": 610000,
+      "price": 590000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 5
@@ -13420,7 +13376,7 @@
       "name": "Mandi",
       "teamID": 10,
       "position": 2,
-      "status": "ok",
+      "status": "warned",
       "fitness": [
         4,
         8,
@@ -13429,8 +13385,8 @@
         3
       ],
       "points": 44,
-      "price": 1440000,
-      "priceIncrement": 10000,
+      "price": 1490000,
+      "priceIncrement": 20000,
       "playedHome": 5,
       "playedAway": 6
     },
@@ -13448,7 +13404,7 @@
         null
       ],
       "points": 21,
-      "price": 490000,
+      "price": 470000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 5
@@ -13467,8 +13423,8 @@
         11
       ],
       "points": 30,
-      "price": 840000,
-      "priceIncrement": 0,
+      "price": 870000,
+      "priceIncrement": 20000,
       "playedHome": 5,
       "playedAway": 4
     },
@@ -13477,7 +13433,7 @@
       "name": "Óscar Valentín",
       "teamID": 70,
       "position": 3,
-      "status": "doubt",
+      "status": "ok",
       "fitness": [
         "doubt",
         "doubt",
@@ -13486,8 +13442,8 @@
         4
       ],
       "points": 32,
-      "price": 800000,
-      "priceIncrement": -10000,
+      "price": 790000,
+      "priceIncrement": 0,
       "playedHome": 4,
       "playedAway": 5
     },
@@ -13543,8 +13499,8 @@
         null
       ],
       "points": 10,
-      "price": 310000,
-      "priceIncrement": 20000,
+      "price": 370000,
+      "priceIncrement": 30000,
       "playedHome": 3,
       "playedAway": 0
     },
@@ -13562,8 +13518,8 @@
         3
       ],
       "points": 19,
-      "price": 760000,
-      "priceIncrement": -20000,
+      "price": 740000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 3
     },
@@ -13600,7 +13556,7 @@
         0
       ],
       "points": 21,
-      "price": 810000,
+      "price": 790000,
       "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 5
@@ -13619,7 +13575,7 @@
         1
       ],
       "points": 17,
-      "price": 610000,
+      "price": 590000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 4
@@ -13657,8 +13613,8 @@
         5
       ],
       "points": 28,
-      "price": 1000000,
-      "priceIncrement": -10000,
+      "price": 960000,
+      "priceIncrement": -20000,
       "playedHome": 4,
       "playedAway": 5
     },
@@ -13695,7 +13651,7 @@
         null
       ],
       "points": 19,
-      "price": 990000,
+      "price": 960000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 2
@@ -13714,7 +13670,7 @@
         4
       ],
       "points": 39,
-      "price": 1390000,
+      "price": 1370000,
       "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 6
@@ -13733,8 +13689,8 @@
         null
       ],
       "points": 22,
-      "price": 850000,
-      "priceIncrement": 0,
+      "price": 890000,
+      "priceIncrement": 30000,
       "playedHome": 4,
       "playedAway": 4
     },
@@ -13752,8 +13708,8 @@
         3
       ],
       "points": 23,
-      "price": 680000,
-      "priceIncrement": -10000,
+      "price": 670000,
+      "priceIncrement": 0,
       "playedHome": 5,
       "playedAway": 5
     },
@@ -13771,7 +13727,7 @@
         null
       ],
       "points": 28,
-      "price": 1300000,
+      "price": 1260000,
       "priceIncrement": -20000,
       "playedHome": 4,
       "playedAway": 3
@@ -13809,8 +13765,8 @@
         -7
       ],
       "points": 18,
-      "price": 900000,
-      "priceIncrement": -60000,
+      "price": 870000,
+      "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 5
     },
@@ -13828,8 +13784,8 @@
         7
       ],
       "points": 24,
-      "price": 930000,
-      "priceIncrement": 0,
+      "price": 960000,
+      "priceIncrement": 20000,
       "playedHome": 7,
       "playedAway": 5
     },
@@ -13838,7 +13794,7 @@
       "name": "Balde",
       "teamID": 3,
       "position": 2,
-      "status": "ok",
+      "status": "doubt",
       "fitness": [
         null,
         null,
@@ -13847,8 +13803,8 @@
         null
       ],
       "points": 12,
-      "price": 860000,
-      "priceIncrement": -20000,
+      "price": 820000,
+      "priceIncrement": -30000,
       "playedHome": 3,
       "playedAway": 0
     },
@@ -13885,7 +13841,7 @@
         2
       ],
       "points": 23,
-      "price": 810000,
+      "price": 790000,
       "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 3
@@ -13905,7 +13861,7 @@
       ],
       "points": 17,
       "price": 340000,
-      "priceIncrement": -10000,
+      "priceIncrement": 0,
       "playedHome": 4,
       "playedAway": 4
     },
@@ -13961,8 +13917,8 @@
         4
       ],
       "points": 31,
-      "price": 860000,
-      "priceIncrement": -20000,
+      "price": 840000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 6
     },
@@ -14009,7 +13965,7 @@
       "name": "Calero",
       "teamID": 65,
       "position": 2,
-      "status": "doubt",
+      "status": "ok",
       "fitness": [
         "doubt",
         2,
@@ -14018,7 +13974,7 @@
         2
       ],
       "points": 10,
-      "price": 490000,
+      "price": 470000,
       "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 1
@@ -14037,8 +13993,8 @@
         3
       ],
       "points": 24,
-      "price": 800000,
-      "priceIncrement": -10000,
+      "price": 790000,
+      "priceIncrement": 0,
       "playedHome": 2,
       "playedAway": 4
     },
@@ -14132,8 +14088,8 @@
         3
       ],
       "points": 44,
-      "price": 1400000,
-      "priceIncrement": 30000,
+      "price": 1500000,
+      "priceIncrement": 60000,
       "playedHome": 4,
       "playedAway": 7
     },
@@ -14170,8 +14126,8 @@
         6
       ],
       "points": 34,
-      "price": 940000,
-      "priceIncrement": 0,
+      "price": 980000,
+      "priceIncrement": 30000,
       "playedHome": 5,
       "playedAway": 6
     },
@@ -14208,8 +14164,8 @@
         3
       ],
       "points": 13,
-      "price": 640000,
-      "priceIncrement": 0,
+      "price": 630000,
+      "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 6
     },
@@ -14303,8 +14259,8 @@
         null
       ],
       "points": 25,
-      "price": 900000,
-      "priceIncrement": 20000,
+      "price": 960000,
+      "priceIncrement": 30000,
       "playedHome": 5,
       "playedAway": 3
     },
@@ -14322,7 +14278,7 @@
         2
       ],
       "points": 9,
-      "price": 1250000,
+      "price": 1230000,
       "priceIncrement": -10000,
       "playedHome": 1,
       "playedAway": 3
@@ -14341,7 +14297,7 @@
         5
       ],
       "points": 25,
-      "price": 750000,
+      "price": 730000,
       "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 3
@@ -14360,7 +14316,7 @@
         "injured"
       ],
       "points": 9,
-      "price": 810000,
+      "price": 790000,
       "priceIncrement": -10000,
       "playedHome": 2,
       "playedAway": 3
@@ -14379,8 +14335,8 @@
         3
       ],
       "points": 30,
-      "price": 610000,
-      "priceIncrement": -20000,
+      "price": 590000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 6
     },
@@ -14398,8 +14354,8 @@
         3
       ],
       "points": 26,
-      "price": 540000,
-      "priceIncrement": 20000,
+      "price": 610000,
+      "priceIncrement": 40000,
       "playedHome": 4,
       "playedAway": 5
     },
@@ -14436,8 +14392,8 @@
         "injured"
       ],
       "points": 35,
-      "price": 1120000,
-      "priceIncrement": -30000,
+      "price": 1070000,
+      "priceIncrement": -20000,
       "playedHome": 5,
       "playedAway": 4
     },
@@ -14474,8 +14430,8 @@
         3
       ],
       "points": 34,
-      "price": 1390000,
-      "priceIncrement": 0,
+      "price": 1400000,
+      "priceIncrement": 10000,
       "playedHome": 5,
       "playedAway": 4
     },
@@ -14493,8 +14449,8 @@
         null
       ],
       "points": 35,
-      "price": 1190000,
-      "priceIncrement": 0,
+      "price": 1200000,
+      "priceIncrement": 10000,
       "playedHome": 5,
       "playedAway": 6
     },
@@ -14512,7 +14468,7 @@
         3
       ],
       "points": 38,
-      "price": 920000,
+      "price": 900000,
       "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 4
@@ -14569,7 +14525,7 @@
         0
       ],
       "points": 36,
-      "price": 690000,
+      "price": 670000,
       "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 6
@@ -14626,8 +14582,8 @@
         3
       ],
       "points": 32,
-      "price": 690000,
-      "priceIncrement": -10000,
+      "price": 680000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 4
     },
@@ -14645,7 +14601,7 @@
         1
       ],
       "points": 12,
-      "price": 620000,
+      "price": 600000,
       "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 6
@@ -14721,8 +14677,8 @@
         5
       ],
       "points": 20,
-      "price": 360000,
-      "priceIncrement": -10000,
+      "price": 350000,
+      "priceIncrement": 0,
       "playedHome": 3,
       "playedAway": 5
     },
@@ -14740,8 +14696,8 @@
         0
       ],
       "points": 19,
-      "price": 880000,
-      "priceIncrement": 0,
+      "price": 870000,
+      "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 6
     },
@@ -14778,8 +14734,8 @@
         3
       ],
       "points": 40,
-      "price": 1010000,
-      "priceIncrement": -10000,
+      "price": 1000000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 7
     },
@@ -14797,7 +14753,7 @@
         null
       ],
       "points": 19,
-      "price": 750000,
+      "price": 730000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 5
@@ -14854,8 +14810,8 @@
         null
       ],
       "points": 23,
-      "price": 770000,
-      "priceIncrement": -30000,
+      "price": 740000,
+      "priceIncrement": -10000,
       "playedHome": 2,
       "playedAway": 3
     },
@@ -14873,7 +14829,7 @@
         2
       ],
       "points": 25,
-      "price": 580000,
+      "price": 510000,
       "priceIncrement": -30000,
       "playedHome": 4,
       "playedAway": 3
@@ -14930,8 +14886,8 @@
         null
       ],
       "points": 9,
-      "price": 870000,
-      "priceIncrement": -40000,
+      "price": 830000,
+      "priceIncrement": -20000,
       "playedHome": 1,
       "playedAway": 1
     },
@@ -14968,8 +14924,8 @@
         3
       ],
       "points": 15,
-      "price": 1060000,
-      "priceIncrement": -20000,
+      "price": 1040000,
+      "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 3
     },
@@ -15025,8 +14981,8 @@
         null
       ],
       "points": 33,
-      "price": 850000,
-      "priceIncrement": -10000,
+      "price": 840000,
+      "priceIncrement": 0,
       "playedHome": 4,
       "playedAway": 4
     },
@@ -15044,8 +15000,8 @@
         0
       ],
       "points": 16,
-      "price": 620000,
-      "priceIncrement": 0,
+      "price": 610000,
+      "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 6
     },
@@ -15101,7 +15057,7 @@
         null
       ],
       "points": 12,
-      "price": 560000,
+      "price": 540000,
       "priceIncrement": -10000,
       "playedHome": 2,
       "playedAway": 3
@@ -15120,8 +15076,8 @@
         3
       ],
       "points": 44,
-      "price": 1050000,
-      "priceIncrement": 0,
+      "price": 1060000,
+      "priceIncrement": 10000,
       "playedHome": 6,
       "playedAway": 6
     },
@@ -15158,8 +15114,8 @@
         null
       ],
       "points": 23,
-      "price": 660000,
-      "priceIncrement": 0,
+      "price": 670000,
+      "priceIncrement": 10000,
       "playedHome": 3,
       "playedAway": 6
     },
@@ -15177,8 +15133,8 @@
         11
       ],
       "points": 20,
-      "price": 360000,
-      "priceIncrement": -10000,
+      "price": 350000,
+      "priceIncrement": 0,
       "playedHome": 2,
       "playedAway": 3
     },
@@ -15196,8 +15152,8 @@
         "injured"
       ],
       "points": 16,
-      "price": 650000,
-      "priceIncrement": 170000,
+      "price": 1020000,
+      "priceIncrement": 190000,
       "playedHome": 0,
       "playedAway": 1
     },
@@ -15215,8 +15171,8 @@
         3
       ],
       "points": 31,
-      "price": 800000,
-      "priceIncrement": -30000,
+      "price": 770000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 6
     },
@@ -15253,8 +15209,8 @@
         "injured"
       ],
       "points": 19,
-      "price": 1050000,
-      "priceIncrement": -30000,
+      "price": 1010000,
+      "priceIncrement": -20000,
       "playedHome": 2,
       "playedAway": 5
     },
@@ -15272,8 +15228,8 @@
         1
       ],
       "points": 15,
-      "price": 1110000,
-      "priceIncrement": -10000,
+      "price": 1100000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 7
     },
@@ -15310,7 +15266,7 @@
         1
       ],
       "points": 33,
-      "price": 1020000,
+      "price": 1060000,
       "priceIncrement": 20000,
       "playedHome": 7,
       "playedAway": 5
@@ -15367,7 +15323,7 @@
         4
       ],
       "points": 18,
-      "price": 760000,
+      "price": 740000,
       "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 4
@@ -15481,8 +15437,8 @@
         "injured"
       ],
       "points": 46,
-      "price": 950000,
-      "priceIncrement": 70000,
+      "price": 1090000,
+      "priceIncrement": 60000,
       "playedHome": 4,
       "playedAway": 6
     },
@@ -15519,8 +15475,8 @@
         "injured"
       ],
       "points": 10,
-      "price": 310000,
-      "priceIncrement": 0,
+      "price": 320000,
+      "priceIncrement": 10000,
       "playedHome": 2,
       "playedAway": 1
     },
@@ -15538,7 +15494,7 @@
         -2
       ],
       "points": 17,
-      "price": 920000,
+      "price": 900000,
       "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 4
@@ -15557,7 +15513,7 @@
         7
       ],
       "points": 28,
-      "price": 1410000,
+      "price": 1390000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 4
@@ -15567,7 +15523,7 @@
       "name": "Abqar",
       "teamID": 8,
       "position": 2,
-      "status": "ok",
+      "status": "doubt",
       "fitness": [
         null,
         null,
@@ -15586,7 +15542,7 @@
       "name": "Benavidez",
       "teamID": 91,
       "position": 3,
-      "status": "ok",
+      "status": "injured",
       "fitness": [
         null,
         4,
@@ -15614,7 +15570,7 @@
         2
       ],
       "points": 43,
-      "price": 1340000,
+      "price": 1320000,
       "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 6
@@ -15652,8 +15608,8 @@
         null
       ],
       "points": 30,
-      "price": 1410000,
-      "priceIncrement": -30000,
+      "price": 1360000,
+      "priceIncrement": -20000,
       "playedHome": 4,
       "playedAway": 6
     },
@@ -15671,8 +15627,8 @@
         "injured"
       ],
       "points": 18,
-      "price": 590000,
-      "priceIncrement": 0,
+      "price": 570000,
+      "priceIncrement": -10000,
       "playedHome": 2,
       "playedAway": 1
     },
@@ -15728,7 +15684,7 @@
         "injured"
       ],
       "points": 21,
-      "price": 710000,
+      "price": 700000,
       "priceIncrement": -10000,
       "playedHome": 2,
       "playedAway": 1
@@ -15738,7 +15694,7 @@
       "name": "Hugo González",
       "teamID": 5,
       "position": 4,
-      "status": "ok",
+      "status": "injured",
       "fitness": [
         null,
         2,
@@ -15747,8 +15703,8 @@
         null
       ],
       "points": 28,
-      "price": 990000,
-      "priceIncrement": -20000,
+      "price": 930000,
+      "priceIncrement": -40000,
       "playedHome": 5,
       "playedAway": 2
     },
@@ -15804,7 +15760,7 @@
         null
       ],
       "points": 27,
-      "price": 670000,
+      "price": 650000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 2
@@ -15823,8 +15779,8 @@
         2
       ],
       "points": 29,
-      "price": 1390000,
-      "priceIncrement": -70000,
+      "price": 1340000,
+      "priceIncrement": -20000,
       "playedHome": 5,
       "playedAway": 4
     },
@@ -15842,7 +15798,7 @@
         "injured"
       ],
       "points": 9,
-      "price": 800000,
+      "price": 780000,
       "priceIncrement": -10000,
       "playedHome": 1,
       "playedAway": 1
@@ -15861,8 +15817,8 @@
         2
       ],
       "points": 34,
-      "price": 1090000,
-      "priceIncrement": -10000,
+      "price": 1080000,
+      "priceIncrement": 0,
       "playedHome": 7,
       "playedAway": 4
     },
@@ -15880,8 +15836,8 @@
         8
       ],
       "points": 18,
-      "price": 1210000,
-      "priceIncrement": -30000,
+      "price": 1180000,
+      "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 4
     },
@@ -15956,8 +15912,8 @@
         2
       ],
       "points": 39,
-      "price": 1310000,
-      "priceIncrement": -20000,
+      "price": 1290000,
+      "priceIncrement": -10000,
       "playedHome": 7,
       "playedAway": 6
     },
@@ -15975,7 +15931,7 @@
         "injured"
       ],
       "points": 0,
-      "price": 720000,
+      "price": 700000,
       "priceIncrement": -10000,
       "playedHome": 0,
       "playedAway": 0
@@ -16013,7 +15969,7 @@
         4
       ],
       "points": 23,
-      "price": 1390000,
+      "price": 1430000,
       "priceIncrement": 20000,
       "playedHome": 4,
       "playedAway": 4
@@ -16032,8 +15988,8 @@
         2
       ],
       "points": 28,
-      "price": 810000,
-      "priceIncrement": -40000,
+      "price": 780000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 4
     },
@@ -16051,8 +16007,8 @@
         2
       ],
       "points": 12,
-      "price": 1010000,
-      "priceIncrement": -70000,
+      "price": 960000,
+      "priceIncrement": -20000,
       "playedHome": 2,
       "playedAway": 3
     },
@@ -16089,8 +16045,8 @@
         null
       ],
       "points": 16,
-      "price": 620000,
-      "priceIncrement": 30000,
+      "price": 700000,
+      "priceIncrement": 40000,
       "playedHome": 5,
       "playedAway": 2
     },
@@ -16127,8 +16083,8 @@
         4
       ],
       "points": 26,
-      "price": 780000,
-      "priceIncrement": -20000,
+      "price": 760000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 6
     },
@@ -16165,8 +16121,8 @@
         2
       ],
       "points": 21,
-      "price": 570000,
-      "priceIncrement": -10000,
+      "price": 560000,
+      "priceIncrement": 0,
       "playedHome": 3,
       "playedAway": 2
     },
@@ -16213,7 +16169,7 @@
       "name": "Novoa",
       "teamID": 91,
       "position": 2,
-      "status": "doubt",
+      "status": "injured",
       "fitness": [
         2,
         null,
@@ -16222,7 +16178,7 @@
         16
       ],
       "points": 26,
-      "price": 660000,
+      "price": 640000,
       "priceIncrement": -10000,
       "playedHome": 2,
       "playedAway": 2
@@ -16241,7 +16197,7 @@
         3
       ],
       "points": 35,
-      "price": 940000,
+      "price": 920000,
       "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 6
@@ -16260,7 +16216,7 @@
         5
       ],
       "points": 40,
-      "price": 1320000,
+      "price": 1360000,
       "priceIncrement": 20000,
       "playedHome": 5,
       "playedAway": 4
@@ -16298,7 +16254,7 @@
         null
       ],
       "points": -1,
-      "price": 840000,
+      "price": 820000,
       "priceIncrement": -10000,
       "playedHome": 1,
       "playedAway": 3
@@ -16317,8 +16273,8 @@
         5
       ],
       "points": 19,
-      "price": 470000,
-      "priceIncrement": -20000,
+      "price": 490000,
+      "priceIncrement": 20000,
       "playedHome": 3,
       "playedAway": 0
     },
@@ -16346,7 +16302,7 @@
       "name": "Morante",
       "teamID": 87,
       "position": 4,
-      "status": "doubt",
+      "status": "ok",
       "fitness": [
         "injured",
         2,
@@ -16355,8 +16311,8 @@
         null
       ],
       "points": 12,
-      "price": 330000,
-      "priceIncrement": 0,
+      "price": 320000,
+      "priceIncrement": -10000,
       "playedHome": 1,
       "playedAway": 1
     },
@@ -16374,8 +16330,8 @@
         null
       ],
       "points": 20,
-      "price": 720000,
-      "priceIncrement": -20000,
+      "price": 700000,
+      "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 4
     },
@@ -16431,7 +16387,7 @@
         1
       ],
       "points": 39,
-      "price": 1180000,
+      "price": 1220000,
       "priceIncrement": 20000,
       "playedHome": 6,
       "playedAway": 5
@@ -16488,8 +16444,8 @@
         -1
       ],
       "points": 8,
-      "price": 1060000,
-      "priceIncrement": 0,
+      "price": 1070000,
+      "priceIncrement": 10000,
       "playedHome": 4,
       "playedAway": 2
     },
@@ -16602,7 +16558,7 @@
         null
       ],
       "points": 28,
-      "price": 1120000,
+      "price": 1100000,
       "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 5
@@ -16659,8 +16615,8 @@
         2
       ],
       "points": 36,
-      "price": 940000,
-      "priceIncrement": -20000,
+      "price": 910000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 5
     },
@@ -16726,7 +16682,7 @@
       "name": "Marc Aguado",
       "teamID": 75,
       "position": 3,
-      "status": "injured",
+      "status": "ok",
       "fitness": [
         "injured",
         "injured",
@@ -16735,8 +16691,8 @@
         3
       ],
       "points": 26,
-      "price": 830000,
-      "priceIncrement": -10000,
+      "price": 820000,
+      "priceIncrement": 0,
       "playedHome": 3,
       "playedAway": 3
     },
@@ -16754,8 +16710,8 @@
         null
       ],
       "points": 20,
-      "price": 470000,
-      "priceIncrement": -10000,
+      "price": 460000,
+      "priceIncrement": 0,
       "playedHome": 2,
       "playedAway": 2
     },
@@ -16887,8 +16843,8 @@
         null
       ],
       "points": 7,
-      "price": 240000,
-      "priceIncrement": 0,
+      "price": 230000,
+      "priceIncrement": -10000,
       "playedHome": 1,
       "playedAway": 3
     },
@@ -16925,8 +16881,8 @@
         5
       ],
       "points": 33,
-      "price": 1360000,
-      "priceIncrement": -10000,
+      "price": 1370000,
+      "priceIncrement": 10000,
       "playedHome": 5,
       "playedAway": 5
     },
@@ -16944,8 +16900,8 @@
         3
       ],
       "points": 28,
-      "price": 1200000,
-      "priceIncrement": -20000,
+      "price": 1180000,
+      "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 4
     },
@@ -17001,7 +16957,7 @@
         1
       ],
       "points": 34,
-      "price": 710000,
+      "price": 650000,
       "priceIncrement": -30000,
       "playedHome": 6,
       "playedAway": 6
@@ -17056,8 +17012,8 @@
         3
       ],
       "points": 7,
-      "price": 620000,
-      "priceIncrement": 10000,
+      "price": 660000,
+      "priceIncrement": 20000,
       "playedHome": 1,
       "playedAway": 2
     },
@@ -17075,8 +17031,8 @@
         null
       ],
       "points": 36,
-      "price": 1200000,
-      "priceIncrement": 20000,
+      "price": 1250000,
+      "priceIncrement": 30000,
       "playedHome": 5,
       "playedAway": 5
     },
@@ -17094,8 +17050,8 @@
         10
       ],
       "points": 30,
-      "price": 840000,
-      "priceIncrement": -20000,
+      "price": 820000,
+      "priceIncrement": -10000,
       "playedHome": 2,
       "playedAway": 3
     },
@@ -17132,8 +17088,8 @@
         2
       ],
       "points": 30,
-      "price": 710000,
-      "priceIncrement": -10000,
+      "price": 700000,
+      "priceIncrement": 0,
       "playedHome": 7,
       "playedAway": 6
     },
@@ -17155,25 +17111,6 @@
       "priceIncrement": 0,
       "playedHome": 3,
       "playedAway": 2
-    },
-    {
-      "id": 38422,
-      "name": "Redondo",
-      "teamID": 75,
-      "position": 3,
-      "status": "warned",
-      "fitness": [
-        7,
-        4,
-        4,
-        10,
-        4
-      ],
-      "points": 34,
-      "price": 1490000,
-      "priceIncrement": 20000,
-      "playedHome": 4,
-      "playedAway": 6
     },
     {
       "id": 38449,
@@ -17199,7 +17136,7 @@
       "name": "Ali Houary",
       "teamID": 75,
       "position": 3,
-      "status": "doubt",
+      "status": "ok",
       "fitness": [
         "doubt",
         3,
@@ -17228,7 +17165,7 @@
       ],
       "points": 26,
       "price": 480000,
-      "priceIncrement": -10000,
+      "priceIncrement": 0,
       "playedHome": 5,
       "playedAway": 4
     },
@@ -17246,8 +17183,8 @@
         3
       ],
       "points": 24,
-      "price": 480000,
-      "priceIncrement": 100000,
+      "price": 780000,
+      "priceIncrement": 160000,
       "playedHome": 5,
       "playedAway": 3
     },
@@ -17341,8 +17278,8 @@
         3
       ],
       "points": 29,
-      "price": 830000,
-      "priceIncrement": -20000,
+      "price": 810000,
+      "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 5
     },
@@ -17360,8 +17297,8 @@
         1
       ],
       "points": 28,
-      "price": 250000,
-      "priceIncrement": -10000,
+      "price": 240000,
+      "priceIncrement": 0,
       "playedHome": 5,
       "playedAway": 4
     },
@@ -17398,7 +17335,7 @@
         3
       ],
       "points": 22,
-      "price": 1330000,
+      "price": 1320000,
       "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 7
@@ -17417,8 +17354,8 @@
         7
       ],
       "points": 43,
-      "price": 1430000,
-      "priceIncrement": -10000,
+      "price": 1440000,
+      "priceIncrement": 10000,
       "playedHome": 5,
       "playedAway": 6
     },
@@ -17474,8 +17411,8 @@
         3
       ],
       "points": 28,
-      "price": 670000,
-      "priceIncrement": -40000,
+      "price": 640000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 4
     },
@@ -17493,8 +17430,8 @@
         "injured"
       ],
       "points": 21,
-      "price": 1330000,
-      "priceIncrement": 10000,
+      "price": 1370000,
+      "priceIncrement": 20000,
       "playedHome": 4,
       "playedAway": 4
     },
@@ -17569,8 +17506,8 @@
         5
       ],
       "points": 37,
-      "price": 1230000,
-      "priceIncrement": 0,
+      "price": 1240000,
+      "priceIncrement": 10000,
       "playedHome": 4,
       "playedAway": 7
     },
@@ -17588,8 +17525,8 @@
         4
       ],
       "points": 31,
-      "price": 580000,
-      "priceIncrement": -20000,
+      "price": 560000,
+      "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 5
     },
@@ -17608,7 +17545,7 @@
       ],
       "points": 2,
       "price": 410000,
-      "priceIncrement": -10000,
+      "priceIncrement": 0,
       "playedHome": 3,
       "playedAway": 2
     },
@@ -17655,7 +17592,7 @@
       "name": "Eddahchouri",
       "teamID": 6,
       "position": 4,
-      "status": "doubt",
+      "status": "ok",
       "fitness": [
         "doubt",
         "injured",
@@ -17683,8 +17620,8 @@
         4
       ],
       "points": 33,
-      "price": 770000,
-      "priceIncrement": -20000,
+      "price": 750000,
+      "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 4
     },
@@ -17702,7 +17639,7 @@
         null
       ],
       "points": 20,
-      "price": 510000,
+      "price": 490000,
       "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 4
@@ -17759,7 +17696,7 @@
         null
       ],
       "points": 20,
-      "price": 840000,
+      "price": 820000,
       "priceIncrement": -10000,
       "playedHome": 2,
       "playedAway": 4
@@ -17835,8 +17772,8 @@
         1
       ],
       "points": 46,
-      "price": 1290000,
-      "priceIncrement": -30000,
+      "price": 1240000,
+      "priceIncrement": -20000,
       "playedHome": 6,
       "playedAway": 6
     },
@@ -17892,7 +17829,7 @@
         0
       ],
       "points": 16,
-      "price": 700000,
+      "price": 680000,
       "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 3
@@ -17968,8 +17905,8 @@
         null
       ],
       "points": 18,
-      "price": 710000,
-      "priceIncrement": 0,
+      "price": 690000,
+      "priceIncrement": -10000,
       "playedHome": 1,
       "playedAway": 1
     },
@@ -17978,7 +17915,7 @@
       "name": "Guliashvili",
       "teamID": 812,
       "position": 4,
-      "status": "ok",
+      "status": "doubt",
       "fitness": [
         null,
         4,
@@ -18025,7 +17962,7 @@
         null
       ],
       "points": 12,
-      "price": 480000,
+      "price": 470000,
       "priceIncrement": 0,
       "playedHome": 2,
       "playedAway": 3
@@ -18044,7 +17981,7 @@
         2
       ],
       "points": 18,
-      "price": 460000,
+      "price": 450000,
       "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 4
@@ -18082,7 +18019,7 @@
         null
       ],
       "points": 27,
-      "price": 700000,
+      "price": 680000,
       "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 2
@@ -18101,7 +18038,7 @@
         "doubt"
       ],
       "points": 0,
-      "price": 610000,
+      "price": 590000,
       "priceIncrement": -10000,
       "playedHome": 0,
       "playedAway": 0
@@ -18120,8 +18057,8 @@
         4
       ],
       "points": 36,
-      "price": 1450000,
-      "priceIncrement": -10000,
+      "price": 1440000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 6
     },
@@ -18158,7 +18095,7 @@
         "doubt"
       ],
       "points": 31,
-      "price": 850000,
+      "price": 830000,
       "priceIncrement": -10000,
       "playedHome": 2,
       "playedAway": 5
@@ -18215,8 +18152,8 @@
         "injured"
       ],
       "points": 6,
-      "price": 240000,
-      "priceIncrement": 50000,
+      "price": 390000,
+      "priceIncrement": 80000,
       "playedHome": 0,
       "playedAway": 1
     },
@@ -18234,8 +18171,8 @@
         1
       ],
       "points": 40,
-      "price": 1100000,
-      "priceIncrement": 0,
+      "price": 1130000,
+      "priceIncrement": 20000,
       "playedHome": 5,
       "playedAway": 6
     },
@@ -18253,8 +18190,8 @@
         -2
       ],
       "points": 29,
-      "price": 820000,
-      "priceIncrement": -10000,
+      "price": 810000,
+      "priceIncrement": 0,
       "playedHome": 5,
       "playedAway": 6
     },
@@ -18272,7 +18209,7 @@
         -1
       ],
       "points": 20,
-      "price": 1470000,
+      "price": 1430000,
       "priceIncrement": -20000,
       "playedHome": 6,
       "playedAway": 7
@@ -18329,8 +18266,8 @@
         1
       ],
       "points": 30,
-      "price": 500000,
-      "priceIncrement": -10000,
+      "price": 490000,
+      "priceIncrement": 0,
       "playedHome": 5,
       "playedAway": 5
     },
@@ -18348,8 +18285,8 @@
         null
       ],
       "points": 36,
-      "price": 1300000,
-      "priceIncrement": -20000,
+      "price": 1280000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 4
     },
@@ -18386,8 +18323,8 @@
         3
       ],
       "points": -3,
-      "price": 540000,
-      "priceIncrement": 0,
+      "price": 520000,
+      "priceIncrement": -10000,
       "playedHome": 2,
       "playedAway": 0
     },
@@ -18443,8 +18380,8 @@
         "doubt"
       ],
       "points": 35,
-      "price": 1100000,
-      "priceIncrement": -30000,
+      "price": 1070000,
+      "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 4
     },
@@ -18462,8 +18399,8 @@
         null
       ],
       "points": 27,
-      "price": 570000,
-      "priceIncrement": -20000,
+      "price": 550000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 3
     },
@@ -18481,8 +18418,8 @@
         3
       ],
       "points": 30,
-      "price": 630000,
-      "priceIncrement": -20000,
+      "price": 610000,
+      "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 5
     },
@@ -18538,8 +18475,8 @@
         5
       ],
       "points": 36,
-      "price": 1480000,
-      "priceIncrement": -20000,
+      "price": 1460000,
+      "priceIncrement": 0,
       "playedHome": 5,
       "playedAway": 4
     },
@@ -18576,7 +18513,7 @@
         4
       ],
       "points": 24,
-      "price": 800000,
+      "price": 760000,
       "priceIncrement": -20000,
       "playedHome": 3,
       "playedAway": 4
@@ -18595,7 +18532,7 @@
         "doubt"
       ],
       "points": 6,
-      "price": 520000,
+      "price": 500000,
       "priceIncrement": -10000,
       "playedHome": 1,
       "playedAway": 1
@@ -18652,8 +18589,8 @@
         3
       ],
       "points": 23,
-      "price": 930000,
-      "priceIncrement": -20000,
+      "price": 900000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 2
     },
@@ -18671,8 +18608,8 @@
         null
       ],
       "points": 12,
-      "price": 160000,
-      "priceIncrement": 10000,
+      "price": 200000,
+      "priceIncrement": 20000,
       "playedHome": 2,
       "playedAway": 2
     },
@@ -18690,8 +18627,8 @@
         2
       ],
       "points": 38,
-      "price": 1260000,
-      "priceIncrement": -30000,
+      "price": 1220000,
+      "priceIncrement": -20000,
       "playedHome": 6,
       "playedAway": 5
     },
@@ -18715,6 +18652,25 @@
       "playedAway": 0
     },
     {
+      "id": 42362,
+      "name": "Dumfries",
+      "teamID": 15,
+      "position": 2,
+      "status": "doubt",
+      "fitness": [
+        null,
+        null,
+        null,
+        3,
+        null
+      ],
+      "points": 23,
+      "price": 1460000,
+      "priceIncrement": -30000,
+      "playedHome": 3,
+      "playedAway": 5
+    },
+    {
       "id": 42370,
       "name": "Facundo Bernal",
       "teamID": 87,
@@ -18728,7 +18684,7 @@
         -5
       ],
       "points": 16,
-      "price": 950000,
+      "price": 930000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 4
@@ -18747,7 +18703,7 @@
         null
       ],
       "points": 11,
-      "price": 800000,
+      "price": 780000,
       "priceIncrement": -10000,
       "playedHome": 3,
       "playedAway": 2
@@ -18766,8 +18722,8 @@
         null
       ],
       "points": 27,
-      "price": 880000,
-      "priceIncrement": 50000,
+      "price": 1020000,
+      "priceIncrement": 70000,
       "playedHome": 3,
       "playedAway": 4
     },
@@ -18880,7 +18836,7 @@
         1
       ],
       "points": 15,
-      "price": 620000,
+      "price": 600000,
       "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 7
@@ -18919,7 +18875,7 @@
       ],
       "points": 5,
       "price": 280000,
-      "priceIncrement": -10000,
+      "priceIncrement": 0,
       "playedHome": 6,
       "playedAway": 7
     },
@@ -18938,7 +18894,7 @@
       ],
       "points": 16,
       "price": 870000,
-      "priceIncrement": -10000,
+      "priceIncrement": 0,
       "playedHome": 7,
       "playedAway": 5
     },
@@ -18994,7 +18950,7 @@
         6
       ],
       "points": 27,
-      "price": 540000,
+      "price": 520000,
       "priceIncrement": -10000,
       "playedHome": 6,
       "playedAway": 5
@@ -19032,8 +18988,8 @@
         7
       ],
       "points": 38,
-      "price": 1500000,
-      "priceIncrement": -110000,
+      "price": 1340000,
+      "priceIncrement": -60000,
       "playedHome": 4,
       "playedAway": 4
     },
@@ -19070,8 +19026,8 @@
         3
       ],
       "points": 24,
-      "price": 1160000,
-      "priceIncrement": -60000,
+      "price": 990000,
+      "priceIncrement": -80000,
       "playedHome": 5,
       "playedAway": 2
     },
@@ -19090,7 +19046,7 @@
       ],
       "points": 17,
       "price": 280000,
-      "priceIncrement": -10000,
+      "priceIncrement": 0,
       "playedHome": 3,
       "playedAway": 5
     },
@@ -19108,8 +19064,8 @@
         3
       ],
       "points": 29,
-      "price": 830000,
-      "priceIncrement": 10000,
+      "price": 880000,
+      "priceIncrement": 30000,
       "playedHome": 6,
       "playedAway": 4
     },
@@ -19127,7 +19083,7 @@
         -3
       ],
       "points": 20,
-      "price": 480000,
+      "price": 460000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 5
@@ -19184,7 +19140,7 @@
         -2
       ],
       "points": 33,
-      "price": 1100000,
+      "price": 1220000,
       "priceIncrement": 60000,
       "playedHome": 5,
       "playedAway": 4
@@ -19203,8 +19159,8 @@
         3
       ],
       "points": 10,
-      "price": 720000,
-      "priceIncrement": -20000,
+      "price": 690000,
+      "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 2
     },
@@ -19222,8 +19178,8 @@
         "doubt"
       ],
       "points": 27,
-      "price": 1060000,
-      "priceIncrement": -20000,
+      "price": 1030000,
+      "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 4
     },
@@ -19241,7 +19197,7 @@
         3
       ],
       "points": 30,
-      "price": 1350000,
+      "price": 1330000,
       "priceIncrement": -10000,
       "playedHome": 4,
       "playedAway": 4
@@ -19260,8 +19216,8 @@
         3
       ],
       "points": 27,
-      "price": 950000,
-      "priceIncrement": 0,
+      "price": 960000,
+      "priceIncrement": 10000,
       "playedHome": 4,
       "playedAway": 4
     },
@@ -19279,8 +19235,8 @@
         8
       ],
       "points": 19,
-      "price": 580000,
-      "priceIncrement": -10000,
+      "price": 570000,
+      "priceIncrement": 0,
       "playedHome": 4,
       "playedAway": 1
     },
@@ -19289,7 +19245,7 @@
       "name": "Ratkov",
       "teamID": 10,
       "position": 4,
-      "status": "ok",
+      "status": "doubt",
       "fitness": [
         2,
         null,
@@ -19298,7 +19254,7 @@
         2
       ],
       "points": 21,
-      "price": 340000,
+      "price": 320000,
       "priceIncrement": -10000,
       "playedHome": 5,
       "playedAway": 3
@@ -19318,7 +19274,7 @@
       ],
       "points": 6,
       "price": 200000,
-      "priceIncrement": -10000,
+      "priceIncrement": 0,
       "playedHome": 1,
       "playedAway": 2
     },
@@ -19355,7 +19311,7 @@
         null
       ],
       "points": 0,
-      "price": 340000,
+      "price": 320000,
       "priceIncrement": -10000,
       "playedHome": 0,
       "playedAway": 0
